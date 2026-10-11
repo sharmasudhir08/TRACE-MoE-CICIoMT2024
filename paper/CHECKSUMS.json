@@ -1,0 +1,182 @@
+{
+  "generated_by": "scripts/generate_checksums.py",
+  "generated_date": "2026-10-11",
+  "purpose": "Supports the manuscript's Data Availability Statement claim of SHA-256-verified result tables and figures, without requiring upload of the full per-run artefact set (~318 MB).",
+  "provenance_fingerprint": {
+    "code_sha256": "b938c56456b5c40606d841abee47662e8269e46b432a528f83cc60ed5dbafc77",
+    "data_sha256": "4216616deb3d4c4838f99b2ea79d695abdd2d84044302c4d2bf962bb949d0207",
+    "runs_checked": 50,
+    "note": "Identical code_sha256/data_sha256 extracted from metrics.json in all 50 run folders under results_v2/main/ — every result in this paper was produced from a single fixed codebase and dataset snapshot."
+  },
+  "tables": [
+    {
+      "number": 1,
+      "caption": "Hypothesis verdicts (5 seeds).",
+      "source_file": "documents_v2/report/hypotheses.csv",
+      "source_sha256": "7a9e43de3058fcf55ea4ba8ce4dc7301ba040c251ce8e14ddefa4cb54b88d99c",
+      "local_copy": "tables/hypotheses.tex",
+      "local_sha256": "8e86a812e63854a8519b6713896e6a709e84d3839f623d381cdaf4933f147278"
+    },
+    {
+      "number": 2,
+      "caption": "Macro-F1 (19 classes) of each model under each split protocol, 5 seeds.",
+      "source_file": "results_v2/tables/split_inflation.csv",
+      "source_sha256": "98d1c0bfb3090b389488b349e13cf92d2b2d207552fafc962ed64ae920ecdd75",
+      "local_copy": "tables/split_inflation.tex",
+      "local_sha256": "96be04ef68ae1749d108f81c0acf322f7fd4abf35fc96c38cf328f71ebf95ec4"
+    },
+    {
+      "number": 3,
+      "caption": "19-class test results, official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/main_official_label19.csv",
+      "source_sha256": "8daaafd161c107abb0d8cfc914d05bf185120e5cdb2a51c44b17d47a5ead152a",
+      "local_copy": "tables/main_official_label19.tex",
+      "local_sha256": "54a329c5e017eb79ae2804d3cd55fef9ccad3ad15a59685f1e8a2561d61de474"
+    },
+    {
+      "number": 4,
+      "caption": "6-category test results, official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/main_official_label6.csv",
+      "source_sha256": "0bf5b3116026ee4aed022293ec2638695d6978306d8647d22524a5afcb2b0699",
+      "local_copy": "tables/main_official_label6.tex",
+      "local_sha256": "8efb5d3e0ccb392a68186ff8a464723005873b162858eb3f5be4348e90ad947b"
+    },
+    {
+      "number": 5,
+      "caption": "Binary test results, official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/main_official_label2.csv",
+      "source_sha256": "5683b79f3bc96859e5d8140920f1590a5d466abae0975a93718abe70bb8c7298",
+      "local_copy": "tables/main_official_label2.tex",
+      "local_sha256": "1644cb4526af816ba4b980c5949c1cafc6fb22da2312ef3ea19a932e7ca0db56"
+    },
+    {
+      "number": 6,
+      "caption": "Pairwise Wilcoxon signed-rank test over (class, seed) pairs, Holm-corrected.",
+      "source_file": "results_v2/tables/wilcoxon_trace_moe_vs_baselines_official.csv",
+      "source_sha256": "b5381d125f6fb9624f8ee536d83ad3d1ed1bb2936fc7240dc0f14f5c509c6ca2",
+      "local_copy": "tables/wilcoxon_trace_moe_vs_baselines_official.tex",
+      "local_sha256": "6ff7128570d7f3a1ba7687e4d18ffedf849221f69a6c232df03a8ec429a9d3a9"
+    },
+    {
+      "number": 7,
+      "caption": "Binary macro-F1 difference TRACE-MoE minus RF, paired by seed, 95 % t-interval. Non-inferiority margin -0.5 pt.",
+      "source_file": "results_v2/tables/noninferiority_binary.csv",
+      "source_sha256": "48273de257741c50641ba19edb72f06e42e4643d2a50bf4bc852df0a6a77d92a",
+      "local_copy": "tables/noninferiority_binary.tex",
+      "local_sha256": "02e75e44f44a1de89397259ce00bdfb7ad58e63debbc3a78a8ae5764e42cc8c5"
+    },
+    {
+      "number": 8,
+      "caption": "Published-paper comparison on CICIoMT2024, 2024-2026.",
+      "source_file": "results_v2/tables/published_comparison.csv",
+      "source_sha256": "a8dd878dd232807506f98540197865902b5a2c3b12f0eb30bd28db2e1291c11e",
+      "local_copy": "tables/published_comparison.tex",
+      "local_sha256": "a0d8194042f9a62b3e38784e09d53876dec2383c8d307ebffef82fcf035d3bad"
+    },
+    {
+      "number": 9,
+      "caption": "Expert specialisation (NMI) and expert load, mean of 5 seeds.",
+      "source_file": "results_v2/tables/expert_routing.csv",
+      "source_sha256": "a701448e54a828ab473e9460a6eef62f4f927a1c2f546958f096e3bb9430a324",
+      "local_copy": "tables/expert_routing.tex",
+      "local_sha256": "57a9e9791f7b86de123a5cc593f2e3163d24e28dc44e26846103d10f163b8d4a"
+    },
+    {
+      "number": 10,
+      "caption": "Hierarchy consistency at inference, official split, mean +/- std over 5 seeds (B1 review analysis).",
+      "source_file": "results_v2/tables/hierarchy_consistency.csv",
+      "source_sha256": "003eaa60958d699823b385562de90c8b58b8fa607a6df8c37f1be00c9a5204e3",
+      "local_copy": "tables/hierarchy_consistency.csv",
+      "local_sha256": "003eaa60958d699823b385562de90c8b58b8fa607a6df8c37f1be00c9a5204e3"
+    },
+    {
+      "number": 11,
+      "caption": "Calibrated abstention layer, official split, 5 seeds.",
+      "source_file": "results_v2/tables/abstain_official.csv",
+      "source_sha256": "6fc0cba9aaec60c87dfe096b38234f0de436851640588d577ee2d8b81d52fb23",
+      "local_copy": "tables/abstain_official.tex",
+      "local_sha256": "a3ca8c8d1efeb609625c7f771b6cdca8e0d8d4b4566dc9484aeee090da31f5d1"
+    },
+    {
+      "number": 12,
+      "caption": "Alternative confidence scores for AURC on the official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/alt_aurc.csv",
+      "source_sha256": "209439b1cfd8fd6d10d038278afc9b978e351802047d149eeb36d39b8c3d7068",
+      "local_copy": "tables/alt_aurc.csv",
+      "local_sha256": "209439b1cfd8fd6d10d038278afc9b978e351802047d149eeb36d39b8c3d7068"
+    },
+    {
+      "number": 13,
+      "caption": "Model size and inference latency (single-thread CPU; RTX 3050 Laptop GPU for CUDA).",
+      "source_file": "results_v2/efficiency/efficiency.csv",
+      "source_sha256": "b28ffeb3d25985bb84c49fa561f4b9f606f2b35e466906f2876361ec46afde12",
+      "local_copy": "tables/efficiency.tex",
+      "local_sha256": "e2347f4d08165b1f1ab1efab43b95a2d4da23b2d4125702d4917ddfa9321fb85"
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "caption": "TRACE-MoE end-to-end methodology on CICIoMT2024: dual-split protocol, oversampled 5-seed training of five models in parallel, hierarchical heads with calibrated abstention, Wilcoxon + Friedman statistics and a SHA-256-tracked technical report. Stage-by-stage outputs are listed in the note below.",
+      "source_file": "results_v2/figures/methodology_trace_moe.png",
+      "source_sha256": "f56f794135212327a767173f0a85abd10a00e0d305698d64ddc332f5a7432e34",
+      "local_copy": "figures/methodology_trace_moe.png",
+      "local_sha256": "f56f794135212327a767173f0a85abd10a00e0d305698d64ddc332f5a7432e34"
+    },
+    {
+      "number": 2,
+      "caption": "19-class macro-F1 under each split protocol, with 5-seed error bars. Deep models are 2 to 3 times more inflated by the random regime than random forest.",
+      "source_file": "results_v2/figures/split_inflation.png",
+      "source_sha256": "e6ce12b7958ee1afdb8c2aa4545cfd740df932b166e83846a3685abfe7962ace",
+      "local_copy": "figures/split_inflation.png",
+      "local_sha256": "e6ce12b7958ee1afdb8c2aa4545cfd740df932b166e83846a3685abfe7962ace"
+    },
+    {
+      "number": 3,
+      "caption": "Per-class F1 of every model on the official split (mean of 5 seeds).",
+      "source_file": "results_v2/figures/per_class_f1_official.png",
+      "source_sha256": "be8ddbe2ed7a135aa58ee128edf68c4c4115daa7ad018385bc4502f8943f3aa2",
+      "local_copy": "figures/per_class_f1_official.png",
+      "local_sha256": "be8ddbe2ed7a135aa58ee128edf68c4c4115daa7ad018385bc4502f8943f3aa2"
+    },
+    {
+      "number": 4,
+      "caption": "Normalised confusion matrix of TRACE-MoE on the official split (seed 42).",
+      "source_file": "results_v2/figures/confusion_trace_moe_official.png",
+      "source_sha256": "bbac9a1e9bb48322de5171ad5b1fdb5729c60cc3a8d040f386751a53f59faf9b",
+      "local_copy": "figures/confusion_trace_moe_official.png",
+      "local_sha256": "bbac9a1e9bb48322de5171ad5b1fdb5729c60cc3a8d040f386751a53f59faf9b"
+    },
+    {
+      "number": 5,
+      "caption": "Friedman average ranks with Nemenyi critical difference (CD = 0.626, alpha = 0.05, 95 class-by-seed blocks).",
+      "source_file": "results_v2/figures/critical_difference_official.png",
+      "source_sha256": "4d5b04063eb48e3e2ccd9b61efe1284b336bc68889f3033602ffda7a6400b6dc",
+      "local_copy": "figures/critical_difference_official.png",
+      "local_sha256": "4d5b04063eb48e3e2ccd9b61efe1284b336bc68889f3033602ffda7a6400b6dc"
+    },
+    {
+      "number": 6,
+      "caption": "Share of each attack category sent to each expert, mean of 5 seeds, official split.",
+      "source_file": "results_v2/figures/expert_by_category_official.png",
+      "source_sha256": "fb09db1aef2ee7b0ec84a1fd971bdd563ae93a73675823105fbd2da3c73d7787",
+      "local_copy": "figures/expert_by_category_official.png",
+      "local_sha256": "fb09db1aef2ee7b0ec84a1fd971bdd563ae93a73675823105fbd2da3c73d7787"
+    },
+    {
+      "number": 7,
+      "caption": "Risk-coverage curves of every model on the official split, mean of 5 seeds. Lower is better.",
+      "source_file": "results_v2/figures/risk_coverage.png",
+      "source_sha256": "de2a8486b59a39f388aaa5fab1c2f1afb52a428a0179fe80510d10916b4231e2",
+      "local_copy": "figures/risk_coverage.png",
+      "local_sha256": "de2a8486b59a39f388aaa5fab1c2f1afb52a428a0179fe80510d10916b4231e2"
+    }
+  ],
+  "paper_bundle": {
+    "paper.pdf": "a0cb7af50bc4f65436741e204074575a137a6005f08e786b872fe9952d974d40",
+    "paper.tex": "4335364e9096e0e51389c4bd0016e08555ab31a25ac3bf9fac357dacd8a39b1e",
+    "paper.docx": "f2ac40d6987cc828d68693f7840fa383d6b4e456c089ed8955bbcc66af8d7da0",
+    "references.bib": "105c56e56f1a9164b885134d371cc2555c84efa51ba6c44d609c5f6768e21121",
+    "traceability.json": "f88ce9bec5566757986e047a1f8cbe5a26891bcd84378be22cae6c414c60ab1d"
+  }
+}

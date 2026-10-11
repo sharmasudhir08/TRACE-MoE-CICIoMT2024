@@ -1,0 +1,129 @@
+{
+  "manuscript": "documents_v2/paper/paper.pdf",
+  "manuscript_source": "documents_v2/CMC_Audit_Output/Paper5_CMC_Revised_v6.docx",
+  "generated_by": "scripts/generate_paper_bundle.py",
+  "tables": [
+    {
+      "number": 1,
+      "caption": "Hypothesis verdicts (5 seeds).",
+      "source_file": "documents_v2/report/hypotheses.csv",
+      "local_copy": "tables/hypotheses.tex"
+    },
+    {
+      "number": 2,
+      "caption": "Macro-F1 (19 classes) of each model under each split protocol, 5 seeds.",
+      "source_file": "results_v2/tables/split_inflation.csv",
+      "local_copy": "tables/split_inflation.tex"
+    },
+    {
+      "number": 3,
+      "caption": "19-class test results, official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/main_official_label19.csv",
+      "local_copy": "tables/main_official_label19.tex"
+    },
+    {
+      "number": 4,
+      "caption": "6-category test results, official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/main_official_label6.csv",
+      "local_copy": "tables/main_official_label6.tex"
+    },
+    {
+      "number": 5,
+      "caption": "Binary test results, official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/main_official_label2.csv",
+      "local_copy": "tables/main_official_label2.tex"
+    },
+    {
+      "number": 6,
+      "caption": "Pairwise Wilcoxon signed-rank test over (class, seed) pairs, Holm-corrected.",
+      "source_file": "results_v2/tables/wilcoxon_trace_moe_vs_baselines_official.csv",
+      "local_copy": "tables/wilcoxon_trace_moe_vs_baselines_official.tex"
+    },
+    {
+      "number": 7,
+      "caption": "Binary macro-F1 difference TRACE-MoE minus RF, paired by seed, 95 % t-interval. Non-inferiority margin -0.5 pt.",
+      "source_file": "results_v2/tables/noninferiority_binary.csv",
+      "local_copy": "tables/noninferiority_binary.tex"
+    },
+    {
+      "number": 8,
+      "caption": "Published-paper comparison on CICIoMT2024, 2024-2026.",
+      "source_file": "results_v2/tables/published_comparison.csv",
+      "local_copy": "tables/published_comparison.tex"
+    },
+    {
+      "number": 9,
+      "caption": "Expert specialisation (NMI) and expert load, mean of 5 seeds.",
+      "source_file": "results_v2/tables/expert_routing.csv",
+      "local_copy": "tables/expert_routing.tex"
+    },
+    {
+      "number": 10,
+      "caption": "Hierarchy consistency at inference, official split, mean +/- std over 5 seeds (B1 review analysis).",
+      "source_file": "results_v2/tables/hierarchy_consistency.csv",
+      "local_copy": "tables/hierarchy_consistency.csv"
+    },
+    {
+      "number": 11,
+      "caption": "Calibrated abstention layer, official split, 5 seeds.",
+      "source_file": "results_v2/tables/abstain_official.csv",
+      "local_copy": "tables/abstain_official.tex"
+    },
+    {
+      "number": 12,
+      "caption": "Alternative confidence scores for AURC on the official split, mean +/- std over 5 seeds.",
+      "source_file": "results_v2/tables/alt_aurc.csv",
+      "local_copy": "tables/alt_aurc.csv"
+    },
+    {
+      "number": 13,
+      "caption": "Model size and inference latency (single-thread CPU; RTX 3050 Laptop GPU for CUDA).",
+      "source_file": "results_v2/efficiency/efficiency.csv",
+      "local_copy": "tables/efficiency.tex"
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "caption": "TRACE-MoE end-to-end methodology on CICIoMT2024: dual-split protocol, oversampled 5-seed training of five models in parallel, hierarchical heads with calibrated abstention, Wilcoxon + Friedman statistics and a SHA-256-tracked technical report. Stage-by-stage outputs are listed in the note below.",
+      "source_file": "results_v2/figures/methodology_trace_moe.png",
+      "local_copy": "figures/methodology_trace_moe.png"
+    },
+    {
+      "number": 2,
+      "caption": "19-class macro-F1 under each split protocol, with 5-seed error bars. Deep models are 2 to 3 times more inflated by the random regime than random forest.",
+      "source_file": "results_v2/figures/split_inflation.png",
+      "local_copy": "figures/split_inflation.png"
+    },
+    {
+      "number": 3,
+      "caption": "Per-class F1 of every model on the official split (mean of 5 seeds).",
+      "source_file": "results_v2/figures/per_class_f1_official.png",
+      "local_copy": "figures/per_class_f1_official.png"
+    },
+    {
+      "number": 4,
+      "caption": "Normalised confusion matrix of TRACE-MoE on the official split (seed 42).",
+      "source_file": "results_v2/figures/confusion_trace_moe_official.png",
+      "local_copy": "figures/confusion_trace_moe_official.png"
+    },
+    {
+      "number": 5,
+      "caption": "Friedman average ranks with Nemenyi critical difference (CD = 0.626, alpha = 0.05, 95 class-by-seed blocks).",
+      "source_file": "results_v2/figures/critical_difference_official.png",
+      "local_copy": "figures/critical_difference_official.png"
+    },
+    {
+      "number": 6,
+      "caption": "Share of each attack category sent to each expert, mean of 5 seeds, official split.",
+      "source_file": "results_v2/figures/expert_by_category_official.png",
+      "local_copy": "figures/expert_by_category_official.png"
+    },
+    {
+      "number": 7,
+      "caption": "Risk-coverage curves of every model on the official split, mean of 5 seeds. Lower is better.",
+      "source_file": "results_v2/figures/risk_coverage.png",
+      "local_copy": "figures/risk_coverage.png"
+    }
+  ]
+}

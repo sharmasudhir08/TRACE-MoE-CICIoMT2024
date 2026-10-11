@@ -1,0 +1,173 @@
+# TRACE-MoE default configuration.
+# Override any key from the command line, e.g.
+#   python scripts/04_train_deep.py --config configs/default.yaml --set train.epochs=5 --set model.name=transformer
+
+paths:
+  # Folder that holds the official CICIoMT2024 Wi-Fi/MQTT CSVs
+  # (it contains train/ and test/ sub-folders, or files ending in _train.pcap.csv / _test.pcap.csv).
+  ciciomt_csv_dir: data/raw/CICIoMT2024/WiFi_and_MQTT/attacks/CSV   # 51 train + 21 test CSVs, 8,775,013 rows, matches paper Table 7
+  processed_dir: data/processed
+  results_dir: results          # simulation outputs only: CSV, JSON, PNG, LaTeX tables, model.pt
+  logs_dir: logs                # one .log per script
+  # Final deliverable documents are kept separately from the simulation record.
+  # Only steps 10 (technical report) and 11 (paper) write here, at the end of the pipeline.
+  documents_dir: documents
+
+data:
+  # Rows kept per CSV file. null = all rows. On a laptop, 200000 keeps memory low.
+  # A contiguous block is kept (not a random sample), so windows stay meaningful.
+  max_rows_per_file: null
+  drop_exact_duplicates: true
+  # Features removed after the shortcut audit (02_audit.py writes suggestions to results/audit/).
+  drop_features: []
+  # A single feature reaching this macro-F1 on its own is flagged as a possible shortcut.
+  shortcut_threshold: 0.95
+  # Rows at the end of each training file held out for validation (temporal hold-out).
+  val_tail_fraction: 0.15
+  scaler: robust            # robust | standard
+  clip_value: 10.0          # clip scaled features to [-clip, clip]
+
+split:
+  # random   : pool train+test files and split rows at random (what most papers do)
+  # official : official train/test CSV files (file level)
+  # temporal : first part of every file for training, last part for testing
+  # loao     : official split with one attack class removed from training (zero-day test)
+  regime: official
+  random_test_fraction: 0.2
+  temporal_test_fraction: 0.2
+  loao_class: null          # e.g. ARP_Spoofing; set by 07_unknown_attacks.py
+
+windows:
+  length: 16                # T consecutive flows per window (1 = row-level)
+  stride_train: 8
+  stride_val: 16
+  # 1 = one test window ending at every test flow, so window models and row-level models
+  # are scored on (almost) the same flows
+  stride_eval: 1
+  max_windows_per_class_train: 60000   # per epoch, balances the huge DDoS classes
+
+model:
+  name: trace_moe           # trace_moe (ours) | bilstm_dnn | transformer | tfsage_lite | trace (no experts)
+  d_model: 128
+  n_heads: 4
+  n_layers: 2
+  ff_dim: 256
+  dropout: 0.1
+  token_dim: 16             # per-feature token size in the feature tokenizer
+  use_protocol_token: true  # derived from the "Protocol Type" feature only, never from file names
+  hierarchical: true        # binary + 6-category + 19-class heads
+  graph_k: 4                # graph baselines: neighbours per flow inside a window
+  graph_k_min: 1
+  trust_threshold: 0.5      # tfsage_lite: edges with cosine similarity below this are dropped
+  moe:                      # TRACE-MoE: protocol-routed mixture of experts
+    n_experts: 4            # intended split: MQTT, TCP/IP DoS-DDoS, Recon, ARP/benign (learned, not forced)
+    routing: learned        # learned | protocol (fixed by protocol token) | dense (one big expert, same size)
+    expert_hidden: 2        # expert hidden size = expert_hidden x d_model
+    balance_weight: 0.01    # load-balancing loss weight (keeps every expert in use)
+
+loss:
+  type: logit_adjusted_focal   # ce | focal | logit_adjusted | logit_adjusted_focal
+  focal_gamma: 2.0
+  tau: 1.0                     # logit-adjustment strength
+  head_weights: {label2: 0.5, label6: 0.5, label19: 1.0}
+  consistency_weight: 0.1
+
+train:
+  seed: 42
+  epochs: 30
+  batch_size: 256
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 5               # early stopping on validation macro-F1 (finest head)
+  amp: true                 # mixed precision on GPU (fits a 4 GB card)
+  num_workers: 0
+  device: auto              # auto | cuda | cpu
+  grad_clip: 1.0
+
+run:
+  # Append-only mode: rerunning the same configuration never destroys the previous result.
+  # A second run of trace_moe_official_T16_seed42/ lands in trace_moe_official_T16_seed42__v2/,
+  # a third in __v3, and so on. Every run is also appended as one line to results/registry.jsonl.
+  # Set this to false to restore the classic overwrite behaviour.
+  append_only: true
+
+classical:
+  models: [rf]                 # the tree-ensemble winner in the published CICIoMT2024 papers
+  n_estimators: 200
+  max_rows_per_class: 100000   # training subsample per class for tree models
+
+robustness:
+  # Features an attacker can change: timing and size statistics.
+  # Flags, protocol indicators and counts are treated as fixed by the protocol.
+  mutable_features: [Duration, Rate, Srate, Drate, Header_Length, Tot sum, Min, Max, AVG, Std,
+                     Tot size, IAT, Number, Magnitue, Radius, Covariance, Variance, Weight]
+  epsilons: [0.05, 0.1, 0.25, 0.5]   # L-infinity budget in scaled units
+  pgd_steps: 20
+  pgd_step_frac: 0.1
+  momentum: 0.0              # 1.0 = MI-FGSM (more transferable examples for the tree models)
+  max_eval_windows: 5000
+  adv_finetune_epochs: 3
+  adv_epsilon: 0.25
+  main_epsilon: 0.25         # the eps used for the ASR table and hypothesis H6
+  models: [trace_moe, bilstm_dnn, transformer, tfsage_lite]
+  tree_models: [rf]            # attacked with transfer examples crafted on each neural model
+  # black-box transfer matrix: examples crafted on each surrogate are fed to every other model
+  transfer_matrix: true
+  transfer_epsilon: 0.25
+
+zero_day:
+  # each class is removed from training in turn and must be flagged as unknown at test time
+  classes: [ARP_Spoofing, Recon-VulScan, MQTT-Malformed_Data, TCP_IP-DoS-UDP, MQTT-DDoS-Publish_Flood]
+  # tfsage_lite can be added; each extra model costs classes x seeds training runs
+  models: [trace_moe, transformer, bilstm_dnn]
+
+abstain:
+  # reject threshold = the validation confidence (after temperature scaling) that keeps this share of windows
+  target_coverage: 0.95
+
+ablation:
+  # variants of TRACE-MoE; each line is a name and the config overrides it applies
+  model: trace_moe
+  variants:
+    full: []
+    dense_expert: [model.moe.routing=dense]          # H4: same size, no routing
+    protocol_routing: [model.moe.routing=protocol]   # fixed routing by protocol token, no learned router
+    no_experts: [model.name=trace]                   # the encoder alone
+    no_balance_loss: [model.moe.balance_weight=0]
+    no_hierarchy: [model.hierarchical=false]
+    plain_ce_loss: [loss.type=ce]
+    no_protocol_token: [model.use_protocol_token=false]
+  window_lengths: [1, 4, 8, 16, 32]
+
+main:
+  # official = leakage-safe main result; random = the split most published papers use (for context)
+  regimes: [official, random]
+  # 5 classifiers: TRACE-MoE + RF (step 03) + these 3 neural baselines, one winner per model family
+  deep_models: [bilstm_dnn, transformer, tfsage_lite, trace_moe]
+  reference_model: trace_moe  # the model the statistical tests compare against
+
+published:
+  # results reported by the closest published papers (not re-implemented), see configs/published_results.yaml
+  file: configs/published_results.yaml
+
+hypotheses:
+  # decision thresholds of H1-H10 (METHODOLOGY.md, Section 0)
+  alpha: 0.05
+  min_recall_gain: 0.05       # H2: minimum-class recall gain over the best baseline
+  noninferiority_margin: 0.005  # H3: binary macro-F1 may be at most this much below RF (lower 95% CI bound)
+  nmi_min: 0.5                # H5: expert specialisation
+  clean_drop_max: 0.01        # H7: clean macro-F1 cost of adversarial fine-tuning
+  ood_auroc_min: 0.90         # H8
+  max_params: 5000000         # H10
+
+evaluation:
+  seeds: [42, 43, 44, 45, 46]
+  recall_at_fpr: 0.01
+  # Store per-window class probabilities (as float16) in predictions.npz so the full posterior of every
+  # run is preserved alongside its metrics.json and model.pt. The 19-class array for the full CICIoMT2024
+  # test set is roughly 300 MB per neural run; disable this if disk space is tight.
+  save_proba: true
+
+figures:
+  dpi: 600                  # CMC asks for at least 300 dpi
+  format: png

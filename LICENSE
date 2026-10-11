@@ -1,0 +1,54 @@
+MIT License (with Citation Requirement)
+
+Copyright (c) 2026 Sudhir Kumar Sharma and Sneha Vasishth
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+**Citation requirement**: any publication, product, or derivative work that
+uses, modifies, or is results from this Software must cite the following
+paper:
+
+> Sharma, Sudhir Kumar, and Sneha Vasishth. "TRACE-MoE: A Protocol-Routed
+> Mixture of Experts with Hierarchical Heads and Calibrated Abstention for
+> Multi-Class Intrusion Detection in the Internet of Medical Things."
+> *Computers, Materials & Continua*, Special Issue "Deep Learning for
+> Next-Generation Cybersecurity: Architectures, Robustness and
+> Applications," 2026. [Citation to be finalized with volume/issue/DOI once
+> published; see `CITATION.cff` for the current machine-readable record.]
+
+```bibtex
+@article{sharma2026tracemoe,
+  title   = {{TRACE-MoE}: A Protocol-Routed Mixture of Experts with
+             Hierarchical Heads and Calibrated Abstention for Multi-Class
+             Intrusion Detection in the Internet of Medical Things},
+  author  = {Sharma, Sudhir Kumar and Vasishth, Sneha},
+  journal = {Computers, Materials \& Continua},
+  year    = {2026},
+  note    = {Special Issue on Deep Learning for Next-Generation Cybersecurity,
+             under review}
+}
+```
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Note: this license covers the code and documentation in this repository only.
+It does not cover the CICIoMT2024 dataset, which is governed by the Canadian
+Institute for Cybersecurity's own dataset terms
+(https://www.unb.ca/cic/datasets/iomt-dataset-2024.html) and is not
+redistributed in this repository.

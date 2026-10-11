@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Macro-F1 (19 classes, %) of each model under each split protocol}
+\label{tab:split_inflation}
+\begin{tabular}{lccc}
+\toprule
+model & official & random & inflation\_random\_minus\_official \\
+\midrule
+bilstm\_dnn & 72.32 & 83.23 & 10.91 \\
+rf & 84.41 & 90.09 & 5.67 \\
+tfsage\_lite & 79.25 & 94.88 & 15.62 \\
+trace\_moe & 81.53 & 95.21 & 13.68 \\
+transformer & 78.92 & 94.88 & 15.96 \\
+\bottomrule
+\end{tabular}
+\end{table}

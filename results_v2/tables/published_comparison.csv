@@ -1,0 +1,32 @@
+study,model,split,task,metric,value_pct,source,verified
+"Jodayree et al. (2026), Sci Rep 16:23252","PSM-HT (hierarchical Transformer, energy open-set head)",session-level (leakage-aware),19-class,accuracy,98.9,reported in paper,True
+"Jodayree et al. (2026), Sci Rep 16:23252","PSM-HT (hierarchical Transformer, energy open-set head)",session-level (leakage-aware),19-class,macro_f1,98.4,reported in paper,True
+"Jodayree et al. (2026), Sci Rep 16:23252","PSM-HT (hierarchical Transformer, energy open-set head)",session-level (leakage-aware),binary,accuracy,99.62,reported in paper,True
+"Jodayree et al. (2026), Sci Rep 16:23252","PSM-HT (hierarchical Transformer, energy open-set head)",session-level (leakage-aware),binary,macro_f1,99.3,reported in paper,True
+"Jodayree et al. (2026), Sci Rep 16:23252","PSM-HT (hierarchical Transformer, energy open-set head)",session-level (leakage-aware),zero-day,auroc,97.5,reported in paper,True
+"Jodayree et al. (2026), Sci Rep 16:23252","PSM-HT (hierarchical Transformer, energy open-set head)",session-level (leakage-aware),zero-day,fpr_at_95tpr,7.8,reported in paper,True
+"Benahmed et al. (2025), Information 16(8):669",BiLSTM-DNN (HBiLD-IDS),stratified random 80/20,19-class,accuracy,98.81,reported in paper,True
+"Benahmed et al. (2025), Information 16(8):669",BiLSTM-DNN (HBiLD-IDS),stratified random 80/20,19-class,f1,98.59,reported in paper,True
+"Alkhodaidi et al. (2026), CMC 88(2):87 (this special issue)",Random Forest with ADASYN balancing,"random, single seed",19-class,accuracy,99.01,reported in paper,True
+"Alkhodaidi et al. (2026), CMC 88(2):87 (this special issue)",Random Forest with ADASYN balancing,"random, single seed",19-class,f1,98.95,reported in paper,True
+"Al-Sharo et al. (2026), PLOS ONE 21(8):e0355601",FedMamba (federated Mamba state-space model),stratified random 80/20 (federated clients),19-class,accuracy,99.52,reported in paper,True
+"Sogut et al. (2026), Sensors 26(13):4036",MSCA-Net (multi-scale CNN + attention + LSTM over windows),stratified random 80/20 after windowing,6-class,accuracy,99.75,reported in paper,True
+"Sogut et al. (2026), Sensors 26(13):4036",MSCA-Net (multi-scale CNN + attention + LSTM over windows),stratified random 80/20 after windowing,6-class,weighted_f1,99.77,reported in paper,True
+This work,TRACE-MoE,official,19-class,accuracy,98.98,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,19-class,macro_f1,81.53,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,19-class,weighted_f1,98.87,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,6-class,accuracy,99.76,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,6-class,macro_f1,91.31,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,6-class,weighted_f1,99.79,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,binary,accuracy,99.86,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,binary,macro_f1,98.45,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,official,binary,weighted_f1,99.86,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,19-class,accuracy,99.71,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,19-class,macro_f1,95.21,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,19-class,weighted_f1,99.71,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,6-class,accuracy,99.9,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,6-class,macro_f1,97.53,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,6-class,weighted_f1,99.9,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,binary,accuracy,99.92,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,binary,macro_f1,99.36,"mean of 5 seeds, results/main",True
+This work,TRACE-MoE,random,binary,weighted_f1,99.92,"mean of 5 seeds, results/main",True

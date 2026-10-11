@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+preferred-citation:
+  type: article
+  title: "TRACE-MoE: A Protocol-Routed Mixture of Experts with Hierarchical Heads and Calibrated Abstention for Multi-Class Intrusion Detection in the Internet of Medical Things"
+  authors:
+    - family-names: "Sharma"
+      given-names: "Sudhir Kumar"
+    - family-names: "Vasishth"
+      given-names: "Sneha"
+  journal: "Computers, Materials & Continua"
+  year: 2026
+  notes: "Special Issue: Deep Learning for Next-Generation Cybersecurity, Architectures, Robustness and Applications. Under review — volume, issue, pages and DOI to be added once published."
+authors:
+  - family-names: "Sharma"
+    given-names: "Sudhir Kumar"
+  - family-names: "Vasishth"
+    given-names: "Sneha"
+title: "TRACE-MoE-CICIoMT2024"
+date-released: 2026-10-11
+license: MIT

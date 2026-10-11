@@ -1,0 +1,63 @@
+# Tiny settings to check that every script runs, on the synthetic data from scripts/00_make_synthetic.py.
+# Outputs go to results/_smoke and logs/_smoke so they never mix with real results.
+base: default.yaml
+
+paths:
+  ciciomt_csv_dir: data/synthetic/CICIoMT2024/WiFi_and_MQTT/attacks/CSV
+  processed_dir: data/processed/_smoke
+  results_dir: results/_smoke
+  logs_dir: logs/_smoke
+  documents_dir: documents/_smoke
+
+windows:
+  length: 8
+  stride_train: 2
+  stride_val: 4
+  stride_eval: 1
+  max_windows_per_class_train: 400
+
+model:
+  d_model: 32
+  ff_dim: 64
+  n_heads: 2
+  n_layers: 1
+
+train:
+  epochs: 3
+  patience: 2
+  batch_size: 128
+
+classical:
+  n_estimators: 20
+  max_rows_per_class: 2000
+
+robustness:
+  epsilons: [0.1, 0.5]
+  pgd_steps: 4
+  max_eval_windows: 600
+  adv_finetune_epochs: 1
+  models: [trace_moe, bilstm_dnn, transformer, tfsage_lite]
+  tree_models: [rf]
+  transfer_epsilon: 0.5
+  main_epsilon: 0.5
+
+zero_day:
+  classes: [ARP_Spoofing, Recon-VulScan]
+  models: [trace_moe, transformer]
+
+ablation:
+  window_lengths: [4, 8]
+
+main:
+  regimes: [official, random]
+
+run:
+  # Smoke test: do NOT accumulate __v2, __v3... versions, so successive smoke runs stay clean.
+  # Real experiments (configs/default.yaml) keep append_only: true.
+  append_only: false
+
+evaluation:
+  seeds: [42, 43, 44]
+
+figures:
+  dpi: 150

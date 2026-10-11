@@ -1,0 +1,6 @@
+2026-10-04 02:59:14 | INFO | --- 09_compare.py | config configs\default_v2.yaml | overrides []
+2026-10-04 02:59:14 | INFO | Session v2_phase1_2026-10-04_025853 | host SudhirSharma | session log: D:\Sharda University\CICIoMT2024\trace-iomt\logs_v2\sessions\v2_phase1_2026-10-04_025853_09_compare_SudhirSharma.log
+2026-10-04 02:59:17 | INFO | Tables in D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\tables, figures in D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\figures, overview in D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\summary.md
+2026-10-05 18:48:14 | INFO | --- 09_compare.py | config configs\default_v2.yaml | overrides []
+2026-10-05 18:48:14 | INFO | Session v2_finalize_2026-10-05_184754 | host SudhirSharma | session log: D:\Sharda University\CICIoMT2024\trace-iomt\logs_v2\sessions\v2_finalize_2026-10-05_184754_09_compare_SudhirSharma.log
+2026-10-05 18:48:18 | INFO | Tables in D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\tables, figures in D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\figures, overview in D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\summary.md

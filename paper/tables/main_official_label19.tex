@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Test results, 19 classes, official split (\%, mean $\pm$ std). [Report T3; source: results\_v2/tables/main\_official\_label19.csv]}
+\label{tab:main_official_label19}
+\begin{tabular}{lcccccccccc}
+\toprule
+model & family & n\_seeds & macro\_f1 & balanced\_accuracy & weighted\_f1 & macro\_pr\_auc & min\_class\_recall & ece & source\_runs & source\_git\_commits \\
+\midrule
+bilstm\_dnn & deep & 5 & 72.32 $\pm$ 0.34 & 74.37 $\pm$ 0.29 & 97.99 $\pm$ 0.04 & 71.94 $\pm$ 0.64 & 10.95 $\pm$ 1.40 & 1.76 $\pm$ 0.03 & bilstm\_dnn\_official\_T16\_seed42|bilstm\_dnn\_official\_T16\_seed43|bilstm\_dnn\_official\_T16\_seed44|bilstm\_dnn\_official\_T16\_seed45|bilstm\_dnn\_official\_T16\_seed46 & no-git \\
+transformer & deep & 5 & 78.92 $\pm$ 1.32 & 81.83 $\pm$ 0.40 & 98.72 $\pm$ 0.10 & 79.01 $\pm$ 1.56 & 10.52 $\pm$ 0.07 & 0.71 $\pm$ 0.07 & transformer\_official\_T16\_seed42|transformer\_official\_T16\_seed43|transformer\_official\_T16\_seed44|transformer\_official\_T16\_seed45|transformer\_official\_T16\_seed46 & no-git \\
+tfsage\_lite & deep & 5 & 79.25 $\pm$ 0.47 & 82.20 $\pm$ 0.28 & 98.67 $\pm$ 0.08 & 78.13 $\pm$ 0.64 & 10.19 $\pm$ 0.22 & 1.18 $\pm$ 0.07 & tfsage\_lite\_official\_T16\_seed42|tfsage\_lite\_official\_T16\_seed43|tfsage\_lite\_official\_T16\_seed44|tfsage\_lite\_official\_T16\_seed45|tfsage\_lite\_official\_T16\_seed46 & no-git \\
+trace\_moe & deep & 5 & 81.53 $\pm$ 0.69 & 82.55 $\pm$ 0.16 & 98.87 $\pm$ 0.04 & 79.41 $\pm$ 0.70 & 10.52 $\pm$ 0.10 & 0.90 $\pm$ 0.04 & trace\_moe\_official\_T16\_seed42|trace\_moe\_official\_T16\_seed43|trace\_moe\_official\_T16\_seed44|trace\_moe\_official\_T16\_seed45|trace\_moe\_official\_T16\_seed46 & no-git \\
+rf & classical & 5 & 84.41 $\pm$ 0.73 & 82.57 $\pm$ 0.69 & 99.33 $\pm$ 0.08 & 87.54 $\pm$ 0.07 & 20.06 $\pm$ 0.49 & 1.77 $\pm$ 0.34 & rf\_official\_T1\_seed42|rf\_official\_T1\_seed43|rf\_official\_T1\_seed44|rf\_official\_T1\_seed45|rf\_official\_T1\_seed46 & no-git \\
+\bottomrule
+\end{tabular}
+\end{table}

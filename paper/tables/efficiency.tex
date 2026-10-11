@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Model size and latency. [Report T15; source: results\_v2/efficiency/efficiency.csv]}
+\label{tab:efficiency}
+\begin{tabular}{lccccccccccc}
+\toprule
+model & T & params & size\_mb\_fp32 & cpu\_bs1\_ms\_per\_window & cpu\_bs1\_windows\_per\_s & cpu\_bs1024\_ms\_per\_window & cpu\_bs1024\_windows\_per\_s & cuda\_bs1\_ms\_per\_window & cuda\_bs1\_windows\_per\_s & cuda\_bs1024\_ms\_per\_window & cuda\_bs1024\_windows\_per\_s \\
+\midrule
+bilstm\_dnn & 16 & 70811 & 0.27 & 3.733 & 267.9 & 0.0265 & 37690.5 & 0.3817 & 2620.2 & 0.0037 & 269101.9 \\
+transformer & 16 & 308251 & 1.176 & 1.1627 & 860.1 & 0.0332 & 30127.6 & 0.7461 & 1340.4 & 0.0079 & 125921.5 \\
+tfsage\_lite & 16 & 109723 & 0.419 & 0.9362 & 1068.1 & 0.0155 & 64522.4 & 1.0585 & 944.7 & 0.0036 & 275032.2 \\
+trace\_moe & 16 & 685041 & 2.613 & 3.6253 & 275.8 & 0.0839 & 11914.3 & 2.3946 & 417.6 & 0.0151 & 66240.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
