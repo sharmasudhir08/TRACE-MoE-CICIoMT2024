@@ -1,0 +1,76 @@
+2026-11-03 19:51:23 | INFO | --- 11_posthoc.py | config configs/rerun.yaml | overrides ['train.device=mps']
+2026-11-03 19:51:23 | INFO | Session rerun_posthoc_2026-11-03_195121 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_posthoc_2026-11-03_195121_11_posthoc_mac-studio.log
+2026-11-03 19:51:23 | INFO | 50 main runs selected
+2026-11-03 19:51:36 | INFO | rf_official_T1_seed42: AURC 0.025  ties@max 59.7%  consistency 99.8082%  binary tuned 0.9497
+2026-11-03 19:51:45 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140765, 'val_windows_also_in_train_removed': 6492, 'test_windows_also_in_train_removed': 20313}
+2026-11-03 19:51:45 | INFO | Windows (official, T=16): train=620,004, val=60,614, test=1,593,554
+2026-11-03 19:51:45 | INFO | Window counts per class (before oversampling) -> <repo>/results_rerun/tables/class_window_counts_official.csv
+2026-11-03 19:52:11 | INFO | bilstm_dnn_official_T16_seed42: AURC 1.671  ties@max 0.0%  consistency 99.5500%  binary tuned 0.9613  agreement 100.0000%
+2026-11-03 19:52:25 | INFO | tfsage_lite_official_T16_seed42: AURC 0.072  ties@max 0.0%  consistency 99.9293%  binary tuned 0.9568  agreement 100.0000%
+2026-11-03 19:53:15 | INFO | trace_moe_official_T16_seed42: AURC 0.683  ties@max 0.0%  consistency 99.8761%  binary tuned 0.9823  agreement 100.0000%
+2026-11-03 19:53:31 | INFO | transformer_official_T16_seed42: AURC 0.847  ties@max 0.0%  consistency 99.9062%  binary tuned 0.9699  agreement 100.0000%
+2026-11-03 19:53:44 | INFO | rf_official_T1_seed43: AURC 0.024  ties@max 60.7%  consistency 99.7478%  binary tuned 0.9730
+2026-11-03 19:53:52 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140619, 'val_windows_also_in_train_removed': 6538, 'test_windows_also_in_train_removed': 20526}
+2026-11-03 19:53:52 | INFO | Windows (official, T=16): train=620,150, val=60,568, test=1,593,341
+2026-11-03 19:54:15 | INFO | bilstm_dnn_official_T16_seed43: AURC 2.161  ties@max 0.0%  consistency 99.5970%  binary tuned 0.9641  agreement 100.0000%
+2026-11-03 19:54:30 | INFO | tfsage_lite_official_T16_seed43: AURC 0.045  ties@max 0.0%  consistency 99.8056%  binary tuned 0.9604  agreement 100.0000%
+2026-11-03 19:55:16 | INFO | trace_moe_official_T16_seed43: AURC 0.339  ties@max 0.0%  consistency 99.8034%  binary tuned 0.9705  agreement 100.0000%
+2026-11-03 19:55:32 | INFO | transformer_official_T16_seed43: AURC 1.075  ties@max 0.0%  consistency 99.8600%  binary tuned 0.9669  agreement 100.0000%
+2026-11-03 19:55:46 | INFO | rf_official_T1_seed44: AURC 0.029  ties@max 60.8%  consistency 99.7457%  binary tuned 0.9515
+2026-11-03 19:55:53 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140855, 'val_windows_also_in_train_removed': 6526, 'test_windows_also_in_train_removed': 21449}
+2026-11-03 19:55:53 | INFO | Windows (official, T=16): train=619,914, val=60,580, test=1,592,418
+2026-11-03 19:56:16 | INFO | bilstm_dnn_official_T16_seed44: AURC 1.608  ties@max 0.0%  consistency 99.6191%  binary tuned 0.9319  agreement 100.0000%
+2026-11-03 19:56:31 | INFO | tfsage_lite_official_T16_seed44: AURC 0.194  ties@max 0.0%  consistency 99.8475%  binary tuned 0.9798  agreement 100.0000%
+2026-11-03 19:57:15 | INFO | trace_moe_official_T16_seed44: AURC 2.206  ties@max 0.0%  consistency 99.8821%  binary tuned 0.9843  agreement 100.0000%
+2026-11-03 19:57:32 | INFO | transformer_official_T16_seed44: AURC 1.208  ties@max 0.0%  consistency 99.5202%  binary tuned 0.9753  agreement 100.0000%
+2026-11-03 19:57:45 | INFO | rf_official_T1_seed45: AURC 0.021  ties@max 62.5%  consistency 99.7606%  binary tuned 0.9505
+2026-11-03 19:57:53 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140707, 'val_windows_also_in_train_removed': 6476, 'test_windows_also_in_train_removed': 19990}
+2026-11-03 19:57:53 | INFO | Windows (official, T=16): train=620,062, val=60,630, test=1,593,877
+2026-11-03 19:58:16 | INFO | bilstm_dnn_official_T16_seed45: AURC 1.280  ties@max 0.0%  consistency 99.5496%  binary tuned 0.9693  agreement 100.0000%
+2026-11-03 19:58:31 | INFO | tfsage_lite_official_T16_seed45: AURC 0.271  ties@max 0.0%  consistency 99.9132%  binary tuned 0.9645  agreement 100.0000%
+2026-11-03 19:59:15 | INFO | trace_moe_official_T16_seed45: AURC 0.270  ties@max 0.0%  consistency 99.8058%  binary tuned 0.9751  agreement 100.0000%
+2026-11-03 19:59:31 | INFO | transformer_official_T16_seed45: AURC 0.825  ties@max 0.0%  consistency 99.8476%  binary tuned 0.9645  agreement 100.0000%
+2026-11-03 19:59:44 | INFO | rf_official_T1_seed46: AURC 0.026  ties@max 57.3%  consistency 99.7573%  binary tuned 0.9514
+2026-11-03 19:59:52 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140528, 'val_windows_also_in_train_removed': 6595, 'test_windows_also_in_train_removed': 21009}
+2026-11-03 19:59:52 | INFO | Windows (official, T=16): train=620,241, val=60,511, test=1,592,858
+2026-11-03 20:00:16 | INFO | bilstm_dnn_official_T16_seed46: AURC 1.323  ties@max 0.0%  consistency 99.4801%  binary tuned 0.9663  agreement 100.0000%
+2026-11-03 20:00:31 | INFO | tfsage_lite_official_T16_seed46: AURC 0.398  ties@max 0.0%  consistency 99.8243%  binary tuned 0.9615  agreement 100.0000%
+2026-11-03 20:01:15 | INFO | trace_moe_official_T16_seed46: AURC 0.406  ties@max 0.0%  consistency 99.7983%  binary tuned 0.9774  agreement 100.0000%
+2026-11-03 20:01:31 | INFO | transformer_official_T16_seed46: AURC 1.228  ties@max 0.0%  consistency 99.8056%  binary tuned 0.9569  agreement 100.0000%
+2026-11-03 20:01:41 | INFO | rf_random_T1_seed42: AURC 0.012  ties@max 53.6%  consistency 99.8899%  binary tuned 0.9845
+2026-11-03 20:01:48 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 145232, 'val_windows_also_in_train_removed': 28159, 'test_windows_also_in_train_removed': 47144}
+2026-11-03 20:01:48 | INFO | Windows (random, T=16): train=600,573, val=103,454, test=172,210
+2026-11-03 20:01:48 | INFO | Window counts per class (before oversampling) -> <repo>/results_rerun/tables/class_window_counts_random.csv
+2026-11-03 20:01:53 | INFO | bilstm_dnn_random_T16_seed42: AURC 0.032  ties@max 0.0%  consistency 99.4727%  binary tuned 0.9762  agreement 100.0000%
+2026-11-03 20:01:57 | INFO | tfsage_lite_random_T16_seed42: AURC 0.002  ties@max 0.0%  consistency 99.9437%  binary tuned 0.9940  agreement 100.0000%
+2026-11-03 20:02:07 | INFO | trace_moe_random_T16_seed42: AURC 0.025  ties@max 0.0%  consistency 99.9843%  binary tuned 0.9933  agreement 100.0000%
+2026-11-03 20:02:10 | INFO | transformer_random_T16_seed42: AURC 0.042  ties@max 0.0%  consistency 99.9599%  binary tuned 0.9947  agreement 100.0000%
+2026-11-03 20:02:20 | INFO | rf_random_T1_seed43: AURC 0.010  ties@max 17.6%  consistency 99.8931%  binary tuned 0.9844
+2026-11-03 20:02:28 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 145025, 'val_windows_also_in_train_removed': 27949, 'test_windows_also_in_train_removed': 47339}
+2026-11-03 20:02:28 | INFO | Windows (random, T=16): train=600,780, val=103,664, test=172,015
+2026-11-03 20:02:32 | INFO | bilstm_dnn_random_T16_seed43: AURC 0.029  ties@max 0.0%  consistency 99.5454%  binary tuned 0.9776  agreement 100.0000%
+2026-11-03 20:02:36 | INFO | tfsage_lite_random_T16_seed43: AURC 0.002  ties@max 0.0%  consistency 99.9419%  binary tuned 0.9943  agreement 100.0000%
+2026-11-03 20:02:46 | INFO | trace_moe_random_T16_seed43: AURC 0.031  ties@max 0.0%  consistency 99.9744%  binary tuned 0.9935  agreement 100.0000%
+2026-11-03 20:02:50 | INFO | transformer_random_T16_seed43: AURC 0.053  ties@max 0.0%  consistency 99.9657%  binary tuned 0.9946  agreement 100.0000%
+2026-11-03 20:03:00 | INFO | rf_random_T1_seed44: AURC 0.013  ties@max 52.9%  consistency 99.8896%  binary tuned 0.9840
+2026-11-03 20:03:07 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 145001, 'val_windows_also_in_train_removed': 28221, 'test_windows_also_in_train_removed': 47116}
+2026-11-03 20:03:07 | INFO | Windows (random, T=16): train=600,804, val=103,392, test=172,238
+2026-11-03 20:03:12 | INFO | bilstm_dnn_random_T16_seed44: AURC 0.041  ties@max 0.0%  consistency 99.4873%  binary tuned 0.9753  agreement 100.0000%
+2026-11-03 20:03:15 | INFO | tfsage_lite_random_T16_seed44: AURC 0.002  ties@max 0.0%  consistency 99.9472%  binary tuned 0.9931  agreement 100.0000%
+2026-11-03 20:03:25 | INFO | trace_moe_random_T16_seed44: AURC 0.059  ties@max 0.0%  consistency 99.9750%  binary tuned 0.9930  agreement 100.0000%
+2026-11-03 20:03:28 | INFO | transformer_random_T16_seed44: AURC 0.124  ties@max 0.0%  consistency 99.9576%  binary tuned 0.9935  agreement 100.0000%
+2026-11-03 20:03:38 | INFO | rf_random_T1_seed45: AURC 0.012  ties@max 53.8%  consistency 99.8889%  binary tuned 0.9836
+2026-11-03 20:03:46 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 145007, 'val_windows_also_in_train_removed': 28023, 'test_windows_also_in_train_removed': 47238}
+2026-11-03 20:03:46 | INFO | Windows (random, T=16): train=600,798, val=103,590, test=172,116
+2026-11-03 20:03:50 | INFO | bilstm_dnn_random_T16_seed45: AURC 0.029  ties@max 0.0%  consistency 99.4881%  binary tuned 0.9749  agreement 100.0000%
+2026-11-03 20:03:54 | INFO | tfsage_lite_random_T16_seed45: AURC 0.002  ties@max 0.0%  consistency 99.9529%  binary tuned 0.9945  agreement 100.0000%
+2026-11-03 20:04:03 | INFO | trace_moe_random_T16_seed45: AURC 0.012  ties@max 0.0%  consistency 99.9553%  binary tuned 0.9939  agreement 100.0000%
+2026-11-03 20:04:07 | INFO | transformer_random_T16_seed45: AURC 0.065  ties@max 0.0%  consistency 99.9640%  binary tuned 0.9956  agreement 100.0000%
+2026-11-03 20:04:16 | INFO | rf_random_T1_seed46: AURC 0.012  ties@max 69.5%  consistency 99.8880%  binary tuned 0.9840
+2026-11-03 20:04:24 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 144985, 'val_windows_also_in_train_removed': 28109, 'test_windows_also_in_train_removed': 47233}
+2026-11-03 20:04:24 | INFO | Windows (random, T=16): train=600,820, val=103,504, test=172,121
+2026-11-03 20:04:29 | INFO | bilstm_dnn_random_T16_seed46: AURC 0.034  ties@max 0.0%  consistency 99.4986%  binary tuned 0.9751  agreement 100.0000%
+2026-11-03 20:04:32 | INFO | tfsage_lite_random_T16_seed46: AURC 0.002  ties@max 0.0%  consistency 99.9431%  binary tuned 0.9938  agreement 100.0000%
+2026-11-03 20:04:42 | INFO | trace_moe_random_T16_seed46: AURC 0.008  ties@max 0.0%  consistency 99.9837%  binary tuned 0.9927  agreement 100.0000%
+2026-11-03 20:04:46 | INFO | transformer_random_T16_seed46: AURC 0.079  ties@max 0.0%  consistency 99.9622%  binary tuned 0.9940  agreement 100.0000%
+2026-11-03 20:04:46 | INFO | Done. Next: scripts/09_compare.py, then scripts/10_hypothesis_verdicts.py

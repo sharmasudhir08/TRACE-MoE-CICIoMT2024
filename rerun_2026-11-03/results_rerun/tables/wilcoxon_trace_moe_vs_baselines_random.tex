@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Wilcoxon signed-rank, trace_moe vs each baseline, per-class F1, Holm (random)}
+\label{tab:wilcoxon_trace_moe_vs_baselines_random}
+\begin{tabular}{lccccccc}
+\toprule
+reference & baseline & n\_pairs & mean\_diff & wilcoxon\_stat & p & p\_holm & significant\_0.05 \\
+\midrule
+trace\_moe & bilstm\_dnn & 95 & 0.1188465344104261 & 585.0 & 3.142068681929898e-10 & 1.2568274727719592e-09 & True \\
+trace\_moe & rf & 95 & 0.04773561546490444 & 969.0 & 1.1373696674748878e-06 & 3.4121090024246635e-06 & True \\
+trace\_moe & transformer & 95 & -0.003756404264857391 & 1138.0 & 0.0002526635220322797 & 0.0005053270440645594 & True \\
+trace\_moe & tfsage\_lite & 95 & 0.002954170814461431 & 2009.5 & 0.6140786584067726 & 0.6140786584067726 & False \\
+\bottomrule
+\end{tabular}
+\end{table}

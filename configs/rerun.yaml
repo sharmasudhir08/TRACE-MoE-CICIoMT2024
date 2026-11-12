@@ -1,0 +1,9 @@
+# Re-run of the v2 experiments on another machine (2026-10-29).
+# Same settings as default_v2.yaml (the configuration behind the paper's numbers); outputs go to a separate
+# tree so they never mix with the author's results_v2/ tables shipped in this repository.
+base: default_v2.yaml
+
+paths:
+  results_dir: results_rerun
+  documents_dir: documents_rerun
+  logs_dir: logs_rerun

@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Poisoning test of the synchronised twin}
+\label{tab:twin_poison}
+\begin{tabular}{lcccccccccccccccccc}
+\toprule
+device & profile & attack\_class & attack\_rows & test\_windows & test\_scope & eta & delta & budget & updates & detection\_static & drift\_sigma\_1h & share\_to\_attack\_1h & detection\_1h & drop\_points\_1h & drift\_sigma\_24h & share\_to\_attack\_24h & detection\_24h & drop\_points\_24h \\
+\midrule
+Blink\_Camera & Blink\_Camera|Interactions & TCP\_IP-DDoS-ICMP & 149996 & 265 & any attack & 0.05 & 3 & 10 & 240 & 0.8906 & 0.1383 & 0.0098 & 0.8868 & 0.3774 & 14.1741 & 1.0 & 0.6377 & 25.283 \\
+Ecobee\_Camera & Ecobee\_Camera|Active & TCP\_IP-DDoS-ICMP & 199956 & 2779 & same class & 0.05 & 3 & 10 & 240 & 0.9144 & 0.1177 & 0.0425 & 0.8845 & 2.9867 & 2.7725 & 1.0 & 0.7614 & 15.2933 \\
+M1T\_Camera & M1T\_Camera|Active & TCP\_IP-DoS-TCP & 143936 & 20000 & any attack & 0.05 & 3 & 10 & 240 & 1.0 & 0.6337 & 0.2212 & 1.0 & 0.0 & 2.8651 & 1.0 & 1.0 & 0.0 \\
+MQTT\_Broker\_attacks & MQTT\_Broker\_attacks|Idle & TCP\_IP-DDoS-UDP & 100000 & 20000 & same class & 0.05 & 3 & 10 & 240 & 0.9998 & 0.525 & 0.3139 & 0.9998 & 0.0 & 1.6722 & 1.0 & 0.9998 & 0.005 \\
+Multifunctional\_Pager & Multifunctional\_Pager|Active & TCP\_IP-DDoS-ICMP & 150000 & 49 & same class & 0.05 & 3 & 10 & 240 & 0.9388 & 0.1216 & 0.0225 & 0.898 & 4.0816 & 5.4094 & 1.0 & 0.8163 & 12.2449 \\
+Owltron\_Camera & Owltron\_Camera|Interactions & TCP\_IP-DDoS-SYN & 100000 & 54 & same class & 0.05 & 3 & 10 & 240 & 0.6296 & 0.225 & 0.0277 & 0.6296 & 0.0 & 8.1309 & 1.0 & 0.6296 & 0.0 \\
+SenseU & SenseU|Active & TCP\_IP-DDoS-ICMP & 100000 & 25 & same class & 0.05 & 3 & 10 & 240 & 0.04 & 0.2443 & 0.0975 & 0.72 & -68.0 & 2.5055 & 1.0 & 1.0 & -96.0 \\
+Singcall & Singcall|None & TCP\_IP-DDoS-UDP & 100000 & 20000 & any attack & 0.05 & 3 & 10 & 240 & 1.0 & 0.4781 & 0.3752 & 1.0 & -0.005 & 1.2742 & 1.0 & 1.0 & -0.005 \\
+Unprofiled\_Device\_002710 & Unprofiled\_Device\_002710|Active & TCP\_IP-DDoS-SYN & 100000 & 13 & same class & 0.05 & 3 & 10 & 240 & 0.6154 & 0.4436 & 0.1129 & 0.6923 & -7.6923 & 3.9301 & 1.0 & 1.0 & -38.4615 \\
+\bottomrule
+\end{tabular}
+\end{table}

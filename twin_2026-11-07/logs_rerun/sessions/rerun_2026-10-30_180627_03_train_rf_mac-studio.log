@@ -1,0 +1,40 @@
+2026-10-30 18:06:28 | INFO | --- 03_train_rf.py | config configs/rerun.yaml | overrides []
+2026-10-30 18:06:28 | INFO | Session rerun_2026-10-30_180627 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_2026-10-30_180627_03_train_rf_mac-studio.log
+2026-10-30 18:06:39 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2724656, 'val_windows_also_in_train_removed': 502383, 'test_windows_also_in_train_removed': 838236}
+2026-10-30 18:06:39 | INFO | Windows (random, T=1): train=3,242,352, val=550,619, test=916,767
+2026-10-30 18:06:39 | INFO | === main/rf_random_T1_seed42 | started 2026-10-30T18:06:39
+2026-10-30 18:07:14 | INFO | test macro-F1  2:0.9846  6:0.9381  19:0.8908  -> <repo>/results_rerun/main/rf_random_T1_seed42
+2026-10-30 18:07:17 | INFO | --- 03_train_rf.py | config configs/rerun.yaml | overrides []
+2026-10-30 18:07:17 | INFO | Session rerun_2026-10-30_180627 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_2026-10-30_180627_03_train_rf_mac-studio.log
+2026-10-30 18:07:27 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2768486, 'val_windows_also_in_train_removed': 314069, 'test_windows_also_in_train_removed': 61169}
+2026-10-30 18:07:27 | INFO | Windows (official, T=1): train=3,318,222, val=760,054, test=1,553,013
+2026-10-30 18:07:27 | INFO | === main/rf_official_T1_seed43 | started 2026-10-30T18:07:27
+2026-10-30 18:08:10 | INFO | test macro-F1  2:0.9529  6:0.8639  19:0.8396  -> <repo>/results_rerun/main/rf_official_T1_seed43
+2026-10-30 18:08:21 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2768672, 'val_windows_also_in_train_removed': 313876, 'test_windows_also_in_train_removed': 61470}
+2026-10-30 18:08:21 | INFO | Windows (official, T=1): train=3,318,036, val=760,247, test=1,552,712
+2026-10-30 18:08:21 | INFO | === main/rf_official_T1_seed44 | started 2026-10-30T18:08:21
+2026-10-30 18:09:04 | INFO | test macro-F1  2:0.9531  6:0.8631  19:0.8392  -> <repo>/results_rerun/main/rf_official_T1_seed44
+2026-10-30 18:09:15 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2768941, 'val_windows_also_in_train_removed': 314083, 'test_windows_also_in_train_removed': 59752}
+2026-10-30 18:09:15 | INFO | Windows (official, T=1): train=3,317,767, val=760,040, test=1,554,430
+2026-10-30 18:09:15 | INFO | === main/rf_official_T1_seed45 | started 2026-10-30T18:09:15
+2026-10-30 18:09:57 | INFO | test macro-F1  2:0.9544  6:0.8662  19:0.8379  -> <repo>/results_rerun/main/rf_official_T1_seed45
+2026-10-30 18:10:08 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2768703, 'val_windows_also_in_train_removed': 313389, 'test_windows_also_in_train_removed': 61432}
+2026-10-30 18:10:08 | INFO | Windows (official, T=1): train=3,318,005, val=760,734, test=1,552,750
+2026-10-30 18:10:08 | INFO | === main/rf_official_T1_seed46 | started 2026-10-30T18:10:08
+2026-10-30 18:10:51 | INFO | test macro-F1  2:0.9526  6:0.8585  19:0.8353  -> <repo>/results_rerun/main/rf_official_T1_seed46
+2026-10-30 18:11:02 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2724512, 'val_windows_also_in_train_removed': 502649, 'test_windows_also_in_train_removed': 837595}
+2026-10-30 18:11:02 | INFO | Windows (random, T=1): train=3,242,496, val=550,353, test=917,408
+2026-10-30 18:11:02 | INFO | === main/rf_random_T1_seed43 | started 2026-10-30T18:11:02
+2026-10-30 18:11:37 | INFO | test macro-F1  2:0.9847  6:0.9378  19:0.8981  -> <repo>/results_rerun/main/rf_random_T1_seed43
+2026-10-30 18:11:47 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2723595, 'val_windows_also_in_train_removed': 503159, 'test_windows_also_in_train_removed': 838167}
+2026-10-30 18:11:47 | INFO | Windows (random, T=1): train=3,243,413, val=549,843, test=916,836
+2026-10-30 18:11:47 | INFO | === main/rf_random_T1_seed44 | started 2026-10-30T18:11:47
+2026-10-30 18:12:22 | INFO | test macro-F1  2:0.9843  6:0.9384  19:0.8938  -> <repo>/results_rerun/main/rf_random_T1_seed44
+2026-10-30 18:12:33 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2724518, 'val_windows_also_in_train_removed': 502650, 'test_windows_also_in_train_removed': 837889}
+2026-10-30 18:12:33 | INFO | Windows (random, T=1): train=3,242,490, val=550,352, test=917,114
+2026-10-30 18:12:33 | INFO | === main/rf_random_T1_seed45 | started 2026-10-30T18:12:33
+2026-10-30 18:13:08 | INFO | test macro-F1  2:0.9840  6:0.9365  19:0.8957  -> <repo>/results_rerun/main/rf_random_T1_seed45
+2026-10-30 18:13:19 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2724692, 'val_windows_also_in_train_removed': 503050, 'test_windows_also_in_train_removed': 837731}
+2026-10-30 18:13:19 | INFO | Windows (random, T=1): train=3,242,316, val=549,952, test=917,272
+2026-10-30 18:13:19 | INFO | === main/rf_random_T1_seed46 | started 2026-10-30T18:13:19
+2026-10-30 18:13:53 | INFO | test macro-F1  2:0.9842  6:0.9383  19:0.8939  -> <repo>/results_rerun/main/rf_random_T1_seed46

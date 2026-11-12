@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.local
+*.key
+*.pem
+*.crt
+secrets.yml
+tokens.txt
+# dataset folder only; src/trace_iomt/data/ is code
+/data/
+~$*.docx

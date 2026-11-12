@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Model size and inference latency per window}
+\label{tab:efficiency}
+\begin{tabular}{lcccccccccccc}
+\toprule
+model & T & params & size\_mb\_fp32 & cpu\_bs1\_ms\_per\_window & cpu\_bs1\_windows\_per\_s & cpu\_bs1024\_ms\_per\_window & cpu\_bs1024\_windows\_per\_s & mps\_bs1\_ms\_per\_window & mps\_bs1\_windows\_per\_s & mps\_bs1024\_ms\_per\_window & mps\_bs1024\_windows\_per\_s & cpu\_threads \\
+\midrule
+bilstm\_dnn & 16 & 70811 & 0.27 & 0.7039 & 1420.6 & 0.141 & 7089.8 & 0.9208 & 1086.0 & 0.0086 & 115965.8 & 1 \\
+transformer & 16 & 308251 & 1.176 & 0.2099 & 4764.7 & 0.0851 & 11755.8 & 0.5151 & 1941.4 & 0.0006 & 1581772.6 & 1 \\
+tfsage\_lite & 16 & 109723 & 0.419 & 0.1688 & 5923.7 & 0.0383 & 26115.2 & 0.3806 & 2627.3 & 0.0005 & 1939853.2 & 1 \\
+trace\_moe & 16 & 685041 & 2.613 & 0.6287 & 1590.7 & 0.1493 & 6700.0 & 5.512 & 181.4 & 0.0212 & 47218.6 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

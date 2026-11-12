@@ -1,0 +1,1145 @@
+{
+  "table": "twin_ablation",
+  "by": [
+    "variant"
+  ],
+  "groups": [
+    {
+      "key": {
+        "variant": "V0"
+      },
+      "dirs": [
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed42",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed43",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed44",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed45",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "twin_A_2026-11-05_113219",
+        "twin_A_2026-11-07_070756"
+      ],
+      "n_runs": 15,
+      "runs": [
+        {
+          "variant": "V0",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V0_seed42",
+          "level": "label2",
+          "macro_f1": 0.9559816798854373,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed42",
+          "started_at": "2026-11-05T15:31:43",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V0_seed42",
+          "level": "label6",
+          "macro_f1": 0.7566842603457925,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed42",
+          "started_at": "2026-11-05T15:31:43",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V0_seed42",
+          "level": "label19",
+          "macro_f1": 0.6436534210934554,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed42",
+          "started_at": "2026-11-05T15:31:43",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V0_seed43",
+          "level": "label2",
+          "macro_f1": 0.9412421653180978,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed43",
+          "started_at": "2026-11-05T22:06:30",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V0_seed43",
+          "level": "label6",
+          "macro_f1": 0.7968656753513802,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed43",
+          "started_at": "2026-11-05T22:06:30",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V0_seed43",
+          "level": "label19",
+          "macro_f1": 0.6802044491146527,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed43",
+          "started_at": "2026-11-05T22:06:30",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V0_seed44",
+          "level": "label2",
+          "macro_f1": 0.9504780704936329,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed44",
+          "started_at": "2026-11-06T05:25:25",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V0_seed44",
+          "level": "label6",
+          "macro_f1": 0.7652371059650109,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed44",
+          "started_at": "2026-11-06T05:25:25",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V0_seed44",
+          "level": "label19",
+          "macro_f1": 0.6672973949549751,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed44",
+          "started_at": "2026-11-06T05:25:25",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V0_seed45",
+          "level": "label2",
+          "macro_f1": 0.9412974576491704,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed45",
+          "started_at": "2026-11-06T12:46:20",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V0_seed45",
+          "level": "label6",
+          "macro_f1": 0.7789104618163386,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed45",
+          "started_at": "2026-11-06T12:46:20",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V0_seed45",
+          "level": "label19",
+          "macro_f1": 0.669348509604375,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V0_seed45",
+          "started_at": "2026-11-06T12:46:20",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V0",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V0_seed46",
+          "level": "label2",
+          "macro_f1": 0.9376522268975794,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_A_2026-11-07_070756_twin_trace_moe_official_T16_V0_seed46",
+          "started_at": "2026-11-07T07:11:49",
+          "session": "twin_A_2026-11-07_070756"
+        },
+        {
+          "variant": "V0",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V0_seed46",
+          "level": "label6",
+          "macro_f1": 0.7907394381409082,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_A_2026-11-07_070756_twin_trace_moe_official_T16_V0_seed46",
+          "started_at": "2026-11-07T07:11:49",
+          "session": "twin_A_2026-11-07_070756"
+        },
+        {
+          "variant": "V0",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V0_seed46",
+          "level": "label19",
+          "macro_f1": 0.6869139561910288,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V0_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_A_2026-11-07_070756_twin_trace_moe_official_T16_V0_seed46",
+          "started_at": "2026-11-07T07:11:49",
+          "session": "twin_A_2026-11-07_070756"
+        }
+      ]
+    },
+    {
+      "key": {
+        "variant": "V1"
+      },
+      "dirs": [
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed42",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed43",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed44"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "twin_B_2026-11-05_113230"
+      ],
+      "n_runs": 9,
+      "runs": [
+        {
+          "variant": "V1",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V1_seed42",
+          "level": "label2",
+          "macro_f1": 0.9639451973343464,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed42",
+          "started_at": "2026-11-05T11:38:57",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V1_seed42",
+          "level": "label6",
+          "macro_f1": 0.7924230631926862,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed42",
+          "started_at": "2026-11-05T11:38:57",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V1_seed42",
+          "level": "label19",
+          "macro_f1": 0.6774308152325104,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed42",
+          "started_at": "2026-11-05T11:38:57",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V1_seed43",
+          "level": "label2",
+          "macro_f1": 0.9663759865363677,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed43",
+          "started_at": "2026-11-05T19:40:19",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V1_seed43",
+          "level": "label6",
+          "macro_f1": 0.7831137225654848,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed43",
+          "started_at": "2026-11-05T19:40:19",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V1_seed43",
+          "level": "label19",
+          "macro_f1": 0.677151255961411,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed43",
+          "started_at": "2026-11-05T19:40:19",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V1_seed44",
+          "level": "label2",
+          "macro_f1": 0.9711650496838109,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed44",
+          "started_at": "2026-11-06T03:41:01",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V1_seed44",
+          "level": "label6",
+          "macro_f1": 0.7570044727220503,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed44",
+          "started_at": "2026-11-06T03:41:01",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V1",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V1_seed44",
+          "level": "label19",
+          "macro_f1": 0.6712133395424016,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V1_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V1_seed44",
+          "started_at": "2026-11-06T03:41:01",
+          "session": "twin_B_2026-11-05_113230"
+        }
+      ]
+    },
+    {
+      "key": {
+        "variant": "V2"
+      },
+      "dirs": [
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed42",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed43",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed44"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "twin_B_2026-11-05_113230"
+      ],
+      "n_runs": 9,
+      "runs": [
+        {
+          "variant": "V2",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V2_seed42",
+          "level": "label2",
+          "macro_f1": 0.9670487951429853,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed42",
+          "started_at": "2026-11-05T15:35:03",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V2_seed42",
+          "level": "label6",
+          "macro_f1": 0.7499222948659999,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed42",
+          "started_at": "2026-11-05T15:35:03",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V2_seed42",
+          "level": "label19",
+          "macro_f1": 0.6294273579461136,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed42",
+          "started_at": "2026-11-05T15:35:03",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V2_seed43",
+          "level": "label2",
+          "macro_f1": 0.9664584237014264,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed43",
+          "started_at": "2026-11-05T23:36:50",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V2_seed43",
+          "level": "label6",
+          "macro_f1": 0.7747419760079323,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed43",
+          "started_at": "2026-11-05T23:36:50",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V2_seed43",
+          "level": "label19",
+          "macro_f1": 0.6594227850595361,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed43",
+          "started_at": "2026-11-05T23:36:50",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V2_seed44",
+          "level": "label2",
+          "macro_f1": 0.9715535728463806,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed44",
+          "started_at": "2026-11-06T07:39:45",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V2_seed44",
+          "level": "label6",
+          "macro_f1": 0.7553485399471916,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed44",
+          "started_at": "2026-11-06T07:39:45",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "V2",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V2_seed44",
+          "level": "label19",
+          "macro_f1": 0.6276563925868901,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V2_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_trace_moe_official_T16_V2_seed44",
+          "started_at": "2026-11-06T07:39:45",
+          "session": "twin_B_2026-11-05_113230"
+        }
+      ]
+    },
+    {
+      "key": {
+        "variant": "V3"
+      },
+      "dirs": [
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed42",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed43",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed44",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed45",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "twin_A_2026-11-05_113219"
+      ],
+      "n_runs": 15,
+      "runs": [
+        {
+          "variant": "V3",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V3_seed42",
+          "level": "label2",
+          "macro_f1": 0.9500435939451582,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed42",
+          "started_at": "2026-11-05T11:37:35",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V3_seed42",
+          "level": "label6",
+          "macro_f1": 0.7421335685258863,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed42",
+          "started_at": "2026-11-05T11:37:35",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V3_seed42",
+          "level": "label19",
+          "macro_f1": 0.6343276188484291,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed42",
+          "started_at": "2026-11-05T11:37:35",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V3_seed43",
+          "level": "label2",
+          "macro_f1": 0.9667187772452741,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed43",
+          "started_at": "2026-11-05T18:09:00",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V3_seed43",
+          "level": "label6",
+          "macro_f1": 0.7666945907593495,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed43",
+          "started_at": "2026-11-05T18:09:00",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V3_seed43",
+          "level": "label19",
+          "macro_f1": 0.643948612708378,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed43",
+          "started_at": "2026-11-05T18:09:00",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V3_seed44",
+          "level": "label2",
+          "macro_f1": 0.9532401272764457,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed44",
+          "started_at": "2026-11-06T01:53:44",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V3_seed44",
+          "level": "label6",
+          "macro_f1": 0.7413545293696777,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed44",
+          "started_at": "2026-11-06T01:53:44",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V3_seed44",
+          "level": "label19",
+          "macro_f1": 0.6261638761008462,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed44",
+          "started_at": "2026-11-06T01:53:44",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V3_seed45",
+          "level": "label2",
+          "macro_f1": 0.9560809359964099,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed45",
+          "started_at": "2026-11-06T08:46:05",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V3_seed45",
+          "level": "label6",
+          "macro_f1": 0.7298218639205972,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed45",
+          "started_at": "2026-11-06T08:46:05",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V3_seed45",
+          "level": "label19",
+          "macro_f1": 0.6140625883377051,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed45",
+          "started_at": "2026-11-06T08:46:05",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V3_seed46",
+          "level": "label2",
+          "macro_f1": 0.9690366929583494,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed46",
+          "started_at": "2026-11-06T16:50:15",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V3_seed46",
+          "level": "label6",
+          "macro_f1": 0.7295138024795457,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed46",
+          "started_at": "2026-11-06T16:50:15",
+          "session": "twin_A_2026-11-05_113219"
+        },
+        {
+          "variant": "V3",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V3_seed46",
+          "level": "label19",
+          "macro_f1": 0.6180044246912272,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V3_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_A_2026-11-05_113219_twin_trace_moe_official_T16_V3_seed46",
+          "started_at": "2026-11-06T16:50:15",
+          "session": "twin_A_2026-11-05_113219"
+        }
+      ]
+    },
+    {
+      "key": {
+        "variant": "V4"
+      },
+      "dirs": [
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed42",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed43",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed44",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed45",
+        "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "twin_final_2026-11-07_113159"
+      ],
+      "n_runs": 15,
+      "runs": [
+        {
+          "variant": "V4",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V4_seed42",
+          "level": "label2",
+          "macro_f1": 0.9499555527322983,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed42",
+          "started_at": "2026-11-07T11:41:05",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V4_seed42",
+          "level": "label6",
+          "macro_f1": 0.7420901345303991,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed42",
+          "started_at": "2026-11-07T11:41:05",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 42,
+          "run": "trace_moe_official_T16_V4_seed42",
+          "level": "label19",
+          "macro_f1": 0.6329891816314804,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed42",
+          "started_at": "2026-11-07T11:41:05",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V4_seed43",
+          "level": "label2",
+          "macro_f1": 0.9670741946781365,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed43",
+          "started_at": "2026-11-07T11:47:34",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V4_seed43",
+          "level": "label6",
+          "macro_f1": 0.7675944987634171,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed43",
+          "started_at": "2026-11-07T11:47:34",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 43,
+          "run": "trace_moe_official_T16_V4_seed43",
+          "level": "label19",
+          "macro_f1": 0.6434856164241949,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed43",
+          "started_at": "2026-11-07T11:47:34",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V4_seed44",
+          "level": "label2",
+          "macro_f1": 0.9498587421041949,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed44",
+          "started_at": "2026-11-07T11:53:59",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V4_seed44",
+          "level": "label6",
+          "macro_f1": 0.7364374597079636,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed44",
+          "started_at": "2026-11-07T11:53:59",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 44,
+          "run": "trace_moe_official_T16_V4_seed44",
+          "level": "label19",
+          "macro_f1": 0.6239699207904873,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed44",
+          "started_at": "2026-11-07T11:53:59",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V4_seed45",
+          "level": "label2",
+          "macro_f1": 0.9606668942087175,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed45",
+          "started_at": "2026-11-07T12:00:24",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V4_seed45",
+          "level": "label6",
+          "macro_f1": 0.7269208045176915,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed45",
+          "started_at": "2026-11-07T12:00:24",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 45,
+          "run": "trace_moe_official_T16_V4_seed45",
+          "level": "label19",
+          "macro_f1": 0.610995728179461,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed45",
+          "started_at": "2026-11-07T12:00:24",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V4_seed46",
+          "level": "label2",
+          "macro_f1": 0.9708212637543959,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed46",
+          "started_at": "2026-11-07T12:06:49",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V4_seed46",
+          "level": "label6",
+          "macro_f1": 0.7307052144014735,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed46",
+          "started_at": "2026-11-07T12:06:49",
+          "session": "twin_final_2026-11-07_113159"
+        },
+        {
+          "variant": "V4",
+          "seed": 46,
+          "run": "trace_moe_official_T16_V4_seed46",
+          "level": "label19",
+          "macro_f1": 0.6178804909723203,
+          "dir": "<repo>/results_rerun/twin/trace_moe_official_T16_V4_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "57fe27a8eff37417f415ab42719604292c8175888c2b68daa3c614b6e6786d11",
+          "run_id": "twin_final_2026-11-07_113159_twin_trace_moe_official_T16_V4_seed46",
+          "started_at": "2026-11-07T12:06:49",
+          "session": "twin_final_2026-11-07_113159"
+        }
+      ]
+    },
+    {
+      "key": {
+        "variant": "rf"
+      },
+      "dirs": [
+        "<repo>/results_rerun/twin/rf_official_T1_seed42",
+        "<repo>/results_rerun/twin/rf_official_T1_seed43",
+        "<repo>/results_rerun/twin/rf_official_T1_seed44",
+        "<repo>/results_rerun/twin/rf_official_T1_seed45",
+        "<repo>/results_rerun/twin/rf_official_T1_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "twin_B_2026-11-05_113230"
+      ],
+      "n_runs": 15,
+      "runs": [
+        {
+          "variant": "rf",
+          "seed": 42,
+          "run": "rf_official_T1_seed42",
+          "level": "label2",
+          "macro_f1": 0.7734574852737706,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed42",
+          "started_at": "2026-11-05T19:33:31",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 42,
+          "run": "rf_official_T1_seed42",
+          "level": "label6",
+          "macro_f1": 0.6085931286546166,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed42",
+          "started_at": "2026-11-05T19:33:31",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 42,
+          "run": "rf_official_T1_seed42",
+          "level": "label19",
+          "macro_f1": 0.5068284085014024,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed42",
+          "started_at": "2026-11-05T19:33:31",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 43,
+          "run": "rf_official_T1_seed43",
+          "level": "label2",
+          "macro_f1": 0.777644829677288,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed43",
+          "started_at": "2026-11-06T03:34:23",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 43,
+          "run": "rf_official_T1_seed43",
+          "level": "label6",
+          "macro_f1": 0.6186153875236939,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed43",
+          "started_at": "2026-11-06T03:34:23",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 43,
+          "run": "rf_official_T1_seed43",
+          "level": "label19",
+          "macro_f1": 0.5130766450488511,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed43",
+          "started_at": "2026-11-06T03:34:23",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 44,
+          "run": "rf_official_T1_seed44",
+          "level": "label2",
+          "macro_f1": 0.7736423458839274,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed44",
+          "started_at": "2026-11-06T11:39:11",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 44,
+          "run": "rf_official_T1_seed44",
+          "level": "label6",
+          "macro_f1": 0.6119626161503132,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed44",
+          "started_at": "2026-11-06T11:39:11",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 44,
+          "run": "rf_official_T1_seed44",
+          "level": "label19",
+          "macro_f1": 0.5142653920285787,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed44",
+          "started_at": "2026-11-06T11:39:11",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 45,
+          "run": "rf_official_T1_seed45",
+          "level": "label2",
+          "macro_f1": 0.7770837044618225,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed45",
+          "started_at": "2026-11-06T11:44:48",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 45,
+          "run": "rf_official_T1_seed45",
+          "level": "label6",
+          "macro_f1": 0.6190059148613162,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed45",
+          "started_at": "2026-11-06T11:44:48",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 45,
+          "run": "rf_official_T1_seed45",
+          "level": "label19",
+          "macro_f1": 0.5144869812766778,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed45",
+          "started_at": "2026-11-06T11:44:48",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 46,
+          "run": "rf_official_T1_seed46",
+          "level": "label2",
+          "macro_f1": 0.7761587645490143,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed46",
+          "started_at": "2026-11-06T11:50:20",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 46,
+          "run": "rf_official_T1_seed46",
+          "level": "label6",
+          "macro_f1": 0.6167674227804291,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed46",
+          "started_at": "2026-11-06T11:50:20",
+          "session": "twin_B_2026-11-05_113230"
+        },
+        {
+          "variant": "rf",
+          "seed": 46,
+          "run": "rf_official_T1_seed46",
+          "level": "label19",
+          "macro_f1": 0.515934790031473,
+          "dir": "<repo>/results_rerun/twin/rf_official_T1_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "58e8c900ebe1435f3b0a16d836c1cb72245cd8865a540dbeffb22898b7813e7d",
+          "run_id": "twin_B_2026-11-05_113230_twin_rf_official_T1_seed46",
+          "started_at": "2026-11-06T11:50:20",
+          "session": "twin_B_2026-11-05_113230"
+        }
+      ]
+    }
+  ]
+}

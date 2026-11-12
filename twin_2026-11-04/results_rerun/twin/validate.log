@@ -1,0 +1,18 @@
+ARP_Spoofing_test                        rows    1,744 /    1,744  unplaced  1,744  worst - 0.000%  malformed 0
+Benign_test                              rows   37,607 /   37,607  unplaced 37,607  worst - 0.000%  malformed 0
+MQTT-DoS-Connect_Flood_test              rows    3,131 /   31,293  unplaced 31,293  worst - 0.000%  malformed 0
+MQTT-Malformed_Data_test                 rows    1,747 /    1,747  unplaced  1,747  worst - 0.000%  malformed 0
+Recon-OS_Scan_test                       rows    3,834 /    3,834  unplaced  3,834  worst - 0.000%  malformed 0
+Recon-Ping_Sweep_test                    rows      186 /      186  unplaced    186  worst - 0.000%  malformed 0
+Recon-Port_Scan_test                     rows   22,622 /   22,622  unplaced 22,622  worst - 0.000%  malformed 0
+Recon-VulScan_test                       rows    1,034 /    1,034  unplaced  1,034  worst - 0.000%  malformed 0
+ARP_Spoofing_train                       rows   16,047 /   16,047  unplaced 16,047  worst - 0.000%  malformed 0
+MQTT-DoS-Connect_Flood_train             rows   12,773 /  127,695  unplaced 127,695  worst - 0.000%  malformed 0
+MQTT-Malformed_Data_train                rows    5,130 /    5,130  unplaced  5,130  worst - 0.000%  malformed 0
+Recon-OS_Scan_train                      rows   16,832 /   16,832  unplaced 16,832  worst - 0.000%  malformed 0
+Recon-Ping_Sweep_train                   rows      740 /      740  unplaced    740  worst - 0.000%  malformed 0
+Recon-Port_Scan_train                    rows   83,981 /   83,981  unplaced 83,981  worst - 0.000%  malformed 0
+Recon-VulScan_train                      rows    2,173 /    2,173  unplaced  2,173  worst - 0.000%  malformed 0
+
+Row-weighted agreement per feature:
+-> results_rerun/twin/pcap_validation.csv

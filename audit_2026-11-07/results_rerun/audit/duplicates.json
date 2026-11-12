@@ -1,0 +1,14 @@
+{
+  "n_rows": 8775013,
+  "n_features": 45,
+  "test_rows": 1614182,
+  "test_duplicate_rows": 724611,
+  "test_duplicate_pct": 44.89,
+  "train_rows": 7160831,
+  "train_duplicate_rows": 2663796,
+  "train_duplicate_pct": 37.2,
+  "test_rows_also_in_train": 13589,
+  "test_rows_also_in_train_pct": 0.842,
+  "feature_vectors_with_conflicting_labels": 0,
+  "rows_with_conflicting_labels": 0
+}

@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{label6 test results, official split, mean ± std over seeds (%)}
+\label{tab:main_official_label6}
+\begin{tabular}{lccccc}
+\toprule
+model & family & macro\_f1 & balanced\_accuracy & weighted\_f1 & min\_class\_recall \\
+\midrule
+bilstm\_dnn & deep & 83.86 $\pm$ 1.14 & 90.98 $\pm$ 0.96 & 99.29 $\pm$ 0.10 & 75.53 $\pm$ 2.86 \\
+rf & classical & 86.06 $\pm$ 0.59 & 86.56 $\pm$ 0.28 & 99.63 $\pm$ 0.03 & 41.78 $\pm$ 0.76 \\
+transformer & deep & 86.62 $\pm$ 1.24 & 93.53 $\pm$ 0.78 & 99.62 $\pm$ 0.06 & 77.41 $\pm$ 3.42 \\
+tfsage\_lite & deep & 88.40 $\pm$ 1.75 & 95.64 $\pm$ 0.57 & 99.67 $\pm$ 0.06 & 87.40 $\pm$ 2.01 \\
+trace\_moe & deep & 89.09 $\pm$ 1.67 & 94.32 $\pm$ 0.85 & 99.71 $\pm$ 0.05 & 78.91 $\pm$ 6.18 \\
+\bottomrule
+\end{tabular}
+\end{table}

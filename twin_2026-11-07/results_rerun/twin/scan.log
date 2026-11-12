@@ -1,0 +1,133 @@
+ARP_Spoofing_test.pcap: 17,463 packets
+Benign_test.pcap: 377,536 packets
+MQTT-DDoS-Connect_Flood_test.pcap: 4,189,922 packets
+MQTT-DDoS-Publish_Flood_test.pcap: 840,207 packets
+MQTT-DoS-Connect_Flood_test.pcap: 312,927 packets
+MQTT-DoS-Publish_Flood_test.pcap: 849,206 packets
+MQTT-Malformed_Data_test.pcap: 17,470 packets
+Recon-OS_Scan_test.pcap: 38,364 packets
+Recon-Ping_Sweep_test.pcap: 1,852 packets
+Recon-Port_Scan_test.pcap: 226,233 packets
+Recon-VulScan_test.pcap: 10,366 packets
+TCP_IP-DDoS-ICMP1_test.pcap: 15,394,832 packets
+TCP_IP-DDoS-ICMP2_test.pcap: 19,560,366 packets
+TCP_IP-DDoS-SYN_test.pcap: 17,233,425 packets
+TCP_IP-DDoS-TCP_test.pcap: 18,252,695 packets
+TCP_IP-DDoS-UDP1_test.pcap: 20,557,509 packets
+TCP_IP-DDoS-UDP2_test.pcap: 15,635,442 packets
+TCP_IP-DoS-ICMP_test.pcap: 9,839,293 packets
+TCP_IP-DoS-SYN_test.pcap: 9,854,644 packets
+TCP_IP-DoS-TCP_test.pcap: 8,206,400 packets
+TCP_IP-DoS-UDP_test.pcap: 13,749,514 packets
+ARP_Spoofing_train.pcap: 160,614 packets
+Benign_train.pcap: 1,935,680 packets
+MQTT-DDoS-Connect_Flood_train.pcap: 17,295,946 packets
+MQTT-DDoS-Publish_Flood_train.pcap: 2,754,292 packets
+MQTT-DoS-Connect_Flood_train.pcap: 1,276,947 packets
+MQTT-DoS-Publish_Flood_train.pcap: 4,431,579 packets
+MQTT-Malformed_Data_train.pcap: 51,332 packets
+Recon-OS_Scan_train.pcap: 168,400 packets
+Recon-Ping_Sweep_train.pcap: 7,406 packets
+Recon-Port_Scan_train.pcap: 839,912 packets
+Recon-VulScan_train.pcap: 21,747 packets
+Traceback (most recent call last):
+  File "<repo>/scripts/12_pcap_scan.py", line 78, in <module>
+    main()
+  File "<repo>/scripts/12_pcap_scan.py", line 68, in main
+    rows.append(mac_shares(f, names))
+                ^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/scripts/12_pcap_scan.py", line 30, in mac_shares
+    e = dpkt.ethernet.Ethernet(buf)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/ethernet.py", line 84, in __init__
+    dpkt.Packet.__init__(self, *args, **kwargs)
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/dpkt.py", line 160, in __init__
+    self.unpack(args[0])
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/ethernet.py", line 199, in unpack
+    self.data = self.llc = llc.LLC(self.data[:eth_len])
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/dpkt.py", line 160, in __init__
+    self.unpack(args[0])
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/llc.py", line 48, in unpack
+    self.data = self.ip = Ethernet.get_type(ETH_TYPE_IP)(self.data)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/ip.py", line 79, in __init__
+    super(IP, self).__init__(*args, **kwargs)
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/dpkt.py", line 160, in __init__
+    self.unpack(args[0])
+  File "<data>/TRACE-MoE-CICIoMT2024-main/data/.moe/lib/python3.12/site-packages/dpkt/ip.py", line 117, in unpack
+    raise dpkt.UnpackError('invalid header length')
+dpkt.dpkt.UnpackError: invalid header length
+ARP_Spoofing_test.pcap: 17,463 packets
+Benign_test.pcap: 377,536 packets
+MQTT-DDoS-Connect_Flood_test.pcap: 4,189,922 packets
+MQTT-DDoS-Publish_Flood_test.pcap: 840,207 packets
+MQTT-DoS-Connect_Flood_test.pcap: 312,927 packets
+MQTT-DoS-Publish_Flood_test.pcap: 849,206 packets
+MQTT-Malformed_Data_test.pcap: 17,470 packets
+Recon-OS_Scan_test.pcap: 38,364 packets
+Recon-Ping_Sweep_test.pcap: 1,852 packets
+Recon-Port_Scan_test.pcap: 226,233 packets
+Recon-VulScan_test.pcap: 10,366 packets
+TCP_IP-DDoS-ICMP1_test.pcap: 15,394,832 packets
+TCP_IP-DDoS-ICMP2_test.pcap: 19,560,366 packets
+TCP_IP-DDoS-SYN_test.pcap: 17,233,425 packets
+TCP_IP-DDoS-TCP_test.pcap: 18,252,695 packets
+TCP_IP-DDoS-UDP1_test.pcap: 20,557,509 packets
+TCP_IP-DDoS-UDP2_test.pcap: 15,635,442 packets
+TCP_IP-DoS-ICMP_test.pcap: 9,839,293 packets
+TCP_IP-DoS-SYN_test.pcap: 9,854,644 packets
+TCP_IP-DoS-TCP_test.pcap: 8,206,400 packets
+TCP_IP-DoS-UDP_test.pcap: 13,749,514 packets
+ARP_Spoofing_train.pcap: 160,614 packets
+Benign_train.pcap: 1,935,680 packets
+MQTT-DDoS-Connect_Flood_train.pcap: 17,295,946 packets
+MQTT-DDoS-Publish_Flood_train.pcap: 2,754,292 packets
+MQTT-DoS-Connect_Flood_train.pcap: 1,276,947 packets
+MQTT-DoS-Publish_Flood_train.pcap: 4,431,579 packets
+MQTT-Malformed_Data_train.pcap: 51,332 packets
+Recon-OS_Scan_train.pcap: 168,400 packets
+Recon-Ping_Sweep_train.pcap: 7,406 packets
+Recon-Port_Scan_train.pcap: 839,912 packets
+Recon-VulScan_train.pcap: 21,747 packets
+TCP_IP-DDoS-ICMP1_train.pcap: 19,486,169 packets
+TCP_IP-DDoS-ICMP2_train.pcap: 19,475,470 packets
+TCP_IP-DDoS-ICMP3_train.pcap: 18,963,740 packets
+TCP_IP-DDoS-ICMP4_train.pcap: 19,266,601 packets
+TCP_IP-DDoS-ICMP5_train.pcap: 19,496,250 packets
+TCP_IP-DDoS-ICMP6_train.pcap: 19,080,009 packets
+TCP_IP-DDoS-ICMP7_train.pcap: 18,594,177 packets
+TCP_IP-DDoS-ICMP8_train.pcap: 19,326,527 packets
+TCP_IP-DDoS-SYN1_train.pcap: 19,931,997 packets
+TCP_IP-DDoS-SYN2_train.pcap: 20,359,731 packets
+TCP_IP-DDoS-SYN3_train.pcap: 20,194,641 packets
+TCP_IP-DDoS-SYN4_train.pcap: 19,679,812 packets
+TCP_IP-DDoS-TCP1_train.pcap: 20,223,622 packets
+TCP_IP-DDoS-TCP2_train.pcap: 19,700,758 packets
+TCP_IP-DDoS-TCP3_train.pcap: 20,399,613 packets
+TCP_IP-DDoS-TCP4_train.pcap: 20,091,019 packets
+TCP_IP-DDoS-UDP1_train.pcap: 20,608,951 packets
+TCP_IP-DDoS-UDP2_train.pcap: 20,722,273 packets
+TCP_IP-DDoS-UDP3_train.pcap: 20,651,397 packets
+TCP_IP-DDoS-UDP4_train.pcap: 20,626,463 packets
+TCP_IP-DDoS-UDP5_train.pcap: 20,543,021 packets
+TCP_IP-DDoS-UDP6_train.pcap: 20,216,876 packets
+TCP_IP-DDoS-UDP7_train.pcap: 19,760,583 packets
+TCP_IP-DDoS-UDP8_train.pcap: 20,402,619 packets
+TCP_IP-DoS-ICMP1_train.pcap: 10,446,280 packets
+TCP_IP-DoS-ICMP2_train.pcap: 9,693,860 packets
+TCP_IP-DoS-ICMP3_train.pcap: 10,863,247 packets
+TCP_IP-DoS-ICMP4_train.pcap: 10,607,586 packets
+TCP_IP-DoS-SYN1_train.pcap: 11,138,638 packets
+TCP_IP-DoS-SYN2_train.pcap: 11,160,843 packets
+TCP_IP-DoS-SYN3_train.pcap: 10,813,744 packets
+TCP_IP-DoS-SYN4_train.pcap: 11,059,982 packets
+TCP_IP-DoS-TCP1_train.pcap: 9,537,689 packets
+TCP_IP-DoS-TCP2_train.pcap: 9,548,514 packets
+TCP_IP-DoS-TCP3_train.pcap: 9,592,792 packets
+TCP_IP-DoS-TCP4_train.pcap: 9,345,102 packets
+TCP_IP-DoS-UDP1_train.pcap: 13,695,288 packets
+TCP_IP-DoS-UDP2_train.pcap: 14,043,139 packets
+TCP_IP-DoS-UDP3_train.pcap: 14,608,427 packets
+TCP_IP-DoS-UDP4_train.pcap: 14,324,896 packets
+-> results_rerun/twin/pcap_mac_shares.csv (72 captures)

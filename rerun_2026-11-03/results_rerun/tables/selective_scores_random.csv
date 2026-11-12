@@ -1,0 +1,25 @@
+model,score,aurc,selective_risk_90,selective_risk_95
+bilstm_dnn,energy,0.53 ± 0.24,1.30 ± 0.28,1.29 ± 0.24
+bilstm_dnn,margin,0.03 ± 0.01,0.03 ± 0.01,0.06 ± 0.02
+bilstm_dnn,msp_calibrated,0.03 ± 0.00,0.03 ± 0.01,0.06 ± 0.02
+bilstm_dnn,msp_raw,0.03 ± 0.01,0.03 ± 0.01,0.06 ± 0.02
+bilstm_dnn,neg_entropy,0.03 ± 0.01,0.03 ± 0.01,0.06 ± 0.02
+rf,margin,0.01 ± 0.00,0.01 ± 0.00,0.03 ± 0.00
+rf,msp_calibrated,0.01 ± 0.00,0.01 ± 0.00,0.02 ± 0.00
+rf,msp_raw,0.01 ± 0.00,0.01 ± 0.00,0.02 ± 0.00
+rf,neg_entropy,0.01 ± 0.00,0.01 ± 0.00,0.02 ± 0.00
+tfsage_lite,energy,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+tfsage_lite,margin,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+tfsage_lite,msp_calibrated,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+tfsage_lite,msp_raw,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+tfsage_lite,neg_entropy,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+trace_moe,energy,0.03 ± 0.01,0.08 ± 0.04,0.10 ± 0.03
+trace_moe,margin,0.02 ± 0.02,0.05 ± 0.05,0.06 ± 0.05
+trace_moe,msp_calibrated,0.03 ± 0.02,0.06 ± 0.05,0.07 ± 0.04
+trace_moe,msp_raw,0.02 ± 0.02,0.05 ± 0.05,0.06 ± 0.05
+trace_moe,neg_entropy,0.02 ± 0.02,0.05 ± 0.05,0.06 ± 0.05
+transformer,energy,0.01 ± 0.01,0.02 ± 0.03,0.12 ± 0.01
+transformer,margin,0.07 ± 0.03,0.05 ± 0.02,0.06 ± 0.02
+transformer,msp_calibrated,0.07 ± 0.03,0.06 ± 0.03,0.07 ± 0.02
+transformer,msp_raw,0.07 ± 0.03,0.06 ± 0.03,0.07 ± 0.02
+transformer,neg_entropy,0.07 ± 0.03,0.06 ± 0.03,0.07 ± 0.02

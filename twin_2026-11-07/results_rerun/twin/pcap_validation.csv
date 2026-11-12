@@ -1,0 +1,16 @@
+file,csv_rows,our_rows,unplaced,malformed_frames
+ARP_Spoofing_test,1744,1744,1744,0
+Benign_test,37607,37607,37607,0
+MQTT-DoS-Connect_Flood_test,3131,31293,31293,0
+MQTT-Malformed_Data_test,1747,1747,1747,0
+Recon-OS_Scan_test,3834,3834,3834,0
+Recon-Ping_Sweep_test,186,186,186,0
+Recon-Port_Scan_test,22622,22622,22622,0
+Recon-VulScan_test,1034,1034,1034,0
+ARP_Spoofing_train,16047,16047,16047,0
+MQTT-DoS-Connect_Flood_train,12773,127695,127695,0
+MQTT-Malformed_Data_train,5130,5130,5130,0
+Recon-OS_Scan_train,16832,16832,16832,0
+Recon-Ping_Sweep_train,740,740,740,0
+Recon-Port_Scan_train,83981,83981,83981,0
+Recon-VulScan_train,2173,2173,2173,0

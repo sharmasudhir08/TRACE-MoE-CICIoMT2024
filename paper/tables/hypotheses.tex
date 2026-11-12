@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Research questions, hypotheses and outcomes. [Report T1; source: documents\_v2/report/tables/hypotheses.csv]}
+\label{tab:hypotheses}
+\begin{tabular}{lcccc}
+\toprule
+hypothesis & RQ & statement & verdict & evidence \\
+\midrule
+H1 & RQ1 & TRACE-MoE has higher 19-class macro-F1 than each baseline & partly supported & TRACE-MoE per-class F1 significantly better (Holm p<0.05) than 3/4: bilstm\_dnn +9.21 pts (p=0), tfsage\_lite +2.28 pts (p=0), transformer +2.61 pts (p=1e-05), rf -2.88 pts (p=0.518) \\
+H2 & RQ1 & TRACE-MoE raises the recall of the weakest class (minimum class recall) over the best baseline & not supported & minimum class recall 10.52\% vs best baseline rf 20.06\% (gain -9.53 pts, needed 5) \\
+H3 & RQ1 & On binary detection TRACE-MoE is non-inferior to Random Forest & supported & binary macro-F1 TRACE-MoE minus RF = +2.419 pts, 95\% CI [+2.007, +2.830] over 5 seeds (margin -0.5 pts) \\
+H4 & RQ2 & Routing helps: one dense expert of the same size gives lower 19-class macro-F1 & not run & needs 05\_ablation.py \\
+H5 & RQ2 & The experts specialise by attack family (NMI between expert and category) & not supported & NMI(expert, category) = 0.191 (needed 0.5); NMI(expert, class) = 0.513 \\
+H6 & RQ3 & Adversarially fine-tuned TRACE-MoE has a lower attack success rate than every baseline & not run & needs 06\_robustness.py with at least one baseline \\
+H7 & RQ3 & Adversarial fine-tuning costs little clean 19-class macro-F1 & not run & needs 06\_robustness.py \\
+H8 & RQ4 & The abstain score detects held-out attack types better than softmax confidence & not run & needs 07\_unknown\_attacks.py \\
+H9 & RQ4 & Abstention lowers the error on accepted traffic more than for any baseline (lowest AURC) & not supported & AURC (lower is better), rank 4/5: rf 0.027, transformer 1.153, bilstm\_dnn 1.427, trace\_moe 1.711, tfsage\_lite 2.026 \\
+H10 & RQ5 & TRACE-MoE is faster than the Transformer baseline and small enough for an edge gateway & partly supported & 685,041 parameters (2.613 MB); 0.0839 ms/window on CPU at batch 1024 vs Transformer 0.0332 ms \\
+\bottomrule
+\end{tabular}
+\end{table}

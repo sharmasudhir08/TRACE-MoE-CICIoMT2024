@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Abstain layer: coverage, error with and without abstention, AURC and calibration. [Report T14; source: results\_v2/tables/abstain\_official.csv]}
+\label{tab:abstain_official}
+\begin{tabular}{lcccccccccc}
+\toprule
+model & n\_seeds & coverage & risk\_full & selective\_risk & aurc & accepted\_macro\_f1 & ece\_raw & ece\_calibrated & source\_runs & source\_git\_commits \\
+\midrule
+rf & 5 & 87.26 $\pm$ 0.31 & 0.64 $\pm$ 0.07 & 0.02 $\pm$ 0.00 & 0.03 $\pm$ 0.01 & 92.06 $\pm$ 0.21 & 1.77 $\pm$ 0.34 & 0.51 $\pm$ 0.11 & rf\_official\_T1\_seed42|rf\_official\_T1\_seed43|rf\_official\_T1\_seed44|rf\_official\_T1\_seed45|rf\_official\_T1\_seed46 & no-git \\
+transformer & 5 & 95.70 $\pm$ 0.32 & 1.23 $\pm$ 0.14 & 0.60 $\pm$ 0.08 & 1.15 $\pm$ 0.55 & 81.49 $\pm$ 1.76 & 0.71 $\pm$ 0.07 & 0.69 $\pm$ 0.08 & transformer\_official\_T16\_seed42|transformer\_official\_T16\_seed43|transformer\_official\_T16\_seed44|transformer\_official\_T16\_seed45|transformer\_official\_T16\_seed46 & no-git \\
+bilstm\_dnn & 5 & 96.26 $\pm$ 0.32 & 2.18 $\pm$ 0.03 & 0.65 $\pm$ 0.09 & 1.43 $\pm$ 1.21 & 77.13 $\pm$ 0.98 & 1.76 $\pm$ 0.03 & 0.91 $\pm$ 0.27 & bilstm\_dnn\_official\_T16\_seed42|bilstm\_dnn\_official\_T16\_seed43|bilstm\_dnn\_official\_T16\_seed44|bilstm\_dnn\_official\_T16\_seed45|bilstm\_dnn\_official\_T16\_seed46 & no-git \\
+trace\_moe & 5 & 95.78 $\pm$ 0.32 & 1.02 $\pm$ 0.05 & 0.65 $\pm$ 0.03 & 1.71 $\pm$ 0.76 & 82.38 $\pm$ 2.35 & 0.90 $\pm$ 0.04 & 0.52 $\pm$ 0.14 & trace\_moe\_official\_T16\_seed42|trace\_moe\_official\_T16\_seed43|trace\_moe\_official\_T16\_seed44|trace\_moe\_official\_T16\_seed45|trace\_moe\_official\_T16\_seed46 & no-git \\
+tfsage\_lite & 5 & 95.58 $\pm$ 0.39 & 1.30 $\pm$ 0.09 & 0.62 $\pm$ 0.11 & 2.03 $\pm$ 0.92 & 83.35 $\pm$ 1.45 & 1.18 $\pm$ 0.07 & 0.72 $\pm$ 0.07 & tfsage\_lite\_official\_T16\_seed42|tfsage\_lite\_official\_T16\_seed43|tfsage\_lite\_official\_T16\_seed44|tfsage\_lite\_official\_T16\_seed45|tfsage\_lite\_official\_T16\_seed46 & no-git \\
+\bottomrule
+\end{tabular}
+\end{table}

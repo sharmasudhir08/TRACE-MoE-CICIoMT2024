@@ -1,0 +1,80 @@
+2026-11-05 09:03:24 | INFO | --- 15_twin_build.py | config configs/rerun.yaml | overrides []
+2026-11-05 09:03:24 | INFO | Session 2026-11-05_090324 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-11-05_090324_15_twin_build_mac-studio.log
+2026-11-05 09:03:24 | INFO | ARP_Spoofing_test.parquet: 3,353 rows, 19 hosts
+2026-11-05 09:03:24 | INFO | Benign_test.parquet: 68,156 rows, 22 hosts
+2026-11-05 09:03:24 | INFO | MQTT-DDoS-Connect_Flood_test.parquet: 837,954 rows, 19 hosts
+2026-11-05 09:03:24 | INFO | MQTT-DDoS-Publish_Flood_test.parquet: 168,003 rows, 19 hosts
+2026-11-05 09:03:24 | INFO | MQTT-DoS-Connect_Flood_test.parquet: 62,515 rows, 17 hosts
+2026-11-05 09:03:24 | INFO | MQTT-DoS-Publish_Flood_test.parquet: 169,815 rows, 16 hosts
+2026-11-05 09:03:24 | INFO | MQTT-Malformed_Data_test.parquet: 2,676 rows, 17 hosts
+2026-11-05 09:03:24 | INFO | Recon-OS_Scan_test.parquet: 7,539 rows, 20 hosts
+2026-11-05 09:03:24 | INFO | Recon-Ping_Sweep_test.parquet: 247 rows, 15 hosts
+2026-11-05 09:03:24 | INFO | Recon-Port_Scan_test.parquet: 45,111 rows, 20 hosts
+2026-11-05 09:03:24 | INFO | Recon-VulScan_test.parquet: 1,855 rows, 19 hosts
+2026-11-05 09:03:26 | INFO | TCP_IP-DDoS-ICMP1_test.parquet: 3,076,466 rows, 23 hosts
+2026-11-05 09:03:27 | INFO | TCP_IP-DDoS-ICMP2_test.parquet: 3,910,989 rows, 23 hosts
+2026-11-05 09:03:28 | INFO | TCP_IP-DDoS-SYN_test.parquet: 3,441,178 rows, 21 hosts
+2026-11-05 09:03:29 | INFO | TCP_IP-DDoS-TCP_test.parquet: 3,648,730 rows, 19 hosts
+2026-11-05 09:03:31 | INFO | TCP_IP-DDoS-UDP1_test.parquet: 4,109,768 rows, 21 hosts
+2026-11-05 09:03:32 | INFO | TCP_IP-DDoS-UDP2_test.parquet: 3,123,816 rows, 19 hosts
+2026-11-05 09:03:32 | INFO | TCP_IP-DoS-ICMP_test.parquet: 1,964,806 rows, 21 hosts
+2026-11-05 09:03:33 | INFO | TCP_IP-DoS-SYN_test.parquet: 1,970,739 rows, 19 hosts
+2026-11-05 09:03:33 | INFO | TCP_IP-DoS-TCP_test.parquet: 1,638,521 rows, 18 hosts
+2026-11-05 09:03:34 | INFO | TCP_IP-DoS-UDP_test.parquet: 2,749,006 rows, 20 hosts
+2026-11-05 09:03:34 | INFO | ARP_Spoofing_train.parquet: 26,800 rows, 21 hosts
+2026-11-05 09:03:34 | INFO | Benign_train.parquet: 346,833 rows, 24 hosts
+2026-11-05 09:03:35 | INFO | MQTT-DDoS-Connect_Flood_train.parquet: 3,457,884 rows, 20 hosts
+2026-11-05 09:03:36 | INFO | MQTT-DDoS-Publish_Flood_train.parquet: 549,617 rows, 19 hosts
+2026-11-05 09:03:36 | INFO | MQTT-DoS-Connect_Flood_train.parquet: 255,260 rows, 17 hosts
+2026-11-05 09:03:36 | INFO | MQTT-DoS-Publish_Flood_train.parquet: 885,013 rows, 18 hosts
+2026-11-05 09:03:36 | INFO | MQTT-Malformed_Data_train.parquet: 6,888 rows, 18 hosts
+2026-11-05 09:03:36 | INFO | Recon-OS_Scan_train.parquet: 33,334 rows, 20 hosts
+2026-11-05 09:03:36 | INFO | Recon-Ping_Sweep_train.parquet: 944 rows, 19 hosts
+2026-11-05 09:03:36 | INFO | Recon-Port_Scan_train.parquet: 166,757 rows, 21 hosts
+2026-11-05 09:03:36 | INFO | Recon-VulScan_train.parquet: 4,149 rows, 15 hosts
+2026-11-05 09:03:37 | INFO | TCP_IP-DDoS-ICMP1_train.parquet: 3,895,340 rows, 21 hosts
+2026-11-05 09:03:39 | INFO | TCP_IP-DDoS-ICMP2_train.parquet: 3,893,280 rows, 20 hosts
+2026-11-05 09:03:40 | INFO | TCP_IP-DDoS-ICMP3_train.parquet: 3,789,556 rows, 21 hosts
+2026-11-05 09:03:41 | INFO | TCP_IP-DDoS-ICMP4_train.parquet: 3,851,060 rows, 21 hosts
+2026-11-05 09:03:42 | INFO | TCP_IP-DDoS-ICMP5_train.parquet: 3,897,649 rows, 20 hosts
+2026-11-05 09:03:44 | INFO | TCP_IP-DDoS-ICMP6_train.parquet: 3,810,867 rows, 21 hosts
+2026-11-05 09:03:45 | INFO | TCP_IP-DDoS-ICMP7_train.parquet: 3,709,133 rows, 22 hosts
+2026-11-05 09:03:46 | INFO | TCP_IP-DDoS-ICMP8_train.parquet: 3,862,127 rows, 21 hosts
+2026-11-05 09:03:47 | INFO | TCP_IP-DDoS-SYN1_train.parquet: 3,981,574 rows, 20 hosts
+2026-11-05 09:03:49 | INFO | TCP_IP-DDoS-SYN2_train.parquet: 4,070,554 rows, 21 hosts
+2026-11-05 09:03:50 | INFO | TCP_IP-DDoS-SYN3_train.parquet: 4,035,977 rows, 20 hosts
+2026-11-05 09:03:52 | INFO | TCP_IP-DDoS-SYN4_train.parquet: 3,929,090 rows, 19 hosts
+2026-11-05 09:03:53 | INFO | TCP_IP-DDoS-TCP1_train.parquet: 4,042,194 rows, 20 hosts
+2026-11-05 09:03:54 | INFO | TCP_IP-DDoS-TCP2_train.parquet: 3,933,160 rows, 20 hosts
+2026-11-05 09:03:56 | INFO | TCP_IP-DDoS-TCP3_train.parquet: 4,076,990 rows, 20 hosts
+2026-11-05 09:03:57 | INFO | TCP_IP-DDoS-TCP4_train.parquet: 4,012,781 rows, 20 hosts
+2026-11-05 09:03:59 | INFO | TCP_IP-DDoS-UDP1_train.parquet: 4,119,999 rows, 21 hosts
+2026-11-05 09:04:00 | INFO | TCP_IP-DDoS-UDP2_train.parquet: 4,143,487 rows, 22 hosts
+2026-11-05 09:04:01 | INFO | TCP_IP-DDoS-UDP3_train.parquet: 4,129,411 rows, 21 hosts
+2026-11-05 09:04:03 | INFO | TCP_IP-DDoS-UDP4_train.parquet: 4,124,039 rows, 21 hosts
+2026-11-05 09:04:04 | INFO | TCP_IP-DDoS-UDP5_train.parquet: 4,106,991 rows, 22 hosts
+2026-11-05 09:04:06 | INFO | TCP_IP-DDoS-UDP6_train.parquet: 4,041,092 rows, 22 hosts
+2026-11-05 09:04:07 | INFO | TCP_IP-DDoS-UDP7_train.parquet: 3,944,933 rows, 22 hosts
+2026-11-05 09:04:08 | INFO | TCP_IP-DDoS-UDP8_train.parquet: 4,077,541 rows, 21 hosts
+2026-11-05 09:04:09 | INFO | TCP_IP-DoS-ICMP1_train.parquet: 2,086,830 rows, 19 hosts
+2026-11-05 09:04:10 | INFO | TCP_IP-DoS-ICMP2_train.parquet: 1,927,959 rows, 20 hosts
+2026-11-05 09:04:10 | INFO | TCP_IP-DoS-ICMP3_train.parquet: 2,171,010 rows, 18 hosts
+2026-11-05 09:04:11 | INFO | TCP_IP-DoS-ICMP4_train.parquet: 2,118,766 rows, 19 hosts
+2026-11-05 09:04:11 | INFO | TCP_IP-DoS-SYN1_train.parquet: 2,224,663 rows, 18 hosts
+2026-11-05 09:04:12 | INFO | TCP_IP-DoS-SYN2_train.parquet: 2,227,061 rows, 20 hosts
+2026-11-05 09:04:13 | INFO | TCP_IP-DoS-SYN3_train.parquet: 2,154,000 rows, 19 hosts
+2026-11-05 09:04:13 | INFO | TCP_IP-DoS-SYN4_train.parquet: 2,204,961 rows, 20 hosts
+2026-11-05 09:04:14 | INFO | TCP_IP-DoS-TCP1_train.parquet: 1,903,397 rows, 21 hosts
+2026-11-05 09:04:14 | INFO | TCP_IP-DoS-TCP2_train.parquet: 1,907,407 rows, 20 hosts
+2026-11-05 09:04:15 | INFO | TCP_IP-DoS-TCP3_train.parquet: 1,915,249 rows, 19 hosts
+2026-11-05 09:04:15 | INFO | TCP_IP-DoS-TCP4_train.parquet: 1,863,295 rows, 19 hosts
+2026-11-05 09:04:16 | INFO | TCP_IP-DoS-UDP1_train.parquet: 2,728,387 rows, 20 hosts
+2026-11-05 09:04:17 | INFO | TCP_IP-DoS-UDP2_train.parquet: 2,799,660 rows, 18 hosts
+2026-11-05 09:04:18 | INFO | TCP_IP-DoS-UDP3_train.parquet: 2,917,619 rows, 18 hosts
+2026-11-05 09:04:19 | INFO | TCP_IP-DoS-UDP4_train.parquet: 2,861,138 rows, 20 hosts
+2026-11-05 09:04:27 | INFO | attack rows 13,955,714 (cap 50,000 per capture|device), profiling rows 658,795
+2026-11-05 09:04:53 | INFO | profiles from 787,795 benign rows; state estimator held-out accuracy 0.946
+2026-11-05 09:05:05 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 870, 'val_windows_also_in_train_removed': 52, 'test_windows_also_in_train_removed': 624}
+2026-11-05 09:05:05 | INFO | Windows (official, T=16): train=1,164,236, val=102,508, test=2,974,490
+2026-11-05 09:06:55 | INFO | windows {'train': 1164236, 'val': 102508, 'test': 2974490}; profile levels per row {'state': 4289359, 'device': 1344625, 'fleet': 8321730}; test Δ {'benign': {'windows': 8828, 'mean_delta': 0.7866689562797546}, 'attack': {'windows': 1106582, 'mean_delta': 5.433907508850098}}
+2026-11-05 09:06:55 | INFO | -> <repo>/results_rerun/twin/build_device_state_file.json and <repo>/results_rerun/twin/twin_model.pkl (211.2s)

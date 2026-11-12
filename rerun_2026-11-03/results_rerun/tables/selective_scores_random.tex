@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering
+\caption{AURC and selective risk by confidence score, ties in expectation, random split (%)}
+\label{tab:selective_scores_random}
+\begin{tabular}{lcccc}
+\toprule
+model & score & aurc & selective\_risk\_90 & selective\_risk\_95 \\
+\midrule
+bilstm\_dnn & energy & 0.53 $\pm$ 0.24 & 1.30 $\pm$ 0.28 & 1.29 $\pm$ 0.24 \\
+bilstm\_dnn & margin & 0.03 $\pm$ 0.01 & 0.03 $\pm$ 0.01 & 0.06 $\pm$ 0.02 \\
+bilstm\_dnn & msp\_calibrated & 0.03 $\pm$ 0.00 & 0.03 $\pm$ 0.01 & 0.06 $\pm$ 0.02 \\
+bilstm\_dnn & msp\_raw & 0.03 $\pm$ 0.01 & 0.03 $\pm$ 0.01 & 0.06 $\pm$ 0.02 \\
+bilstm\_dnn & neg\_entropy & 0.03 $\pm$ 0.01 & 0.03 $\pm$ 0.01 & 0.06 $\pm$ 0.02 \\
+rf & margin & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+rf & msp\_calibrated & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 & 0.02 $\pm$ 0.00 \\
+rf & msp\_raw & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 & 0.02 $\pm$ 0.00 \\
+rf & neg\_entropy & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 & 0.02 $\pm$ 0.00 \\
+tfsage\_lite & energy & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 \\
+tfsage\_lite & margin & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 \\
+tfsage\_lite & msp\_calibrated & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 \\
+tfsage\_lite & msp\_raw & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 \\
+tfsage\_lite & neg\_entropy & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 \\
+trace\_moe & energy & 0.03 $\pm$ 0.01 & 0.08 $\pm$ 0.04 & 0.10 $\pm$ 0.03 \\
+trace\_moe & margin & 0.02 $\pm$ 0.02 & 0.05 $\pm$ 0.05 & 0.06 $\pm$ 0.05 \\
+trace\_moe & msp\_calibrated & 0.03 $\pm$ 0.02 & 0.06 $\pm$ 0.05 & 0.07 $\pm$ 0.04 \\
+trace\_moe & msp\_raw & 0.02 $\pm$ 0.02 & 0.05 $\pm$ 0.05 & 0.06 $\pm$ 0.05 \\
+trace\_moe & neg\_entropy & 0.02 $\pm$ 0.02 & 0.05 $\pm$ 0.05 & 0.06 $\pm$ 0.05 \\
+transformer & energy & 0.01 $\pm$ 0.01 & 0.02 $\pm$ 0.03 & 0.12 $\pm$ 0.01 \\
+transformer & margin & 0.07 $\pm$ 0.03 & 0.05 $\pm$ 0.02 & 0.06 $\pm$ 0.02 \\
+transformer & msp\_calibrated & 0.07 $\pm$ 0.03 & 0.06 $\pm$ 0.03 & 0.07 $\pm$ 0.02 \\
+transformer & msp\_raw & 0.07 $\pm$ 0.03 & 0.06 $\pm$ 0.03 & 0.07 $\pm$ 0.02 \\
+transformer & neg\_entropy & 0.07 $\pm$ 0.03 & 0.06 $\pm$ 0.03 & 0.07 $\pm$ 0.02 \\
+\bottomrule
+\end{tabular}
+\end{table}

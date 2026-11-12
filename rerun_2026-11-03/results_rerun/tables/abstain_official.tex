@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Calibrated abstention, official split, mean ± std over seeds (%)}
+\label{tab:abstain_official}
+\begin{tabular}{lccccccc}
+\toprule
+model & coverage & risk\_full & selective\_risk & aurc & accepted\_macro\_f1 & ece\_raw & ece\_calibrated \\
+\midrule
+rf & 84.43 $\pm$ 3.47 & 0.61 $\pm$ 0.04 & 0.03 $\pm$ 0.00 & 0.02 $\pm$ 0.00 & 90.31 $\pm$ 0.54 & 1.79 $\pm$ 0.25 & 1.18 $\pm$ 0.21 \\
+tfsage\_lite & 95.53 $\pm$ 0.27 & 1.28 $\pm$ 0.13 & 0.55 $\pm$ 0.09 & 0.20 $\pm$ 0.15 & 85.34 $\pm$ 0.74 & 1.13 $\pm$ 0.09 & 0.63 $\pm$ 0.14 \\
+trace\_moe & 95.71 $\pm$ 0.20 & 1.21 $\pm$ 0.07 & 0.62 $\pm$ 0.09 & 0.78 $\pm$ 0.81 & 78.68 $\pm$ 2.94 & 0.96 $\pm$ 0.05 & 0.72 $\pm$ 0.06 \\
+transformer & 95.67 $\pm$ 0.25 & 1.36 $\pm$ 0.26 & 0.69 $\pm$ 0.05 & 1.04 $\pm$ 0.19 & 79.25 $\pm$ 1.21 & 0.94 $\pm$ 0.19 & 0.74 $\pm$ 0.16 \\
+bilstm\_dnn & 96.12 $\pm$ 0.14 & 2.25 $\pm$ 0.12 & 0.65 $\pm$ 0.05 & 1.61 $\pm$ 0.35 & 76.28 $\pm$ 1.13 & 1.83 $\pm$ 0.11 & 0.98 $\pm$ 0.25 \\
+\bottomrule
+\end{tabular}
+\end{table}

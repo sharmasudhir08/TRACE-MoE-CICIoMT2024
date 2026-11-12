@@ -1,0 +1,4 @@
+2026-11-07 13:25:47 | INFO | --- 19_twin_cost.py | config configs/twin.yaml | overrides []
+2026-11-07 13:25:47 | INFO | Session 2026-11-07_132546 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-11-07_132546_19_twin_cost_mac-studio.log
+2026-11-07 13:25:47 | INFO | twin from <repo>/results_rerun/twin/twin_model.pkl
+2026-11-07 13:25:48 | INFO | memory per added device 4511 B, total 602,699 B; end to end 1.296 ms per window ({'delta_ms': 0.0059159974625799805, 'novelty_ms': 0.016666999727021903, 'state_estimate_ms': 0.5079999973531812, 'sync_update_ms': 0.009209001291310415, 'detector_no_twin_ms': 0.7466455008398043, 'detector_twin_ms': 0.7650830011698417, 'end_to_end_ms': 1.2956659957126249})

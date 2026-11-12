@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{Digital Twin ablation on the device rows, official split (%)}
+\label{tab:twin_ablation}
+\begin{tabular}{lcccccccccc}
+\toprule
+name & variant & n\_seeds & macro\_f1\_19 & min\_recall\_19 & macro\_f1\_6 & macro\_f1\_2\_tuned & aurc & aurc\_delta & delta\_auroc & consistency \\
+\midrule
+No-Twin & V0 & 5 & 66.95 $\pm$ 1.65 & 8.18 $\pm$ 1.40 & 77.77 $\pm$ 1.69 & 94.25 $\pm$ 1.09 & 12.10 $\pm$ 0.98 & -- & -- & 98.32 $\pm$ 0.28 \\
+Device-agnostic profile & V1 & 3 & 67.53 $\pm$ 0.35 & 9.73 $\pm$ 0.78 & 77.75 $\pm$ 1.84 & 96.65 $\pm$ 0.43 & 13.88 $\pm$ 0.66 & 23.99 $\pm$ 0.16 & 64.95 $\pm$ 0.12 & 98.60 $\pm$ 0.06 \\
+Twin-Δ (static) & V2 & 3 & 63.88 $\pm$ 1.79 & 11.17 $\pm$ 4.34 & 76.00 $\pm$ 1.30 & 96.67 $\pm$ 0.45 & 18.95 $\pm$ 2.85 & 23.72 $\pm$ 1.75 & 88.19 $\pm$ 0.01 & 98.36 $\pm$ 0.15 \\
+Twin-Δ+State (static) & V3 & 5 & 62.73 $\pm$ 1.21 & 13.23 $\pm$ 1.44 & 74.19 $\pm$ 1.51 & 95.65 $\pm$ 0.69 & 19.35 $\pm$ 0.91 & 27.57 $\pm$ 2.63 & 86.74 $\pm$ 0.13 & 97.45 $\pm$ 0.27 \\
+Twin-Δ+State (synchronised) & V4 & 5 & 62.59 $\pm$ 1.27 & 12.97 $\pm$ 1.61 & 74.07 $\pm$ 1.61 & 95.77 $\pm$ 0.87 & 19.39 $\pm$ 0.92 & 27.74 $\pm$ 2.71 & 84.65 $\pm$ 0.68 & 97.45 $\pm$ 0.28 \\
+Random forest & rf & 5 & 51.29 $\pm$ 0.36 & 8.01 $\pm$ 0.32 & 61.50 $\pm$ 0.45 & 78.52 $\pm$ 0.36 & 22.90 $\pm$ 1.43 & -- & -- & 98.25 $\pm$ 0.04 \\
+\bottomrule
+\end{tabular}
+\end{table}

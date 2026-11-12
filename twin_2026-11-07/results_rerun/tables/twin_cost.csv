@@ -1,0 +1,13 @@
+item,value
+memory: mean_bytes_per_added_device,4511.333333333333
+memory: fleet_profile_bytes,8282.0
+memory: state_estimator_bytes,553815.0
+memory: total_bytes,602699.0
+memory: n_twinned_devices,9.0
+time: delta_ms,0.0059
+time: novelty_ms,0.0167
+time: state_estimate_ms,0.508
+time: sync_update_ms,0.0092
+time: detector_no_twin_ms,0.7466
+time: detector_twin_ms,0.7651
+time: end_to_end_ms,1.2957

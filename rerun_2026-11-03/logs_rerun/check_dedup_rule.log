@@ -1,0 +1,67 @@
+2026-10-30 13:14:41 | INFO | --- check_dedup_rule.py | config configs/rerun.yaml | overrides []
+2026-10-30 13:14:41 | INFO | Session 2026-10-30_131440 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-10-30_131440_check_dedup_rule_mac-studio.log
+2026-10-30 13:14:46 | INFO | Windows (official, T=1): train=6,086,708, val=1,074,123, test=1,433,369
+2026-10-30 13:14:50 | INFO | target (original, seed 42): {'train': 2788114, 'val': 346261, 'test': 65205}
+2026-10-30 13:14:56 | INFO | scaled, exact float32 (current)            train  2,381,704  val   105,293  test   19,216
+2026-10-30 13:15:01 | INFO | scaled, float16                            train  2,833,558  val   359,928  test   72,630
+2026-10-30 13:15:06 | INFO | scaled, rounded to 6 decimals              train  2,768,690  val   313,345  test   60,045
+2026-10-30 13:15:11 | INFO | scaled, rounded to 5 decimals              train  2,861,302  val   389,771  test   81,199
+2026-10-30 13:15:16 | INFO | scaled, rounded to 4 decimals              train  2,935,085  val   461,116  test   96,683
+2026-10-30 13:15:20 | INFO | scaled, rounded to 3 decimals              train  3,141,060  val   551,815  test  110,661
+2026-10-30 13:15:24 | INFO | scaled, rounded to 2 decimals              train  4,538,721  val   830,869  test  702,604
+2026-10-30 13:15:28 | INFO | scaled, rounded to 1 decimals              train  5,187,155  val   936,919  test 1,127,101
+2026-10-30 13:15:34 | INFO | raw, exact float32                         train  2,249,986  val    80,407  test   12,735
+2026-10-30 13:15:40 | INFO | raw, rounded to 6 decimals (audit rule)    train  2,263,426  val    83,395  test   12,769
+2026-10-30 13:18:59 | INFO | --- check_dedup_rule.py | config configs/rerun.yaml | overrides []
+2026-10-30 13:18:59 | INFO | Session 2026-10-30_131857 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-10-30_131857_check_dedup_rule_mac-studio.log
+2026-10-30 13:18:59 | INFO | target: {42: (2788114, 346261), 43: (2788071, 345238)}
+2026-10-30 13:19:08 | INFO | fit_rows   100,000  seed 42  round6 f32  train  2,768,664 (  -19,450)  val  313,894 ( -32,367)
+2026-10-30 13:19:15 | INFO | fit_rows   100,000  seed 42  round6 f64  train  2,768,665 (  -19,449)  val  313,888 ( -32,373)
+2026-10-30 13:19:20 | INFO | fit_rows   100,000  seed 42  float16     train  2,833,029 (  +44,915)  val  360,359 ( +14,098)
+2026-10-30 13:19:25 | INFO | fit_rows   100,000  seed 42  round5 f32  train  2,860,690 (  +72,576)  val  387,908 ( +41,647)
+2026-10-30 13:19:34 | INFO | fit_rows   100,000  seed 43  round6 f32  train  2,769,181 (  -18,890)  val  313,266 ( -31,972)
+2026-10-30 13:19:40 | INFO | fit_rows   100,000  seed 43  round6 f64  train  2,769,182 (  -18,889)  val  313,264 ( -31,974)
+2026-10-30 13:19:46 | INFO | fit_rows   100,000  seed 43  float16     train  2,830,872 (  +42,801)  val  362,699 ( +17,461)
+2026-10-30 13:19:51 | INFO | fit_rows   100,000  seed 43  round5 f32  train  2,861,013 (  +72,942)  val  390,636 ( +45,398)
+2026-10-30 13:20:00 | INFO | fit_rows   200,000  seed 42  round6 f32  train  2,768,908 (  -19,206)  val  312,388 ( -33,873)
+2026-10-30 13:20:06 | INFO | fit_rows   200,000  seed 42  round6 f64  train  2,768,909 (  -19,205)  val  312,384 ( -33,877)
+2026-10-30 13:20:11 | INFO | fit_rows   200,000  seed 42  float16     train  2,831,594 (  +43,480)  val  363,090 ( +16,829)
+2026-10-30 13:20:17 | INFO | fit_rows   200,000  seed 42  round5 f32  train  2,861,611 (  +73,497)  val  390,772 ( +44,511)
+2026-10-30 13:20:26 | INFO | fit_rows   200,000  seed 43  round6 f32  train  2,769,024 (  -19,047)  val  314,162 ( -31,076)
+2026-10-30 13:20:32 | INFO | fit_rows   200,000  seed 43  round6 f64  train  2,769,025 (  -19,046)  val  314,164 ( -31,074)
+2026-10-30 13:20:37 | INFO | fit_rows   200,000  seed 43  float16     train  2,831,814 (  +43,743)  val  364,579 ( +19,341)
+2026-10-30 13:20:43 | INFO | fit_rows   200,000  seed 43  round5 f32  train  2,861,235 (  +73,164)  val  388,545 ( +43,307)
+2026-10-30 13:20:52 | INFO | fit_rows   500,000  seed 42  round6 f32  train  2,768,568 (  -19,546)  val  313,363 ( -32,898)
+2026-10-30 13:20:58 | INFO | fit_rows   500,000  seed 42  round6 f64  train  2,768,578 (  -19,536)  val  313,359 ( -32,902)
+2026-10-30 13:21:04 | INFO | fit_rows   500,000  seed 42  float16     train  2,832,819 (  +44,705)  val  365,146 ( +18,885)
+2026-10-30 13:21:09 | INFO | fit_rows   500,000  seed 42  round5 f32  train  2,861,372 (  +73,258)  val  390,818 ( +44,557)
+2026-10-30 13:21:18 | INFO | fit_rows   500,000  seed 43  round6 f32  train  2,768,659 (  -19,412)  val  313,549 ( -31,689)
+2026-10-30 13:21:25 | INFO | fit_rows   500,000  seed 43  round6 f64  train  2,768,655 (  -19,416)  val  313,549 ( -31,689)
+2026-10-30 13:21:30 | INFO | fit_rows   500,000  seed 43  float16     train  2,831,269 (  +43,198)  val  363,186 ( +17,948)
+2026-10-30 13:21:35 | INFO | fit_rows   500,000  seed 43  round5 f32  train  2,861,232 (  +73,161)  val  388,950 ( +43,712)
+2026-10-30 13:21:45 | INFO | fit_rows 1,000,000  seed 42  round6 f32  train  2,768,690 (  -19,424)  val  313,345 ( -32,916)
+2026-10-30 13:21:52 | INFO | fit_rows 1,000,000  seed 42  round6 f64  train  2,768,694 (  -19,420)  val  313,347 ( -32,914)
+2026-10-30 13:21:57 | INFO | fit_rows 1,000,000  seed 42  float16     train  2,833,558 (  +45,444)  val  359,928 ( +13,667)
+2026-10-30 13:22:02 | INFO | fit_rows 1,000,000  seed 42  round5 f32  train  2,861,302 (  +73,188)  val  389,771 ( +43,510)
+2026-10-30 13:22:13 | INFO | fit_rows 1,000,000  seed 43  round6 f32  train  2,768,486 (  -19,585)  val  314,069 ( -31,169)
+2026-10-30 13:22:19 | INFO | fit_rows 1,000,000  seed 43  round6 f64  train  2,768,485 (  -19,586)  val  314,101 ( -31,137)
+2026-10-30 13:22:25 | INFO | fit_rows 1,000,000  seed 43  float16     train  2,832,552 (  +44,481)  val  363,304 ( +18,066)
+2026-10-30 13:22:30 | INFO | fit_rows 1,000,000  seed 43  round5 f32  train  2,861,490 (  +73,419)  val  389,658 ( +44,420)
+2026-10-30 13:22:47 | INFO | fit_rows 6,086,708  seed 42  round6 f32  train  2,768,654 (  -19,460)  val  312,132 ( -34,129)
+2026-10-30 13:22:53 | INFO | fit_rows 6,086,708  seed 42  round6 f64  train  2,768,655 (  -19,459)  val  312,131 ( -34,130)
+2026-10-30 13:22:59 | INFO | fit_rows 6,086,708  seed 42  float16     train  2,832,575 (  +44,461)  val  364,531 ( +18,270)
+2026-10-30 13:23:04 | INFO | fit_rows 6,086,708  seed 42  round5 f32  train  2,861,436 (  +73,322)  val  392,146 ( +45,885)
+2026-10-30 13:23:21 | INFO | fit_rows 6,086,708  seed 43  round6 f32  train  2,768,654 (  -19,417)  val  312,132 ( -33,106)
+2026-10-30 13:23:27 | INFO | fit_rows 6,086,708  seed 43  round6 f64  train  2,768,655 (  -19,416)  val  312,131 ( -33,107)
+2026-10-30 13:23:33 | INFO | fit_rows 6,086,708  seed 43  float16     train  2,832,575 (  +44,504)  val  364,531 ( +19,293)
+2026-10-30 13:23:38 | INFO | fit_rows 6,086,708  seed 43  round5 f32  train  2,861,436 (  +73,365)  val  392,146 ( +46,908)
+2026-10-30 13:27:50 | INFO | --- check_dedup_rule.py | config configs/rerun.yaml | overrides []
+2026-10-30 13:27:50 | INFO | Session 2026-10-30_132749 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-10-30_132749_check_dedup_rule_mac-studio.log
+2026-10-30 13:27:55 | INFO | target: train 2,788,114  val 346,261
+2026-10-30 13:28:01 | INFO | round6   train  2,768,690 ( -19,424)  val in train  313,345 ( -32,916)  val in train or earlier in val  501,366 (+155,105)  [repeats only inside val: 188,021]
+2026-10-30 13:28:06 | INFO | float16  train  2,833,558 ( +45,444)  val in train  359,928 ( +13,667)  val in train or earlier in val  520,209 (+173,948)  [repeats only inside val: 160,281]
+2026-10-30 13:28:57 | INFO | --- check_dedup_rule.py | config configs/rerun.yaml | overrides []
+2026-10-30 13:28:57 | INFO | Session 2026-10-30_132856 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-10-30_132856_check_dedup_rule_mac-studio.log
+2026-10-30 13:29:03 | INFO | target: train 2,788,114  val 346,261
+2026-10-30 13:29:08 | INFO | round6   train  2,768,690 ( -19,424)  val in train  313,345 ( -32,916)  val in train or earlier in val  501,366 (+155,105)  [repeats only inside val: 188,021]
+2026-10-30 13:29:13 | INFO | float16  train  2,833,558 ( +45,444)  val in train  359,928 ( +13,667)  val in train or earlier in val  520,209 (+173,948)  [repeats only inside val: 160,281]

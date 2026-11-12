@@ -1,0 +1,13 @@
+{
+  "generated": "2026-10-05T19:09:16",
+  "python": "3.12.4",
+  "os": "Windows 11",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "torch": "2.5.1+cu121",
+  "cuda": "12.1",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "sklearn": "1.9.1",
+  "pandas": "3.0.6",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1"
+}

@@ -1,0 +1,18 @@
+2026-10-05 18:56:14 | INFO | --- 06_robustness.py | config configs\default_v2.yaml | overrides ['train.device=cuda']
+2026-10-05 18:56:14 | INFO | Session v2_phase3_2026-10-05_185606 | host SudhirSharma | session log: D:\Sharda University\CICIoMT2024\trace-iomt\logs_v2\sessions\v2_phase3_2026-10-05_185606_06_robustness_SudhirSharma.log
+2026-10-05 18:57:03 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 144682, 'val_windows_also_in_train_removed': 8014, 'test_windows_also_in_train_removed': 29478}
+2026-10-05 18:57:03 | INFO | Windows (official, T=16): train=616,087, val=59,092, test=1,584,389
+2026-10-05 18:57:03 | INFO | Loaded trained model D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\main\trace_moe_official_T16_seed42\model.pt
+2026-10-05 18:57:04 | INFO | Loaded trained model D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\main\bilstm_dnn_official_T16_seed42\model.pt
+2026-10-05 18:57:04 | INFO | Loaded trained model D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\main\transformer_official_T16_seed42\model.pt
+2026-10-05 18:57:04 | INFO | Loaded trained model D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\main\tfsage_lite_official_T16_seed42\model.pt
+2026-10-05 18:57:39 | INFO | transfer from trace_moe: trace_moe ASR 0.085, bilstm_dnn ASR 0.097, transformer ASR 0.065, tfsage_lite ASR 0.046, rf ASR 0.118
+2026-10-05 18:57:45 | INFO | transfer from bilstm_dnn: trace_moe ASR 0.048, bilstm_dnn ASR 0.100, transformer ASR 0.064, tfsage_lite ASR 0.045, rf ASR 0.113
+2026-10-05 18:57:48 | INFO | transfer from transformer: trace_moe ASR 0.049, bilstm_dnn ASR 0.097, transformer ASR 0.100, tfsage_lite ASR 0.047, rf ASR 0.119
+2026-10-05 18:57:49 | INFO | transfer from tfsage_lite: trace_moe ASR 0.051, bilstm_dnn ASR 0.101, transformer ASR 0.068, tfsage_lite ASR 0.066, rf ASR 0.122
+2026-10-05 18:57:49 | INFO | [trace_moe seed 42] PGD on 4,905 test windows
+2026-10-05 18:57:49 | INFO | eps=0.0   macro-F1 19:0.8138 2:0.8347 attack detection rate 0.9522
+2026-10-05 18:57:56 | INFO | eps=0.05  macro-F1 19:0.8014 2:0.8225 attack detection rate 0.9470
+2026-10-05 18:58:02 | INFO | eps=0.1   macro-F1 19:0.7690 2:0.8095 attack detection rate 0.9412
+2026-10-05 18:58:08 | INFO | eps=0.25  macro-F1 19:0.6590 2:0.7621 attack detection rate 0.9166
+2026-10-05 18:58:14 | INFO | eps=0.5   macro-F1 19:0.3967 2:0.6078 attack detection rate 0.7831

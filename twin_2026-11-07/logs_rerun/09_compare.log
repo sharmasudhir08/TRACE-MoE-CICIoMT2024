@@ -1,0 +1,10 @@
+2026-11-02 20:21:19 | INFO | --- 09_compare.py | config configs/rerun.yaml | overrides []
+2026-11-02 20:21:19 | INFO | Session rerun_final_2026-11-02_202047 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_final_2026-11-02_202047_09_compare_mac-studio.log
+2026-11-02 20:21:19 | INFO | 5 older copies of re-run runs (<name>__vN) ignored; newest kept
+2026-11-02 20:21:19 | INFO | 103 runs, 309 run x level rows
+2026-11-02 20:21:24 | INFO | Tables in <repo>/results_rerun/tables, figures in <repo>/results_rerun/figures
+2026-11-03 20:04:48 | INFO | --- 09_compare.py | config configs/rerun.yaml | overrides []
+2026-11-03 20:04:48 | INFO | Session rerun_posthoc_2026-11-03_195121 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_posthoc_2026-11-03_195121_09_compare_mac-studio.log
+2026-11-03 20:04:48 | INFO | 5 older copies of re-run runs (<name>__vN) ignored; newest kept
+2026-11-03 20:04:48 | INFO | 103 runs, 309 run x level rows
+2026-11-03 20:04:50 | INFO | Tables in <repo>/results_rerun/tables, figures in <repo>/results_rerun/figures

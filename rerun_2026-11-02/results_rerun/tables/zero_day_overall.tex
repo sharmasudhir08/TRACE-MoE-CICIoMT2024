@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\caption{Unknown-attack detection, mean over held-out classes and seeds}
+\label{tab:zero_day_overall}
+\begin{tabular}{lcccccccc}
+\toprule
+model & energy\_auroc & energy\_fpr95 & msp\_auroc & flagged\_unknown & caught\_as\_attack & caught\_any & false\_alarm\_known & known\_macro\_f1 \\
+\midrule
+bilstm\_dnn & 0.6879 & 0.5017 & 0.7247 & 0.3862 & 0.6466 & 0.9606 & 0.0513 & 0.7395 \\
+trace\_moe & 0.7261 & 0.3712 & 0.7224 & 0.5172 & 0.6362 & 0.9925 & 0.0405 & 0.8189 \\
+transformer & 0.6554 & 0.3963 & 0.8061 & 0.5734 & 0.6165 & 0.9991 & 0.0432 & 0.8053 \\
+\bottomrule
+\end{tabular}
+\end{table}

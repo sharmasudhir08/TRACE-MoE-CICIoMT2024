@@ -1,0 +1,11 @@
+hypothesis,RQ,statement,verdict,evidence
+H1,RQ1,TRACE-MoE has higher 19-class macro-F1 than each baseline,partly supported,"TRACE-MoE per-class F1 significantly better (Holm p<0.05) than 1/4: bilstm_dnn +8.19 pts (p=3.96e-13), transformer +1.21 pts (p=0.133), rf -4.18 pts (p=0.133), tfsage_lite +0.69 pts (p=0.817)"
+H2,RQ1,TRACE-MoE raises the recall of the weakest class (minimum class recall) over the best baseline,not supported,"minimum class recall 10.43% vs best baseline rf 14.74% (gain -4.31 pts, needed 5)"
+H3,RQ1,On binary detection TRACE-MoE is non-inferior to Random Forest,supported,"binary macro-F1 TRACE-MoE minus RF = +2.716 pts, 95% CI [+2.087, +3.344] over 5 seeds (margin -0.5 pts)"
+H4,RQ2,Routing helps: one dense expert of the same size gives lower 19-class macro-F1,partly supported,"full minus dense expert: +0.28 pts per-class F1, Holm p=1; other variants: plain_ce_loss -0.81, protocol_routing -0.34, no_experts +0.63, no_hierarchy -0.12, no_balance_loss -0.53, no_protocol_token -0.05"
+H5,RQ2,The experts specialise by attack family (NMI between expert and category),partly supported,"NMI(expert, category) = 0.483 (needed 0.5); NMI(expert, class) = 0.603"
+H6,RQ3,Adversarially fine-tuned TRACE-MoE has a lower attack success rate than every baseline,partly supported,"TRACE-MoE per-class ASR significantly better (Holm p<0.05) than 1/3: bilstm_dnn +2.55 pts (p=0.00698), transformer +0.74 pts (p=0.582), tfsage_lite -0.45 pts (p=0.582)"
+H7,RQ3,Adversarial fine-tuning costs little clean 19-class macro-F1,supported,"clean 19-class macro-F1 79.53% before and 79.56% after adversarial fine-tuning (drop -0.03 pts, allowed 1)"
+H8,RQ4,The abstain score detects held-out attack types better than softmax confidence,partly supported,"abstain-score AUROC 72.61% vs softmax confidence 72.24% (needed >= 90%); held-out windows flagged unknown 51.7%, caught as attack or unknown 99.2%"
+H9,RQ4,Abstention lowers the error on accepted traffic more than for any baseline (lowest AURC),not supported,"AURC (lower is better), rank 3/5: rf 0.025, tfsage_lite 0.196, trace_moe 0.781, transformer 1.037, bilstm_dnn 1.609"
+H10,RQ5,TRACE-MoE is faster than the Transformer baseline and small enough for an edge gateway,partly supported,"685,041 parameters (2.613 MB); 0.1493 ms/window on CPU at batch 1024 vs Transformer 0.0851 ms"

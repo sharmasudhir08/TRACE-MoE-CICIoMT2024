@@ -1,0 +1,30 @@
+{
+  "_note": "Wi-Fi/MQTT devices of CICIoMT2024 profiling, MAC derived 2026-11-04: in each device's Power and Interaction captures this MAC is in 100% of packets (scripts/12_pcap_scan.py --inventory). The router appears in every capture. Broker and simulated (VMware) MACs are from the Broker capture; their roles in the attack captures are not yet confirmed.",
+  "devices": {
+    "Blink_Camera": "90:11:95:16:40:3b",
+    "Ecobee_Camera": "44:61:32:e8:88:2f",
+    "M1T_Camera": "f4:b1:9c:c9:79:ff",
+    "Multifunctional_Pager": "fc:67:1f:e1:9e:58",
+    "Owltron_Camera": "fc:67:1f:f7:cb:07",
+    "SenseU": "34:94:54:f0:db:f0",
+    "Singcall": "1c:90:ff:e6:e2:4b"
+  },
+  "infrastructure": {
+    "router": "8c:ae:4c:dd:1e:39",
+    "broker_profiling": "00:e0:4c:78:78:21",
+    "simulated_vm_1": "00:0c:29:b9:07:00",
+    "simulated_vm_2": "00:0c:29:b9:07:f6"
+  },
+  "extra_endpoints": {
+    "_note": "Proposed 2026-11-04, pending KM decision (TWIN_PROTOCOL.md 3a): targets in the attack captures without Power/Interaction captures; both appear in Idle and Active. Used only with --with-extra.",
+    "MQTT_Broker_attacks": "a8:6b:ad:1f:9b:e5",
+    "Unprofiled_Device_002710": "00:27:10:cb:17:60"
+  },
+  "attackers": {
+    "_note": "Raspberry Pi MACs (OUI dc:a6:32) that dominate the attack captures (scan of 8 PCAPs, 2026-11-04); confirm with the full scan.",
+    "rpi_1": "dc:a6:32:c9:e4:ab",
+    "rpi_2": "dc:a6:32:c9:e5:a4",
+    "rpi_3": "dc:a6:32:c9:e4:d5",
+    "rpi_4": "dc:a6:32:dc:27:d5"
+  }
+}

@@ -1,0 +1,133 @@
+2026-11-07 07:08:00 | INFO | --- 16_twin_train.py | config configs/twin.yaml | overrides ['train.device=mps']
+2026-11-07 07:08:00 | INFO | Session twin_A_2026-11-07_070756 | host mac-studio | session log: <repo>/logs_rerun/sessions/twin_A_2026-11-07_070756_16_twin_train_mac-studio.log
+2026-11-07 07:08:00 | INFO | seed 42: ['V3', 'V0'] already done
+2026-11-07 07:08:00 | INFO | seed 43: ['V3', 'V0'] already done
+2026-11-07 07:08:00 | INFO | seed 44: ['V3', 'V0'] already done
+2026-11-07 07:08:00 | INFO | seed 45: ['V3', 'V0'] already done
+2026-11-07 07:08:01 | INFO | ARP_Spoofing_test.parquet: 3,353 rows, 19 hosts
+2026-11-07 07:08:01 | INFO | Benign_test.parquet: 68,156 rows, 22 hosts
+2026-11-07 07:08:01 | INFO | MQTT-DDoS-Connect_Flood_test.parquet: 837,954 rows, 19 hosts
+2026-11-07 07:08:01 | INFO | MQTT-DDoS-Publish_Flood_test.parquet: 168,003 rows, 19 hosts
+2026-11-07 07:08:01 | INFO | MQTT-DoS-Connect_Flood_test.parquet: 62,515 rows, 17 hosts
+2026-11-07 07:08:01 | INFO | MQTT-DoS-Publish_Flood_test.parquet: 169,815 rows, 16 hosts
+2026-11-07 07:08:01 | INFO | MQTT-Malformed_Data_test.parquet: 2,676 rows, 17 hosts
+2026-11-07 07:08:01 | INFO | Recon-OS_Scan_test.parquet: 7,539 rows, 20 hosts
+2026-11-07 07:08:01 | INFO | Recon-Ping_Sweep_test.parquet: 247 rows, 15 hosts
+2026-11-07 07:08:01 | INFO | Recon-Port_Scan_test.parquet: 45,111 rows, 20 hosts
+2026-11-07 07:08:01 | INFO | Recon-VulScan_test.parquet: 1,855 rows, 19 hosts
+2026-11-07 07:08:02 | INFO | TCP_IP-DDoS-ICMP1_test.parquet: 3,076,466 rows, 23 hosts
+2026-11-07 07:08:03 | INFO | TCP_IP-DDoS-ICMP2_test.parquet: 3,910,989 rows, 23 hosts
+2026-11-07 07:08:04 | INFO | TCP_IP-DDoS-SYN_test.parquet: 3,441,178 rows, 21 hosts
+2026-11-07 07:08:05 | INFO | TCP_IP-DDoS-TCP_test.parquet: 3,648,730 rows, 19 hosts
+2026-11-07 07:08:06 | INFO | TCP_IP-DDoS-UDP1_test.parquet: 4,109,768 rows, 21 hosts
+2026-11-07 07:08:07 | INFO | TCP_IP-DDoS-UDP2_test.parquet: 3,123,816 rows, 19 hosts
+2026-11-07 07:08:08 | INFO | TCP_IP-DoS-ICMP_test.parquet: 1,964,806 rows, 21 hosts
+2026-11-07 07:08:08 | INFO | TCP_IP-DoS-SYN_test.parquet: 1,970,739 rows, 19 hosts
+2026-11-07 07:08:09 | INFO | TCP_IP-DoS-TCP_test.parquet: 1,638,521 rows, 18 hosts
+2026-11-07 07:08:09 | INFO | TCP_IP-DoS-UDP_test.parquet: 2,749,006 rows, 20 hosts
+2026-11-07 07:08:09 | INFO | ARP_Spoofing_train.parquet: 26,800 rows, 21 hosts
+2026-11-07 07:08:09 | INFO | Benign_train.parquet: 346,833 rows, 24 hosts
+2026-11-07 07:08:10 | INFO | MQTT-DDoS-Connect_Flood_train.parquet: 3,457,884 rows, 20 hosts
+2026-11-07 07:08:11 | INFO | MQTT-DDoS-Publish_Flood_train.parquet: 549,617 rows, 19 hosts
+2026-11-07 07:08:11 | INFO | MQTT-DoS-Connect_Flood_train.parquet: 255,260 rows, 17 hosts
+2026-11-07 07:08:11 | INFO | MQTT-DoS-Publish_Flood_train.parquet: 885,013 rows, 18 hosts
+2026-11-07 07:08:11 | INFO | MQTT-Malformed_Data_train.parquet: 6,888 rows, 18 hosts
+2026-11-07 07:08:11 | INFO | Recon-OS_Scan_train.parquet: 33,334 rows, 20 hosts
+2026-11-07 07:08:11 | INFO | Recon-Ping_Sweep_train.parquet: 944 rows, 19 hosts
+2026-11-07 07:08:11 | INFO | Recon-Port_Scan_train.parquet: 166,757 rows, 21 hosts
+2026-11-07 07:08:11 | INFO | Recon-VulScan_train.parquet: 4,149 rows, 15 hosts
+2026-11-07 07:08:12 | INFO | TCP_IP-DDoS-ICMP1_train.parquet: 3,895,340 rows, 21 hosts
+2026-11-07 07:08:13 | INFO | TCP_IP-DDoS-ICMP2_train.parquet: 3,893,280 rows, 20 hosts
+2026-11-07 07:08:14 | INFO | TCP_IP-DDoS-ICMP3_train.parquet: 3,789,556 rows, 21 hosts
+2026-11-07 07:08:15 | INFO | TCP_IP-DDoS-ICMP4_train.parquet: 3,851,060 rows, 21 hosts
+2026-11-07 07:08:17 | INFO | TCP_IP-DDoS-ICMP5_train.parquet: 3,897,649 rows, 20 hosts
+2026-11-07 07:08:18 | INFO | TCP_IP-DDoS-ICMP6_train.parquet: 3,810,867 rows, 21 hosts
+2026-11-07 07:08:19 | INFO | TCP_IP-DDoS-ICMP7_train.parquet: 3,709,133 rows, 22 hosts
+2026-11-07 07:08:20 | INFO | TCP_IP-DDoS-ICMP8_train.parquet: 3,862,127 rows, 21 hosts
+2026-11-07 07:08:21 | INFO | TCP_IP-DDoS-SYN1_train.parquet: 3,981,574 rows, 20 hosts
+2026-11-07 07:08:22 | INFO | TCP_IP-DDoS-SYN2_train.parquet: 4,070,554 rows, 21 hosts
+2026-11-07 07:08:23 | INFO | TCP_IP-DDoS-SYN3_train.parquet: 4,035,977 rows, 20 hosts
+2026-11-07 07:08:24 | INFO | TCP_IP-DDoS-SYN4_train.parquet: 3,929,090 rows, 19 hosts
+2026-11-07 07:08:26 | INFO | TCP_IP-DDoS-TCP1_train.parquet: 4,042,194 rows, 20 hosts
+2026-11-07 07:08:27 | INFO | TCP_IP-DDoS-TCP2_train.parquet: 3,933,160 rows, 20 hosts
+2026-11-07 07:08:28 | INFO | TCP_IP-DDoS-TCP3_train.parquet: 4,076,990 rows, 20 hosts
+2026-11-07 07:08:29 | INFO | TCP_IP-DDoS-TCP4_train.parquet: 4,012,781 rows, 20 hosts
+2026-11-07 07:08:31 | INFO | TCP_IP-DDoS-UDP1_train.parquet: 4,119,999 rows, 21 hosts
+2026-11-07 07:08:32 | INFO | TCP_IP-DDoS-UDP2_train.parquet: 4,143,487 rows, 22 hosts
+2026-11-07 07:08:33 | INFO | TCP_IP-DDoS-UDP3_train.parquet: 4,129,411 rows, 21 hosts
+2026-11-07 07:08:34 | INFO | TCP_IP-DDoS-UDP4_train.parquet: 4,124,039 rows, 21 hosts
+2026-11-07 07:08:36 | INFO | TCP_IP-DDoS-UDP5_train.parquet: 4,106,991 rows, 22 hosts
+2026-11-07 07:08:37 | INFO | TCP_IP-DDoS-UDP6_train.parquet: 4,041,092 rows, 22 hosts
+2026-11-07 07:08:38 | INFO | TCP_IP-DDoS-UDP7_train.parquet: 3,944,933 rows, 22 hosts
+2026-11-07 07:08:39 | INFO | TCP_IP-DDoS-UDP8_train.parquet: 4,077,541 rows, 21 hosts
+2026-11-07 07:08:40 | INFO | TCP_IP-DoS-ICMP1_train.parquet: 2,086,830 rows, 19 hosts
+2026-11-07 07:08:41 | INFO | TCP_IP-DoS-ICMP2_train.parquet: 1,927,959 rows, 20 hosts
+2026-11-07 07:08:41 | INFO | TCP_IP-DoS-ICMP3_train.parquet: 2,171,010 rows, 18 hosts
+2026-11-07 07:08:42 | INFO | TCP_IP-DoS-ICMP4_train.parquet: 2,118,766 rows, 19 hosts
+2026-11-07 07:08:42 | INFO | TCP_IP-DoS-SYN1_train.parquet: 2,224,663 rows, 18 hosts
+2026-11-07 07:08:43 | INFO | TCP_IP-DoS-SYN2_train.parquet: 2,227,061 rows, 20 hosts
+2026-11-07 07:08:43 | INFO | TCP_IP-DoS-SYN3_train.parquet: 2,154,000 rows, 19 hosts
+2026-11-07 07:08:44 | INFO | TCP_IP-DoS-SYN4_train.parquet: 2,204,961 rows, 20 hosts
+2026-11-07 07:08:44 | INFO | TCP_IP-DoS-TCP1_train.parquet: 1,903,397 rows, 21 hosts
+2026-11-07 07:08:45 | INFO | TCP_IP-DoS-TCP2_train.parquet: 1,907,407 rows, 20 hosts
+2026-11-07 07:08:45 | INFO | TCP_IP-DoS-TCP3_train.parquet: 1,915,249 rows, 19 hosts
+2026-11-07 07:08:46 | INFO | TCP_IP-DoS-TCP4_train.parquet: 1,863,295 rows, 19 hosts
+2026-11-07 07:08:47 | INFO | TCP_IP-DoS-UDP1_train.parquet: 2,728,387 rows, 20 hosts
+2026-11-07 07:08:47 | INFO | TCP_IP-DoS-UDP2_train.parquet: 2,799,660 rows, 18 hosts
+2026-11-07 07:08:48 | INFO | TCP_IP-DoS-UDP3_train.parquet: 2,917,619 rows, 18 hosts
+2026-11-07 07:08:49 | INFO | TCP_IP-DoS-UDP4_train.parquet: 2,861,138 rows, 20 hosts
+2026-11-07 07:09:25 | INFO | profiles from 787,795 benign rows; state estimator held-out accuracy 0.945
+2026-11-07 07:09:38 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 709, 'val_windows_also_in_train_removed': 28, 'test_windows_also_in_train_removed': 389}
+2026-11-07 07:09:38 | INFO | Windows (official, T=16): train=1,164,397, val=102,532, test=2,974,725
+2026-11-07 07:11:49 | INFO | === twin/trace_moe_official_T16_V0_seed46: 684,081 parameters on mps | started 2026-11-07T07:11:49
+2026-11-07 07:16:42 | INFO | epoch   1 | loss 0.4894 | val macro-F1 2:0.8331 6:0.6758 19:0.6456 | 292.6s
+2026-11-07 07:21:26 | INFO | epoch   2 | loss 0.3101 | val macro-F1 2:0.8692 6:0.7202 19:0.6509 | 284.2s
+2026-11-07 07:26:08 | INFO | epoch   3 | loss 0.2538 | val macro-F1 2:0.8873 6:0.7407 19:0.6739 | 281.9s
+2026-11-07 07:30:56 | INFO | epoch   4 | loss 0.2242 | val macro-F1 2:0.8889 6:0.7536 19:0.6865 | 288.0s
+2026-11-07 07:35:45 | INFO | epoch   5 | loss 0.2051 | val macro-F1 2:0.8940 6:0.7664 19:0.6988 | 288.5s
+2026-11-07 07:40:31 | INFO | epoch   6 | loss 0.1915 | val macro-F1 2:0.8866 6:0.7743 19:0.7119 | 286.5s
+2026-11-07 07:45:23 | INFO | epoch   7 | loss 0.1815 | val macro-F1 2:0.9060 6:0.7544 19:0.6861 | 291.8s
+2026-11-07 07:50:14 | INFO | epoch   8 | loss 0.1720 | val macro-F1 2:0.8845 6:0.7671 19:0.7098 | 290.8s
+2026-11-07 07:55:04 | INFO | epoch   9 | loss 0.1657 | val macro-F1 2:0.8954 6:0.7607 19:0.6979 | 290.0s
+2026-11-07 07:59:56 | INFO | epoch  10 | loss 0.1596 | val macro-F1 2:0.9039 6:0.7659 19:0.7064 | 291.6s
+2026-11-07 08:04:47 | INFO | epoch  11 | loss 0.1539 | val macro-F1 2:0.8967 6:0.7704 19:0.7126 | 291.7s
+2026-11-07 08:09:38 | INFO | epoch  12 | loss 0.1500 | val macro-F1 2:0.9098 6:0.7760 19:0.7161 | 290.5s
+2026-11-07 08:14:30 | INFO | epoch  13 | loss 0.1448 | val macro-F1 2:0.9055 6:0.7735 19:0.7096 | 291.8s
+2026-11-07 08:19:21 | INFO | epoch  14 | loss 0.1412 | val macro-F1 2:0.8954 6:0.7753 19:0.7103 | 291.8s
+2026-11-07 08:24:13 | INFO | epoch  15 | loss 0.1372 | val macro-F1 2:0.9049 6:0.7757 19:0.7184 | 291.5s
+2026-11-07 08:29:03 | INFO | epoch  16 | loss 0.1345 | val macro-F1 2:0.9124 6:0.7717 19:0.7139 | 290.3s
+2026-11-07 08:33:55 | INFO | epoch  17 | loss 0.1307 | val macro-F1 2:0.9146 6:0.7719 19:0.7115 | 291.7s
+2026-11-07 08:38:45 | INFO | epoch  18 | loss 0.1283 | val macro-F1 2:0.9106 6:0.7754 19:0.7029 | 290.1s
+2026-11-07 08:43:37 | INFO | epoch  19 | loss 0.1253 | val macro-F1 2:0.9160 6:0.7776 19:0.7172 | 292.1s
+2026-11-07 08:48:29 | INFO | epoch  20 | loss 0.1222 | val macro-F1 2:0.9120 6:0.7739 19:0.7181 | 292.0s
+2026-11-07 08:53:20 | INFO | epoch  21 | loss 0.1200 | val macro-F1 2:0.9159 6:0.7726 19:0.7088 | 291.2s
+2026-11-07 08:58:12 | INFO | epoch  22 | loss 0.1167 | val macro-F1 2:0.9184 6:0.7852 19:0.7267 | 292.2s
+2026-11-07 09:03:04 | INFO | epoch  23 | loss 0.1152 | val macro-F1 2:0.9085 6:0.7792 19:0.7230 | 291.9s
+2026-11-07 09:07:56 | INFO | epoch  24 | loss 0.1126 | val macro-F1 2:0.9140 6:0.7829 19:0.7247 | 291.3s
+2026-11-07 09:12:47 | INFO | epoch  25 | loss 0.1113 | val macro-F1 2:0.9175 6:0.7902 19:0.7304 | 291.5s
+2026-11-07 09:17:38 | INFO | epoch  26 | loss 0.1093 | val macro-F1 2:0.9189 6:0.7924 19:0.7396 | 291.2s
+2026-11-07 09:22:29 | INFO | epoch  27 | loss 0.1065 | val macro-F1 2:0.9215 6:0.7889 19:0.7355 | 291.0s
+2026-11-07 09:27:20 | INFO | epoch  28 | loss 0.1049 | val macro-F1 2:0.9164 6:0.7806 19:0.7235 | 290.8s
+2026-11-07 09:32:11 | INFO | epoch  29 | loss 0.1028 | val macro-F1 2:0.9197 6:0.7913 19:0.7384 | 290.8s
+2026-11-07 09:37:03 | INFO | epoch  30 | loss 0.1015 | val macro-F1 2:0.9212 6:0.7888 19:0.7396 | 291.6s
+2026-11-07 09:41:54 | INFO | epoch  31 | loss 0.0998 | val macro-F1 2:0.9239 6:0.7919 19:0.7379 | 291.3s
+2026-11-07 09:46:46 | INFO | epoch  32 | loss 0.0984 | val macro-F1 2:0.9240 6:0.7929 19:0.7408 | 292.4s
+2026-11-07 09:51:38 | INFO | epoch  33 | loss 0.0970 | val macro-F1 2:0.9241 6:0.7988 19:0.7510 | 291.3s
+2026-11-07 09:56:29 | INFO | epoch  34 | loss 0.0951 | val macro-F1 2:0.9249 6:0.7996 19:0.7557 | 291.2s
+2026-11-07 10:01:19 | INFO | epoch  35 | loss 0.0937 | val macro-F1 2:0.9252 6:0.7959 19:0.7450 | 289.7s
+2026-11-07 10:06:06 | INFO | epoch  36 | loss 0.0927 | val macro-F1 2:0.9248 6:0.7953 19:0.7521 | 287.8s
+2026-11-07 10:10:47 | INFO | epoch  37 | loss 0.0916 | val macro-F1 2:0.9270 6:0.8003 19:0.7586 | 280.2s
+2026-11-07 10:15:27 | INFO | epoch  38 | loss 0.0906 | val macro-F1 2:0.9249 6:0.7934 19:0.7475 | 280.6s
+2026-11-07 10:20:09 | INFO | epoch  39 | loss 0.0890 | val macro-F1 2:0.9256 6:0.7952 19:0.7429 | 282.0s
+2026-11-07 10:24:50 | INFO | epoch  40 | loss 0.0879 | val macro-F1 2:0.9265 6:0.7971 19:0.7501 | 281.3s
+2026-11-07 10:29:32 | INFO | epoch  41 | loss 0.0874 | val macro-F1 2:0.9256 6:0.7971 19:0.7546 | 281.9s
+2026-11-07 10:34:22 | INFO | epoch  42 | loss 0.0861 | val macro-F1 2:0.9274 6:0.7978 19:0.7561 | 289.2s
+2026-11-07 10:39:12 | INFO | epoch  43 | loss 0.0854 | val macro-F1 2:0.9263 6:0.7955 19:0.7566 | 290.7s
+2026-11-07 10:44:03 | INFO | epoch  44 | loss 0.0847 | val macro-F1 2:0.9274 6:0.7965 19:0.7559 | 291.0s
+2026-11-07 10:48:54 | INFO | epoch  45 | loss 0.0847 | val macro-F1 2:0.9273 6:0.7983 19:0.7592 | 290.6s
+2026-11-07 10:53:46 | INFO | epoch  46 | loss 0.0834 | val macro-F1 2:0.9278 6:0.7989 19:0.7567 | 292.5s
+2026-11-07 10:58:39 | INFO | epoch  47 | loss 0.0836 | val macro-F1 2:0.9272 6:0.7981 19:0.7581 | 292.8s
+2026-11-07 11:03:31 | INFO | epoch  48 | loss 0.0829 | val macro-F1 2:0.9283 6:0.7994 19:0.7579 | 291.8s
+2026-11-07 11:08:22 | INFO | epoch  49 | loss 0.0825 | val macro-F1 2:0.9279 6:0.7992 19:0.7590 | 290.6s
+2026-11-07 11:13:13 | INFO | epoch  50 | loss 0.0831 | val macro-F1 2:0.9281 6:0.7988 19:0.7586 | 290.9s
+2026-11-07 11:15:16 | INFO | test macro-F1  2:0.9377  6:0.7907  19:0.6869  -> <repo>/results_rerun/twin/trace_moe_official_T16_V0_seed46

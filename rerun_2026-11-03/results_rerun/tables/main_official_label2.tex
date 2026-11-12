@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{label2 test results, official split, mean ± std over seeds (%)}
+\label{tab:main_official_label2}
+\begin{tabular}{lcccccc}
+\toprule
+model & family & macro\_f1 & roc\_auc & pr\_auc & recall\_at\_fpr\_0.01 & ece \\
+\midrule
+rf & classical & 95.29 $\pm$ 0.10 & 99.97 $\pm$ 0.00 & 100.00 $\pm$ 0.00 & 99.76 $\pm$ 0.01 & 0.13 $\pm$ 0.01 \\
+bilstm\_dnn & deep & 95.57 $\pm$ 1.68 & 99.84 $\pm$ 0.12 & 99.99 $\pm$ 0.01 & 99.59 $\pm$ 0.17 & 0.28 $\pm$ 0.12 \\
+tfsage\_lite & deep & 96.42 $\pm$ 0.87 & 98.13 $\pm$ 1.64 & 99.91 $\pm$ 0.08 & 19.96 $\pm$ 44.63 & 0.29 $\pm$ 0.08 \\
+transformer & deep & 96.80 $\pm$ 0.43 & 99.92 $\pm$ 0.05 & 100.00 $\pm$ 0.00 & 99.45 $\pm$ 0.32 & 0.24 $\pm$ 0.06 \\
+trace\_moe & deep & 98.01 $\pm$ 0.44 & 99.98 $\pm$ 0.00 & 100.00 $\pm$ 0.00 & 99.78 $\pm$ 0.10 & 0.15 $\pm$ 0.03 \\
+\bottomrule
+\end{tabular}
+\end{table}

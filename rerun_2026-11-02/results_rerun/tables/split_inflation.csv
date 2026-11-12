@@ -1,0 +1,6 @@
+model,official,random,inflation
+bilstm_dnn,71.34,82.34,11.0
+rf,83.71,89.45,5.74
+tfsage_lite,78.84,93.93,15.08
+trace_moe,79.53,94.22,14.69
+transformer,78.32,94.6,16.27

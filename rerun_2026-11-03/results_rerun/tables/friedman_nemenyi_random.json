@@ -1,0 +1,14 @@
+{
+  "chi2": 160.5939329430548,
+  "p": 1.0902971789943571e-33,
+  "k_models": 5,
+  "n_blocks": 95,
+  "critical_difference": 0.6258461219988926,
+  "average_ranks": {
+    "transformer": 1.942,
+    "trace_moe": 2.495,
+    "tfsage_lite": 2.511,
+    "rf": 3.547,
+    "bilstm_dnn": 4.505
+  }
+}

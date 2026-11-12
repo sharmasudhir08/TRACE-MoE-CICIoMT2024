@@ -1,0 +1,28 @@
+2026-10-05 19:09:12 | INFO | --- 10_technical_report.py | config configs\default_v2.yaml | overrides []
+2026-10-05 19:09:12 | INFO | Session v2_refreeze_2026-10-05_190911 | host SudhirSharma | session log: D:\Sharda University\CICIoMT2024\trace-iomt\logs_v2\sessions\v2_refreeze_2026-10-05_190911_10_technical_report_SudhirSharma.log
+2026-10-05 19:09:17 | INFO |   T1 documents_v2/report/tables/hypotheses.csv  <- scripts/10_technical_report.py
+2026-10-05 19:09:17 | INFO |   T2 documents_v2/report/tables/environment.csv  <- scripts/10_technical_report.py
+2026-10-05 19:09:17 | INFO |   T3 results_v2/tables/main_official_label19.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   T4 results_v2/tables/main_official_label6.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   T5 results_v2/tables/main_official_label2.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   T6 results_v2/tables/split_inflation.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   T7 results_v2/tables/per_class_f1_official.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   T8 results_v2/tables/wilcoxon_trace_moe_vs_baselines_official.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   T9 documents_v2/report/tables/friedman_ranks_official.csv  <- scripts/10_technical_report.py
+2026-10-05 19:09:17 | INFO |  T10 results_v2/tables/noninferiority_binary.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |  T11 results_v2/tables/published_comparison.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |  T12 results_v2/tables/expert_routing.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |  T13 results_v2/tables/expert_by_category_official.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |  T14 results_v2/tables/abstain_official.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |  T15 results_v2/efficiency/efficiency.csv  <- scripts/08_efficiency.py
+2026-10-05 19:09:17 | INFO |   F1 results_v2/figures/confusion_trace_moe_official.png  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   F2 results_v2/figures/critical_difference_official.png  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   F3 results_v2/figures/expert_by_category_official.png  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   F4 results_v2/figures/per_class_f1_official.png  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   F5 results_v2/figures/risk_coverage.png  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   F6 results_v2/figures/split_inflation.png  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |   F7 results_v2/figures/val_curves_official.png  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO |  T16 documents_v2/report/tables/log_summary.csv  <- scripts/10_technical_report.py
+2026-10-05 19:09:17 | INFO |  T17 documents_v2/report/tables/runs_per_experiment.csv  <- scripts/10_technical_report.py
+2026-10-05 19:09:17 | INFO |  T18 results_v2/tables/all_runs_long.csv  <- scripts/09_compare.py
+2026-10-05 19:09:17 | INFO | Technical report: D:\Sharda University\CICIoMT2024\trace-iomt\documents_v2\report\technical_report.docx (25 items, manifest.json)

@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Test results on CICIoMT2024 (label6, official split), mean ± std over seeds (%)}
+\label{tab:main_official_label6}
+\begin{tabular}{lcccccccccc}
+\toprule
+model & family & n\_seeds & macro\_f1 & balanced\_accuracy & weighted\_f1 & macro\_pr\_auc & min\_class\_recall & ece & source\_runs & source\_git\_commits \\
+\midrule
+bilstm\_dnn & deep & 5 & 84.48 $\pm$ 0.27 & 90.76 $\pm$ 0.25 & 99.32 $\pm$ 0.03 & 84.91 $\pm$ 0.49 & 71.54 $\pm$ 0.70 & 0.58 $\pm$ 0.03 & bilstm\_dnn\_official\_T16\_seed42|bilstm\_dnn\_official\_T16\_seed43|bilstm\_dnn\_official\_T16\_seed44|bilstm\_dnn\_official\_T16\_seed45|bilstm\_dnn\_official\_T16\_seed46 & no-git \\
+tfsage\_lite & deep & 5 & 87.33 $\pm$ 0.51 & 95.20 $\pm$ 0.28 & 99.61 $\pm$ 0.05 & 86.23 $\pm$ 1.22 & \textbf{86.67 $\pm$ 0.48} & 0.44 $\pm$ 0.05 & tfsage\_lite\_official\_T16\_seed42|tfsage\_lite\_official\_T16\_seed43|tfsage\_lite\_official\_T16\_seed44|tfsage\_lite\_official\_T16\_seed45|tfsage\_lite\_official\_T16\_seed46 & no-git \\
+rf & classical & 5 & 88.05 $\pm$ 0.21 & 87.87 $\pm$ 0.14 & 99.63 $\pm$ 0.02 & 90.46 $\pm$ 0.09 & 46.66 $\pm$ 0.50 & \textbf{1.58 $\pm$ 0.23} & rf\_official\_T1\_seed42|rf\_official\_T1\_seed43|rf\_official\_T1\_seed44|rf\_official\_T1\_seed45|rf\_official\_T1\_seed46 & no-git \\
+transformer & deep & 5 & 89.20 $\pm$ 1.49 & 95.09 $\pm$ 0.95 & 99.66 $\pm$ 0.06 & 90.51 $\pm$ 2.47 & 83.01 $\pm$ 7.12 & 0.15 $\pm$ 0.06 & transformer\_official\_T16\_seed42|transformer\_official\_T16\_seed43|transformer\_official\_T16\_seed44|transformer\_official\_T16\_seed45|transformer\_official\_T16\_seed46 & no-git \\
+trace\_moe & deep & 5 & \textbf{91.31 $\pm$ 1.68} & \textbf{95.26 $\pm$ 0.77} & \textbf{99.79 $\pm$ 0.04} & \textbf{93.65 $\pm$ 1.67} & 80.29 $\pm$ 3.71 & 0.17 $\pm$ 0.04 & trace\_moe\_official\_T16\_seed42|trace\_moe\_official\_T16\_seed43|trace\_moe\_official\_T16\_seed44|trace\_moe\_official\_T16\_seed45|trace\_moe\_official\_T16\_seed46 & no-git \\
+\bottomrule
+\end{tabular}
+\end{table}

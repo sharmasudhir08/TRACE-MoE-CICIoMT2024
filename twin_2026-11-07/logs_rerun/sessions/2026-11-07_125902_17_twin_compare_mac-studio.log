@@ -1,0 +1,22 @@
+2026-11-07 12:59:04 | INFO | --- 17_twin_compare.py | config configs/twin.yaml | overrides []
+2026-11-07 12:59:04 | INFO | Session 2026-11-07_125902 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-11-07_125902_17_twin_compare_mac-studio.log
+2026-11-07 12:59:16 | INFO | 26 twin runs: V0 x5, V3 x5, V4 x5, rf x5, V1 x3, V2 x3
+2026-11-07 12:59:16 | INFO | 
+                       name variant  n_seeds  macro_f1_19 min_recall_19   macro_f1_6 macro_f1_2_tuned         aurc   aurc_delta  delta_auroc  consistency
+                    No-Twin      V0        5 66.95 ± 1.65   8.18 ± 1.40 77.77 ± 1.69     94.25 ± 1.09 12.10 ± 0.98           --           -- 98.32 ± 0.28
+    Device-agnostic profile      V1        3 67.53 ± 0.35   9.73 ± 0.78 77.75 ± 1.84     96.65 ± 0.43 13.88 ± 0.66 23.99 ± 0.16 64.95 ± 0.12 98.60 ± 0.06
+            Twin-Δ (static)      V2        3 63.88 ± 1.79  11.17 ± 4.34 76.00 ± 1.30     96.67 ± 0.45 18.95 ± 2.85 23.72 ± 1.75 88.19 ± 0.01 98.36 ± 0.15
+      Twin-Δ+State (static)      V3        5 62.73 ± 1.21  13.23 ± 1.44 74.19 ± 1.51     95.65 ± 0.69 19.35 ± 0.91 27.57 ± 2.63 86.74 ± 0.13 97.45 ± 0.27
+Twin-Δ+State (synchronised)      V4        5 62.59 ± 1.27  12.97 ± 1.61 74.07 ± 1.61     95.77 ± 0.87 19.39 ± 0.92 27.74 ± 2.71 84.65 ± 0.68 97.45 ± 0.28
+              Random forest      rf        5 51.29 ± 0.36   8.01 ± 0.32 61.50 ± 0.45     78.52 ± 0.36 22.90 ± 1.43           --           -- 98.25 ± 0.04
+2026-11-07 13:00:49 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 717, 'val_windows_also_in_train_removed': 42, 'test_windows_also_in_train_removed': 408}
+2026-11-07 13:00:49 | INFO | Windows (official, T=16): train=1,164,389, val=102,518, test=2,974,706
+2026-11-07 13:02:13 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 626, 'val_windows_also_in_train_removed': 396, 'test_windows_also_in_train_removed': 477}
+2026-11-07 13:02:13 | INFO | Windows (official, T=16): train=1,164,480, val=102,164, test=2,974,637
+2026-11-07 13:03:38 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2115, 'val_windows_also_in_train_removed': 24, 'test_windows_also_in_train_removed': 412}
+2026-11-07 13:03:38 | INFO | Windows (official, T=16): train=1,162,991, val=102,536, test=2,974,702
+2026-11-07 13:05:02 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 634, 'val_windows_also_in_train_removed': 30, 'test_windows_also_in_train_removed': 392}
+2026-11-07 13:05:02 | INFO | Windows (official, T=16): train=1,164,472, val=102,530, test=2,974,722
+2026-11-07 13:06:27 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 709, 'val_windows_also_in_train_removed': 28, 'test_windows_also_in_train_removed': 389}
+2026-11-07 13:06:27 | INFO | Windows (official, T=16): train=1,164,397, val=102,532, test=2,974,725
+2026-11-07 13:07:29 | INFO | H11: not supported | V4 - V0 -4.36 points, t-interval [-7.14, -1.59], file bootstrap [-7.52, -0.5]

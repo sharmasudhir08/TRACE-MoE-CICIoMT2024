@@ -1,0 +1,5 @@
+surrogate,bilstm_dnn,rf,tfsage_lite,trace_moe,transformer
+bilstm_dnn,0.1083,0.1073,0.0488,0.0594,0.0574
+tfsage_lite,0.0954,0.1098,0.0712,0.063,0.0627
+trace_moe,0.0936,0.1106,0.0501,0.0789,0.0607
+transformer,0.0934,0.1099,0.0513,0.0626,0.0873

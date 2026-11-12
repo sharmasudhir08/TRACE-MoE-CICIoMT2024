@@ -1,0 +1,28 @@
+# Twin study (H11; TWIN_PROTOCOL.md §6-7, added 2026-11-05): every model is trained on the device rows of
+# scripts/14_pcap_extract.py --mode device --all-hosts. Same training settings as the re-run (rerun.yaml);
+# results go to results_rerun/twin/ and never mix with the official-CSV runs in results_rerun/main/.
+base: rerun.yaml
+
+twin:
+  rows_dir: data/processed/twin/device
+  devices: configs/twin_devices.json
+  labels: file              # file = label of the capture (as the official CSVs); attacker = the (b) check
+  cap: 50000                # max consecutive rows per (capture, device)
+  min_support: 200          # rows a profile needs, else it falls back state -> device -> fleet
+  shrinkage: 50             # prior strength (rows) of the shrinkage toward the fleet profile
+  mlp_hidden: 64            # width of φ, the MLP that maps the twin context into the encoder output
+  # V3 is trained on 5 seeds because V4 (synchronised) re-uses the V3 models: same weights, the twin is
+  # then updated on the test stream. So V3 static and V4 are compared on the same 5 trained models.
+  seeds:
+    V0: [42, 43, 44, 45, 46]
+    V1: [42, 43, 44]
+    V2: [42, 43, 44]
+    V3: [42, 43, 44, 45, 46]
+    V4: [42, 43, 44, 45, 46]
+    rf: [42, 43, 44, 45, 46]
+  tune_seed: 42             # η, δ and the budget are chosen on validation of the V3 model of this seed
+  sync_grid:
+    eta: [0.001, 0.01, 0.05]
+    delta: [3, 5, 8]
+    budget: [10, 60]
+  stream_batch: 1024        # windows per chunk of the synchronised stream

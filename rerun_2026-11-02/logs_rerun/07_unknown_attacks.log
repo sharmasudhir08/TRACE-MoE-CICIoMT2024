@@ -1,0 +1,861 @@
+2026-10-30 23:54:47 | INFO | --- 07_unknown_attacks.py | config configs/rerun.yaml | overrides ['train.device=mps']
+2026-10-30 23:54:47 | INFO | Session rerun_B_2026-10-30_235445 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_B_2026-10-30_235445_07_unknown_attacks_mac-studio.log
+2026-10-30 23:54:59 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140714, 'val_windows_also_in_train_removed': 6481, 'test_windows_also_in_train_removed': 20310}
+2026-10-30 23:54:59 | INFO | Windows (loao, T=16): train=618,351, val=60,475, test=1,593,557
+2026-10-30 23:54:59 | INFO | === zero_day/trace_moe_loao_T16_ARP_Spoofing_seed42: 685,041 parameters on mps | started 2026-10-30T23:54:59
+2026-10-30 23:58:53 | INFO | epoch   1 | loss 0.0749 | val macro-F1 2:0.9896 6:0.8193 19:0.8043 | 234.0s
+2026-10-31 00:02:40 | INFO | epoch   2 | loss 0.0318 | val macro-F1 2:0.9898 6:0.8218 19:0.8098 | 226.7s
+2026-10-31 00:06:26 | INFO | epoch   3 | loss 0.0268 | val macro-F1 2:0.9885 6:0.8207 19:0.8131 | 226.3s
+2026-10-31 00:10:13 | INFO | epoch   4 | loss 0.0238 | val macro-F1 2:0.9908 6:0.8251 19:0.8167 | 226.4s
+2026-10-31 00:13:59 | INFO | epoch   5 | loss 0.0222 | val macro-F1 2:0.9910 6:0.8263 19:0.8228 | 226.5s
+2026-10-31 00:17:47 | INFO | epoch   6 | loss 0.0209 | val macro-F1 2:0.9918 6:0.8225 19:0.8089 | 228.2s
+2026-10-31 00:21:35 | INFO | epoch   7 | loss 0.0200 | val macro-F1 2:0.9883 6:0.8214 19:0.8345 | 227.9s
+2026-10-31 00:25:23 | INFO | epoch   8 | loss 0.0192 | val macro-F1 2:0.9904 6:0.8252 19:0.8127 | 227.4s
+2026-10-31 00:29:05 | INFO | epoch   9 | loss 0.0187 | val macro-F1 2:0.9898 6:0.8233 19:0.8263 | 222.6s
+2026-10-31 00:32:51 | INFO | epoch  10 | loss 0.0185 | val macro-F1 2:0.9893 6:0.8249 19:0.8189 | 225.2s
+2026-10-31 00:36:38 | INFO | epoch  11 | loss 0.0181 | val macro-F1 2:0.9892 6:0.8269 19:0.8403 | 227.4s
+2026-10-31 00:40:23 | INFO | epoch  12 | loss 0.0178 | val macro-F1 2:0.9901 6:0.8266 19:0.8466 | 225.5s
+2026-10-31 00:44:05 | INFO | epoch  13 | loss 0.0173 | val macro-F1 2:0.9898 6:0.8266 19:0.8383 | 221.1s
+2026-10-31 00:47:58 | INFO | epoch  14 | loss 0.0174 | val macro-F1 2:0.9922 6:0.8261 19:0.8488 | 233.2s
+2026-10-31 00:53:16 | INFO | epoch  15 | loss 0.0168 | val macro-F1 2:0.9922 6:0.8250 19:0.8338 | 318.1s
+2026-10-31 00:58:35 | INFO | epoch  16 | loss 0.0165 | val macro-F1 2:0.9913 6:0.8262 19:0.8387 | 319.1s
+2026-10-31 01:03:53 | INFO | epoch  17 | loss 0.0167 | val macro-F1 2:0.9907 6:0.8258 19:0.8173 | 317.7s
+2026-10-31 01:09:09 | INFO | epoch  18 | loss 0.0163 | val macro-F1 2:0.9921 6:0.8267 19:0.8171 | 316.4s
+2026-10-31 01:14:26 | INFO | epoch  19 | loss 0.0159 | val macro-F1 2:0.9924 6:0.8267 19:0.8217 | 316.6s
+2026-10-31 01:19:42 | INFO | epoch  20 | loss 0.0157 | val macro-F1 2:0.9924 6:0.8268 19:0.8329 | 316.4s
+2026-10-31 01:24:59 | INFO | epoch  21 | loss 0.0160 | val macro-F1 2:0.9896 6:0.8246 19:0.8293 | 316.9s
+2026-10-31 01:30:14 | INFO | epoch  22 | loss 0.0154 | val macro-F1 2:0.9921 6:0.8276 19:0.8238 | 315.4s
+2026-10-31 01:35:30 | INFO | epoch  23 | loss 0.0154 | val macro-F1 2:0.9922 6:0.8260 19:0.8164 | 315.2s
+2026-10-31 01:40:44 | INFO | epoch  24 | loss 0.0152 | val macro-F1 2:0.9931 6:0.8279 19:0.8276 | 314.9s
+2026-10-31 01:40:44 | INFO | Early stopping at epoch 24 (best val macro-F1 0.8488)
+2026-10-31 01:41:35 | INFO | test macro-F1  2:0.9813  6:0.8197  19:0.7853  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_ARP_Spoofing_seed42
+2026-10-31 01:42:18 | INFO | [zero-day] trace_moe without ARP_Spoofing seed 42: energy AUROC 0.9838 vs softmax 0.9829; flagged unknown 0.965, caught at all 0.994
+2026-10-31 01:42:18 | INFO | === zero_day/transformer_loao_T16_ARP_Spoofing_seed42: 308,251 parameters on mps | started 2026-10-31T01:42:18
+2026-10-31 01:43:44 | INFO | epoch   1 | loss 0.0713 | val macro-F1 2:0.9888 6:0.8097 19:0.7954 | 86.7s
+2026-10-31 01:45:10 | INFO | epoch   2 | loss 0.0298 | val macro-F1 2:0.9864 6:0.8139 19:0.8040 | 85.6s
+2026-10-31 01:46:36 | INFO | epoch   3 | loss 0.0211 | val macro-F1 2:0.9884 6:0.8211 19:0.8110 | 85.7s
+2026-10-31 01:48:01 | INFO | epoch   4 | loss 0.0174 | val macro-F1 2:0.9895 6:0.8235 19:0.8252 | 85.7s
+2026-10-31 01:49:27 | INFO | epoch   5 | loss 0.0155 | val macro-F1 2:0.9907 6:0.8242 19:0.7915 | 85.4s
+2026-10-31 01:50:52 | INFO | epoch   6 | loss 0.0139 | val macro-F1 2:0.9875 6:0.8246 19:0.8241 | 85.5s
+2026-10-31 01:52:18 | INFO | epoch   7 | loss 0.0124 | val macro-F1 2:0.9908 6:0.8237 19:0.8249 | 85.4s
+2026-10-31 01:53:43 | INFO | epoch   8 | loss 0.0114 | val macro-F1 2:0.9892 6:0.8245 19:0.8088 | 85.5s
+2026-10-31 01:55:09 | INFO | epoch   9 | loss 0.0106 | val macro-F1 2:0.9901 6:0.8225 19:0.7976 | 85.6s
+2026-10-31 01:56:34 | INFO | epoch  10 | loss 0.0102 | val macro-F1 2:0.9897 6:0.8208 19:0.8014 | 85.4s
+2026-10-31 01:58:09 | INFO | epoch  11 | loss 0.0092 | val macro-F1 2:0.9888 6:0.8235 19:0.8097 | 94.4s
+2026-10-31 01:59:48 | INFO | epoch  12 | loss 0.0090 | val macro-F1 2:0.9918 6:0.8219 19:0.8172 | 99.4s
+2026-10-31 02:01:20 | INFO | epoch  13 | loss 0.0084 | val macro-F1 2:0.9895 6:0.8215 19:0.8054 | 92.1s
+2026-10-31 02:02:49 | INFO | epoch  14 | loss 0.0081 | val macro-F1 2:0.9902 6:0.8238 19:0.8051 | 88.9s
+2026-10-31 02:02:49 | INFO | Early stopping at epoch 14 (best val macro-F1 0.8252)
+2026-10-31 02:03:18 | INFO | test macro-F1  2:0.9765  6:0.8186  19:0.7758  -> <repo>/results_rerun/zero_day/transformer_loao_T16_ARP_Spoofing_seed42
+2026-10-31 02:03:35 | INFO | [zero-day] transformer without ARP_Spoofing seed 42: energy AUROC 0.9821 vs softmax 0.9683; flagged unknown 0.974, caught at all 0.998
+2026-10-31 02:03:35 | INFO | === zero_day/bilstm_dnn_loao_T16_ARP_Spoofing_seed42: 70,811 parameters on mps | started 2026-10-31T02:03:35
+2026-10-31 02:04:43 | INFO | epoch   1 | loss 0.6315 | val macro-F1 2:0.9736 6:0.6567 19:0.5609 | 68.0s
+2026-10-31 02:05:48 | INFO | epoch   2 | loss 0.1897 | val macro-F1 2:0.9801 6:0.7767 19:0.6440 | 64.5s
+2026-10-31 02:06:52 | INFO | epoch   3 | loss 0.1509 | val macro-F1 2:0.9819 6:0.7668 19:0.6685 | 64.2s
+2026-10-31 02:07:55 | INFO | epoch   4 | loss 0.1332 | val macro-F1 2:0.9815 6:0.7757 19:0.6729 | 63.0s
+2026-10-31 02:08:57 | INFO | epoch   5 | loss 0.1212 | val macro-F1 2:0.9815 6:0.7764 19:0.6843 | 62.7s
+2026-10-31 02:09:59 | INFO | epoch   6 | loss 0.1121 | val macro-F1 2:0.9748 6:0.7794 19:0.6868 | 62.0s
+2026-10-31 02:11:01 | INFO | epoch   7 | loss 0.1053 | val macro-F1 2:0.9740 6:0.7688 19:0.6797 | 62.0s
+2026-10-31 02:12:03 | INFO | epoch   8 | loss 0.1014 | val macro-F1 2:0.9802 6:0.7899 19:0.6910 | 61.3s
+2026-10-31 02:13:04 | INFO | epoch   9 | loss 0.0971 | val macro-F1 2:0.9767 6:0.7613 19:0.6853 | 61.7s
+2026-10-31 02:14:05 | INFO | epoch  10 | loss 0.0936 | val macro-F1 2:0.9736 6:0.7710 19:0.6946 | 60.8s
+2026-10-31 02:15:06 | INFO | epoch  11 | loss 0.0899 | val macro-F1 2:0.9793 6:0.7699 19:0.6956 | 61.1s
+2026-10-31 02:16:07 | INFO | epoch  12 | loss 0.0876 | val macro-F1 2:0.9737 6:0.7868 19:0.6926 | 60.5s
+2026-10-31 02:17:07 | INFO | epoch  13 | loss 0.0858 | val macro-F1 2:0.9741 6:0.7733 19:0.6942 | 60.5s
+2026-10-31 02:18:07 | INFO | epoch  14 | loss 0.0833 | val macro-F1 2:0.9749 6:0.7715 19:0.7000 | 59.7s
+2026-10-31 02:19:07 | INFO | epoch  15 | loss 0.0809 | val macro-F1 2:0.9748 6:0.7892 19:0.7014 | 59.9s
+2026-10-31 02:20:06 | INFO | epoch  16 | loss 0.0791 | val macro-F1 2:0.9809 6:0.7770 19:0.6990 | 59.4s
+2026-10-31 02:21:06 | INFO | epoch  17 | loss 0.0773 | val macro-F1 2:0.9825 6:0.7944 19:0.7076 | 59.9s
+2026-10-31 02:22:06 | INFO | epoch  18 | loss 0.0763 | val macro-F1 2:0.9736 6:0.7865 19:0.7070 | 59.4s
+2026-10-31 02:23:05 | INFO | epoch  19 | loss 0.0744 | val macro-F1 2:0.9762 6:0.7896 19:0.7059 | 59.6s
+2026-10-31 02:24:04 | INFO | epoch  20 | loss 0.0726 | val macro-F1 2:0.9800 6:0.7906 19:0.7043 | 59.2s
+2026-10-31 02:25:04 | INFO | epoch  21 | loss 0.0704 | val macro-F1 2:0.9809 6:0.7910 19:0.7055 | 59.3s
+2026-10-31 02:26:03 | INFO | epoch  22 | loss 0.0694 | val macro-F1 2:0.9813 6:0.7841 19:0.7053 | 59.2s
+2026-10-31 02:27:03 | INFO | epoch  23 | loss 0.0686 | val macro-F1 2:0.9775 6:0.7993 19:0.7054 | 59.7s
+2026-10-31 02:28:02 | INFO | epoch  24 | loss 0.0672 | val macro-F1 2:0.9799 6:0.7939 19:0.7057 | 59.1s
+2026-10-31 02:29:01 | INFO | epoch  25 | loss 0.0659 | val macro-F1 2:0.9766 6:0.7981 19:0.7092 | 59.2s
+2026-10-31 02:30:00 | INFO | epoch  26 | loss 0.0651 | val macro-F1 2:0.9738 6:0.7936 19:0.7048 | 59.2s
+2026-10-31 02:30:59 | INFO | epoch  27 | loss 0.0642 | val macro-F1 2:0.9743 6:0.7929 19:0.7051 | 59.4s
+2026-10-31 02:32:02 | INFO | epoch  28 | loss 0.0621 | val macro-F1 2:0.9803 6:0.8016 19:0.7071 | 63.0s
+2026-10-31 02:33:04 | INFO | epoch  29 | loss 0.0621 | val macro-F1 2:0.9772 6:0.7977 19:0.7073 | 61.1s
+2026-10-31 02:34:05 | INFO | epoch  30 | loss 0.0607 | val macro-F1 2:0.9809 6:0.7989 19:0.7120 | 61.0s
+2026-10-31 02:35:06 | INFO | epoch  31 | loss 0.0601 | val macro-F1 2:0.9743 6:0.7978 19:0.7099 | 61.2s
+2026-10-31 02:36:07 | INFO | epoch  32 | loss 0.0591 | val macro-F1 2:0.9752 6:0.7954 19:0.7095 | 60.7s
+2026-10-31 02:37:08 | INFO | epoch  33 | loss 0.0580 | val macro-F1 2:0.9751 6:0.8022 19:0.7111 | 61.0s
+2026-10-31 02:38:08 | INFO | epoch  34 | loss 0.0574 | val macro-F1 2:0.9739 6:0.8012 19:0.7097 | 60.7s
+2026-10-31 02:39:09 | INFO | epoch  35 | loss 0.0562 | val macro-F1 2:0.9731 6:0.7999 19:0.7117 | 60.9s
+2026-10-31 02:40:10 | INFO | epoch  36 | loss 0.0556 | val macro-F1 2:0.9738 6:0.8011 19:0.7110 | 60.8s
+2026-10-31 02:41:11 | INFO | epoch  37 | loss 0.0549 | val macro-F1 2:0.9748 6:0.8022 19:0.7097 | 61.0s
+2026-10-31 02:42:12 | INFO | epoch  38 | loss 0.0546 | val macro-F1 2:0.9745 6:0.8001 19:0.7103 | 61.2s
+2026-10-31 02:43:14 | INFO | epoch  39 | loss 0.0539 | val macro-F1 2:0.9754 6:0.8025 19:0.7117 | 61.5s
+2026-10-31 02:44:15 | INFO | epoch  40 | loss 0.0528 | val macro-F1 2:0.9746 6:0.8025 19:0.7110 | 61.1s
+2026-10-31 02:44:15 | INFO | Early stopping at epoch 40 (best val macro-F1 0.7120)
+2026-10-31 02:44:36 | INFO | test macro-F1  2:0.9561  6:0.7813  19:0.6988  -> <repo>/results_rerun/zero_day/bilstm_dnn_loao_T16_ARP_Spoofing_seed42
+2026-10-31 02:44:49 | INFO | [zero-day] bilstm_dnn without ARP_Spoofing seed 42: energy AUROC 0.8437 vs softmax 0.9665; flagged unknown 0.641, caught at all 0.902
+2026-10-31 02:44:57 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140703, 'val_windows_also_in_train_removed': 6438, 'test_windows_also_in_train_removed': 20481}
+2026-10-31 02:44:57 | INFO | Windows (loao, T=16): train=619,837, val=60,648, test=1,593,386
+2026-10-31 02:44:58 | INFO | === zero_day/trace_moe_loao_T16_Recon-VulScan_seed42: 685,041 parameters on mps | started 2026-10-31T02:44:58
+2026-10-31 02:49:13 | INFO | epoch   1 | loss 0.0851 | val macro-F1 2:0.9906 6:0.9196 19:0.7797 | 255.6s
+2026-10-31 02:53:28 | INFO | epoch   2 | loss 0.0375 | val macro-F1 2:0.9912 6:0.9352 19:0.7905 | 254.6s
+2026-10-31 02:57:43 | INFO | epoch   3 | loss 0.0297 | val macro-F1 2:0.9905 6:0.9565 19:0.7969 | 255.0s
+2026-10-31 03:01:56 | INFO | epoch   4 | loss 0.0254 | val macro-F1 2:0.9892 6:0.9241 19:0.7896 | 253.4s
+2026-10-31 03:06:10 | INFO | epoch   5 | loss 0.0225 | val macro-F1 2:0.9894 6:0.9315 19:0.7962 | 254.2s
+2026-10-31 03:10:24 | INFO | epoch   6 | loss 0.0208 | val macro-F1 2:0.9858 6:0.9575 19:0.8041 | 253.1s
+2026-10-31 03:14:37 | INFO | epoch   7 | loss 0.0192 | val macro-F1 2:0.9905 6:0.9608 19:0.7918 | 253.7s
+2026-10-31 03:18:50 | INFO | epoch   8 | loss 0.0182 | val macro-F1 2:0.9904 6:0.9673 19:0.8371 | 253.1s
+2026-10-31 03:23:01 | INFO | epoch   9 | loss 0.0169 | val macro-F1 2:0.9900 6:0.9640 19:0.8115 | 250.3s
+2026-10-31 03:27:09 | INFO | epoch  10 | loss 0.0162 | val macro-F1 2:0.9907 6:0.9616 19:0.8089 | 248.0s
+2026-10-31 03:31:17 | INFO | epoch  11 | loss 0.0156 | val macro-F1 2:0.9904 6:0.9620 19:0.8107 | 248.1s
+2026-10-31 03:35:24 | INFO | epoch  12 | loss 0.0153 | val macro-F1 2:0.9895 6:0.9548 19:0.8027 | 247.5s
+2026-10-31 03:39:31 | INFO | epoch  13 | loss 0.0151 | val macro-F1 2:0.9892 6:0.9570 19:0.8096 | 247.2s
+2026-10-31 03:43:39 | INFO | epoch  14 | loss 0.0149 | val macro-F1 2:0.9878 6:0.9584 19:0.8090 | 247.1s
+2026-10-31 03:47:46 | INFO | epoch  15 | loss 0.0146 | val macro-F1 2:0.9911 6:0.9666 19:0.8095 | 247.2s
+2026-10-31 03:51:54 | INFO | epoch  16 | loss 0.0142 | val macro-F1 2:0.9896 6:0.9636 19:0.8108 | 247.8s
+2026-10-31 03:56:00 | INFO | epoch  17 | loss 0.0137 | val macro-F1 2:0.9881 6:0.9669 19:0.8129 | 246.3s
+2026-10-31 04:00:06 | INFO | epoch  18 | loss 0.0133 | val macro-F1 2:0.9897 6:0.9665 19:0.8108 | 245.9s
+2026-10-31 04:00:06 | INFO | Early stopping at epoch 18 (best val macro-F1 0.8371)
+2026-10-31 04:00:47 | INFO | test macro-F1  2:0.9766  6:0.8842  19:0.7947  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_Recon-VulScan_seed42
+2026-10-31 04:01:19 | INFO | [zero-day] trace_moe without Recon-VulScan seed 42: energy AUROC 0.9796 vs softmax 0.9784; flagged unknown 0.887, caught at all 1.000
+2026-10-31 04:01:19 | INFO | === zero_day/transformer_loao_T16_Recon-VulScan_seed42: 308,251 parameters on mps | started 2026-10-31T04:01:19
+2026-10-31 04:02:39 | INFO | epoch   1 | loss 0.0844 | val macro-F1 2:0.9834 6:0.8280 19:0.7729 | 79.2s
+2026-10-31 04:03:59 | INFO | epoch   2 | loss 0.0368 | val macro-F1 2:0.9819 6:0.8843 19:0.7954 | 80.5s
+2026-10-31 04:05:19 | INFO | epoch   3 | loss 0.0282 | val macro-F1 2:0.9868 6:0.9202 19:0.7899 | 80.2s
+2026-10-31 04:06:40 | INFO | epoch   4 | loss 0.0232 | val macro-F1 2:0.9920 6:0.9236 19:0.7891 | 80.6s
+2026-10-31 04:08:01 | INFO | epoch   5 | loss 0.0207 | val macro-F1 2:0.9901 6:0.9354 19:0.8071 | 80.6s
+2026-10-31 04:09:21 | INFO | epoch   6 | loss 0.0181 | val macro-F1 2:0.9849 6:0.9179 19:0.7883 | 80.2s
+2026-10-31 04:10:41 | INFO | epoch   7 | loss 0.0164 | val macro-F1 2:0.9856 6:0.9461 19:0.7899 | 80.4s
+2026-10-31 04:12:01 | INFO | epoch   8 | loss 0.0143 | val macro-F1 2:0.9864 6:0.9352 19:0.7914 | 79.8s
+2026-10-31 04:13:21 | INFO | epoch   9 | loss 0.0131 | val macro-F1 2:0.9899 6:0.9609 19:0.8009 | 80.4s
+2026-10-31 04:14:42 | INFO | epoch  10 | loss 0.0123 | val macro-F1 2:0.9854 6:0.9424 19:0.7966 | 80.3s
+2026-10-31 04:16:02 | INFO | epoch  11 | loss 0.0111 | val macro-F1 2:0.9895 6:0.9484 19:0.8010 | 80.0s
+2026-10-31 04:17:22 | INFO | epoch  12 | loss 0.0099 | val macro-F1 2:0.9885 6:0.9432 19:0.7933 | 80.0s
+2026-10-31 04:18:42 | INFO | epoch  13 | loss 0.0097 | val macro-F1 2:0.9888 6:0.9572 19:0.8010 | 80.3s
+2026-10-31 04:20:02 | INFO | epoch  14 | loss 0.0088 | val macro-F1 2:0.9883 6:0.9424 19:0.7951 | 80.2s
+2026-10-31 04:21:22 | INFO | epoch  15 | loss 0.0081 | val macro-F1 2:0.9906 6:0.9554 19:0.8042 | 80.0s
+2026-10-31 04:21:22 | INFO | Early stopping at epoch 15 (best val macro-F1 0.8071)
+2026-10-31 04:21:45 | INFO | test macro-F1  2:0.9620  6:0.8578  19:0.7624  -> <repo>/results_rerun/zero_day/transformer_loao_T16_Recon-VulScan_seed42
+2026-10-31 04:21:58 | INFO | [zero-day] transformer without Recon-VulScan seed 42: energy AUROC 0.9771 vs softmax 0.9578; flagged unknown 0.889, caught at all 0.997
+2026-10-31 04:21:58 | INFO | === zero_day/bilstm_dnn_loao_T16_Recon-VulScan_seed42: 70,811 parameters on mps | started 2026-10-31T04:21:58
+2026-10-31 04:22:59 | INFO | epoch   1 | loss 0.6569 | val macro-F1 2:0.9670 6:0.7142 19:0.6220 | 61.1s
+2026-10-31 04:23:59 | INFO | epoch   2 | loss 0.2401 | val macro-F1 2:0.9707 6:0.7788 19:0.6651 | 59.8s
+2026-10-31 04:24:59 | INFO | epoch   3 | loss 0.1873 | val macro-F1 2:0.9705 6:0.8058 19:0.6935 | 60.1s
+2026-10-31 04:25:59 | INFO | epoch   4 | loss 0.1649 | val macro-F1 2:0.9766 6:0.8248 19:0.6964 | 60.0s
+2026-10-31 04:27:02 | INFO | epoch   5 | loss 0.1490 | val macro-F1 2:0.9744 6:0.8208 19:0.7009 | 63.2s
+2026-10-31 04:27:59 | INFO | epoch   6 | loss 0.1375 | val macro-F1 2:0.9794 6:0.8299 19:0.6987 | 56.7s
+2026-10-31 04:28:55 | INFO | epoch   7 | loss 0.1291 | val macro-F1 2:0.9769 6:0.8224 19:0.7045 | 56.2s
+2026-10-31 04:29:50 | INFO | epoch   8 | loss 0.1214 | val macro-F1 2:0.9822 6:0.8424 19:0.7101 | 55.5s
+2026-10-31 04:30:45 | INFO | epoch   9 | loss 0.1156 | val macro-F1 2:0.9782 6:0.8317 19:0.7110 | 54.6s
+2026-10-31 04:31:40 | INFO | epoch  10 | loss 0.1108 | val macro-F1 2:0.9785 6:0.8323 19:0.7187 | 55.2s
+2026-10-31 04:32:35 | INFO | epoch  11 | loss 0.1059 | val macro-F1 2:0.9775 6:0.8546 19:0.7175 | 55.3s
+2026-10-31 04:33:31 | INFO | epoch  12 | loss 0.1021 | val macro-F1 2:0.9779 6:0.8516 19:0.7236 | 55.4s
+2026-10-31 04:34:26 | INFO | epoch  13 | loss 0.0982 | val macro-F1 2:0.9785 6:0.8320 19:0.7168 | 54.9s
+2026-10-31 04:35:21 | INFO | epoch  14 | loss 0.0956 | val macro-F1 2:0.9812 6:0.8457 19:0.7273 | 55.3s
+2026-10-31 04:36:17 | INFO | epoch  15 | loss 0.0933 | val macro-F1 2:0.9810 6:0.8391 19:0.7266 | 55.6s
+2026-10-31 04:37:12 | INFO | epoch  16 | loss 0.0904 | val macro-F1 2:0.9781 6:0.8604 19:0.7240 | 55.6s
+2026-10-31 04:38:07 | INFO | epoch  17 | loss 0.0872 | val macro-F1 2:0.9800 6:0.8565 19:0.7239 | 55.0s
+2026-10-31 04:39:02 | INFO | epoch  18 | loss 0.0855 | val macro-F1 2:0.9832 6:0.8633 19:0.7307 | 55.1s
+2026-10-31 04:39:58 | INFO | epoch  19 | loss 0.0830 | val macro-F1 2:0.9788 6:0.8666 19:0.7281 | 55.7s
+2026-10-31 04:40:58 | INFO | epoch  20 | loss 0.0814 | val macro-F1 2:0.9798 6:0.8621 19:0.7270 | 59.8s
+2026-10-31 04:41:53 | INFO | epoch  21 | loss 0.0787 | val macro-F1 2:0.9818 6:0.8644 19:0.7309 | 55.2s
+2026-10-31 04:42:49 | INFO | epoch  22 | loss 0.0765 | val macro-F1 2:0.9762 6:0.8739 19:0.7325 | 55.5s
+2026-10-31 04:43:44 | INFO | epoch  23 | loss 0.0748 | val macro-F1 2:0.9828 6:0.8783 19:0.7320 | 55.7s
+2026-10-31 04:44:39 | INFO | epoch  24 | loss 0.0736 | val macro-F1 2:0.9803 6:0.8711 19:0.7307 | 55.2s
+2026-10-31 04:45:34 | INFO | epoch  25 | loss 0.0720 | val macro-F1 2:0.9837 6:0.8674 19:0.7305 | 54.8s
+2026-10-31 04:46:30 | INFO | epoch  26 | loss 0.0705 | val macro-F1 2:0.9818 6:0.8771 19:0.7346 | 55.3s
+2026-10-31 04:47:25 | INFO | epoch  27 | loss 0.0687 | val macro-F1 2:0.9794 6:0.8779 19:0.7333 | 55.2s
+2026-10-31 04:48:20 | INFO | epoch  28 | loss 0.0686 | val macro-F1 2:0.9798 6:0.8852 19:0.7368 | 55.4s
+2026-10-31 04:49:16 | INFO | epoch  29 | loss 0.0656 | val macro-F1 2:0.9782 6:0.8832 19:0.7357 | 55.5s
+2026-10-31 04:50:11 | INFO | epoch  30 | loss 0.0641 | val macro-F1 2:0.9781 6:0.8817 19:0.7343 | 55.4s
+2026-10-31 04:51:06 | INFO | epoch  31 | loss 0.0635 | val macro-F1 2:0.9776 6:0.8849 19:0.7349 | 55.5s
+2026-10-31 04:52:01 | INFO | epoch  32 | loss 0.0617 | val macro-F1 2:0.9791 6:0.8858 19:0.7365 | 54.8s
+2026-10-31 04:52:57 | INFO | epoch  33 | loss 0.0612 | val macro-F1 2:0.9806 6:0.8858 19:0.7365 | 56.3s
+2026-10-31 04:53:52 | INFO | epoch  34 | loss 0.0594 | val macro-F1 2:0.9812 6:0.8881 19:0.7373 | 54.9s
+2026-10-31 04:54:47 | INFO | epoch  35 | loss 0.0588 | val macro-F1 2:0.9780 6:0.8876 19:0.7372 | 54.9s
+2026-10-31 04:55:42 | INFO | epoch  36 | loss 0.0581 | val macro-F1 2:0.9804 6:0.8887 19:0.7369 | 55.2s
+2026-10-31 04:56:39 | INFO | epoch  37 | loss 0.0567 | val macro-F1 2:0.9796 6:0.8847 19:0.7363 | 56.2s
+2026-10-31 04:57:34 | INFO | epoch  38 | loss 0.0556 | val macro-F1 2:0.9788 6:0.8917 19:0.7387 | 55.6s
+2026-10-31 04:58:29 | INFO | epoch  39 | loss 0.0548 | val macro-F1 2:0.9793 6:0.8965 19:0.7403 | 55.2s
+2026-10-31 04:59:25 | INFO | epoch  40 | loss 0.0538 | val macro-F1 2:0.9774 6:0.8970 19:0.7405 | 55.5s
+2026-10-31 05:00:20 | INFO | epoch  41 | loss 0.0532 | val macro-F1 2:0.9781 6:0.8964 19:0.7398 | 55.1s
+2026-10-31 05:01:17 | INFO | epoch  42 | loss 0.0529 | val macro-F1 2:0.9792 6:0.8936 19:0.7389 | 57.2s
+2026-10-31 05:02:13 | INFO | epoch  43 | loss 0.0523 | val macro-F1 2:0.9801 6:0.9011 19:0.7414 | 56.0s
+2026-10-31 05:03:08 | INFO | epoch  44 | loss 0.0525 | val macro-F1 2:0.9771 6:0.9010 19:0.7416 | 54.7s
+2026-10-31 05:04:03 | INFO | epoch  45 | loss 0.0516 | val macro-F1 2:0.9781 6:0.8985 19:0.7404 | 55.6s
+2026-10-31 05:05:00 | INFO | epoch  46 | loss 0.0514 | val macro-F1 2:0.9771 6:0.9016 19:0.7419 | 56.9s
+2026-10-31 05:05:56 | INFO | epoch  47 | loss 0.0507 | val macro-F1 2:0.9785 6:0.8990 19:0.7409 | 55.7s
+2026-10-31 05:06:51 | INFO | epoch  48 | loss 0.0510 | val macro-F1 2:0.9782 6:0.9001 19:0.7412 | 55.1s
+2026-10-31 05:07:46 | INFO | epoch  49 | loss 0.0511 | val macro-F1 2:0.9778 6:0.9000 19:0.7411 | 54.8s
+2026-10-31 05:08:42 | INFO | epoch  50 | loss 0.0509 | val macro-F1 2:0.9780 6:0.9003 19:0.7413 | 55.8s
+2026-10-31 05:09:01 | INFO | test macro-F1  2:0.9564  6:0.8420  19:0.7205  -> <repo>/results_rerun/zero_day/bilstm_dnn_loao_T16_Recon-VulScan_seed42
+2026-10-31 05:09:13 | INFO | [zero-day] bilstm_dnn without Recon-VulScan seed 42: energy AUROC 0.8816 vs softmax 0.8305; flagged unknown 0.526, caught at all 0.981
+2026-10-31 05:09:21 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140625, 'val_windows_also_in_train_removed': 6451, 'test_windows_also_in_train_removed': 20196}
+2026-10-31 05:09:21 | INFO | Windows (loao, T=16): train=619,600, val=60,607, test=1,593,671
+2026-10-31 05:09:21 | INFO | === zero_day/trace_moe_loao_T16_MQTT-Malformed_Data_seed42: 685,041 parameters on mps | started 2026-10-31T05:09:21
+2026-10-31 05:13:01 | INFO | epoch   1 | loss 0.0987 | val macro-F1 2:0.9931 6:0.9325 19:0.7693 | 219.6s
+2026-10-31 05:16:41 | INFO | epoch   2 | loss 0.0438 | val macro-F1 2:0.9922 6:0.9268 19:0.7674 | 219.8s
+2026-10-31 05:21:50 | INFO | epoch   3 | loss 0.0344 | val macro-F1 2:0.9939 6:0.9420 19:0.7766 | 309.1s
+2026-10-31 05:27:06 | INFO | epoch   4 | loss 0.0295 | val macro-F1 2:0.9904 6:0.9257 19:0.7675 | 316.4s
+2026-10-31 05:32:23 | INFO | epoch   5 | loss 0.0268 | val macro-F1 2:0.9930 6:0.9307 19:0.7707 | 316.8s
+2026-10-31 05:37:38 | INFO | epoch   6 | loss 0.0242 | val macro-F1 2:0.9926 6:0.9636 19:0.7764 | 315.0s
+2026-10-31 05:42:54 | INFO | epoch   7 | loss 0.0228 | val macro-F1 2:0.9939 6:0.9653 19:0.7917 | 315.6s
+2026-10-31 05:48:07 | INFO | epoch   8 | loss 0.0216 | val macro-F1 2:0.9922 6:0.9673 19:0.7786 | 313.1s
+2026-10-31 05:53:19 | INFO | epoch   9 | loss 0.0209 | val macro-F1 2:0.9908 6:0.9537 19:0.7693 | 312.2s
+2026-10-31 05:58:30 | INFO | epoch  10 | loss 0.0201 | val macro-F1 2:0.9923 6:0.9608 19:0.7836 | 311.0s
+2026-10-31 06:03:40 | INFO | epoch  11 | loss 0.0193 | val macro-F1 2:0.9921 6:0.9591 19:0.7773 | 310.3s
+2026-10-31 06:08:53 | INFO | epoch  12 | loss 0.0191 | val macro-F1 2:0.9918 6:0.9606 19:0.7716 | 312.1s
+2026-10-31 06:14:02 | INFO | epoch  13 | loss 0.0182 | val macro-F1 2:0.9919 6:0.9557 19:0.7860 | 309.3s
+2026-10-31 06:19:13 | INFO | epoch  14 | loss 0.0179 | val macro-F1 2:0.9928 6:0.9664 19:0.7796 | 311.1s
+2026-10-31 06:24:23 | INFO | epoch  15 | loss 0.0177 | val macro-F1 2:0.9919 6:0.9661 19:0.7753 | 310.1s
+2026-10-31 06:29:00 | INFO | epoch  16 | loss 0.0174 | val macro-F1 2:0.9890 6:0.9623 19:0.7768 | 276.5s
+2026-10-31 06:33:17 | INFO | epoch  17 | loss 0.0171 | val macro-F1 2:0.9915 6:0.9419 19:0.7709 | 257.0s
+2026-10-31 06:33:17 | INFO | Early stopping at epoch 17 (best val macro-F1 0.7917)
+2026-10-31 06:34:03 | INFO | test macro-F1  2:0.9737  6:0.8777  19:0.7447  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_MQTT-Malformed_Data_seed42
+2026-10-31 06:34:41 | INFO | [zero-day] trace_moe without MQTT-Malformed_Data seed 42: energy AUROC 0.9835 vs softmax 0.9857; flagged unknown 0.920, caught at all 0.999
+2026-10-31 06:34:41 | INFO | === zero_day/transformer_loao_T16_MQTT-Malformed_Data_seed42: 308,251 parameters on mps | started 2026-10-31T06:34:41
+2026-10-31 06:36:00 | INFO | epoch   1 | loss 0.1010 | val macro-F1 2:0.9863 6:0.8866 19:0.7424 | 79.0s
+2026-10-31 06:37:22 | INFO | epoch   2 | loss 0.0458 | val macro-F1 2:0.9920 6:0.9034 19:0.7693 | 81.2s
+2026-10-31 06:38:41 | INFO | epoch   3 | loss 0.0329 | val macro-F1 2:0.9894 6:0.9201 19:0.7729 | 79.8s
+2026-10-31 06:40:01 | INFO | epoch   4 | loss 0.0278 | val macro-F1 2:0.9898 6:0.9200 19:0.7686 | 79.8s
+2026-10-31 06:41:21 | INFO | epoch   5 | loss 0.0245 | val macro-F1 2:0.9915 6:0.9403 19:0.7615 | 80.0s
+2026-10-31 06:42:41 | INFO | epoch   6 | loss 0.0212 | val macro-F1 2:0.9932 6:0.9378 19:0.7784 | 79.9s
+2026-10-31 06:44:01 | INFO | epoch   7 | loss 0.0195 | val macro-F1 2:0.9937 6:0.9386 19:0.7834 | 79.6s
+2026-10-31 06:45:21 | INFO | epoch   8 | loss 0.0174 | val macro-F1 2:0.9917 6:0.9231 19:0.7760 | 79.8s
+2026-10-31 06:46:40 | INFO | epoch   9 | loss 0.0159 | val macro-F1 2:0.9872 6:0.9459 19:0.7691 | 79.7s
+2026-10-31 06:48:00 | INFO | epoch  10 | loss 0.0153 | val macro-F1 2:0.9896 6:0.9477 19:0.7856 | 79.6s
+2026-10-31 06:49:19 | INFO | epoch  11 | loss 0.0136 | val macro-F1 2:0.9906 6:0.9322 19:0.7759 | 79.5s
+2026-10-31 06:50:39 | INFO | epoch  12 | loss 0.0127 | val macro-F1 2:0.9865 6:0.9504 19:0.7825 | 79.5s
+2026-10-31 06:51:58 | INFO | epoch  13 | loss 0.0121 | val macro-F1 2:0.9914 6:0.9555 19:0.7970 | 79.3s
+2026-10-31 06:53:17 | INFO | epoch  14 | loss 0.0118 | val macro-F1 2:0.9868 6:0.9572 19:0.7917 | 79.3s
+2026-10-31 06:54:37 | INFO | epoch  15 | loss 0.0106 | val macro-F1 2:0.9903 6:0.9618 19:0.7893 | 79.2s
+2026-10-31 06:55:56 | INFO | epoch  16 | loss 0.0100 | val macro-F1 2:0.9913 6:0.9451 19:0.7879 | 79.1s
+2026-10-31 06:57:15 | INFO | epoch  17 | loss 0.0100 | val macro-F1 2:0.9921 6:0.9531 19:0.7809 | 79.3s
+2026-10-31 06:58:34 | INFO | epoch  18 | loss 0.0090 | val macro-F1 2:0.9890 6:0.9536 19:0.7773 | 79.2s
+2026-10-31 06:59:53 | INFO | epoch  19 | loss 0.0085 | val macro-F1 2:0.9911 6:0.9543 19:0.7961 | 78.9s
+2026-10-31 07:01:12 | INFO | epoch  20 | loss 0.0080 | val macro-F1 2:0.9907 6:0.9535 19:0.7865 | 79.0s
+2026-10-31 07:02:31 | INFO | epoch  21 | loss 0.0081 | val macro-F1 2:0.9901 6:0.9569 19:0.7923 | 79.0s
+2026-10-31 07:03:50 | INFO | epoch  22 | loss 0.0071 | val macro-F1 2:0.9910 6:0.9442 19:0.7918 | 79.1s
+2026-10-31 07:05:09 | INFO | epoch  23 | loss 0.0073 | val macro-F1 2:0.9894 6:0.9571 19:0.7957 | 78.9s
+2026-10-31 07:05:09 | INFO | Early stopping at epoch 23 (best val macro-F1 0.7970)
+2026-10-31 07:05:32 | INFO | test macro-F1  2:0.9640  6:0.8586  19:0.7432  -> <repo>/results_rerun/zero_day/transformer_loao_T16_MQTT-Malformed_Data_seed42
+2026-10-31 07:05:44 | INFO | [zero-day] transformer without MQTT-Malformed_Data seed 42: energy AUROC 0.9779 vs softmax 0.9732; flagged unknown 0.998, caught at all 1.000
+2026-10-31 07:05:44 | INFO | === zero_day/bilstm_dnn_loao_T16_MQTT-Malformed_Data_seed42: 70,811 parameters on mps | started 2026-10-31T07:05:44
+2026-10-31 07:06:47 | INFO | epoch   1 | loss 0.5962 | val macro-F1 2:0.9781 6:0.7395 19:0.6223 | 62.7s
+2026-10-31 07:07:48 | INFO | epoch   2 | loss 0.2357 | val macro-F1 2:0.9727 6:0.7674 19:0.6395 | 61.1s
+2026-10-31 07:08:49 | INFO | epoch   3 | loss 0.1945 | val macro-F1 2:0.9754 6:0.8298 19:0.6559 | 61.2s
+2026-10-31 07:09:51 | INFO | epoch   4 | loss 0.1763 | val macro-F1 2:0.9784 6:0.8132 19:0.6654 | 61.8s
+2026-10-31 07:10:53 | INFO | epoch   5 | loss 0.1638 | val macro-F1 2:0.9826 6:0.8264 19:0.6760 | 61.7s
+2026-10-31 07:11:55 | INFO | epoch   6 | loss 0.1563 | val macro-F1 2:0.9795 6:0.8359 19:0.6764 | 62.1s
+2026-10-31 07:12:57 | INFO | epoch   7 | loss 0.1522 | val macro-F1 2:0.9860 6:0.8375 19:0.6832 | 62.3s
+2026-10-31 07:13:58 | INFO | epoch   8 | loss 0.1429 | val macro-F1 2:0.9886 6:0.8378 19:0.6858 | 61.2s
+2026-10-31 07:15:00 | INFO | epoch   9 | loss 0.1382 | val macro-F1 2:0.9878 6:0.8417 19:0.6868 | 61.2s
+2026-10-31 07:16:01 | INFO | epoch  10 | loss 0.1342 | val macro-F1 2:0.9851 6:0.8306 19:0.6849 | 61.2s
+2026-10-31 07:17:02 | INFO | epoch  11 | loss 0.1296 | val macro-F1 2:0.9867 6:0.8367 19:0.6833 | 60.9s
+2026-10-31 07:18:03 | INFO | epoch  12 | loss 0.1267 | val macro-F1 2:0.9840 6:0.8409 19:0.6906 | 61.5s
+2026-10-31 07:19:04 | INFO | epoch  13 | loss 0.1235 | val macro-F1 2:0.9833 6:0.8665 19:0.6938 | 61.1s
+2026-10-31 07:20:06 | INFO | epoch  14 | loss 0.1206 | val macro-F1 2:0.9826 6:0.8514 19:0.6916 | 61.5s
+2026-10-31 07:21:07 | INFO | epoch  15 | loss 0.1192 | val macro-F1 2:0.9785 6:0.8498 19:0.6904 | 61.3s
+2026-10-31 07:22:09 | INFO | epoch  16 | loss 0.1162 | val macro-F1 2:0.9838 6:0.8604 19:0.6937 | 61.7s
+2026-10-31 07:23:10 | INFO | epoch  17 | loss 0.1136 | val macro-F1 2:0.9820 6:0.8605 19:0.6932 | 61.4s
+2026-10-31 07:24:11 | INFO | epoch  18 | loss 0.1121 | val macro-F1 2:0.9878 6:0.8600 19:0.6954 | 61.0s
+2026-10-31 07:25:13 | INFO | epoch  19 | loss 0.1102 | val macro-F1 2:0.9841 6:0.8662 19:0.6970 | 61.6s
+2026-10-31 07:26:15 | INFO | epoch  20 | loss 0.1094 | val macro-F1 2:0.9879 6:0.8666 19:0.6970 | 61.9s
+2026-10-31 07:27:17 | INFO | epoch  21 | loss 0.1063 | val macro-F1 2:0.9848 6:0.8782 19:0.7001 | 62.3s
+2026-10-31 07:28:19 | INFO | epoch  22 | loss 0.1045 | val macro-F1 2:0.9824 6:0.8883 19:0.7013 | 61.9s
+2026-10-31 07:29:21 | INFO | epoch  23 | loss 0.1034 | val macro-F1 2:0.9851 6:0.8647 19:0.6982 | 61.7s
+2026-10-31 07:30:22 | INFO | epoch  24 | loss 0.1024 | val macro-F1 2:0.9841 6:0.8811 19:0.7007 | 61.8s
+2026-10-31 07:31:25 | INFO | epoch  25 | loss 0.1007 | val macro-F1 2:0.9844 6:0.8812 19:0.7005 | 62.3s
+2026-10-31 07:32:27 | INFO | epoch  26 | loss 0.0990 | val macro-F1 2:0.9861 6:0.8903 19:0.7030 | 62.0s
+2026-10-31 07:33:28 | INFO | epoch  27 | loss 0.0975 | val macro-F1 2:0.9869 6:0.8844 19:0.7012 | 61.2s
+2026-10-31 07:34:30 | INFO | epoch  28 | loss 0.0956 | val macro-F1 2:0.9862 6:0.8943 19:0.7044 | 61.7s
+2026-10-31 07:35:31 | INFO | epoch  29 | loss 0.0953 | val macro-F1 2:0.9828 6:0.8932 19:0.7054 | 61.5s
+2026-10-31 07:36:34 | INFO | epoch  30 | loss 0.0934 | val macro-F1 2:0.9830 6:0.8980 19:0.7060 | 62.6s
+2026-10-31 07:37:36 | INFO | epoch  31 | loss 0.0926 | val macro-F1 2:0.9822 6:0.8933 19:0.7056 | 62.0s
+2026-10-31 07:38:38 | INFO | epoch  32 | loss 0.0905 | val macro-F1 2:0.9837 6:0.8978 19:0.7072 | 61.8s
+2026-10-31 07:39:39 | INFO | epoch  33 | loss 0.0892 | val macro-F1 2:0.9830 6:0.8944 19:0.7049 | 61.5s
+2026-10-31 07:40:41 | INFO | epoch  34 | loss 0.0883 | val macro-F1 2:0.9813 6:0.9001 19:0.7114 | 61.8s
+2026-10-31 07:41:42 | INFO | epoch  35 | loss 0.0861 | val macro-F1 2:0.9822 6:0.8967 19:0.7126 | 61.3s
+2026-10-31 07:42:43 | INFO | epoch  36 | loss 0.0852 | val macro-F1 2:0.9816 6:0.8986 19:0.7186 | 61.2s
+2026-10-31 07:43:45 | INFO | epoch  37 | loss 0.0830 | val macro-F1 2:0.9823 6:0.9008 19:0.7180 | 61.4s
+2026-10-31 07:44:47 | INFO | epoch  38 | loss 0.0823 | val macro-F1 2:0.9813 6:0.9024 19:0.7197 | 61.8s
+2026-10-31 07:45:48 | INFO | epoch  39 | loss 0.0815 | val macro-F1 2:0.9844 6:0.9005 19:0.7194 | 61.8s
+2026-10-31 07:46:50 | INFO | epoch  40 | loss 0.0801 | val macro-F1 2:0.9821 6:0.9058 19:0.7210 | 61.6s
+2026-10-31 07:47:52 | INFO | epoch  41 | loss 0.0801 | val macro-F1 2:0.9819 6:0.9061 19:0.7215 | 61.7s
+2026-10-31 07:48:53 | INFO | epoch  42 | loss 0.0793 | val macro-F1 2:0.9814 6:0.9052 19:0.7222 | 61.2s
+2026-10-31 07:49:55 | INFO | epoch  43 | loss 0.0786 | val macro-F1 2:0.9835 6:0.9045 19:0.7218 | 61.7s
+2026-10-31 07:50:56 | INFO | epoch  44 | loss 0.0784 | val macro-F1 2:0.9813 6:0.9057 19:0.7214 | 61.9s
+2026-10-31 07:51:59 | INFO | epoch  45 | loss 0.0776 | val macro-F1 2:0.9808 6:0.9056 19:0.7219 | 62.3s
+2026-10-31 07:53:01 | INFO | epoch  46 | loss 0.0779 | val macro-F1 2:0.9801 6:0.9037 19:0.7216 | 62.6s
+2026-10-31 07:53:57 | INFO | epoch  47 | loss 0.0774 | val macro-F1 2:0.9811 6:0.9056 19:0.7220 | 56.0s
+2026-10-31 07:54:54 | INFO | epoch  48 | loss 0.0772 | val macro-F1 2:0.9813 6:0.9055 19:0.7224 | 56.6s
+2026-10-31 07:55:49 | INFO | epoch  49 | loss 0.0770 | val macro-F1 2:0.9813 6:0.9063 19:0.7223 | 55.4s
+2026-10-31 07:56:45 | INFO | epoch  50 | loss 0.0771 | val macro-F1 2:0.9813 6:0.9063 19:0.7223 | 55.7s
+2026-10-31 07:57:04 | INFO | test macro-F1  2:0.9571  6:0.8429  19:0.6871  -> <repo>/results_rerun/zero_day/bilstm_dnn_loao_T16_MQTT-Malformed_Data_seed42
+2026-10-31 07:57:16 | INFO | [zero-day] bilstm_dnn without MQTT-Malformed_Data seed 42: energy AUROC 0.9360 vs softmax 0.9623; flagged unknown 0.708, caught at all 0.920
+2026-10-31 07:57:24 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140501, 'val_windows_also_in_train_removed': 6505, 'test_windows_also_in_train_removed': 20421}
+2026-10-31 07:57:24 | INFO | Windows (loao, T=16): train=560,035, val=55,287, test=1,593,446
+2026-10-31 07:57:25 | INFO | === zero_day/trace_moe_loao_T16_TCP_IP-DoS-UDP_seed42: 685,041 parameters on mps | started 2026-10-31T07:57:25
+2026-10-31 08:01:06 | INFO | epoch   1 | loss 0.1039 | val macro-F1 2:0.9754 6:0.9016 19:0.7420 | 221.8s
+2026-10-31 08:04:51 | INFO | epoch   2 | loss 0.0434 | val macro-F1 2:0.9883 6:0.9233 19:0.7599 | 224.2s
+2026-10-31 08:08:34 | INFO | epoch   3 | loss 0.0336 | val macro-F1 2:0.9891 6:0.9508 19:0.7690 | 223.7s
+2026-10-31 08:12:18 | INFO | epoch   4 | loss 0.0296 | val macro-F1 2:0.9865 6:0.9370 19:0.7542 | 224.0s
+2026-10-31 08:16:05 | INFO | epoch   5 | loss 0.0259 | val macro-F1 2:0.9905 6:0.9524 19:0.7597 | 227.0s
+2026-10-31 08:19:52 | INFO | epoch   6 | loss 0.0238 | val macro-F1 2:0.9902 6:0.9575 19:0.7584 | 227.2s
+2026-10-31 08:23:37 | INFO | epoch   7 | loss 0.0230 | val macro-F1 2:0.9834 6:0.9491 19:0.7520 | 224.6s
+2026-10-31 08:27:23 | INFO | epoch   8 | loss 0.0214 | val macro-F1 2:0.9904 6:0.9534 19:0.7553 | 225.6s
+2026-10-31 08:31:08 | INFO | epoch   9 | loss 0.0206 | val macro-F1 2:0.9861 6:0.9524 19:0.7603 | 225.4s
+2026-10-31 08:34:52 | INFO | epoch  10 | loss 0.0200 | val macro-F1 2:0.9902 6:0.9484 19:0.7661 | 224.3s
+2026-10-31 08:38:38 | INFO | epoch  11 | loss 0.0195 | val macro-F1 2:0.9887 6:0.9609 19:0.7586 | 226.0s
+2026-10-31 08:42:22 | INFO | epoch  12 | loss 0.0190 | val macro-F1 2:0.9881 6:0.9602 19:0.7644 | 223.7s
+2026-10-31 08:46:07 | INFO | epoch  13 | loss 0.0183 | val macro-F1 2:0.9887 6:0.9591 19:0.7635 | 224.7s
+2026-10-31 08:46:07 | INFO | Early stopping at epoch 13 (best val macro-F1 0.7690)
+2026-10-31 08:46:52 | INFO | test macro-F1  2:0.9856  6:0.8615  19:0.7334  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_TCP_IP-DoS-UDP_seed42
+2026-10-31 08:47:34 | INFO | [zero-day] trace_moe without TCP_IP-DoS-UDP seed 42: energy AUROC 0.0971 vs softmax 0.3235; flagged unknown 0.000, caught at all 1.000
+2026-10-31 08:47:34 | INFO | === zero_day/transformer_loao_T16_TCP_IP-DoS-UDP_seed42: 308,251 parameters on mps | started 2026-10-31T08:47:34
+2026-10-31 08:49:16 | INFO | epoch   1 | loss 0.1073 | val macro-F1 2:0.9866 6:0.8727 19:0.7213 | 102.7s
+2026-10-31 08:50:54 | INFO | epoch   2 | loss 0.0462 | val macro-F1 2:0.9881 6:0.8772 19:0.7374 | 97.9s
+2026-10-31 08:52:38 | INFO | epoch   3 | loss 0.0339 | val macro-F1 2:0.9877 6:0.9131 19:0.7398 | 103.6s
+2026-10-31 08:54:21 | INFO | epoch   4 | loss 0.0280 | val macro-F1 2:0.9820 6:0.9071 19:0.7527 | 103.3s
+2026-10-31 08:56:04 | INFO | epoch   5 | loss 0.0245 | val macro-F1 2:0.9900 6:0.9272 19:0.7529 | 102.9s
+2026-10-31 08:57:47 | INFO | epoch   6 | loss 0.0214 | val macro-F1 2:0.9900 6:0.9215 19:0.7599 | 102.6s
+2026-10-31 08:59:29 | INFO | epoch   7 | loss 0.0194 | val macro-F1 2:0.9843 6:0.9329 19:0.7539 | 102.2s
+2026-10-31 09:01:11 | INFO | epoch   8 | loss 0.0175 | val macro-F1 2:0.9879 6:0.9426 19:0.7663 | 102.3s
+2026-10-31 09:02:54 | INFO | epoch   9 | loss 0.0157 | val macro-F1 2:0.9845 6:0.9345 19:0.7607 | 102.9s
+2026-10-31 09:04:36 | INFO | epoch  10 | loss 0.0147 | val macro-F1 2:0.9792 6:0.9223 19:0.7465 | 102.5s
+2026-10-31 09:06:19 | INFO | epoch  11 | loss 0.0138 | val macro-F1 2:0.9848 6:0.9481 19:0.7465 | 102.1s
+2026-10-31 09:08:01 | INFO | epoch  12 | loss 0.0124 | val macro-F1 2:0.9866 6:0.9491 19:0.7700 | 102.6s
+2026-10-31 09:09:44 | INFO | epoch  13 | loss 0.0119 | val macro-F1 2:0.9852 6:0.9424 19:0.7470 | 102.3s
+2026-10-31 09:11:22 | INFO | epoch  14 | loss 0.0114 | val macro-F1 2:0.9855 6:0.9431 19:0.7504 | 98.2s
+2026-10-31 09:13:03 | INFO | epoch  15 | loss 0.0106 | val macro-F1 2:0.9859 6:0.9485 19:0.7594 | 101.1s
+2026-10-31 09:14:36 | INFO | epoch  16 | loss 0.0101 | val macro-F1 2:0.9859 6:0.9456 19:0.7689 | 93.5s
+2026-10-31 09:16:07 | INFO | epoch  17 | loss 0.0097 | val macro-F1 2:0.9871 6:0.9465 19:0.7683 | 90.7s
+2026-10-31 09:17:36 | INFO | epoch  18 | loss 0.0090 | val macro-F1 2:0.9862 6:0.9545 19:0.7653 | 88.5s
+2026-10-31 09:19:03 | INFO | epoch  19 | loss 0.0087 | val macro-F1 2:0.9887 6:0.9493 19:0.7599 | 87.4s
+2026-10-31 09:20:29 | INFO | epoch  20 | loss 0.0083 | val macro-F1 2:0.9837 6:0.9538 19:0.7606 | 85.9s
+2026-10-31 09:21:53 | INFO | epoch  21 | loss 0.0081 | val macro-F1 2:0.9852 6:0.9565 19:0.7683 | 84.5s
+2026-10-31 09:23:17 | INFO | epoch  22 | loss 0.0074 | val macro-F1 2:0.9850 6:0.9540 19:0.7649 | 83.3s
+2026-10-31 09:23:17 | INFO | Early stopping at epoch 22 (best val macro-F1 0.7700)
+2026-10-31 09:23:43 | INFO | test macro-F1  2:0.9794  6:0.8436  19:0.7290  -> <repo>/results_rerun/zero_day/transformer_loao_T16_TCP_IP-DoS-UDP_seed42
+2026-10-31 09:23:59 | INFO | [zero-day] transformer without TCP_IP-DoS-UDP seed 42: energy AUROC 0.2576 vs softmax 0.6827; flagged unknown 0.000, caught at all 1.000
+2026-10-31 09:23:59 | INFO | === zero_day/bilstm_dnn_loao_T16_TCP_IP-DoS-UDP_seed42: 70,811 parameters on mps | started 2026-10-31T09:23:59
+2026-10-31 09:25:02 | INFO | epoch   1 | loss 0.7257 | val macro-F1 2:0.9648 6:0.6750 19:0.4818 | 62.9s
+2026-10-31 09:26:04 | INFO | epoch   2 | loss 0.3079 | val macro-F1 2:0.9696 6:0.7643 19:0.5922 | 61.8s
+2026-10-31 09:27:05 | INFO | epoch   3 | loss 0.2496 | val macro-F1 2:0.9793 6:0.8416 19:0.6097 | 60.8s
+2026-10-31 09:28:06 | INFO | epoch   4 | loss 0.2223 | val macro-F1 2:0.9774 6:0.8188 19:0.6159 | 60.6s
+2026-10-31 09:29:06 | INFO | epoch   5 | loss 0.2030 | val macro-F1 2:0.9713 6:0.8316 19:0.6039 | 60.6s
+2026-10-31 09:30:06 | INFO | epoch   6 | loss 0.1891 | val macro-F1 2:0.9789 6:0.8219 19:0.6130 | 60.3s
+2026-10-31 09:31:06 | INFO | epoch   7 | loss 0.1780 | val macro-F1 2:0.9789 6:0.8365 19:0.6403 | 59.9s
+2026-10-31 09:32:06 | INFO | epoch   8 | loss 0.1674 | val macro-F1 2:0.9788 6:0.8325 19:0.6448 | 59.8s
+2026-10-31 09:33:06 | INFO | epoch   9 | loss 0.1603 | val macro-F1 2:0.9816 6:0.8326 19:0.6455 | 59.6s
+2026-10-31 09:34:05 | INFO | epoch  10 | loss 0.1539 | val macro-F1 2:0.9771 6:0.8301 19:0.6516 | 59.4s
+2026-10-31 09:35:04 | INFO | epoch  11 | loss 0.1495 | val macro-F1 2:0.9759 6:0.8540 19:0.6627 | 59.3s
+2026-10-31 09:36:07 | INFO | epoch  12 | loss 0.1440 | val macro-F1 2:0.9771 6:0.8709 19:0.6668 | 62.5s
+2026-10-31 09:37:08 | INFO | epoch  13 | loss 0.1400 | val macro-F1 2:0.9771 6:0.8538 19:0.6694 | 61.4s
+2026-10-31 09:38:10 | INFO | epoch  14 | loss 0.1367 | val macro-F1 2:0.9767 6:0.8650 19:0.6757 | 61.4s
+2026-10-31 09:39:12 | INFO | epoch  15 | loss 0.1340 | val macro-F1 2:0.9816 6:0.8604 19:0.6764 | 61.7s
+2026-10-31 09:40:13 | INFO | epoch  16 | loss 0.1308 | val macro-F1 2:0.9754 6:0.8602 19:0.6782 | 61.6s
+2026-10-31 09:41:14 | INFO | epoch  17 | loss 0.1274 | val macro-F1 2:0.9774 6:0.8694 19:0.6774 | 61.1s
+2026-10-31 09:42:16 | INFO | epoch  18 | loss 0.1256 | val macro-F1 2:0.9794 6:0.8703 19:0.6788 | 61.6s
+2026-10-31 09:43:17 | INFO | epoch  19 | loss 0.1224 | val macro-F1 2:0.9778 6:0.8629 19:0.6747 | 61.6s
+2026-10-31 09:44:19 | INFO | epoch  20 | loss 0.1202 | val macro-F1 2:0.9799 6:0.8801 19:0.6776 | 61.7s
+2026-10-31 09:45:21 | INFO | epoch  21 | loss 0.1190 | val macro-F1 2:0.9767 6:0.8783 19:0.6808 | 61.4s
+2026-10-31 09:46:22 | INFO | epoch  22 | loss 0.1156 | val macro-F1 2:0.9776 6:0.8791 19:0.6778 | 61.5s
+2026-10-31 09:47:24 | INFO | epoch  23 | loss 0.1145 | val macro-F1 2:0.9812 6:0.8829 19:0.6830 | 61.5s
+2026-10-31 09:48:25 | INFO | epoch  24 | loss 0.1124 | val macro-F1 2:0.9734 6:0.8772 19:0.6802 | 61.5s
+2026-10-31 09:49:26 | INFO | epoch  25 | loss 0.1099 | val macro-F1 2:0.9765 6:0.8812 19:0.6815 | 61.3s
+2026-10-31 09:50:28 | INFO | epoch  26 | loss 0.1085 | val macro-F1 2:0.9772 6:0.8887 19:0.6814 | 61.6s
+2026-10-31 09:51:29 | INFO | epoch  27 | loss 0.1075 | val macro-F1 2:0.9767 6:0.8880 19:0.6822 | 61.4s
+2026-10-31 09:52:31 | INFO | epoch  28 | loss 0.1065 | val macro-F1 2:0.9825 6:0.8856 19:0.6827 | 61.4s
+2026-10-31 09:53:32 | INFO | epoch  29 | loss 0.1037 | val macro-F1 2:0.9743 6:0.8923 19:0.6828 | 61.2s
+2026-10-31 09:54:33 | INFO | epoch  30 | loss 0.1020 | val macro-F1 2:0.9763 6:0.8882 19:0.6826 | 61.3s
+2026-10-31 09:55:35 | INFO | epoch  31 | loss 0.1010 | val macro-F1 2:0.9763 6:0.8894 19:0.6860 | 61.4s
+2026-10-31 09:56:36 | INFO | epoch  32 | loss 0.0995 | val macro-F1 2:0.9766 6:0.8943 19:0.6856 | 61.3s
+2026-10-31 09:57:37 | INFO | epoch  33 | loss 0.0988 | val macro-F1 2:0.9764 6:0.8944 19:0.6851 | 61.5s
+2026-10-31 09:58:39 | INFO | epoch  34 | loss 0.0967 | val macro-F1 2:0.9753 6:0.8988 19:0.6878 | 61.2s
+2026-10-31 09:59:40 | INFO | epoch  35 | loss 0.0961 | val macro-F1 2:0.9731 6:0.8947 19:0.6866 | 61.4s
+2026-10-31 10:00:41 | INFO | epoch  36 | loss 0.0947 | val macro-F1 2:0.9744 6:0.8982 19:0.6888 | 61.4s
+2026-10-31 10:01:43 | INFO | epoch  37 | loss 0.0937 | val macro-F1 2:0.9757 6:0.8991 19:0.6888 | 61.4s
+2026-10-31 10:02:44 | INFO | epoch  38 | loss 0.0925 | val macro-F1 2:0.9758 6:0.9012 19:0.6896 | 61.3s
+2026-10-31 10:03:46 | INFO | epoch  39 | loss 0.0914 | val macro-F1 2:0.9756 6:0.9011 19:0.6870 | 61.4s
+2026-10-31 10:04:47 | INFO | epoch  40 | loss 0.0906 | val macro-F1 2:0.9747 6:0.9013 19:0.6889 | 61.2s
+2026-10-31 10:05:48 | INFO | epoch  41 | loss 0.0897 | val macro-F1 2:0.9752 6:0.9030 19:0.6877 | 61.3s
+2026-10-31 10:06:49 | INFO | epoch  42 | loss 0.0896 | val macro-F1 2:0.9749 6:0.9007 19:0.6879 | 61.4s
+2026-10-31 10:07:51 | INFO | epoch  43 | loss 0.0887 | val macro-F1 2:0.9754 6:0.9023 19:0.6912 | 61.3s
+2026-10-31 10:08:52 | INFO | epoch  44 | loss 0.0884 | val macro-F1 2:0.9754 6:0.9044 19:0.6879 | 61.3s
+2026-10-31 10:09:53 | INFO | epoch  45 | loss 0.0877 | val macro-F1 2:0.9742 6:0.9032 19:0.6909 | 61.1s
+2026-10-31 10:10:54 | INFO | epoch  46 | loss 0.0875 | val macro-F1 2:0.9748 6:0.9015 19:0.6899 | 61.1s
+2026-10-31 10:11:55 | INFO | epoch  47 | loss 0.0866 | val macro-F1 2:0.9745 6:0.9023 19:0.6904 | 60.9s
+2026-10-31 10:12:56 | INFO | epoch  48 | loss 0.0866 | val macro-F1 2:0.9745 6:0.9041 19:0.6906 | 60.9s
+2026-10-31 10:13:57 | INFO | epoch  49 | loss 0.0874 | val macro-F1 2:0.9745 6:0.9029 19:0.6914 | 60.9s
+2026-10-31 10:14:58 | INFO | epoch  50 | loss 0.0865 | val macro-F1 2:0.9748 6:0.9027 19:0.6912 | 60.9s
+2026-10-31 10:15:19 | INFO | test macro-F1  2:0.9649  6:0.8109  19:0.6607  -> <repo>/results_rerun/zero_day/bilstm_dnn_loao_T16_TCP_IP-DoS-UDP_seed42
+2026-10-31 10:15:32 | INFO | [zero-day] bilstm_dnn without TCP_IP-DoS-UDP seed 42: energy AUROC 0.7241 vs softmax 0.4575; flagged unknown 0.044, caught at all 1.000
+2026-10-31 10:15:40 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140693, 'val_windows_also_in_train_removed': 6421, 'test_windows_also_in_train_removed': 20749}
+2026-10-31 10:15:40 | INFO | Windows (loao, T=16): train=617,142, val=60,427, test=1,593,118
+2026-10-31 10:15:40 | INFO | === zero_day/trace_moe_loao_T16_MQTT-DDoS-Publish_Flood_seed42: 685,041 parameters on mps | started 2026-10-31T10:15:40
+2026-10-31 10:19:58 | INFO | epoch   1 | loss 0.1053 | val macro-F1 2:0.9912 6:0.9279 19:0.7446 | 257.8s
+2026-10-31 10:24:17 | INFO | epoch   2 | loss 0.0445 | val macro-F1 2:0.9867 6:0.9242 19:0.7478 | 259.0s
+2026-10-31 10:28:33 | INFO | epoch   3 | loss 0.0351 | val macro-F1 2:0.9893 6:0.9415 19:0.7492 | 255.5s
+2026-10-31 10:32:51 | INFO | epoch   4 | loss 0.0296 | val macro-F1 2:0.9885 6:0.9313 19:0.7540 | 258.2s
+2026-10-31 10:37:05 | INFO | epoch   5 | loss 0.0270 | val macro-F1 2:0.9880 6:0.9304 19:0.7493 | 254.2s
+2026-10-31 10:41:19 | INFO | epoch   6 | loss 0.0249 | val macro-F1 2:0.9911 6:0.9614 19:0.7589 | 254.3s
+2026-10-31 10:45:32 | INFO | epoch   7 | loss 0.0232 | val macro-F1 2:0.9862 6:0.9653 19:0.7728 | 252.5s
+2026-10-31 10:49:31 | INFO | epoch   8 | loss 0.0217 | val macro-F1 2:0.9892 6:0.9657 19:0.7643 | 239.5s
+2026-10-31 10:53:14 | INFO | epoch   9 | loss 0.0209 | val macro-F1 2:0.9879 6:0.9615 19:0.7624 | 222.6s
+2026-10-31 10:56:57 | INFO | epoch  10 | loss 0.0203 | val macro-F1 2:0.9883 6:0.9574 19:0.7633 | 223.4s
+2026-10-31 11:00:39 | INFO | epoch  11 | loss 0.0199 | val macro-F1 2:0.9870 6:0.9537 19:0.7599 | 221.6s
+2026-10-31 11:04:22 | INFO | epoch  12 | loss 0.0191 | val macro-F1 2:0.9878 6:0.9492 19:0.7606 | 222.6s
+2026-10-31 11:08:06 | INFO | epoch  13 | loss 0.0188 | val macro-F1 2:0.9881 6:0.9538 19:0.7681 | 224.5s
+2026-10-31 11:11:51 | INFO | epoch  14 | loss 0.0182 | val macro-F1 2:0.9884 6:0.9643 19:0.7619 | 225.2s
+2026-10-31 11:15:35 | INFO | epoch  15 | loss 0.0179 | val macro-F1 2:0.9874 6:0.9534 19:0.7616 | 223.9s
+2026-10-31 11:19:18 | INFO | epoch  16 | loss 0.0172 | val macro-F1 2:0.9841 6:0.9547 19:0.7626 | 222.8s
+2026-10-31 11:22:59 | INFO | epoch  17 | loss 0.0176 | val macro-F1 2:0.9865 6:0.9656 19:0.7696 | 220.8s
+2026-10-31 11:22:59 | INFO | Early stopping at epoch 17 (best val macro-F1 0.7728)
+2026-10-31 11:23:39 | INFO | test macro-F1  2:0.9812  6:0.8878  19:0.7799  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_MQTT-DDoS-Publish_Flood_seed42
+2026-10-31 11:24:10 | INFO | [zero-day] trace_moe without MQTT-DDoS-Publish_Flood seed 42: energy AUROC 0.5137 vs softmax 0.3534; flagged unknown 0.045, caught at all 1.000
+2026-10-31 11:24:10 | INFO | === zero_day/transformer_loao_T16_MQTT-DDoS-Publish_Flood_seed42: 308,251 parameters on mps | started 2026-10-31T11:24:10
+2026-10-31 11:25:23 | INFO | epoch   1 | loss 0.1090 | val macro-F1 2:0.9844 6:0.8891 19:0.7324 | 72.9s
+2026-10-31 11:26:39 | INFO | epoch   2 | loss 0.0488 | val macro-F1 2:0.9904 6:0.9012 19:0.7514 | 76.2s
+2026-10-31 11:27:56 | INFO | epoch   3 | loss 0.0353 | val macro-F1 2:0.9813 6:0.8956 19:0.7425 | 76.8s
+2026-10-31 11:29:13 | INFO | epoch   4 | loss 0.0290 | val macro-F1 2:0.9893 6:0.9134 19:0.7357 | 77.0s
+2026-10-31 11:30:30 | INFO | epoch   5 | loss 0.0255 | val macro-F1 2:0.9866 6:0.9269 19:0.7536 | 76.9s
+2026-10-31 11:31:47 | INFO | epoch   6 | loss 0.0221 | val macro-F1 2:0.9866 6:0.9311 19:0.7540 | 76.7s
+2026-10-31 11:33:03 | INFO | epoch   7 | loss 0.0204 | val macro-F1 2:0.9864 6:0.9444 19:0.7397 | 76.7s
+2026-10-31 11:34:20 | INFO | epoch   8 | loss 0.0176 | val macro-F1 2:0.9879 6:0.9371 19:0.7533 | 76.7s
+2026-10-31 11:35:37 | INFO | epoch   9 | loss 0.0162 | val macro-F1 2:0.9861 6:0.9311 19:0.7379 | 76.8s
+2026-10-31 11:36:53 | INFO | epoch  10 | loss 0.0156 | val macro-F1 2:0.9828 6:0.9355 19:0.7533 | 76.7s
+2026-10-31 11:38:10 | INFO | epoch  11 | loss 0.0139 | val macro-F1 2:0.9872 6:0.9546 19:0.7487 | 76.7s
+2026-10-31 11:39:27 | INFO | epoch  12 | loss 0.0128 | val macro-F1 2:0.9836 6:0.9444 19:0.7457 | 76.7s
+2026-10-31 11:40:43 | INFO | epoch  13 | loss 0.0120 | val macro-F1 2:0.9872 6:0.9421 19:0.7535 | 76.5s
+2026-10-31 11:42:00 | INFO | epoch  14 | loss 0.0121 | val macro-F1 2:0.9859 6:0.9356 19:0.7639 | 76.5s
+2026-10-31 11:43:16 | INFO | epoch  15 | loss 0.0110 | val macro-F1 2:0.9866 6:0.9484 19:0.7587 | 76.4s
+2026-10-31 11:44:33 | INFO | epoch  16 | loss 0.0106 | val macro-F1 2:0.9859 6:0.9518 19:0.7544 | 76.3s
+2026-10-31 11:45:53 | INFO | epoch  17 | loss 0.0098 | val macro-F1 2:0.9856 6:0.9484 19:0.7636 | 80.7s
+2026-10-31 11:47:36 | INFO | epoch  18 | loss 0.0094 | val macro-F1 2:0.9866 6:0.9461 19:0.7672 | 102.6s
+2026-10-31 11:49:17 | INFO | epoch  19 | loss 0.0090 | val macro-F1 2:0.9855 6:0.9507 19:0.7480 | 101.2s
+2026-10-31 11:50:58 | INFO | epoch  20 | loss 0.0081 | val macro-F1 2:0.9825 6:0.9585 19:0.7483 | 101.4s
+2026-10-31 11:52:40 | INFO | epoch  21 | loss 0.0083 | val macro-F1 2:0.9855 6:0.9539 19:0.7515 | 101.2s
+2026-10-31 11:54:21 | INFO | epoch  22 | loss 0.0078 | val macro-F1 2:0.9850 6:0.9470 19:0.7645 | 101.0s
+2026-10-31 11:56:01 | INFO | epoch  23 | loss 0.0074 | val macro-F1 2:0.9875 6:0.9600 19:0.7514 | 100.2s
+2026-10-31 11:57:27 | INFO | epoch  24 | loss 0.0068 | val macro-F1 2:0.9872 6:0.9582 19:0.7647 | 86.2s
+2026-10-31 11:59:08 | INFO | epoch  25 | loss 0.0066 | val macro-F1 2:0.9861 6:0.9393 19:0.7570 | 100.8s
+2026-10-31 12:00:45 | INFO | epoch  26 | loss 0.0063 | val macro-F1 2:0.9856 6:0.9533 19:0.7512 | 97.1s
+2026-10-31 12:02:25 | INFO | epoch  27 | loss 0.0062 | val macro-F1 2:0.9873 6:0.9541 19:0.7545 | 100.1s
+2026-10-31 12:04:06 | INFO | epoch  28 | loss 0.0059 | val macro-F1 2:0.9859 6:0.9521 19:0.7555 | 100.5s
+2026-10-31 12:04:06 | INFO | Early stopping at epoch 28 (best val macro-F1 0.7672)
+2026-10-31 12:04:34 | INFO | test macro-F1  2:0.9705  6:0.8602  19:0.7700  -> <repo>/results_rerun/zero_day/transformer_loao_T16_MQTT-DDoS-Publish_Flood_seed42
+2026-10-31 12:04:49 | INFO | [zero-day] transformer without MQTT-DDoS-Publish_Flood seed 42: energy AUROC 0.0825 vs softmax 0.4487; flagged unknown 0.006, caught at all 1.000
+2026-10-31 12:04:49 | INFO | === zero_day/bilstm_dnn_loao_T16_MQTT-DDoS-Publish_Flood_seed42: 70,811 parameters on mps | started 2026-10-31T12:04:49
+2026-10-31 12:06:02 | INFO | epoch   1 | loss 0.7099 | val macro-F1 2:0.9629 6:0.6055 19:0.4566 | 72.4s
+2026-10-31 12:07:15 | INFO | epoch   2 | loss 0.3122 | val macro-F1 2:0.9684 6:0.7993 19:0.5951 | 72.9s
+2026-10-31 12:08:28 | INFO | epoch   3 | loss 0.2472 | val macro-F1 2:0.9710 6:0.8236 19:0.6270 | 73.2s
+2026-10-31 12:09:41 | INFO | epoch   4 | loss 0.2228 | val macro-F1 2:0.9768 6:0.8170 19:0.6156 | 73.1s
+2026-10-31 12:10:53 | INFO | epoch   5 | loss 0.2035 | val macro-F1 2:0.9776 6:0.8190 19:0.6268 | 72.6s
+2026-10-31 12:12:07 | INFO | epoch   6 | loss 0.1908 | val macro-F1 2:0.9806 6:0.8396 19:0.6387 | 73.1s
+2026-10-31 12:13:19 | INFO | epoch   7 | loss 0.1821 | val macro-F1 2:0.9786 6:0.8149 19:0.6291 | 72.6s
+2026-10-31 12:14:32 | INFO | epoch   8 | loss 0.1739 | val macro-F1 2:0.9827 6:0.8234 19:0.6418 | 72.8s
+2026-10-31 12:15:45 | INFO | epoch   9 | loss 0.1680 | val macro-F1 2:0.9785 6:0.8417 19:0.6436 | 72.9s
+2026-10-31 12:16:57 | INFO | epoch  10 | loss 0.1632 | val macro-F1 2:0.9761 6:0.8354 19:0.6463 | 72.5s
+2026-10-31 12:18:09 | INFO | epoch  11 | loss 0.1565 | val macro-F1 2:0.9759 6:0.8445 19:0.6493 | 72.0s
+2026-10-31 12:19:22 | INFO | epoch  12 | loss 0.1518 | val macro-F1 2:0.9815 6:0.8570 19:0.6517 | 72.5s
+2026-10-31 12:20:34 | INFO | epoch  13 | loss 0.1473 | val macro-F1 2:0.9785 6:0.8311 19:0.6580 | 72.6s
+2026-10-31 12:21:47 | INFO | epoch  14 | loss 0.1427 | val macro-F1 2:0.9796 6:0.8273 19:0.6511 | 72.5s
+2026-10-31 12:23:00 | INFO | epoch  15 | loss 0.1394 | val macro-F1 2:0.9750 6:0.8542 19:0.6664 | 73.0s
+2026-10-31 12:24:13 | INFO | epoch  16 | loss 0.1364 | val macro-F1 2:0.9755 6:0.8491 19:0.6649 | 72.9s
+2026-10-31 12:25:25 | INFO | epoch  17 | loss 0.1326 | val macro-F1 2:0.9815 6:0.8444 19:0.6617 | 72.1s
+2026-10-31 12:26:37 | INFO | epoch  18 | loss 0.1315 | val macro-F1 2:0.9787 6:0.8451 19:0.6704 | 72.4s
+2026-10-31 12:27:50 | INFO | epoch  19 | loss 0.1281 | val macro-F1 2:0.9792 6:0.8631 19:0.6691 | 72.3s
+2026-10-31 12:29:02 | INFO | epoch  20 | loss 0.1262 | val macro-F1 2:0.9837 6:0.8661 19:0.6699 | 72.4s
+2026-10-31 12:30:15 | INFO | epoch  21 | loss 0.1238 | val macro-F1 2:0.9739 6:0.8674 19:0.6750 | 72.7s
+2026-10-31 12:31:27 | INFO | epoch  22 | loss 0.1215 | val macro-F1 2:0.9835 6:0.8624 19:0.6675 | 72.6s
+2026-10-31 12:32:40 | INFO | epoch  23 | loss 0.1194 | val macro-F1 2:0.9809 6:0.8546 19:0.6693 | 72.4s
+2026-10-31 12:33:52 | INFO | epoch  24 | loss 0.1179 | val macro-F1 2:0.9783 6:0.8556 19:0.6692 | 72.2s
+2026-10-31 12:35:04 | INFO | epoch  25 | loss 0.1155 | val macro-F1 2:0.9786 6:0.8645 19:0.6727 | 72.1s
+2026-10-31 12:36:16 | INFO | epoch  26 | loss 0.1146 | val macro-F1 2:0.9841 6:0.8752 19:0.6771 | 72.3s
+2026-10-31 12:37:29 | INFO | epoch  27 | loss 0.1120 | val macro-F1 2:0.9815 6:0.8669 19:0.6780 | 72.2s
+2026-10-31 12:38:41 | INFO | epoch  28 | loss 0.1108 | val macro-F1 2:0.9821 6:0.8737 19:0.6765 | 72.0s
+2026-10-31 12:39:52 | INFO | epoch  29 | loss 0.1091 | val macro-F1 2:0.9760 6:0.8714 19:0.6777 | 71.5s
+2026-10-31 12:41:04 | INFO | epoch  30 | loss 0.1071 | val macro-F1 2:0.9804 6:0.8777 19:0.6800 | 71.6s
+2026-10-31 12:42:15 | INFO | epoch  31 | loss 0.1062 | val macro-F1 2:0.9798 6:0.8756 19:0.6809 | 71.7s
+2026-10-31 12:43:26 | INFO | epoch  32 | loss 0.1041 | val macro-F1 2:0.9791 6:0.8806 19:0.6793 | 71.0s
+2026-10-31 12:44:47 | INFO | epoch  33 | loss 0.1027 | val macro-F1 2:0.9797 6:0.8820 19:0.6815 | 80.7s
+2026-10-31 12:46:01 | INFO | epoch  34 | loss 0.1014 | val macro-F1 2:0.9805 6:0.8802 19:0.6810 | 73.5s
+2026-10-31 12:47:10 | INFO | epoch  35 | loss 0.1002 | val macro-F1 2:0.9785 6:0.8836 19:0.6790 | 69.8s
+2026-10-31 12:48:18 | INFO | epoch  36 | loss 0.0994 | val macro-F1 2:0.9775 6:0.8831 19:0.6811 | 67.8s
+2026-10-31 12:49:24 | INFO | epoch  37 | loss 0.0976 | val macro-F1 2:0.9776 6:0.8804 19:0.6800 | 65.8s
+2026-10-31 12:50:28 | INFO | epoch  38 | loss 0.0966 | val macro-F1 2:0.9792 6:0.8847 19:0.6816 | 64.4s
+2026-10-31 12:51:34 | INFO | epoch  39 | loss 0.0955 | val macro-F1 2:0.9782 6:0.8841 19:0.6799 | 65.6s
+2026-10-31 12:52:38 | INFO | epoch  40 | loss 0.0940 | val macro-F1 2:0.9790 6:0.8887 19:0.6841 | 63.7s
+2026-10-31 12:53:41 | INFO | epoch  41 | loss 0.0940 | val macro-F1 2:0.9772 6:0.8865 19:0.6831 | 63.1s
+2026-10-31 12:54:44 | INFO | epoch  42 | loss 0.0932 | val macro-F1 2:0.9777 6:0.8870 19:0.6829 | 62.7s
+2026-10-31 12:55:46 | INFO | epoch  43 | loss 0.0928 | val macro-F1 2:0.9785 6:0.8913 19:0.6857 | 62.1s
+2026-10-31 12:56:48 | INFO | epoch  44 | loss 0.0923 | val macro-F1 2:0.9780 6:0.8910 19:0.6831 | 61.9s
+2026-10-31 12:57:50 | INFO | epoch  45 | loss 0.0920 | val macro-F1 2:0.9780 6:0.8928 19:0.6836 | 61.9s
+2026-10-31 12:58:51 | INFO | epoch  46 | loss 0.0921 | val macro-F1 2:0.9786 6:0.8920 19:0.6850 | 61.4s
+2026-10-31 12:59:52 | INFO | epoch  47 | loss 0.0912 | val macro-F1 2:0.9777 6:0.8928 19:0.6844 | 61.2s
+2026-10-31 13:00:53 | INFO | epoch  48 | loss 0.0911 | val macro-F1 2:0.9775 6:0.8927 19:0.6839 | 60.7s
+2026-10-31 13:01:54 | INFO | epoch  49 | loss 0.0913 | val macro-F1 2:0.9777 6:0.8941 19:0.6845 | 60.9s
+2026-10-31 13:02:54 | INFO | epoch  50 | loss 0.0909 | val macro-F1 2:0.9777 6:0.8941 19:0.6846 | 60.5s
+2026-10-31 13:03:18 | INFO | test macro-F1  2:0.9437  6:0.8297  19:0.7040  -> <repo>/results_rerun/zero_day/bilstm_dnn_loao_T16_MQTT-DDoS-Publish_Flood_seed42
+2026-10-31 13:03:34 | INFO | [zero-day] bilstm_dnn without MQTT-DDoS-Publish_Flood seed 42: energy AUROC 0.0541 vs softmax 0.4065; flagged unknown 0.011, caught at all 1.000
+2026-10-31 13:03:36 | INFO | --- 07_unknown_attacks.py | config configs/rerun.yaml | overrides ['train.device=mps']
+2026-10-31 13:03:36 | INFO | Session rerun_B_2026-10-30_235445 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_B_2026-10-30_235445_07_unknown_attacks_mac-studio.log
+2026-10-31 13:03:45 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140531, 'val_windows_also_in_train_removed': 6546, 'test_windows_also_in_train_removed': 20304}
+2026-10-31 13:03:45 | INFO | Windows (loao, T=16): train=618,534, val=60,410, test=1,593,563
+2026-10-31 13:03:45 | INFO | === zero_day/trace_moe_loao_T16_ARP_Spoofing_seed43: 685,041 parameters on mps | started 2026-10-31T13:03:45
+2026-10-31 13:08:57 | INFO | epoch   1 | loss 0.0782 | val macro-F1 2:0.9888 6:0.8229 19:0.8002 | 311.0s
+2026-10-31 13:14:03 | INFO | epoch   2 | loss 0.0344 | val macro-F1 2:0.9905 6:0.8238 19:0.8005 | 306.6s
+2026-10-31 13:19:11 | INFO | epoch   3 | loss 0.0286 | val macro-F1 2:0.9911 6:0.8231 19:0.7982 | 307.4s
+2026-10-31 13:24:34 | INFO | epoch   4 | loss 0.0251 | val macro-F1 2:0.9918 6:0.8250 19:0.8065 | 323.0s
+2026-10-31 13:30:09 | INFO | epoch   5 | loss 0.0232 | val macro-F1 2:0.9915 6:0.8266 19:0.8158 | 335.6s
+2026-10-31 13:35:39 | INFO | epoch   6 | loss 0.0218 | val macro-F1 2:0.9922 6:0.8271 19:0.8281 | 330.2s
+2026-10-31 13:41:11 | INFO | epoch   7 | loss 0.0207 | val macro-F1 2:0.9900 6:0.8268 19:0.8212 | 332.0s
+2026-10-31 13:46:41 | INFO | epoch   8 | loss 0.0199 | val macro-F1 2:0.9907 6:0.8266 19:0.8170 | 329.7s
+2026-10-31 13:52:14 | INFO | epoch   9 | loss 0.0192 | val macro-F1 2:0.9925 6:0.8267 19:0.8294 | 332.8s
+2026-10-31 13:57:44 | INFO | epoch  10 | loss 0.0187 | val macro-F1 2:0.9935 6:0.8272 19:0.8269 | 330.4s
+2026-10-31 14:03:17 | INFO | epoch  11 | loss 0.0183 | val macro-F1 2:0.9917 6:0.8269 19:0.8307 | 332.7s
+2026-10-31 14:08:51 | INFO | epoch  12 | loss 0.0178 | val macro-F1 2:0.9925 6:0.8263 19:0.8284 | 334.1s
+2026-10-31 14:14:22 | INFO | epoch  13 | loss 0.0176 | val macro-F1 2:0.9921 6:0.8257 19:0.8307 | 331.0s
+2026-10-31 14:19:52 | INFO | epoch  14 | loss 0.0175 | val macro-F1 2:0.9922 6:0.8264 19:0.8331 | 329.5s
+2026-10-31 14:25:20 | INFO | epoch  15 | loss 0.0170 | val macro-F1 2:0.9922 6:0.8274 19:0.8189 | 328.2s
+2026-10-31 14:30:50 | INFO | epoch  16 | loss 0.0172 | val macro-F1 2:0.9928 6:0.8276 19:0.8337 | 329.9s
+2026-10-31 14:36:22 | INFO | epoch  17 | loss 0.0164 | val macro-F1 2:0.9927 6:0.8272 19:0.8230 | 332.6s
+2026-10-31 14:41:54 | INFO | epoch  18 | loss 0.0164 | val macro-F1 2:0.9935 6:0.8273 19:0.8256 | 331.8s
+2026-10-31 14:47:26 | INFO | epoch  19 | loss 0.0163 | val macro-F1 2:0.9925 6:0.8263 19:0.8394 | 331.8s
+2026-10-31 14:52:56 | INFO | epoch  20 | loss 0.0160 | val macro-F1 2:0.9935 6:0.8273 19:0.8302 | 330.5s
+2026-10-31 14:58:55 | INFO | epoch  21 | loss 0.0158 | val macro-F1 2:0.9935 6:0.8280 19:0.8453 | 358.9s
+2026-10-31 15:05:08 | INFO | epoch  22 | loss 0.0156 | val macro-F1 2:0.9938 6:0.8278 19:0.8346 | 372.6s
+2026-10-31 15:11:19 | INFO | epoch  23 | loss 0.0154 | val macro-F1 2:0.9929 6:0.8277 19:0.8326 | 371.2s
+2026-10-31 15:17:30 | INFO | epoch  24 | loss 0.0153 | val macro-F1 2:0.9932 6:0.8278 19:0.8302 | 370.5s
+2026-10-31 15:23:40 | INFO | epoch  25 | loss 0.0151 | val macro-F1 2:0.9931 6:0.8270 19:0.8274 | 370.0s
+2026-10-31 15:29:49 | INFO | epoch  26 | loss 0.0152 | val macro-F1 2:0.9936 6:0.8269 19:0.8254 | 369.9s
+2026-10-31 15:36:00 | INFO | epoch  27 | loss 0.0150 | val macro-F1 2:0.9932 6:0.8263 19:0.8271 | 371.0s
+2026-10-31 15:42:11 | INFO | epoch  28 | loss 0.0150 | val macro-F1 2:0.9931 6:0.8269 19:0.8248 | 370.5s
+2026-10-31 15:48:23 | INFO | epoch  29 | loss 0.0147 | val macro-F1 2:0.9929 6:0.8272 19:0.8360 | 371.9s
+2026-10-31 15:55:21 | INFO | epoch  30 | loss 0.0146 | val macro-F1 2:0.9931 6:0.8274 19:0.8275 | 417.7s
+2026-10-31 16:02:43 | INFO | epoch  31 | loss 0.0145 | val macro-F1 2:0.9931 6:0.8271 19:0.8193 | 442.4s
+2026-10-31 16:02:43 | INFO | Early stopping at epoch 31 (best val macro-F1 0.8453)
+2026-10-31 16:03:52 | INFO | test macro-F1  2:0.9820  6:0.8200  19:0.7952  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_ARP_Spoofing_seed43
+2026-10-31 16:04:52 | INFO | [zero-day] trace_moe without ARP_Spoofing seed 43: energy AUROC 0.9875 vs softmax 0.9783; flagged unknown 0.936, caught at all 0.995
+2026-10-31 16:05:00 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140694, 'val_windows_also_in_train_removed': 6517, 'test_windows_also_in_train_removed': 20562}
+2026-10-31 16:05:00 | INFO | Windows (loao, T=16): train=618,371, val=60,439, test=1,593,305
+2026-10-31 16:05:00 | INFO | === zero_day/trace_moe_loao_T16_ARP_Spoofing_seed44: 685,041 parameters on mps | started 2026-10-31T16:05:00
+2026-10-31 16:12:11 | INFO | epoch   1 | loss 0.0783 | val macro-F1 2:0.9920 6:0.8215 19:0.8028 | 431.2s
+2026-10-31 16:19:20 | INFO | epoch   2 | loss 0.0339 | val macro-F1 2:0.9912 6:0.8231 19:0.7919 | 428.8s
+2026-10-31 16:26:30 | INFO | epoch   3 | loss 0.0267 | val macro-F1 2:0.9898 6:0.8245 19:0.8053 | 429.5s
+2026-10-31 16:33:38 | INFO | epoch   4 | loss 0.0246 | val macro-F1 2:0.9907 6:0.8183 19:0.8129 | 428.1s
+2026-10-31 16:40:00 | INFO | epoch   5 | loss 0.0224 | val macro-F1 2:0.9900 6:0.8248 19:0.8110 | 382.6s
+2026-10-31 16:45:39 | INFO | epoch   6 | loss 0.0214 | val macro-F1 2:0.9928 6:0.8254 19:0.8096 | 338.3s
+2026-10-31 16:51:03 | INFO | epoch   7 | loss 0.0204 | val macro-F1 2:0.9921 6:0.8260 19:0.8164 | 323.9s
+2026-10-31 16:56:19 | INFO | epoch   8 | loss 0.0196 | val macro-F1 2:0.9911 6:0.8262 19:0.8054 | 316.5s
+2026-10-31 17:01:29 | INFO | epoch   9 | loss 0.0189 | val macro-F1 2:0.9918 6:0.8264 19:0.8183 | 310.2s
+2026-10-31 17:06:34 | INFO | epoch  10 | loss 0.0186 | val macro-F1 2:0.9900 6:0.8255 19:0.8173 | 304.2s
+2026-10-31 17:11:34 | INFO | epoch  11 | loss 0.0178 | val macro-F1 2:0.9924 6:0.8261 19:0.8226 | 300.9s
+2026-10-31 17:16:34 | INFO | epoch  12 | loss 0.0174 | val macro-F1 2:0.9924 6:0.8253 19:0.8155 | 299.4s
+2026-10-31 17:21:30 | INFO | epoch  13 | loss 0.0172 | val macro-F1 2:0.9926 6:0.8256 19:0.8122 | 296.5s
+2026-10-31 17:26:44 | INFO | epoch  14 | loss 0.0170 | val macro-F1 2:0.9913 6:0.8263 19:0.8132 | 314.0s
+2026-10-31 17:32:04 | INFO | epoch  15 | loss 0.0170 | val macro-F1 2:0.9913 6:0.8240 19:0.8186 | 319.4s
+2026-10-31 17:37:21 | INFO | epoch  16 | loss 0.0165 | val macro-F1 2:0.9922 6:0.8270 19:0.8124 | 317.5s
+2026-10-31 17:42:45 | INFO | epoch  17 | loss 0.0164 | val macro-F1 2:0.9927 6:0.8268 19:0.8235 | 323.4s
+2026-10-31 17:48:05 | INFO | epoch  18 | loss 0.0162 | val macro-F1 2:0.9918 6:0.8267 19:0.8158 | 320.6s
+2026-10-31 17:53:28 | INFO | epoch  19 | loss 0.0161 | val macro-F1 2:0.9931 6:0.8275 19:0.8140 | 322.8s
+2026-10-31 17:58:46 | INFO | epoch  20 | loss 0.0158 | val macro-F1 2:0.9921 6:0.8268 19:0.8202 | 317.9s
+2026-10-31 18:04:06 | INFO | epoch  21 | loss 0.0158 | val macro-F1 2:0.9932 6:0.8269 19:0.8346 | 320.2s
+2026-10-31 18:09:25 | INFO | epoch  22 | loss 0.0155 | val macro-F1 2:0.9884 6:0.8182 19:0.8122 | 319.1s
+2026-10-31 18:14:41 | INFO | epoch  23 | loss 0.0154 | val macro-F1 2:0.9933 6:0.8277 19:0.8203 | 316.2s
+2026-10-31 18:19:57 | INFO | epoch  24 | loss 0.0151 | val macro-F1 2:0.9928 6:0.8276 19:0.8223 | 316.1s
+2026-10-31 18:25:16 | INFO | epoch  25 | loss 0.0151 | val macro-F1 2:0.9932 6:0.8277 19:0.8264 | 318.5s
+2026-10-31 18:30:37 | INFO | epoch  26 | loss 0.0149 | val macro-F1 2:0.9922 6:0.8270 19:0.8247 | 321.3s
+2026-10-31 18:36:03 | INFO | epoch  27 | loss 0.0147 | val macro-F1 2:0.9924 6:0.8260 19:0.8199 | 325.4s
+2026-10-31 18:41:26 | INFO | epoch  28 | loss 0.0146 | val macro-F1 2:0.9932 6:0.8280 19:0.8360 | 323.2s
+2026-10-31 18:46:50 | INFO | epoch  29 | loss 0.0147 | val macro-F1 2:0.9929 6:0.8270 19:0.8238 | 323.8s
+2026-10-31 18:52:11 | INFO | epoch  30 | loss 0.0144 | val macro-F1 2:0.9922 6:0.8272 19:0.8252 | 321.4s
+2026-10-31 18:57:30 | INFO | epoch  31 | loss 0.0145 | val macro-F1 2:0.9926 6:0.8276 19:0.8258 | 319.3s
+2026-10-31 19:02:46 | INFO | epoch  32 | loss 0.0143 | val macro-F1 2:0.9939 6:0.8279 19:0.8258 | 316.0s
+2026-10-31 19:08:09 | INFO | epoch  33 | loss 0.0143 | val macro-F1 2:0.9934 6:0.8278 19:0.8248 | 322.5s
+2026-10-31 19:13:58 | INFO | epoch  34 | loss 0.0142 | val macro-F1 2:0.9931 6:0.8277 19:0.8225 | 349.5s
+2026-10-31 19:19:57 | INFO | epoch  35 | loss 0.0140 | val macro-F1 2:0.9934 6:0.8277 19:0.8235 | 358.2s
+2026-10-31 19:25:53 | INFO | epoch  36 | loss 0.0142 | val macro-F1 2:0.9938 6:0.8282 19:0.8191 | 356.6s
+2026-10-31 19:31:50 | INFO | epoch  37 | loss 0.0140 | val macro-F1 2:0.9932 6:0.8271 19:0.8227 | 356.6s
+2026-10-31 19:37:47 | INFO | epoch  38 | loss 0.0139 | val macro-F1 2:0.9926 6:0.8272 19:0.8210 | 357.2s
+2026-10-31 19:37:47 | INFO | Early stopping at epoch 38 (best val macro-F1 0.8360)
+2026-10-31 19:38:50 | INFO | test macro-F1  2:0.9807  6:0.8203  19:0.7952  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_ARP_Spoofing_seed44
+2026-10-31 19:39:45 | INFO | [zero-day] trace_moe without ARP_Spoofing seed 44: energy AUROC 0.9670 vs softmax 0.8696; flagged unknown 0.802, caught at all 0.976
+2026-10-31 19:39:53 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140582, 'val_windows_also_in_train_removed': 6479, 'test_windows_also_in_train_removed': 19970}
+2026-10-31 19:39:53 | INFO | Windows (loao, T=16): train=619,958, val=60,607, test=1,593,897
+2026-10-31 19:39:54 | INFO | === zero_day/trace_moe_loao_T16_Recon-VulScan_seed43: 685,041 parameters on mps | started 2026-10-31T19:39:54
+2026-10-31 19:46:00 | INFO | epoch   1 | loss 0.0875 | val macro-F1 2:0.9910 6:0.9096 19:0.7860 | 366.7s
+2026-10-31 19:52:06 | INFO | epoch   2 | loss 0.0384 | val macro-F1 2:0.9923 6:0.9315 19:0.7834 | 365.3s
+2026-10-31 19:58:07 | INFO | epoch   3 | loss 0.0306 | val macro-F1 2:0.9924 6:0.9389 19:0.7841 | 361.6s
+2026-10-31 20:04:09 | INFO | epoch   4 | loss 0.0266 | val macro-F1 2:0.9899 6:0.9087 19:0.7834 | 362.3s
+2026-10-31 20:10:44 | INFO | epoch   5 | loss 0.0233 | val macro-F1 2:0.9897 6:0.9510 19:0.7964 | 394.3s
+2026-10-31 20:17:57 | INFO | epoch   6 | loss 0.0215 | val macro-F1 2:0.9889 6:0.9617 19:0.7981 | 432.9s
+2026-10-31 20:25:11 | INFO | epoch   7 | loss 0.0202 | val macro-F1 2:0.9908 6:0.9534 19:0.8035 | 434.6s
+2026-10-31 20:32:23 | INFO | epoch   8 | loss 0.0188 | val macro-F1 2:0.9880 6:0.9368 19:0.7950 | 431.7s
+2026-10-31 20:39:34 | INFO | epoch   9 | loss 0.0181 | val macro-F1 2:0.9902 6:0.9618 19:0.8041 | 430.8s
+2026-10-31 20:46:43 | INFO | epoch  10 | loss 0.0168 | val macro-F1 2:0.9911 6:0.9518 19:0.8074 | 429.4s
+2026-10-31 20:53:49 | INFO | epoch  11 | loss 0.0162 | val macro-F1 2:0.9901 6:0.9567 19:0.8059 | 425.6s
+2026-10-31 21:00:58 | INFO | epoch  12 | loss 0.0161 | val macro-F1 2:0.9905 6:0.9493 19:0.7987 | 429.0s
+2026-10-31 21:08:00 | INFO | epoch  13 | loss 0.0156 | val macro-F1 2:0.9904 6:0.9721 19:0.8137 | 422.4s
+2026-10-31 21:14:59 | INFO | epoch  14 | loss 0.0150 | val macro-F1 2:0.9936 6:0.9699 19:0.8127 | 419.2s
+2026-10-31 21:21:44 | INFO | epoch  15 | loss 0.0147 | val macro-F1 2:0.9913 6:0.9618 19:0.8116 | 404.7s
+2026-10-31 21:27:40 | INFO | epoch  16 | loss 0.0144 | val macro-F1 2:0.9922 6:0.9646 19:0.8121 | 356.2s
+2026-10-31 21:33:17 | INFO | epoch  17 | loss 0.0140 | val macro-F1 2:0.9908 6:0.9643 19:0.8118 | 336.8s
+2026-10-31 21:38:44 | INFO | epoch  18 | loss 0.0136 | val macro-F1 2:0.9904 6:0.9691 19:0.8146 | 326.5s
+2026-10-31 21:44:03 | INFO | epoch  19 | loss 0.0135 | val macro-F1 2:0.9861 6:0.9563 19:0.8097 | 319.5s
+2026-10-31 21:49:16 | INFO | epoch  20 | loss 0.0132 | val macro-F1 2:0.9916 6:0.9617 19:0.8114 | 313.1s
+2026-10-31 21:54:24 | INFO | epoch  21 | loss 0.0128 | val macro-F1 2:0.9915 6:0.9656 19:0.8143 | 308.0s
+2026-10-31 21:59:30 | INFO | epoch  22 | loss 0.0130 | val macro-F1 2:0.9908 6:0.9730 19:0.8174 | 305.6s
+2026-10-31 22:04:33 | INFO | epoch  23 | loss 0.0128 | val macro-F1 2:0.9914 6:0.9680 19:0.8135 | 303.4s
+2026-10-31 22:09:43 | INFO | epoch  24 | loss 0.0123 | val macro-F1 2:0.9923 6:0.9659 19:0.8148 | 309.4s
+2026-10-31 22:15:12 | INFO | epoch  25 | loss 0.0122 | val macro-F1 2:0.9929 6:0.9689 19:0.8142 | 329.2s
+2026-10-31 22:20:36 | INFO | epoch  26 | loss 0.0120 | val macro-F1 2:0.9918 6:0.9684 19:0.8137 | 324.0s
+2026-10-31 22:26:05 | INFO | epoch  27 | loss 0.0119 | val macro-F1 2:0.9920 6:0.9666 19:0.8145 | 329.4s
+2026-10-31 22:31:32 | INFO | epoch  28 | loss 0.0117 | val macro-F1 2:0.9924 6:0.9672 19:0.8125 | 326.5s
+2026-10-31 22:36:57 | INFO | epoch  29 | loss 0.0115 | val macro-F1 2:0.9923 6:0.9721 19:0.8161 | 325.7s
+2026-10-31 22:42:24 | INFO | epoch  30 | loss 0.0115 | val macro-F1 2:0.9918 6:0.9644 19:0.8152 | 327.1s
+2026-10-31 22:47:53 | INFO | epoch  31 | loss 0.0113 | val macro-F1 2:0.9901 6:0.9666 19:0.8143 | 328.6s
+2026-10-31 22:53:19 | INFO | epoch  32 | loss 0.0112 | val macro-F1 2:0.9922 6:0.9706 19:0.8176 | 326.0s
+2026-10-31 22:58:45 | INFO | epoch  33 | loss 0.0112 | val macro-F1 2:0.9925 6:0.9712 19:0.8164 | 326.0s
+2026-10-31 23:04:14 | INFO | epoch  34 | loss 0.0111 | val macro-F1 2:0.9912 6:0.9698 19:0.8146 | 328.7s
+2026-10-31 23:09:43 | INFO | epoch  35 | loss 0.0111 | val macro-F1 2:0.9910 6:0.9687 19:0.8163 | 329.3s
+2026-10-31 23:15:05 | INFO | epoch  36 | loss 0.0109 | val macro-F1 2:0.9911 6:0.9684 19:0.8175 | 321.9s
+2026-10-31 23:20:27 | INFO | epoch  37 | loss 0.0110 | val macro-F1 2:0.9918 6:0.9683 19:0.8148 | 321.6s
+2026-10-31 23:25:51 | INFO | epoch  38 | loss 0.0108 | val macro-F1 2:0.9902 6:0.9638 19:0.8136 | 324.2s
+2026-10-31 23:31:13 | INFO | epoch  39 | loss 0.0108 | val macro-F1 2:0.9917 6:0.9686 19:0.8157 | 322.2s
+2026-10-31 23:36:39 | INFO | epoch  40 | loss 0.0107 | val macro-F1 2:0.9917 6:0.9686 19:0.8154 | 325.8s
+2026-10-31 23:42:04 | INFO | epoch  41 | loss 0.0108 | val macro-F1 2:0.9912 6:0.9697 19:0.8154 | 325.2s
+2026-10-31 23:47:29 | INFO | epoch  42 | loss 0.0107 | val macro-F1 2:0.9921 6:0.9699 19:0.8145 | 324.8s
+2026-10-31 23:47:29 | INFO | Early stopping at epoch 42 (best val macro-F1 0.8176)
+2026-10-31 23:48:23 | INFO | test macro-F1  2:0.9756  6:0.8891  19:0.7984  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_Recon-VulScan_seed43
+2026-10-31 23:49:09 | INFO | [zero-day] trace_moe without Recon-VulScan seed 43: energy AUROC 0.9676 vs softmax 0.9798; flagged unknown 0.682, caught at all 1.000
+2026-10-31 23:49:17 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140643, 'val_windows_also_in_train_removed': 6509, 'test_windows_also_in_train_removed': 21739}
+2026-10-31 23:49:17 | INFO | Windows (loao, T=16): train=619,897, val=60,577, test=1,592,128
+2026-10-31 23:49:17 | INFO | === zero_day/trace_moe_loao_T16_Recon-VulScan_seed44: 685,041 parameters on mps | started 2026-10-31T23:49:17
+2026-10-31 23:54:47 | INFO | epoch   1 | loss 0.0875 | val macro-F1 2:0.9909 6:0.8985 19:0.7733 | 330.0s
+2026-11-01 00:00:18 | INFO | epoch   2 | loss 0.0375 | val macro-F1 2:0.9919 6:0.9431 19:0.7797 | 330.9s
+2026-11-01 00:05:51 | INFO | epoch   3 | loss 0.0307 | val macro-F1 2:0.9905 6:0.9575 19:0.8031 | 332.9s
+2026-11-01 00:11:26 | INFO | epoch   4 | loss 0.0266 | val macro-F1 2:0.9905 6:0.9518 19:0.7986 | 335.2s
+2026-11-01 00:17:02 | INFO | epoch   5 | loss 0.0243 | val macro-F1 2:0.9846 6:0.9517 19:0.8022 | 336.0s
+2026-11-01 00:22:37 | INFO | epoch   6 | loss 0.0220 | val macro-F1 2:0.9916 6:0.9486 19:0.7981 | 335.2s
+2026-11-01 00:28:07 | INFO | epoch   7 | loss 0.0199 | val macro-F1 2:0.9901 6:0.9664 19:0.8067 | 329.5s
+2026-11-01 00:33:37 | INFO | epoch   8 | loss 0.0186 | val macro-F1 2:0.9869 6:0.9615 19:0.8101 | 330.9s
+2026-11-01 00:39:08 | INFO | epoch   9 | loss 0.0177 | val macro-F1 2:0.9875 6:0.9672 19:0.8040 | 330.8s
+2026-11-01 00:44:40 | INFO | epoch  10 | loss 0.0171 | val macro-F1 2:0.9896 6:0.9671 19:0.8096 | 331.9s
+2026-11-01 00:50:10 | INFO | epoch  11 | loss 0.0161 | val macro-F1 2:0.9895 6:0.9657 19:0.8086 | 330.1s
+2026-11-01 00:55:39 | INFO | epoch  12 | loss 0.0159 | val macro-F1 2:0.9874 6:0.9662 19:0.8099 | 328.8s
+2026-11-01 01:01:10 | INFO | epoch  13 | loss 0.0151 | val macro-F1 2:0.9897 6:0.9610 19:0.8092 | 330.8s
+2026-11-01 01:06:39 | INFO | epoch  14 | loss 0.0148 | val macro-F1 2:0.9891 6:0.9615 19:0.8091 | 329.7s
+2026-11-01 01:12:09 | INFO | epoch  15 | loss 0.0144 | val macro-F1 2:0.9871 6:0.9606 19:0.8097 | 329.5s
+2026-11-01 01:17:36 | INFO | epoch  16 | loss 0.0142 | val macro-F1 2:0.9881 6:0.9612 19:0.8073 | 327.4s
+2026-11-01 01:23:04 | INFO | epoch  17 | loss 0.0140 | val macro-F1 2:0.9891 6:0.9625 19:0.8075 | 327.7s
+2026-11-01 01:28:31 | INFO | epoch  18 | loss 0.0135 | val macro-F1 2:0.9884 6:0.9680 19:0.8091 | 326.8s
+2026-11-01 01:28:31 | INFO | Early stopping at epoch 18 (best val macro-F1 0.8101)
+2026-11-01 01:29:19 | INFO | test macro-F1  2:0.9807  6:0.8934  19:0.7886  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_Recon-VulScan_seed44
+2026-11-01 01:29:58 | INFO | [zero-day] trace_moe without Recon-VulScan seed 44: energy AUROC 0.9252 vs softmax 0.9570; flagged unknown 0.588, caught at all 0.985
+2026-11-01 01:30:07 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140659, 'val_windows_also_in_train_removed': 6518, 'test_windows_also_in_train_removed': 20836}
+2026-11-01 01:30:07 | INFO | Windows (loao, T=16): train=619,566, val=60,540, test=1,593,031
+2026-11-01 01:30:07 | INFO | === zero_day/trace_moe_loao_T16_MQTT-Malformed_Data_seed43: 685,041 parameters on mps | started 2026-11-01T01:30:07
+2026-11-01 01:35:31 | INFO | epoch   1 | loss 0.1017 | val macro-F1 2:0.9932 6:0.9057 19:0.7454 | 323.9s
+2026-11-01 01:41:02 | INFO | epoch   2 | loss 0.0442 | val macro-F1 2:0.9905 6:0.9391 19:0.7732 | 331.4s
+2026-11-01 01:46:36 | INFO | epoch   3 | loss 0.0350 | val macro-F1 2:0.9930 6:0.9310 19:0.7695 | 334.4s
+2026-11-01 01:52:11 | INFO | epoch   4 | loss 0.0303 | val macro-F1 2:0.9896 6:0.9144 19:0.7589 | 334.6s
+2026-11-01 01:57:45 | INFO | epoch   5 | loss 0.0270 | val macro-F1 2:0.9925 6:0.9548 19:0.7728 | 334.0s
+2026-11-01 01:03:18 | INFO | epoch   6 | loss 0.0251 | val macro-F1 2:0.9904 6:0.9570 19:0.7767 | 333.2s
+2026-11-01 01:08:49 | INFO | epoch   7 | loss 0.0230 | val macro-F1 2:0.9915 6:0.9669 19:0.7838 | 331.0s
+2026-11-01 01:14:25 | INFO | epoch   8 | loss 0.0215 | val macro-F1 2:0.9933 6:0.9623 19:0.7773 | 336.0s
+2026-11-01 01:20:00 | INFO | epoch   9 | loss 0.0209 | val macro-F1 2:0.9910 6:0.9586 19:0.7792 | 335.0s
+2026-11-01 01:25:30 | INFO | epoch  10 | loss 0.0202 | val macro-F1 2:0.9926 6:0.9616 19:0.7718 | 330.0s
+2026-11-01 01:31:02 | INFO | epoch  11 | loss 0.0192 | val macro-F1 2:0.9908 6:0.9567 19:0.7786 | 331.3s
+2026-11-01 01:36:35 | INFO | epoch  12 | loss 0.0189 | val macro-F1 2:0.9918 6:0.9577 19:0.7862 | 333.5s
+2026-11-01 01:42:07 | INFO | epoch  13 | loss 0.0182 | val macro-F1 2:0.9924 6:0.9672 19:0.7822 | 331.7s
+2026-11-01 01:47:40 | INFO | epoch  14 | loss 0.0181 | val macro-F1 2:0.9922 6:0.9652 19:0.7756 | 333.0s
+2026-11-01 01:53:05 | INFO | epoch  15 | loss 0.0175 | val macro-F1 2:0.9926 6:0.9680 19:0.7830 | 325.4s
+2026-11-01 01:58:30 | INFO | epoch  16 | loss 0.0173 | val macro-F1 2:0.9919 6:0.9657 19:0.7819 | 324.7s
+2026-11-01 02:04:04 | INFO | epoch  17 | loss 0.0168 | val macro-F1 2:0.9930 6:0.9649 19:0.7891 | 334.0s
+2026-11-01 02:10:10 | INFO | epoch  18 | loss 0.0167 | val macro-F1 2:0.9915 6:0.9545 19:0.7812 | 366.5s
+2026-11-01 02:16:16 | INFO | epoch  19 | loss 0.0163 | val macro-F1 2:0.9907 6:0.9645 19:0.7818 | 365.8s
+2026-11-01 02:22:22 | INFO | epoch  20 | loss 0.0161 | val macro-F1 2:0.9911 6:0.9657 19:0.7856 | 365.5s
+2026-11-01 02:28:26 | INFO | epoch  21 | loss 0.0159 | val macro-F1 2:0.9913 6:0.9596 19:0.7834 | 364.6s
+2026-11-01 02:34:31 | INFO | epoch  22 | loss 0.0158 | val macro-F1 2:0.9910 6:0.9621 19:0.7807 | 364.7s
+2026-11-01 02:40:35 | INFO | epoch  23 | loss 0.0156 | val macro-F1 2:0.9913 6:0.9639 19:0.7862 | 364.0s
+2026-11-01 02:46:39 | INFO | epoch  24 | loss 0.0153 | val macro-F1 2:0.9943 6:0.9596 19:0.7863 | 363.5s
+2026-11-01 02:52:42 | INFO | epoch  25 | loss 0.0152 | val macro-F1 2:0.9929 6:0.9669 19:0.7806 | 363.3s
+2026-11-01 02:58:45 | INFO | epoch  26 | loss 0.0151 | val macro-F1 2:0.9902 6:0.9521 19:0.7761 | 363.3s
+2026-11-01 03:05:38 | INFO | epoch  27 | loss 0.0149 | val macro-F1 2:0.9924 6:0.9667 19:0.7906 | 412.8s
+2026-11-01 03:12:42 | INFO | epoch  28 | loss 0.0147 | val macro-F1 2:0.9939 6:0.9661 19:0.7791 | 424.2s
+2026-11-01 03:19:43 | INFO | epoch  29 | loss 0.0147 | val macro-F1 2:0.9932 6:0.9657 19:0.7840 | 420.9s
+2026-11-01 03:26:43 | INFO | epoch  30 | loss 0.0146 | val macro-F1 2:0.9904 6:0.9601 19:0.7777 | 419.4s
+2026-11-01 03:33:40 | INFO | epoch  31 | loss 0.0144 | val macro-F1 2:0.9918 6:0.9644 19:0.7865 | 417.0s
+2026-11-01 03:40:36 | INFO | epoch  32 | loss 0.0142 | val macro-F1 2:0.9912 6:0.9631 19:0.7825 | 416.2s
+2026-11-01 03:47:33 | INFO | epoch  33 | loss 0.0142 | val macro-F1 2:0.9922 6:0.9695 19:0.7817 | 417.5s
+2026-11-01 03:54:29 | INFO | epoch  34 | loss 0.0142 | val macro-F1 2:0.9922 6:0.9680 19:0.7759 | 416.1s
+2026-11-01 04:01:24 | INFO | epoch  35 | loss 0.0142 | val macro-F1 2:0.9911 6:0.9595 19:0.7734 | 414.4s
+2026-11-01 04:08:19 | INFO | epoch  36 | loss 0.0140 | val macro-F1 2:0.9912 6:0.9570 19:0.7878 | 415.0s
+2026-11-01 04:15:08 | INFO | epoch  37 | loss 0.0142 | val macro-F1 2:0.9936 6:0.9654 19:0.7799 | 409.1s
+2026-11-01 04:15:08 | INFO | Early stopping at epoch 37 (best val macro-F1 0.7906)
+2026-11-01 04:16:20 | INFO | test macro-F1  2:0.9689  6:0.8838  19:0.7480  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_MQTT-Malformed_Data_seed43
+2026-11-01 04:17:22 | INFO | [zero-day] trace_moe without MQTT-Malformed_Data seed 43: energy AUROC 0.9765 vs softmax 0.9835; flagged unknown 0.827, caught at all 0.945
+2026-11-01 04:17:30 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140771, 'val_windows_also_in_train_removed': 6559, 'test_windows_also_in_train_removed': 20239}
+2026-11-01 04:17:30 | INFO | Windows (loao, T=16): train=619,454, val=60,499, test=1,593,628
+2026-11-01 04:17:31 | INFO | === zero_day/trace_moe_loao_T16_MQTT-Malformed_Data_seed44: 685,041 parameters on mps | started 2026-11-01T04:17:31
+2026-11-01 04:23:30 | INFO | epoch   1 | loss 0.1014 | val macro-F1 2:0.9930 6:0.8912 19:0.7536 | 359.2s
+2026-11-01 04:29:11 | INFO | epoch   2 | loss 0.0456 | val macro-F1 2:0.9925 6:0.9166 19:0.7652 | 340.8s
+2026-11-01 04:34:40 | INFO | epoch   3 | loss 0.0366 | val macro-F1 2:0.9905 6:0.9303 19:0.7681 | 329.7s
+2026-11-01 04:40:01 | INFO | epoch   4 | loss 0.0314 | val macro-F1 2:0.9915 6:0.9351 19:0.7733 | 321.1s
+2026-11-01 04:45:18 | INFO | epoch   5 | loss 0.0282 | val macro-F1 2:0.9873 6:0.9578 19:0.7802 | 316.3s
+2026-11-01 04:50:31 | INFO | epoch   6 | loss 0.0251 | val macro-F1 2:0.9917 6:0.9398 19:0.7721 | 313.4s
+2026-11-01 04:55:42 | INFO | epoch   7 | loss 0.0240 | val macro-F1 2:0.9903 6:0.9522 19:0.7799 | 311.3s
+2026-11-01 05:00:53 | INFO | epoch   8 | loss 0.0226 | val macro-F1 2:0.9911 6:0.9586 19:0.7823 | 310.7s
+2026-11-01 05:06:14 | INFO | epoch   9 | loss 0.0210 | val macro-F1 2:0.9916 6:0.9668 19:0.7816 | 320.6s
+2026-11-01 05:11:42 | INFO | epoch  10 | loss 0.0205 | val macro-F1 2:0.9918 6:0.9701 19:0.7905 | 328.3s
+2026-11-01 05:17:06 | INFO | epoch  11 | loss 0.0197 | val macro-F1 2:0.9890 6:0.9487 19:0.7690 | 323.8s
+2026-11-01 05:22:31 | INFO | epoch  12 | loss 0.0195 | val macro-F1 2:0.9899 6:0.9570 19:0.7751 | 325.4s
+2026-11-01 05:27:53 | INFO | epoch  13 | loss 0.0189 | val macro-F1 2:0.9924 6:0.9607 19:0.7693 | 322.3s
+2026-11-01 05:33:15 | INFO | epoch  14 | loss 0.0180 | val macro-F1 2:0.9918 6:0.9662 19:0.7718 | 321.7s
+2026-11-01 05:38:37 | INFO | epoch  15 | loss 0.0178 | val macro-F1 2:0.9897 6:0.9469 19:0.7685 | 321.8s
+2026-11-01 05:44:07 | INFO | epoch  16 | loss 0.0174 | val macro-F1 2:0.9913 6:0.9577 19:0.7867 | 330.6s
+2026-11-01 05:49:36 | INFO | epoch  17 | loss 0.0169 | val macro-F1 2:0.9915 6:0.9577 19:0.7865 | 328.8s
+2026-11-01 05:55:01 | INFO | epoch  18 | loss 0.0167 | val macro-F1 2:0.9908 6:0.9604 19:0.7838 | 325.0s
+2026-11-01 06:00:29 | INFO | epoch  19 | loss 0.0165 | val macro-F1 2:0.9925 6:0.9624 19:0.7972 | 327.7s
+2026-11-01 06:05:59 | INFO | epoch  20 | loss 0.0164 | val macro-F1 2:0.9922 6:0.9627 19:0.7864 | 330.2s
+2026-11-01 06:11:25 | INFO | epoch  21 | loss 0.0162 | val macro-F1 2:0.9912 6:0.9622 19:0.7852 | 326.3s
+2026-11-01 06:16:50 | INFO | epoch  22 | loss 0.0157 | val macro-F1 2:0.9909 6:0.9585 19:0.7949 | 324.5s
+2026-11-01 06:22:11 | INFO | epoch  23 | loss 0.0156 | val macro-F1 2:0.9928 6:0.9713 19:0.7935 | 321.1s
+2026-11-01 06:27:33 | INFO | epoch  24 | loss 0.0154 | val macro-F1 2:0.9908 6:0.9625 19:0.7894 | 322.4s
+2026-11-01 06:32:57 | INFO | epoch  25 | loss 0.0152 | val macro-F1 2:0.9925 6:0.9650 19:0.7857 | 323.6s
+2026-11-01 06:38:23 | INFO | epoch  26 | loss 0.0151 | val macro-F1 2:0.9929 6:0.9671 19:0.7963 | 326.1s
+2026-11-01 06:43:52 | INFO | epoch  27 | loss 0.0150 | val macro-F1 2:0.9927 6:0.9634 19:0.7908 | 328.5s
+2026-11-01 06:49:19 | INFO | epoch  28 | loss 0.0148 | val macro-F1 2:0.9931 6:0.9657 19:0.7873 | 327.1s
+2026-11-01 06:54:41 | INFO | epoch  29 | loss 0.0146 | val macro-F1 2:0.9908 6:0.9661 19:0.7954 | 322.3s
+2026-11-01 06:54:41 | INFO | Early stopping at epoch 29 (best val macro-F1 0.7972)
+2026-11-01 06:55:32 | INFO | test macro-F1  2:0.9731  6:0.8883  19:0.7547  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_MQTT-Malformed_Data_seed44
+2026-11-01 06:56:15 | INFO | [zero-day] trace_moe without MQTT-Malformed_Data seed 44: energy AUROC 0.9828 vs softmax 0.9886; flagged unknown 0.965, caught at all 0.992
+2026-11-01 06:56:23 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140276, 'val_windows_also_in_train_removed': 6414, 'test_windows_also_in_train_removed': 19713}
+2026-11-01 06:56:23 | INFO | Windows (loao, T=16): train=560,260, val=55,378, test=1,594,154
+2026-11-01 06:56:23 | INFO | === zero_day/trace_moe_loao_T16_TCP_IP-DoS-UDP_seed43: 685,041 parameters on mps | started 2026-11-01T06:56:23
+2026-11-01 07:01:54 | INFO | epoch   1 | loss 0.1083 | val macro-F1 2:0.9890 6:0.9161 19:0.7306 | 330.7s
+2026-11-01 07:07:17 | INFO | epoch   2 | loss 0.0457 | val macro-F1 2:0.9887 6:0.9305 19:0.7245 | 323.0s
+2026-11-01 07:12:45 | INFO | epoch   3 | loss 0.0367 | val macro-F1 2:0.9920 6:0.9512 19:0.7497 | 327.9s
+2026-11-01 07:18:13 | INFO | epoch   4 | loss 0.0313 | val macro-F1 2:0.9875 6:0.9179 19:0.7417 | 328.6s
+2026-11-01 07:23:39 | INFO | epoch   5 | loss 0.0277 | val macro-F1 2:0.9901 6:0.9591 19:0.7650 | 325.5s
+2026-11-01 07:29:11 | INFO | epoch   6 | loss 0.0254 | val macro-F1 2:0.9903 6:0.9566 19:0.7626 | 332.1s
+2026-11-01 07:34:43 | INFO | epoch   7 | loss 0.0237 | val macro-F1 2:0.9880 6:0.9509 19:0.7697 | 331.7s
+2026-11-01 07:40:10 | INFO | epoch   8 | loss 0.0224 | val macro-F1 2:0.9912 6:0.9659 19:0.7842 | 327.5s
+2026-11-01 07:45:39 | INFO | epoch   9 | loss 0.0216 | val macro-F1 2:0.9890 6:0.9591 19:0.7741 | 328.6s
+2026-11-01 07:51:12 | INFO | epoch  10 | loss 0.0200 | val macro-F1 2:0.9915 6:0.9647 19:0.7743 | 333.3s
+2026-11-01 07:56:43 | INFO | epoch  11 | loss 0.0196 | val macro-F1 2:0.9891 6:0.9596 19:0.7712 | 331.5s
+2026-11-01 08:02:15 | INFO | epoch  12 | loss 0.0193 | val macro-F1 2:0.9887 6:0.9602 19:0.7613 | 331.7s
+2026-11-01 08:07:48 | INFO | epoch  13 | loss 0.0188 | val macro-F1 2:0.9890 6:0.9563 19:0.7708 | 332.3s
+2026-11-01 08:13:20 | INFO | epoch  14 | loss 0.0183 | val macro-F1 2:0.9884 6:0.9610 19:0.7720 | 332.3s
+2026-11-01 08:18:51 | INFO | epoch  15 | loss 0.0178 | val macro-F1 2:0.9909 6:0.9595 19:0.7730 | 331.1s
+2026-11-01 08:24:22 | INFO | epoch  16 | loss 0.0175 | val macro-F1 2:0.9899 6:0.9611 19:0.7836 | 331.0s
+2026-11-01 08:29:50 | INFO | epoch  17 | loss 0.0172 | val macro-F1 2:0.9896 6:0.9328 19:0.7239 | 328.0s
+2026-11-01 08:35:15 | INFO | epoch  18 | loss 0.0168 | val macro-F1 2:0.9909 6:0.9664 19:0.7759 | 325.5s
+2026-11-01 08:35:15 | INFO | Early stopping at epoch 18 (best val macro-F1 0.7842)
+2026-11-01 08:36:07 | INFO | test macro-F1  2:0.9830  6:0.8438  19:0.7261  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_TCP_IP-DoS-UDP_seed43
+2026-11-01 08:36:49 | INFO | [zero-day] trace_moe without TCP_IP-DoS-UDP seed 43: energy AUROC 0.5808 vs softmax 0.4318; flagged unknown 0.000, caught at all 1.000
+2026-11-01 08:36:57 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140416, 'val_windows_also_in_train_removed': 6470, 'test_windows_also_in_train_removed': 19796}
+2026-11-01 08:36:57 | INFO | Windows (loao, T=16): train=560,120, val=55,322, test=1,594,071
+2026-11-01 08:36:57 | INFO | === zero_day/trace_moe_loao_T16_TCP_IP-DoS-UDP_seed44: 685,041 parameters on mps | started 2026-11-01T08:36:57
+2026-11-01 08:42:13 | INFO | epoch   1 | loss 0.1051 | val macro-F1 2:0.9908 6:0.9186 19:0.7386 | 315.4s
+2026-11-01 08:47:39 | INFO | epoch   2 | loss 0.0443 | val macro-F1 2:0.9849 6:0.9071 19:0.7230 | 325.7s
+2026-11-01 08:53:06 | INFO | epoch   3 | loss 0.0355 | val macro-F1 2:0.9898 6:0.9345 19:0.7411 | 327.3s
+2026-11-01 08:58:33 | INFO | epoch   4 | loss 0.0307 | val macro-F1 2:0.9897 6:0.9360 19:0.7612 | 327.3s
+2026-11-01 09:04:01 | INFO | epoch   5 | loss 0.0272 | val macro-F1 2:0.9895 6:0.9553 19:0.7567 | 327.8s
+2026-11-01 09:09:29 | INFO | epoch   6 | loss 0.0249 | val macro-F1 2:0.9912 6:0.9509 19:0.7575 | 328.4s
+2026-11-01 09:14:58 | INFO | epoch   7 | loss 0.0233 | val macro-F1 2:0.9903 6:0.9610 19:0.7625 | 328.7s
+2026-11-01 09:20:30 | INFO | epoch   8 | loss 0.0222 | val macro-F1 2:0.9869 6:0.9432 19:0.7538 | 331.6s
+2026-11-01 09:26:01 | INFO | epoch   9 | loss 0.0211 | val macro-F1 2:0.9901 6:0.9529 19:0.7704 | 331.8s
+2026-11-01 09:31:31 | INFO | epoch  10 | loss 0.0204 | val macro-F1 2:0.9865 6:0.9611 19:0.7614 | 329.6s
+2026-11-01 09:36:59 | INFO | epoch  11 | loss 0.0196 | val macro-F1 2:0.9861 6:0.9604 19:0.7815 | 327.9s
+2026-11-01 09:42:26 | INFO | epoch  12 | loss 0.0191 | val macro-F1 2:0.9869 6:0.9509 19:0.7600 | 327.0s
+2026-11-01 09:47:49 | INFO | epoch  13 | loss 0.0187 | val macro-F1 2:0.9877 6:0.9596 19:0.7724 | 322.9s
+2026-11-01 09:53:19 | INFO | epoch  14 | loss 0.0180 | val macro-F1 2:0.9906 6:0.9596 19:0.7646 | 330.3s
+2026-11-01 09:59:24 | INFO | epoch  15 | loss 0.0177 | val macro-F1 2:0.9872 6:0.9507 19:0.7682 | 364.7s
+2026-11-01 10:05:37 | INFO | epoch  16 | loss 0.0176 | val macro-F1 2:0.9872 6:0.9629 19:0.7603 | 372.8s
+2026-11-01 10:11:48 | INFO | epoch  17 | loss 0.0172 | val macro-F1 2:0.9884 6:0.9653 19:0.7618 | 371.6s
+2026-11-01 10:18:00 | INFO | epoch  18 | loss 0.0170 | val macro-F1 2:0.9874 6:0.9534 19:0.7573 | 371.8s
+2026-11-01 10:24:11 | INFO | epoch  19 | loss 0.0167 | val macro-F1 2:0.9894 6:0.9605 19:0.7766 | 371.1s
+2026-11-01 10:30:23 | INFO | epoch  20 | loss 0.0165 | val macro-F1 2:0.9913 6:0.9566 19:0.7830 | 371.5s
+2026-11-01 10:36:35 | INFO | epoch  21 | loss 0.0161 | val macro-F1 2:0.9888 6:0.9622 19:0.7723 | 371.9s
+2026-11-01 10:42:46 | INFO | epoch  22 | loss 0.0159 | val macro-F1 2:0.9859 6:0.9617 19:0.7727 | 371.2s
+2026-11-01 10:48:56 | INFO | epoch  23 | loss 0.0156 | val macro-F1 2:0.9886 6:0.9667 19:0.7759 | 370.4s
+2026-11-01 10:55:40 | INFO | epoch  24 | loss 0.0157 | val macro-F1 2:0.9873 6:0.9636 19:0.7662 | 403.9s
+2026-11-01 11:02:53 | INFO | epoch  25 | loss 0.0154 | val macro-F1 2:0.9876 6:0.9556 19:0.7796 | 432.3s
+2026-11-01 11:10:02 | INFO | epoch  26 | loss 0.0153 | val macro-F1 2:0.9886 6:0.9658 19:0.7792 | 429.6s
+2026-11-01 11:17:08 | INFO | epoch  27 | loss 0.0153 | val macro-F1 2:0.9881 6:0.9617 19:0.7676 | 426.2s
+2026-11-01 11:24:13 | INFO | epoch  28 | loss 0.0148 | val macro-F1 2:0.9882 6:0.9642 19:0.7741 | 425.1s
+2026-11-01 11:31:19 | INFO | epoch  29 | loss 0.0148 | val macro-F1 2:0.9880 6:0.9662 19:0.7680 | 425.8s
+2026-11-01 11:38:26 | INFO | epoch  30 | loss 0.0146 | val macro-F1 2:0.9873 6:0.9562 19:0.7679 | 426.5s
+2026-11-01 11:38:26 | INFO | Early stopping at epoch 30 (best val macro-F1 0.7830)
+2026-11-01 11:39:37 | INFO | test macro-F1  2:0.9699  6:0.8279  19:0.7324  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_TCP_IP-DoS-UDP_seed44
+2026-11-01 11:40:38 | INFO | [zero-day] trace_moe without TCP_IP-DoS-UDP seed 44: energy AUROC 0.2004 vs softmax 0.3088; flagged unknown 0.000, caught at all 1.000
+2026-11-01 11:40:46 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140750, 'val_windows_also_in_train_removed': 6503, 'test_windows_also_in_train_removed': 21107}
+2026-11-01 11:40:46 | INFO | Windows (loao, T=16): train=617,085, val=60,345, test=1,592,760
+2026-11-01 11:40:47 | INFO | === zero_day/trace_moe_loao_T16_MQTT-DDoS-Publish_Flood_seed43: 685,041 parameters on mps | started 2026-11-01T11:40:47
+2026-11-01 11:47:51 | INFO | epoch   1 | loss 0.1094 | val macro-F1 2:0.9887 6:0.9072 19:0.7331 | 423.9s
+2026-11-01 11:54:58 | INFO | epoch   2 | loss 0.0454 | val macro-F1 2:0.9922 6:0.9412 19:0.7497 | 427.4s
+2026-11-01 12:02:00 | INFO | epoch   3 | loss 0.0360 | val macro-F1 2:0.9883 6:0.9394 19:0.7481 | 422.6s
+2026-11-01 12:08:44 | INFO | epoch   4 | loss 0.0309 | val macro-F1 2:0.9887 6:0.9402 19:0.7541 | 403.6s
+2026-11-01 12:14:41 | INFO | epoch   5 | loss 0.0277 | val macro-F1 2:0.9894 6:0.9433 19:0.7567 | 357.1s
+2026-11-01 12:20:19 | INFO | epoch   6 | loss 0.0250 | val macro-F1 2:0.9876 6:0.9665 19:0.7572 | 338.1s
+2026-11-01 12:25:49 | INFO | epoch   7 | loss 0.0234 | val macro-F1 2:0.9882 6:0.9519 19:0.7599 | 329.6s
+2026-11-01 12:31:12 | INFO | epoch   8 | loss 0.0223 | val macro-F1 2:0.9870 6:0.9324 19:0.7616 | 323.1s
+2026-11-01 12:36:31 | INFO | epoch   9 | loss 0.0215 | val macro-F1 2:0.9876 6:0.9394 19:0.7534 | 318.6s
+2026-11-01 12:41:47 | INFO | epoch  10 | loss 0.0208 | val macro-F1 2:0.9890 6:0.9611 19:0.7556 | 316.4s
+2026-11-01 12:47:01 | INFO | epoch  11 | loss 0.0199 | val macro-F1 2:0.9916 6:0.9613 19:0.7656 | 313.7s
+2026-11-01 12:52:11 | INFO | epoch  12 | loss 0.0193 | val macro-F1 2:0.9878 6:0.9543 19:0.7630 | 310.5s
+2026-11-01 12:57:37 | INFO | epoch  13 | loss 0.0186 | val macro-F1 2:0.9909 6:0.9618 19:0.7731 | 326.0s
+2026-11-01 13:03:05 | INFO | epoch  14 | loss 0.0183 | val macro-F1 2:0.9894 6:0.9604 19:0.7642 | 328.0s
+2026-11-01 13:08:31 | INFO | epoch  15 | loss 0.0181 | val macro-F1 2:0.9887 6:0.9438 19:0.7623 | 325.5s
+2026-11-01 13:14:02 | INFO | epoch  16 | loss 0.0175 | val macro-F1 2:0.9890 6:0.9503 19:0.7611 | 330.7s
+2026-11-01 13:19:26 | INFO | epoch  17 | loss 0.0170 | val macro-F1 2:0.9910 6:0.9615 19:0.7683 | 324.7s
+2026-11-01 13:24:50 | INFO | epoch  18 | loss 0.0167 | val macro-F1 2:0.9887 6:0.9595 19:0.7594 | 324.2s
+2026-11-01 13:30:13 | INFO | epoch  19 | loss 0.0165 | val macro-F1 2:0.9914 6:0.9629 19:0.7763 | 322.5s
+2026-11-01 13:35:35 | INFO | epoch  20 | loss 0.0162 | val macro-F1 2:0.9889 6:0.9603 19:0.7613 | 321.8s
+2026-11-01 13:40:57 | INFO | epoch  21 | loss 0.0159 | val macro-F1 2:0.9901 6:0.9589 19:0.7649 | 322.5s
+2026-11-01 13:46:16 | INFO | epoch  22 | loss 0.0158 | val macro-F1 2:0.9897 6:0.9584 19:0.7673 | 318.9s
+2026-11-01 13:51:35 | INFO | epoch  23 | loss 0.0155 | val macro-F1 2:0.9893 6:0.9633 19:0.7772 | 318.8s
+2026-11-01 13:56:54 | INFO | epoch  24 | loss 0.0152 | val macro-F1 2:0.9887 6:0.9504 19:0.7597 | 318.6s
+2026-11-01 14:02:12 | INFO | epoch  25 | loss 0.0154 | val macro-F1 2:0.9893 6:0.9665 19:0.7815 | 318.1s
+2026-11-01 14:07:31 | INFO | epoch  26 | loss 0.0151 | val macro-F1 2:0.9912 6:0.9621 19:0.7794 | 319.7s
+2026-11-01 14:12:52 | INFO | epoch  27 | loss 0.0150 | val macro-F1 2:0.9905 6:0.9701 19:0.7746 | 320.1s
+2026-11-01 14:18:13 | INFO | epoch  28 | loss 0.0150 | val macro-F1 2:0.9882 6:0.9584 19:0.7735 | 321.7s
+2026-11-01 14:23:35 | INFO | epoch  29 | loss 0.0147 | val macro-F1 2:0.9902 6:0.9640 19:0.7694 | 322.1s
+2026-11-01 14:28:51 | INFO | epoch  30 | loss 0.0146 | val macro-F1 2:0.9909 6:0.9641 19:0.7757 | 316.1s
+2026-11-01 14:34:12 | INFO | epoch  31 | loss 0.0145 | val macro-F1 2:0.9902 6:0.9631 19:0.7781 | 320.2s
+2026-11-01 14:39:27 | INFO | epoch  32 | loss 0.0142 | val macro-F1 2:0.9908 6:0.9719 19:0.7735 | 315.3s
+2026-11-01 14:44:42 | INFO | epoch  33 | loss 0.0143 | val macro-F1 2:0.9896 6:0.9678 19:0.7742 | 315.2s
+2026-11-01 14:49:59 | INFO | epoch  34 | loss 0.0142 | val macro-F1 2:0.9912 6:0.9681 19:0.7774 | 316.5s
+2026-11-01 14:55:15 | INFO | epoch  35 | loss 0.0141 | val macro-F1 2:0.9914 6:0.9707 19:0.7650 | 316.8s
+2026-11-01 14:55:15 | INFO | Early stopping at epoch 35 (best val macro-F1 0.7815)
+2026-11-01 14:56:11 | INFO | test macro-F1  2:0.9709  6:0.8702  19:0.7731  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_MQTT-DDoS-Publish_Flood_seed43
+2026-11-01 14:56:58 | INFO | [zero-day] trace_moe without MQTT-DDoS-Publish_Flood seed 43: energy AUROC 0.2132 vs softmax 0.3519; flagged unknown 0.056, caught at all 1.000
+2026-11-01 14:57:06 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140618, 'val_windows_also_in_train_removed': 6584, 'test_windows_also_in_train_removed': 20915}
+2026-11-01 14:57:06 | INFO | Windows (loao, T=16): train=617,217, val=60,264, test=1,592,952
+2026-11-01 14:57:06 | INFO | === zero_day/trace_moe_loao_T16_MQTT-DDoS-Publish_Flood_seed44: 685,041 parameters on mps | started 2026-11-01T14:57:06
+2026-11-01 15:02:34 | INFO | epoch   1 | loss 0.1073 | val macro-F1 2:0.9895 6:0.9238 19:0.7370 | 327.4s
+2026-11-01 15:08:05 | INFO | epoch   2 | loss 0.0450 | val macro-F1 2:0.9919 6:0.9261 19:0.7378 | 330.9s
+2026-11-01 15:13:39 | INFO | epoch   3 | loss 0.0364 | val macro-F1 2:0.9919 6:0.9257 19:0.7380 | 334.4s
+2026-11-01 15:19:11 | INFO | epoch   4 | loss 0.0316 | val macro-F1 2:0.9916 6:0.9428 19:0.7648 | 331.7s
+2026-11-01 15:24:40 | INFO | epoch   5 | loss 0.0283 | val macro-F1 2:0.9904 6:0.9415 19:0.7540 | 329.1s
+2026-11-01 15:30:13 | INFO | epoch   6 | loss 0.0259 | val macro-F1 2:0.9915 6:0.9554 19:0.7672 | 332.6s
+2026-11-01 15:35:44 | INFO | epoch   7 | loss 0.0243 | val macro-F1 2:0.9887 6:0.9635 19:0.7643 | 331.4s
+2026-11-01 15:41:14 | INFO | epoch   8 | loss 0.0228 | val macro-F1 2:0.9886 6:0.9677 19:0.7735 | 329.8s
+2026-11-01 15:46:43 | INFO | epoch   9 | loss 0.0216 | val macro-F1 2:0.9908 6:0.9549 19:0.7692 | 329.7s
+2026-11-01 15:52:11 | INFO | epoch  10 | loss 0.0210 | val macro-F1 2:0.9860 6:0.9624 19:0.7563 | 327.6s
+2026-11-01 15:57:39 | INFO | epoch  11 | loss 0.0201 | val macro-F1 2:0.9895 6:0.9645 19:0.7570 | 328.1s
+2026-11-01 16:03:07 | INFO | epoch  12 | loss 0.0196 | val macro-F1 2:0.9882 6:0.9595 19:0.7765 | 327.8s
+2026-11-01 16:08:37 | INFO | epoch  13 | loss 0.0190 | val macro-F1 2:0.9880 6:0.9612 19:0.7690 | 330.5s
+2026-11-01 16:14:07 | INFO | epoch  14 | loss 0.0186 | val macro-F1 2:0.9893 6:0.9711 19:0.7577 | 330.0s
+2026-11-01 16:19:38 | INFO | epoch  15 | loss 0.0185 | val macro-F1 2:0.9883 6:0.9564 19:0.7686 | 330.1s
+2026-11-01 16:25:03 | INFO | epoch  16 | loss 0.0181 | val macro-F1 2:0.9893 6:0.9630 19:0.7677 | 325.9s
+2026-11-01 16:30:24 | INFO | epoch  17 | loss 0.0176 | val macro-F1 2:0.9874 6:0.9616 19:0.7690 | 320.4s
+2026-11-01 16:35:45 | INFO | epoch  18 | loss 0.0173 | val macro-F1 2:0.9894 6:0.9582 19:0.7722 | 321.3s
+2026-11-01 16:41:11 | INFO | epoch  19 | loss 0.0168 | val macro-F1 2:0.9905 6:0.9623 19:0.7579 | 326.0s
+2026-11-01 16:46:34 | INFO | epoch  20 | loss 0.0166 | val macro-F1 2:0.9913 6:0.9496 19:0.7656 | 322.6s
+2026-11-01 16:51:57 | INFO | epoch  21 | loss 0.0163 | val macro-F1 2:0.9914 6:0.9656 19:0.7657 | 323.7s
+2026-11-01 16:57:19 | INFO | epoch  22 | loss 0.0161 | val macro-F1 2:0.9923 6:0.9693 19:0.7735 | 322.0s
+2026-11-01 16:57:19 | INFO | Early stopping at epoch 22 (best val macro-F1 0.7765)
+2026-11-01 16:58:11 | INFO | test macro-F1  2:0.9735  6:0.8831  19:0.7798  -> <repo>/results_rerun/zero_day/trace_moe_loao_T16_MQTT-DDoS-Publish_Flood_seed44
+2026-11-01 16:58:54 | INFO | [zero-day] trace_moe without MQTT-DDoS-Publish_Flood seed 44: energy AUROC 0.5319 vs softmax 0.3623; flagged unknown 0.084, caught at all 1.000

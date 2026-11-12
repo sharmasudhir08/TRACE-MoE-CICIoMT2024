@@ -1,0 +1,6 @@
+model,binary_macro_f1_default,binary_macro_f1_tuned,threshold_tuned
+bilstm_dnn,95.57 ± 1.68,95.86 ± 1.52,0.6838 ± 0.0734
+rf,95.26 ± 0.09,95.52 ± 1.00,0.5160 ± 0.0777
+tfsage_lite,96.42 ± 0.87,96.46 ± 0.90,0.6563 ± 0.1155
+trace_moe,98.01 ± 0.44,97.79 ± 0.56,0.0994 ± 0.1233
+transformer,96.80 ± 0.43,96.67 ± 0.68,0.3547 ± 0.3750

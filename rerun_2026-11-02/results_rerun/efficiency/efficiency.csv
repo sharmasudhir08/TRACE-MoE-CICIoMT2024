@@ -1,0 +1,5 @@
+model,T,params,size_mb_fp32,cpu_bs1_ms_per_window,cpu_bs1_windows_per_s,cpu_bs1024_ms_per_window,cpu_bs1024_windows_per_s,mps_bs1_ms_per_window,mps_bs1_windows_per_s,mps_bs1024_ms_per_window,mps_bs1024_windows_per_s,cpu_threads
+bilstm_dnn,16,70811,0.27,0.7039,1420.6,0.141,7089.8,0.9208,1086.0,0.0086,115965.8,1
+transformer,16,308251,1.176,0.2099,4764.7,0.0851,11755.8,0.5151,1941.4,0.0006,1581772.6,1
+tfsage_lite,16,109723,0.419,0.1688,5923.7,0.0383,26115.2,0.3806,2627.3,0.0005,1939853.2,1
+trace_moe,16,685041,2.613,0.6287,1590.7,0.1493,6700.0,5.512,181.4,0.0212,47218.6,1

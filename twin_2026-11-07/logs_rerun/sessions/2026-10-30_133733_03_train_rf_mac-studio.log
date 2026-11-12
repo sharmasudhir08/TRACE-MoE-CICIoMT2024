@@ -1,0 +1,6 @@
+2026-10-30 13:37:34 | INFO | --- 03_train_rf.py | config configs/rerun.yaml | overrides []
+2026-10-30 13:37:34 | INFO | Session 2026-10-30_133733 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-10-30_133733_03_train_rf_mac-studio.log
+2026-10-30 13:37:45 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2768690, 'val_windows_also_in_train_removed': 313345, 'test_windows_also_in_train_removed': 60213}
+2026-10-30 13:37:45 | INFO | Windows (official, T=1): train=3,318,018, val=760,778, test=1,553,969
+2026-10-30 13:37:45 | INFO | === main/rf_official_T1_seed42 | started 2026-10-30T13:37:45
+2026-10-30 13:38:28 | INFO | test macro-F1  2:0.9517  6:0.8513  19:0.8336  -> <repo>/results_rerun/main/rf_official_T1_seed42__v2

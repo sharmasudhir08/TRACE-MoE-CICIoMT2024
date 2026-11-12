@@ -1,0 +1,7 @@
+2026-10-04 04:02:16 | INFO | --- 04_train_deep.py | config configs\default_v2.yaml | overrides ['train.device=cuda']
+2026-10-04 04:02:16 | INFO | Session v2_stride1_2026-10-04_040213 | host SudhirSharma | session log: D:\Sharda University\CICIoMT2024\trace-iomt\logs_v2\sessions\v2_stride1_2026-10-04_040213_04_train_deep_SudhirSharma.log
+2026-10-04 04:02:57 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 144682, 'val_windows_also_in_train_removed': 128335, 'test_windows_also_in_train_removed': 29478}
+2026-10-04 04:02:57 | INFO | Windows (official, T=16): train=616,087, val=945,023, test=1,584,389
+2026-10-04 04:02:57 | INFO | === main/trace_moe_official_T16_seed42: 685,041 parameters on cuda | started 2026-10-04T04:02:57
+2026-10-04 04:05:14 | INFO | epoch   1 | loss 0.0897 | val macro-F1 2:0.9891 6:0.9246 19:0.8454 | 134.6s
+2026-10-04 04:07:12 | INFO | epoch   2 | loss 0.0359 | val macro-F1 2:0.9879 6:0.9310 19:0.8749 | 117.7s

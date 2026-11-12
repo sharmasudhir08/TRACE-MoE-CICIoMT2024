@@ -1,0 +1,469 @@
+{
+  "table": "main_random_label2",
+  "by": [
+    "model",
+    "family"
+  ],
+  "groups": [
+    {
+      "key": {
+        "model": "bilstm_dnn",
+        "family": "deep"
+      },
+      "dirs": [
+        "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed42__v2",
+        "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed43",
+        "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed44",
+        "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed45",
+        "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "rerun_A_2026-10-30_235442"
+      ],
+      "n_runs": 5,
+      "runs": [
+        {
+          "model": "bilstm_dnn",
+          "family": "deep",
+          "seed": 42,
+          "run": "bilstm_dnn_random_T16_seed42",
+          "level": "label2",
+          "macro_f1": 0.975466830988688,
+          "dir": "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed42__v2",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_bilstm_dnn_random_T16_seed42",
+          "started_at": "2026-10-31T19:09:01",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "bilstm_dnn",
+          "family": "deep",
+          "seed": 43,
+          "run": "bilstm_dnn_random_T16_seed43",
+          "level": "label2",
+          "macro_f1": 0.9769523319387117,
+          "dir": "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_bilstm_dnn_random_T16_seed43",
+          "started_at": "2026-11-01T02:02:20",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "bilstm_dnn",
+          "family": "deep",
+          "seed": 44,
+          "run": "bilstm_dnn_random_T16_seed44",
+          "level": "label2",
+          "macro_f1": 0.9745792765236913,
+          "dir": "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_bilstm_dnn_random_T16_seed44",
+          "started_at": "2026-11-01T09:54:13",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "bilstm_dnn",
+          "family": "deep",
+          "seed": 45,
+          "run": "bilstm_dnn_random_T16_seed45",
+          "level": "label2",
+          "macro_f1": 0.975683123525954,
+          "dir": "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_bilstm_dnn_random_T16_seed45",
+          "started_at": "2026-11-01T17:32:00",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "bilstm_dnn",
+          "family": "deep",
+          "seed": 46,
+          "run": "bilstm_dnn_random_T16_seed46",
+          "level": "label2",
+          "macro_f1": 0.9752167420887199,
+          "dir": "<repo>/results_rerun/main/bilstm_dnn_random_T16_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_bilstm_dnn_random_T16_seed46",
+          "started_at": "2026-11-01T22:02:38",
+          "session": "rerun_A_2026-10-30_235442"
+        }
+      ]
+    },
+    {
+      "key": {
+        "model": "rf",
+        "family": "classical"
+      },
+      "dirs": [
+        "<repo>/results_rerun/main/rf_random_T1_seed42",
+        "<repo>/results_rerun/main/rf_random_T1_seed43",
+        "<repo>/results_rerun/main/rf_random_T1_seed44",
+        "<repo>/results_rerun/main/rf_random_T1_seed45",
+        "<repo>/results_rerun/main/rf_random_T1_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "rerun_2026-10-30_180627"
+      ],
+      "n_runs": 5,
+      "runs": [
+        {
+          "model": "rf",
+          "family": "classical",
+          "seed": 42,
+          "run": "rf_random_T1_seed42",
+          "level": "label2",
+          "macro_f1": 0.9846116134718655,
+          "dir": "<repo>/results_rerun/main/rf_random_T1_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "7d155acf567607d72a88cb991d9a20fcd7962d9a2538a8e18315689e237dfbec",
+          "run_id": "rerun_2026-10-30_180627_main_rf_random_T1_seed42",
+          "started_at": "2026-10-30T18:06:39",
+          "session": "rerun_2026-10-30_180627"
+        },
+        {
+          "model": "rf",
+          "family": "classical",
+          "seed": 43,
+          "run": "rf_random_T1_seed43",
+          "level": "label2",
+          "macro_f1": 0.9847016821723051,
+          "dir": "<repo>/results_rerun/main/rf_random_T1_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "7d155acf567607d72a88cb991d9a20fcd7962d9a2538a8e18315689e237dfbec",
+          "run_id": "rerun_2026-10-30_180627_main_rf_random_T1_seed43",
+          "started_at": "2026-10-30T18:11:02",
+          "session": "rerun_2026-10-30_180627"
+        },
+        {
+          "model": "rf",
+          "family": "classical",
+          "seed": 44,
+          "run": "rf_random_T1_seed44",
+          "level": "label2",
+          "macro_f1": 0.9842684921081943,
+          "dir": "<repo>/results_rerun/main/rf_random_T1_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "7d155acf567607d72a88cb991d9a20fcd7962d9a2538a8e18315689e237dfbec",
+          "run_id": "rerun_2026-10-30_180627_main_rf_random_T1_seed44",
+          "started_at": "2026-10-30T18:11:47",
+          "session": "rerun_2026-10-30_180627"
+        },
+        {
+          "model": "rf",
+          "family": "classical",
+          "seed": 45,
+          "run": "rf_random_T1_seed45",
+          "level": "label2",
+          "macro_f1": 0.9840070014970073,
+          "dir": "<repo>/results_rerun/main/rf_random_T1_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "7d155acf567607d72a88cb991d9a20fcd7962d9a2538a8e18315689e237dfbec",
+          "run_id": "rerun_2026-10-30_180627_main_rf_random_T1_seed45",
+          "started_at": "2026-10-30T18:12:33",
+          "session": "rerun_2026-10-30_180627"
+        },
+        {
+          "model": "rf",
+          "family": "classical",
+          "seed": 46,
+          "run": "rf_random_T1_seed46",
+          "level": "label2",
+          "macro_f1": 0.9841660259745739,
+          "dir": "<repo>/results_rerun/main/rf_random_T1_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "7d155acf567607d72a88cb991d9a20fcd7962d9a2538a8e18315689e237dfbec",
+          "run_id": "rerun_2026-10-30_180627_main_rf_random_T1_seed46",
+          "started_at": "2026-10-30T18:13:19",
+          "session": "rerun_2026-10-30_180627"
+        }
+      ]
+    },
+    {
+      "key": {
+        "model": "tfsage_lite",
+        "family": "deep"
+      },
+      "dirs": [
+        "<repo>/results_rerun/main/tfsage_lite_random_T16_seed42",
+        "<repo>/results_rerun/main/tfsage_lite_random_T16_seed43",
+        "<repo>/results_rerun/main/tfsage_lite_random_T16_seed44",
+        "<repo>/results_rerun/main/tfsage_lite_random_T16_seed45",
+        "<repo>/results_rerun/main/tfsage_lite_random_T16_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "rerun_A_2026-10-30_235442"
+      ],
+      "n_runs": 5,
+      "runs": [
+        {
+          "model": "tfsage_lite",
+          "family": "deep",
+          "seed": 42,
+          "run": "tfsage_lite_random_T16_seed42",
+          "level": "label2",
+          "macro_f1": 0.994207775185715,
+          "dir": "<repo>/results_rerun/main/tfsage_lite_random_T16_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_tfsage_lite_random_T16_seed42",
+          "started_at": "2026-10-31T21:19:33",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "tfsage_lite",
+          "family": "deep",
+          "seed": 43,
+          "run": "tfsage_lite_random_T16_seed43",
+          "level": "label2",
+          "macro_f1": 0.9947481408871545,
+          "dir": "<repo>/results_rerun/main/tfsage_lite_random_T16_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_tfsage_lite_random_T16_seed43",
+          "started_at": "2026-11-01T04:15:13",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "tfsage_lite",
+          "family": "deep",
+          "seed": 44,
+          "run": "tfsage_lite_random_T16_seed44",
+          "level": "label2",
+          "macro_f1": 0.9945588060637912,
+          "dir": "<repo>/results_rerun/main/tfsage_lite_random_T16_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_tfsage_lite_random_T16_seed44",
+          "started_at": "2026-11-01T12:05:01",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "tfsage_lite",
+          "family": "deep",
+          "seed": 45,
+          "run": "tfsage_lite_random_T16_seed45",
+          "level": "label2",
+          "macro_f1": 0.9950075312565765,
+          "dir": "<repo>/results_rerun/main/tfsage_lite_random_T16_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_tfsage_lite_random_T16_seed45",
+          "started_at": "2026-11-01T19:33:43",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "tfsage_lite",
+          "family": "deep",
+          "seed": 46,
+          "run": "tfsage_lite_random_T16_seed46",
+          "level": "label2",
+          "macro_f1": 0.9943787998812802,
+          "dir": "<repo>/results_rerun/main/tfsage_lite_random_T16_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_tfsage_lite_random_T16_seed46",
+          "started_at": "2026-11-02T00:01:44",
+          "session": "rerun_A_2026-10-30_235442"
+        }
+      ]
+    },
+    {
+      "key": {
+        "model": "trace_moe",
+        "family": "deep"
+      },
+      "dirs": [
+        "<repo>/results_rerun/main/trace_moe_random_T16_seed42",
+        "<repo>/results_rerun/main/trace_moe_random_T16_seed43",
+        "<repo>/results_rerun/main/trace_moe_random_T16_seed44",
+        "<repo>/results_rerun/main/trace_moe_random_T16_seed45",
+        "<repo>/results_rerun/main/trace_moe_random_T16_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "rerun_A_2026-10-30_235442"
+      ],
+      "n_runs": 5,
+      "runs": [
+        {
+          "model": "trace_moe",
+          "family": "deep",
+          "seed": 42,
+          "run": "trace_moe_random_T16_seed42",
+          "level": "label2",
+          "macro_f1": 0.9945002198643164,
+          "dir": "<repo>/results_rerun/main/trace_moe_random_T16_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_trace_moe_random_T16_seed42",
+          "started_at": "2026-10-31T22:07:53",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "trace_moe",
+          "family": "deep",
+          "seed": 43,
+          "run": "trace_moe_random_T16_seed43",
+          "level": "label2",
+          "macro_f1": 0.9937466218083588,
+          "dir": "<repo>/results_rerun/main/trace_moe_random_T16_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_trace_moe_random_T16_seed43",
+          "started_at": "2026-11-01T05:02:50",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "trace_moe",
+          "family": "deep",
+          "seed": 44,
+          "run": "trace_moe_random_T16_seed44",
+          "level": "label2",
+          "macro_f1": 0.993386277662597,
+          "dir": "<repo>/results_rerun/main/trace_moe_random_T16_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_trace_moe_random_T16_seed44",
+          "started_at": "2026-11-01T12:53:29",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "trace_moe",
+          "family": "deep",
+          "seed": 45,
+          "run": "trace_moe_random_T16_seed45",
+          "level": "label2",
+          "macro_f1": 0.9940057557048336,
+          "dir": "<repo>/results_rerun/main/trace_moe_random_T16_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_trace_moe_random_T16_seed45",
+          "started_at": "2026-11-01T20:12:44",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "trace_moe",
+          "family": "deep",
+          "seed": 46,
+          "run": "trace_moe_random_T16_seed46",
+          "level": "label2",
+          "macro_f1": 0.9936931562425919,
+          "dir": "<repo>/results_rerun/main/trace_moe_random_T16_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_trace_moe_random_T16_seed46",
+          "started_at": "2026-11-02T00:43:10",
+          "session": "rerun_A_2026-10-30_235442"
+        }
+      ]
+    },
+    {
+      "key": {
+        "model": "transformer",
+        "family": "deep"
+      },
+      "dirs": [
+        "<repo>/results_rerun/main/transformer_random_T16_seed42",
+        "<repo>/results_rerun/main/transformer_random_T16_seed43",
+        "<repo>/results_rerun/main/transformer_random_T16_seed44",
+        "<repo>/results_rerun/main/transformer_random_T16_seed45",
+        "<repo>/results_rerun/main/transformer_random_T16_seed46"
+      ],
+      "git_commits": [
+        "3aefa0f"
+      ],
+      "sessions": [
+        "rerun_A_2026-10-30_235442"
+      ],
+      "n_runs": 5,
+      "runs": [
+        {
+          "model": "transformer",
+          "family": "deep",
+          "seed": 42,
+          "run": "transformer_random_T16_seed42",
+          "level": "label2",
+          "macro_f1": 0.9951164332429965,
+          "dir": "<repo>/results_rerun/main/transformer_random_T16_seed42",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_transformer_random_T16_seed42",
+          "started_at": "2026-10-31T20:06:56",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "transformer",
+          "family": "deep",
+          "seed": 43,
+          "run": "transformer_random_T16_seed43",
+          "level": "label2",
+          "macro_f1": 0.9955153633715159,
+          "dir": "<repo>/results_rerun/main/transformer_random_T16_seed43",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_transformer_random_T16_seed43",
+          "started_at": "2026-11-01T02:59:16",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "transformer",
+          "family": "deep",
+          "seed": 44,
+          "run": "transformer_random_T16_seed44",
+          "level": "label2",
+          "macro_f1": 0.9946621820866881,
+          "dir": "<repo>/results_rerun/main/transformer_random_T16_seed44",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_transformer_random_T16_seed44",
+          "started_at": "2026-11-01T10:51:13",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "transformer",
+          "family": "deep",
+          "seed": 45,
+          "run": "transformer_random_T16_seed45",
+          "level": "label2",
+          "macro_f1": 0.9957781679910154,
+          "dir": "<repo>/results_rerun/main/transformer_random_T16_seed45",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_transformer_random_T16_seed45",
+          "started_at": "2026-11-01T18:26:52",
+          "session": "rerun_A_2026-10-30_235442"
+        },
+        {
+          "model": "transformer",
+          "family": "deep",
+          "seed": 46,
+          "run": "transformer_random_T16_seed46",
+          "level": "label2",
+          "macro_f1": 0.9954303568307055,
+          "dir": "<repo>/results_rerun/main/transformer_random_T16_seed46",
+          "git_commit": "3aefa0f",
+          "code_sha256": "4aad5e9170f255a2d05cc3bc2f6776d182bce5052fabd89dfed09ea94ba4c460",
+          "run_id": "rerun_A_2026-10-30_235442_main_transformer_random_T16_seed46",
+          "started_at": "2026-11-01T22:54:55",
+          "session": "rerun_A_2026-10-30_235442"
+        }
+      ]
+    }
+  ]
+}

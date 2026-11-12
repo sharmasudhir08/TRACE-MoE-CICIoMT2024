@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Binary macro-F1 at 0.5 and at the tuned threshold, random (%)}
+\label{tab:binary_tuned_random}
+\begin{tabular}{lccc}
+\toprule
+model & binary\_macro\_f1\_default & binary\_macro\_f1\_tuned & threshold\_tuned \\
+\midrule
+bilstm\_dnn & 97.56 $\pm$ 0.09 & 97.59 $\pm$ 0.11 & 0.6826 $\pm$ 0.1974 \\
+rf & 98.44 $\pm$ 0.03 & 98.41 $\pm$ 0.04 & 0.5020 $\pm$ 0.0562 \\
+tfsage\_lite & 99.46 $\pm$ 0.03 & 99.39 $\pm$ 0.05 & 0.0381 $\pm$ 0.0144 \\
+trace\_moe & 99.39 $\pm$ 0.04 & 99.33 $\pm$ 0.04 & 0.0012 $\pm$ 0.0010 \\
+transformer & 99.53 $\pm$ 0.04 & 99.45 $\pm$ 0.08 & 0.0086 $\pm$ 0.0051 \\
+\bottomrule
+\end{tabular}
+\end{table}

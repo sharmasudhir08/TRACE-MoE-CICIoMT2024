@@ -1,0 +1,10 @@
+2026-10-04 04:49:02 | INFO | --- 03_train_rf.py | config configs\default_v2.yaml | overrides ['train.device=cuda']
+2026-10-04 04:49:02 | INFO | Session v2_seed43_2026-10-04_044858 | host SudhirSharma | session log: D:\Sharda University\CICIoMT2024\trace-iomt\logs_v2\sessions\v2_seed43_2026-10-04_044858_03_train_rf_SudhirSharma.log
+2026-10-04 04:49:37 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2788071, 'val_windows_also_in_train_removed': 345238, 'test_windows_also_in_train_removed': 66842}
+2026-10-04 04:49:37 | INFO | Windows (official, T=1): train=3,298,637, val=728,885, test=1,547,340
+2026-10-04 04:49:37 | INFO | === main/rf_official_T1_seed43 | started 2026-10-04T04:49:37
+2026-10-04 04:51:32 | INFO | test macro-F1  2:0.9608  6:0.8822  19:0.8349  -> D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\main\rf_official_T1_seed43
+2026-10-04 04:52:06 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2749384, 'val_windows_also_in_train_removed': 502104, 'test_windows_also_in_train_removed': 836526}
+2026-10-04 04:52:06 | INFO | Windows (random, T=1): train=3,217,624, val=550,898, test=918,477
+2026-10-04 04:52:06 | INFO | === main/rf_random_T1_seed43 | started 2026-10-04T04:52:06
+2026-10-04 04:53:46 | INFO | test macro-F1  2:0.9867  6:0.9440  19:0.9039  -> D:\Sharda University\CICIoMT2024\trace-iomt\results_v2\main\rf_random_T1_seed43

@@ -1,0 +1,289 @@
+{
+  "paths": {
+    "ciciomt_csv_dir": "<repo>/data/raw/CICIoMT2024/WiFi_and_MQTT/attacks/CSV",
+    "processed_dir": "<repo>/data/processed",
+    "results_dir": "<repo>/results_rerun",
+    "logs_dir": "<repo>/logs_rerun",
+    "documents_dir": "<repo>/documents_rerun"
+  },
+  "data": {
+    "max_rows_per_file": null,
+    "drop_exact_duplicates": true,
+    "drop_features": [],
+    "shortcut_threshold": 0.95,
+    "val_tail_fraction": 0.15,
+    "scaler": "robust",
+    "clip_value": 10.0,
+    "oversample_small_classes": true
+  },
+  "split": {
+    "regime": "official",
+    "random_test_fraction": 0.2,
+    "temporal_test_fraction": 0.2,
+    "loao_class": null
+  },
+  "windows": {
+    "length": 16,
+    "stride_train": 8,
+    "stride_val": 16,
+    "stride_eval": 1,
+    "max_windows_per_class_train": 60000
+  },
+  "model": {
+    "name": "trace_moe",
+    "d_model": 128,
+    "n_heads": 4,
+    "n_layers": 2,
+    "ff_dim": 256,
+    "dropout": 0.2,
+    "token_dim": 16,
+    "use_protocol_token": true,
+    "hierarchical": true,
+    "graph_k": 4,
+    "graph_k_min": 1,
+    "trust_threshold": 0.5,
+    "moe": {
+      "n_experts": 4,
+      "routing": "learned",
+      "expert_hidden": 2,
+      "balance_weight": 0.01
+    }
+  },
+  "loss": {
+    "type": "logit_adjusted_focal",
+    "focal_gamma": 1.0,
+    "tau": 1.0,
+    "head_weights": {
+      "label2": 0.5,
+      "label6": 0.5,
+      "label19": 1.0
+    },
+    "consistency_weight": 0.1
+  },
+  "train": {
+    "seed": 45,
+    "epochs": 50,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 10,
+    "amp": true,
+    "num_workers": 0,
+    "device": "mps",
+    "grad_clip": 1.0
+  },
+  "run": {
+    "append_only": true
+  },
+  "classical": {
+    "models": [
+      "rf"
+    ],
+    "n_estimators": 200,
+    "max_rows_per_class": 100000
+  },
+  "robustness": {
+    "mutable_features": [
+      "Duration",
+      "Rate",
+      "Srate",
+      "Drate",
+      "Header_Length",
+      "Tot sum",
+      "Min",
+      "Max",
+      "AVG",
+      "Std",
+      "Tot size",
+      "IAT",
+      "Number",
+      "Magnitue",
+      "Radius",
+      "Covariance",
+      "Variance",
+      "Weight"
+    ],
+    "epsilons": [
+      0.05,
+      0.1,
+      0.25,
+      0.5
+    ],
+    "pgd_steps": 20,
+    "pgd_step_frac": 0.1,
+    "momentum": 0.0,
+    "max_eval_windows": 5000,
+    "adv_finetune_epochs": 3,
+    "adv_epsilon": 0.25,
+    "main_epsilon": 0.25,
+    "models": [
+      "trace_moe",
+      "bilstm_dnn",
+      "transformer",
+      "tfsage_lite"
+    ],
+    "tree_models": [
+      "rf"
+    ],
+    "transfer_matrix": true,
+    "transfer_epsilon": 0.25
+  },
+  "zero_day": {
+    "classes": [
+      "ARP_Spoofing",
+      "Recon-VulScan",
+      "MQTT-Malformed_Data",
+      "TCP_IP-DoS-UDP",
+      "MQTT-DDoS-Publish_Flood"
+    ],
+    "models": [
+      "trace_moe",
+      "transformer",
+      "bilstm_dnn"
+    ]
+  },
+  "abstain": {
+    "target_coverage": 0.95
+  },
+  "ablation": {
+    "model": "trace_moe",
+    "variants": {
+      "full": [],
+      "dense_expert": [
+        "model.moe.routing=dense"
+      ],
+      "protocol_routing": [
+        "model.moe.routing=protocol"
+      ],
+      "no_experts": [
+        "model.name=trace"
+      ],
+      "no_balance_loss": [
+        "model.moe.balance_weight=0"
+      ],
+      "no_hierarchy": [
+        "model.hierarchical=false"
+      ],
+      "plain_ce_loss": [
+        "loss.type=ce"
+      ],
+      "no_protocol_token": [
+        "model.use_protocol_token=false"
+      ]
+    },
+    "window_lengths": [
+      1,
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "main": {
+    "regimes": [
+      "official",
+      "random"
+    ],
+    "deep_models": [
+      "bilstm_dnn",
+      "transformer",
+      "tfsage_lite",
+      "trace_moe"
+    ],
+    "reference_model": "trace_moe"
+  },
+  "published": {
+    "file": "configs/published_results.yaml"
+  },
+  "hypotheses": {
+    "alpha": 0.05,
+    "min_recall_gain": 0.05,
+    "noninferiority_margin": 0.005,
+    "nmi_min": 0.5,
+    "clean_drop_max": 0.01,
+    "ood_auroc_min": 0.9,
+    "max_params": 5000000
+  },
+  "evaluation": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "recall_at_fpr": 0.01,
+    "save_proba": true
+  },
+  "figures": {
+    "dpi": 600,
+    "format": "png"
+  },
+  "twin": {
+    "rows_dir": "data/processed/twin/device",
+    "devices": "configs/twin_devices.json",
+    "labels": "file",
+    "cap": 50000,
+    "min_support": 200,
+    "shrinkage": 50,
+    "mlp_hidden": 64,
+    "seeds": {
+      "V0": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "V1": [
+        42,
+        43,
+        44
+      ],
+      "V2": [
+        42,
+        43,
+        44
+      ],
+      "V3": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "V4": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "rf": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    "tune_seed": 42,
+    "sync_grid": {
+      "eta": [
+        0.001,
+        0.01,
+        0.05
+      ],
+      "delta": [
+        3,
+        5,
+        8
+      ],
+      "budget": [
+        10,
+        60
+      ]
+    },
+    "stream_batch": 1024
+  }
+}

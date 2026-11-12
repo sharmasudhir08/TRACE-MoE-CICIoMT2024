@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Cross-level consistency of predicted labels, random split (%)}
+\label{tab:hierarchy_consistency_random}
+\begin{tabular}{lccc}
+\toprule
+model & consistency\_c19\_6 & consistency\_c6\_2 & consistency\_joint \\
+\midrule
+bilstm\_dnn & 99.84 $\pm$ 0.02 & 99.64 $\pm$ 0.03 & 99.50 $\pm$ 0.03 \\
+rf & 99.97 $\pm$ 0.00 & 99.92 $\pm$ 0.00 & 99.89 $\pm$ 0.00 \\
+tfsage\_lite & 99.98 $\pm$ 0.00 & 99.96 $\pm$ 0.01 & 99.95 $\pm$ 0.00 \\
+trace\_moe & 99.99 $\pm$ 0.01 & 99.98 $\pm$ 0.01 & 99.97 $\pm$ 0.01 \\
+transformer & 99.99 $\pm$ 0.00 & 99.97 $\pm$ 0.00 & 99.96 $\pm$ 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

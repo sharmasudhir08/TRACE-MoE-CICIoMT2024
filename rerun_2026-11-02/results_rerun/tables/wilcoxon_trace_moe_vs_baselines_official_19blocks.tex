@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Wilcoxon signed-rank, trace_moe vs each baseline, per-class F1, Holm (official_19blocks)}
+\label{tab:wilcoxon_trace_moe_vs_baselines_official_19blocks}
+\begin{tabular}{lccccccc}
+\toprule
+reference & baseline & n\_pairs & mean\_diff & wilcoxon\_stat & p & p\_holm & significant\_0.05 \\
+\midrule
+trace\_moe & bilstm\_dnn & 19 & 0.08194422249623247 & 5.0 & 3.814697265625e-05 & 0.000152587890625 & True \\
+trace\_moe & transformer & 19 & 0.012080647962836468 & 71.0 & 0.3524589538574219 & 1.0 & False \\
+trace\_moe & rf & 19 & -0.041812508432207275 & 80.0 & 0.5677604675292969 & 1.0 & False \\
+trace\_moe & tfsage\_lite & 19 & 0.006874945400774496 & 83.0 & 0.6507492065429688 & 1.0 & False \\
+\bottomrule
+\end{tabular}
+\end{table}

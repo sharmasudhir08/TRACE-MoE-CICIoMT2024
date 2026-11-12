@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\caption{Per-class ASR at eps=0.25 after fine-tuning: trace_moe vs each baseline, Wilcoxon + Holm}
+\label{tab:robustness_asr_tests}
+\begin{tabular}{lcccccccc}
+\toprule
+reference & baseline & n\_pairs & mean\_diff & wilcoxon\_stat & p & p\_holm & significant\_0.05 & mean\_asr\_reduction \\
+\midrule
+trace\_moe & bilstm\_dnn & 54 & -0.02552930935516042 & 38.0 & 0.002325295661716587 & 0.006975886985149761 & True & 0.02552930935516042 \\
+trace\_moe & transformer & 54 & -0.007393324883819181 & 94.0 & 0.2909825055865578 & 0.5819650111731156 & False & 0.007393324883819181 \\
+trace\_moe & tfsage\_lite & 54 & 0.004468936505936485 & 118.0 & 0.35919021837910514 & 0.5819650111731156 & False & -0.004468936505936485 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,22 @@
+# Smoke test on the REAL CICIoMT2024 data (not the synthetic generator).
+# Inherits every tiny setting from smoke.yaml (3 seeds, 3 epochs, small model), but points
+# the loader at data/raw/ (your current flattened layout holding .xlsx train + .csv test files)
+# and caps rows per file so the end-to-end pipeline completes in a reasonable time.
+#
+# Outputs land in results/_smoke_real, documents/_smoke_real, logs/_smoke_real — kept apart
+# from the synthetic smoke so you can compare both.
+base: smoke.yaml
+
+paths:
+  ciciomt_csv_dir: data/raw
+  processed_dir: data/processed/_smoke_real
+  results_dir: results/_smoke_real
+  logs_dir: logs/_smoke_real
+  documents_dir: documents/_smoke_real
+
+data:
+  # Row cap per CSV/XLSX file: a contiguous block of this many rows is kept.
+  # 10000 rows per file across ~70 files = ~700k rows total, enough for every class to be
+  # represented and for the pipeline to touch real feature distributions. Raise or remove
+  # (set to null) when you want a full run.
+  max_rows_per_file: 10000

@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{Random-forest macro-F1 under different split protocols}
+\label{tab:split_inflation}
+\begin{tabular}{lccccc}
+\toprule
+regime & dedup & n\_test & macro\_f1\_label2 & macro\_f1\_label6 & macro\_f1\_label19 \\
+\midrule
+random & False & 1718840 & 0.9726 & 0.9297 & 0.8977 \\
+random & True & 980141 & 0.972 & 0.9289 & 0.882 \\
+official & False & 1433369 & 0.9429 & 0.8452 & 0.7441 \\
+official & True & 1414153 & 0.9413 & 0.8441 & 0.7456 \\
+temporal & False & 1718835 & 0.9774 & 0.9113 & 0.8504 \\
+temporal & True & 1558191 & 0.9762 & 0.9127 & 0.8517 \\
+\bottomrule
+\end{tabular}
+\end{table}

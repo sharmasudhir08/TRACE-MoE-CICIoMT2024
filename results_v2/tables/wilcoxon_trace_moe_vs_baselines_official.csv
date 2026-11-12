@@ -1,0 +1,5 @@
+reference,baseline,n_pairs,mean_diff,wilcoxon_stat,p,p_holm,significant_0.05
+trace_moe,bilstm_dnn,95,0.09213,567.0,0.0,0.0,True
+trace_moe,tfsage_lite,95,0.02279,899.0,0.0,0.0,True
+trace_moe,transformer,95,0.02614,1044.0,1e-05,1e-05,True
+trace_moe,rf,95,-0.02883,2106.0,0.51837,0.51837,False

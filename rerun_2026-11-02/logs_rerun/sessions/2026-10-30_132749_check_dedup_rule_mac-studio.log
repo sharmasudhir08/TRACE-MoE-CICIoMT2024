@@ -1,0 +1,5 @@
+2026-10-30 13:27:50 | INFO | --- check_dedup_rule.py | config configs/rerun.yaml | overrides []
+2026-10-30 13:27:50 | INFO | Session 2026-10-30_132749 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-10-30_132749_check_dedup_rule_mac-studio.log
+2026-10-30 13:27:55 | INFO | target: train 2,788,114  val 346,261
+2026-10-30 13:28:01 | INFO | round6   train  2,768,690 ( -19,424)  val in train  313,345 ( -32,916)  val in train or earlier in val  501,366 (+155,105)  [repeats only inside val: 188,021]
+2026-10-30 13:28:06 | INFO | float16  train  2,833,558 ( +45,444)  val in train  359,928 ( +13,667)  val in train or earlier in val  520,209 (+173,948)  [repeats only inside val: 160,281]

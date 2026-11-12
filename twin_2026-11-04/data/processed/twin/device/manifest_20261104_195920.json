@@ -1,0 +1,868 @@
+{
+  "created_at": "2026-11-04T19:59:20",
+  "code_sha256": "52d4033e117b4d8eff4b554efb8c86c7fb4f0e202d78632f723b20e3858ed81e",
+  "mode": "device",
+  "endpoints": {
+    "Blink_Camera": "90:11:95:16:40:3b",
+    "Ecobee_Camera": "44:61:32:e8:88:2f",
+    "M1T_Camera": "f4:b1:9c:c9:79:ff",
+    "Multifunctional_Pager": "fc:67:1f:e1:9e:58",
+    "Owltron_Camera": "fc:67:1f:f7:cb:07",
+    "SenseU": "34:94:54:f0:db:f0",
+    "Singcall": "1c:90:ff:e6:e2:4b",
+    "MQTT_Broker_attacks": "a8:6b:ad:1f:9b:e5",
+    "Unprofiled_Device_002710": "00:27:10:cb:17:60"
+  },
+  "attackers": [
+    "dc:a6:32:c9:e4:ab",
+    "dc:a6:32:c9:e4:d5",
+    "dc:a6:32:c9:e5:a4",
+    "dc:a6:32:dc:27:d5"
+  ],
+  "files": [
+    {
+      "file": "TCP_IP-DoS-ICMP2_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-ICMP",
+      "state": "",
+      "rows": 965013,
+      "malformed_frames": 0,
+      "seconds": 163.2,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 368617,
+        "Ecobee_Camera": 335382,
+        "Unprofiled_Device_002710": 143997,
+        "Multifunctional_Pager": 109892,
+        "Blink_Camera": 7105,
+        "M1T_Camera": 16,
+        "SenseU": 4
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-ICMP1_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-ICMP",
+      "state": "",
+      "rows": 1041723,
+      "malformed_frames": 0,
+      "seconds": 177.3,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 1041675,
+        "Owltron_Camera": 16,
+        "Multifunctional_Pager": 11,
+        "Blink_Camera": 11,
+        "Unprofiled_Device_002710": 5,
+        "M1T_Camera": 4,
+        "SenseU": 1
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-ICMP4_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-ICMP",
+      "state": "",
+      "rows": 1059196,
+      "malformed_frames": 0,
+      "seconds": 181.0,
+      "rows_per_endpoint": {
+        "M1T_Camera": 731980,
+        "Ecobee_Camera": 327127,
+        "Owltron_Camera": 32,
+        "Blink_Camera": 22,
+        "Multifunctional_Pager": 21,
+        "Unprofiled_Device_002710": 11,
+        "SenseU": 2,
+        "Singcall": 1
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-ICMP3_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-ICMP",
+      "state": "",
+      "rows": 1085398,
+      "malformed_frames": 0,
+      "seconds": 183.7,
+      "rows_per_endpoint": {
+        "Unprofiled_Device_002710": 1083787,
+        "Ecobee_Camera": 1490,
+        "Multifunctional_Pager": 83,
+        "Owltron_Camera": 19,
+        "Blink_Camera": 13,
+        "M1T_Camera": 5,
+        "SenseU": 1
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-SYN3_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-SYN",
+      "state": "",
+      "rows": 1079360,
+      "malformed_frames": 0,
+      "seconds": 184.7,
+      "rows_per_endpoint": {
+        "MQTT_Broker_attacks": 446669,
+        "Owltron_Camera": 432686,
+        "M1T_Camera": 191463,
+        "Ecobee_Camera": 8387,
+        "Blink_Camera": 65,
+        "Multifunctional_Pager": 49,
+        "SenseU": 29,
+        "Singcall": 12
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-SYN4_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-SYN",
+      "state": "",
+      "rows": 1103203,
+      "malformed_frames": 0,
+      "seconds": 190.1,
+      "rows_per_endpoint": {
+        "Singcall": 676341,
+        "Multifunctional_Pager": 295566,
+        "Ecobee_Camera": 130888,
+        "Blink_Camera": 162,
+        "Owltron_Camera": 86,
+        "M1T_Camera": 66,
+        "MQTT_Broker_attacks": 50,
+        "SenseU": 44
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-SYN2_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-SYN",
+      "state": "",
+      "rows": 1114661,
+      "malformed_frames": 0,
+      "seconds": 190.9,
+      "rows_per_endpoint": {
+        "M1T_Camera": 887352,
+        "Ecobee_Camera": 227229,
+        "Owltron_Camera": 27,
+        "Blink_Camera": 18,
+        "Multifunctional_Pager": 17,
+        "SenseU": 12,
+        "MQTT_Broker_attacks": 5,
+        "Singcall": 1
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-SYN1_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-SYN",
+      "state": "",
+      "rows": 1112953,
+      "malformed_frames": 0,
+      "seconds": 192.6,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 1112885,
+        "Owltron_Camera": 19,
+        "Multifunctional_Pager": 17,
+        "Blink_Camera": 13,
+        "SenseU": 9,
+        "M1T_Camera": 5,
+        "MQTT_Broker_attacks": 3,
+        "Singcall": 2
+      }
+    },
+    {
+      "file": "TCP_IP-DDoS-UDP7_train",
+      "split": "train",
+      "label19": "TCP_IP-DDoS-UDP",
+      "state": "",
+      "rows": 1972710,
+      "malformed_frames": 0,
+      "seconds": 312.6,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 769837,
+        "Ecobee_Camera": 410986,
+        "Unprofiled_Device_002710": 378196,
+        "Blink_Camera": 306559,
+        "MQTT_Broker_attacks": 107024,
+        "SenseU": 52,
+        "Multifunctional_Pager": 41,
+        "M1T_Camera": 15
+      }
+    },
+    {
+      "file": "TCP_IP-DDoS-UDP6_train",
+      "split": "train",
+      "label19": "TCP_IP-DDoS-UDP",
+      "state": "",
+      "rows": 2020988,
+      "malformed_frames": 0,
+      "seconds": 325.0,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 2020927,
+        "SenseU": 16,
+        "Owltron_Camera": 15,
+        "Multifunctional_Pager": 12,
+        "Blink_Camera": 10,
+        "Unprofiled_Device_002710": 4,
+        "M1T_Camera": 4
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-TCP1_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-TCP",
+      "state": "",
+      "rows": 951512,
+      "malformed_frames": 0,
+      "seconds": 162.5,
+      "rows_per_endpoint": {
+        "Singcall": 656499,
+        "Multifunctional_Pager": 290955,
+        "Ecobee_Camera": 3568,
+        "MQTT_Broker_attacks": 232,
+        "Blink_Camera": 83,
+        "M1T_Camera": 63,
+        "SenseU": 58,
+        "Owltron_Camera": 54
+      }
+    },
+    {
+      "file": "TCP_IP-DDoS-UDP8_train",
+      "split": "train",
+      "label19": "TCP_IP-DDoS-UDP",
+      "state": "",
+      "rows": 2039635,
+      "malformed_frames": 0,
+      "seconds": 327.8,
+      "rows_per_endpoint": {
+        "MQTT_Broker_attacks": 1712371,
+        "Unprofiled_Device_002710": 324333,
+        "Ecobee_Camera": 2894,
+        "SenseU": 14,
+        "Multifunctional_Pager": 10,
+        "Blink_Camera": 9,
+        "M1T_Camera": 4
+      }
+    },
+    {
+      "file": "Blink_Camera_LAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 2146,
+      "malformed_frames": 0,
+      "seconds": 0.4,
+      "rows_per_endpoint": {
+        "Blink_Camera": 2146
+      }
+    },
+    {
+      "file": "Blink_Camera_WAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 2218,
+      "malformed_frames": 0,
+      "seconds": 0.4,
+      "rows_per_endpoint": {
+        "Blink_Camera": 2218
+      }
+    },
+    {
+      "file": "Ecobee_Camera_LAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3873,
+      "malformed_frames": 0,
+      "seconds": 0.7,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 3873
+      }
+    },
+    {
+      "file": "Ecobee_Camera_LAN_WATCH",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3665,
+      "malformed_frames": 0,
+      "seconds": 0.6,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 3665
+      }
+    },
+    {
+      "file": "TCP_IP-DDoS-UDP5_train",
+      "split": "train",
+      "label19": "TCP_IP-DDoS-UDP",
+      "state": "",
+      "rows": 2052498,
+      "malformed_frames": 0,
+      "seconds": 330.4,
+      "rows_per_endpoint": {
+        "Singcall": 1089881,
+        "Ecobee_Camera": 962325,
+        "SenseU": 80,
+        "Multifunctional_Pager": 77,
+        "M1T_Camera": 52,
+        "Owltron_Camera": 50,
+        "Blink_Camera": 20,
+        "Unprofiled_Device_002710": 13
+      }
+    },
+    {
+      "file": "Ecobee_Camera_WAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3586,
+      "malformed_frames": 0,
+      "seconds": 0.6,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 3586
+      }
+    },
+    {
+      "file": "M1T_Camera_LAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 1611,
+      "malformed_frames": 0,
+      "seconds": 0.3,
+      "rows_per_endpoint": {
+        "M1T_Camera": 1611
+      }
+    },
+    {
+      "file": "Ecobee_Camera_WAN_WATCH",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3338,
+      "malformed_frames": 0,
+      "seconds": 0.6,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 3338
+      }
+    },
+    {
+      "file": "M1T_Camera_LAN_PRECORDING",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 849,
+      "malformed_frames": 0,
+      "seconds": 0.2,
+      "rows_per_endpoint": {
+        "M1T_Camera": 847,
+        "Blink_Camera": 2
+      }
+    },
+    {
+      "file": "M1T_Camera_LAN_WATCH",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 1188,
+      "malformed_frames": 0,
+      "seconds": 0.2,
+      "rows_per_endpoint": {
+        "M1T_Camera": 1172,
+        "Ecobee_Camera": 6,
+        "Unprofiled_Device_002710": 3,
+        "Owltron_Camera": 2,
+        "SenseU": 2,
+        "Blink_Camera": 2,
+        "Multifunctional_Pager": 1
+      }
+    },
+    {
+      "file": "Idle",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Idle",
+      "rows": 30585,
+      "malformed_frames": 0,
+      "seconds": 5.6,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 10639,
+        "Owltron_Camera": 3859,
+        "Unprofiled_Device_002710": 3472,
+        "Multifunctional_Pager": 3133,
+        "SenseU": 2891,
+        "Blink_Camera": 2573,
+        "MQTT_Broker_attacks": 2390,
+        "M1T_Camera": 1628
+      }
+    },
+    {
+      "file": "M1T_Camera_WAN_PHOTO",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 577,
+      "malformed_frames": 0,
+      "seconds": 0.1,
+      "rows_per_endpoint": {
+        "M1T_Camera": 577
+      }
+    },
+    {
+      "file": "M1T_Camera_WAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 1736,
+      "malformed_frames": 0,
+      "seconds": 0.3,
+      "rows_per_endpoint": {
+        "M1T_Camera": 1736
+      }
+    },
+    {
+      "file": "Multifunctional_Pager_LAN_APP",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 44,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Multifunctional_Pager": 44
+      }
+    },
+    {
+      "file": "Multifunctional_Pager_LAN_PHYSICAL",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 21,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Multifunctional_Pager": 21
+      }
+    },
+    {
+      "file": "Multifunctional_Pager_WAN_APP",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 21,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Multifunctional_Pager": 21
+      }
+    },
+    {
+      "file": "Multifunctional_Pager_WAN_PHYSICAL",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 10,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Multifunctional_Pager": 10
+      }
+    },
+    {
+      "file": "M1T_Camera_WAN_RECORDING",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 1645,
+      "malformed_frames": 0,
+      "seconds": 0.3,
+      "rows_per_endpoint": {
+        "M1T_Camera": 1645
+      }
+    },
+    {
+      "file": "Active",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Active",
+      "rows": 99444,
+      "malformed_frames": 0,
+      "seconds": 18.6,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 32117,
+        "M1T_Camera": 28332,
+        "Unprofiled_Device_002710": 21552,
+        "Owltron_Camera": 5179,
+        "SenseU": 4463,
+        "Blink_Camera": 3926,
+        "Multifunctional_Pager": 3706,
+        "Singcall": 169
+      }
+    },
+    {
+      "file": "M1T_Camera_WAN_WATCH",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 1576,
+      "malformed_frames": 0,
+      "seconds": 0.3,
+      "rows_per_endpoint": {
+        "M1T_Camera": 1576
+      }
+    },
+    {
+      "file": "Owltron_Camera_LAN_WATCH",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3061,
+      "malformed_frames": 0,
+      "seconds": 0.5,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 3061
+      }
+    },
+    {
+      "file": "Owltron_Camera_LAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3892,
+      "malformed_frames": 0,
+      "seconds": 0.7,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 3892
+      }
+    },
+    {
+      "file": "Owltron_Camera_LAN_RECORDING",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3667,
+      "malformed_frames": 0,
+      "seconds": 0.6,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 3667
+      }
+    },
+    {
+      "file": "Owltron_Camera_WAN_PHOTO",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 570,
+      "malformed_frames": 0,
+      "seconds": 0.1,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 570
+      }
+    },
+    {
+      "file": "SenseU_LAN_EMERGENCY",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 22,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "SenseU": 22
+      }
+    },
+    {
+      "file": "SenseU_WAN_EMERGENCY",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 16,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "SenseU": 16
+      }
+    },
+    {
+      "file": "Singcall_LAN_PHYSICAL",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 42,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Singcall": 42
+      }
+    },
+    {
+      "file": "Singcall_WAN_PHYSICAL",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 34,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Singcall": 34
+      }
+    },
+    {
+      "file": "Blink_Mini_Camera_Power",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Power",
+      "rows": 57,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Blink_Camera": 57
+      }
+    },
+    {
+      "file": "Owltron_Camera_WAN_MIC",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3733,
+      "malformed_frames": 0,
+      "seconds": 0.6,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 3733
+      }
+    },
+    {
+      "file": "M1T_Camera_Power",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Power",
+      "rows": 41,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "M1T_Camera": 41
+      }
+    },
+    {
+      "file": "Ecobee_Camera_Power",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Power",
+      "rows": 256,
+      "malformed_frames": 0,
+      "seconds": 0.1,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 256
+      }
+    },
+    {
+      "file": "Multifunctional_Pager_Power",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Power",
+      "rows": 72,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Multifunctional_Pager": 72
+      }
+    },
+    {
+      "file": "SenseUBaby_Power",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Power",
+      "rows": 33,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "SenseU": 33
+      }
+    },
+    {
+      "file": "Owltron_Camera_Power",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Power",
+      "rows": 121,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 121
+      }
+    },
+    {
+      "file": "Singcall_Power",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Power",
+      "rows": 51,
+      "malformed_frames": 0,
+      "seconds": 0.0,
+      "rows_per_endpoint": {
+        "Singcall": 51
+      }
+    },
+    {
+      "file": "Owltron_Camera_WAN_WATCH",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 3504,
+      "malformed_frames": 0,
+      "seconds": 0.6,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 3504
+      }
+    },
+    {
+      "file": "Owltron_Camera_WAN_RECORDING",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Interactions",
+      "rows": 4012,
+      "malformed_frames": 0,
+      "seconds": 0.7,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 4012
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-TCP2_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-TCP",
+      "state": "",
+      "rows": 953186,
+      "malformed_frames": 0,
+      "seconds": 164.5,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 596923,
+        "Singcall": 312148,
+        "M1T_Camera": 43974,
+        "MQTT_Broker_attacks": 35,
+        "Owltron_Camera": 31,
+        "SenseU": 29,
+        "Multifunctional_Pager": 23,
+        "Blink_Camera": 23
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-TCP4_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-TCP",
+      "state": "",
+      "rows": 932515,
+      "malformed_frames": 0,
+      "seconds": 158.5,
+      "rows_per_endpoint": {
+        "Owltron_Camera": 427442,
+        "MQTT_Broker_attacks": 322023,
+        "M1T_Camera": 177707,
+        "Ecobee_Camera": 5181,
+        "SenseU": 56,
+        "Blink_Camera": 56,
+        "Multifunctional_Pager": 50
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-TCP3_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-TCP",
+      "state": "",
+      "rows": 958110,
+      "malformed_frames": 0,
+      "seconds": 165.9,
+      "rows_per_endpoint": {
+        "M1T_Camera": 955079,
+        "Ecobee_Camera": 2948,
+        "SenseU": 27,
+        "Owltron_Camera": 21,
+        "Multifunctional_Pager": 14,
+        "Blink_Camera": 14,
+        "MQTT_Broker_attacks": 7
+      }
+    },
+    {
+      "file": "ActiveBroker",
+      "split": "profiling",
+      "label19": "Benign",
+      "state": "Broker",
+      "rows": 0,
+      "malformed_frames": 0,
+      "seconds": 23.1,
+      "rows_per_endpoint": {}
+    },
+    {
+      "file": "TCP_IP-DoS-UDP1_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-UDP",
+      "state": "",
+      "rows": 1367061,
+      "malformed_frames": 0,
+      "seconds": 219.9,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 594565,
+        "Blink_Camera": 388914,
+        "M1T_Camera": 382472,
+        "Unprofiled_Device_002710": 910,
+        "SenseU": 88,
+        "Owltron_Camera": 61,
+        "Multifunctional_Pager": 51
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-UDP2_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-UDP",
+      "state": "",
+      "rows": 1402049,
+      "malformed_frames": 0,
+      "seconds": 228.0,
+      "rows_per_endpoint": {
+        "M1T_Camera": 798011,
+        "Owltron_Camera": 573600,
+        "Unprofiled_Device_002710": 21777,
+        "Ecobee_Camera": 8536,
+        "SenseU": 58,
+        "Blink_Camera": 34,
+        "Multifunctional_Pager": 33
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-UDP3_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-UDP",
+      "state": "",
+      "rows": 1459636,
+      "malformed_frames": 0,
+      "seconds": 230.7,
+      "rows_per_endpoint": {
+        "Unprofiled_Device_002710": 1455611,
+        "Ecobee_Camera": 3948,
+        "Owltron_Camera": 25,
+        "Multifunctional_Pager": 16,
+        "Blink_Camera": 16,
+        "SenseU": 11,
+        "M1T_Camera": 9
+      }
+    },
+    {
+      "file": "TCP_IP-DoS-UDP4_train",
+      "split": "train",
+      "label19": "TCP_IP-DoS-UDP",
+      "state": "",
+      "rows": 1427685,
+      "malformed_frames": 0,
+      "seconds": 233.8,
+      "rows_per_endpoint": {
+        "Ecobee_Camera": 930189,
+        "Multifunctional_Pager": 409115,
+        "SenseU": 88128,
+        "Blink_Camera": 97,
+        "Owltron_Camera": 68,
+        "M1T_Camera": 44,
+        "Unprofiled_Device_002710": 44
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Full TRACE-MoE minus each ablation variant, per-class F1, Wilcoxon + Holm}
+\label{tab:ablation_tests}
+\begin{tabular}{lccccccc}
+\toprule
+reference & variant & n\_pairs & mean\_diff & wilcoxon\_stat & p & p\_holm & significant\_0.05 \\
+\midrule
+full & plain\_ce\_loss & 19 & -0.008110664962019298 & 42.0 & 0.05816656898450354 & 0.4071659828915248 & False \\
+full & protocol\_routing & 19 & -0.0034062529181303654 & 58.0 & 0.14468765258789062 & 0.8681259155273438 & False \\
+full & no\_experts & 19 & 0.006339496834496175 & 71.0 & 0.3524589538574219 & 1.0 & False \\
+full & dense\_expert & 57 & 0.0028261808487283504 & 749.0 & 0.6893796008500883 & 1.0 & False \\
+full & no\_hierarchy & 19 & -0.0012378844872744815 & 77.0 & 0.7112498505312588 & 1.0 & False \\
+full & no\_balance\_loss & 19 & -0.0052749673221450626 & 78.0 & 0.7439495148870137 & 1.0 & False \\
+full & no\_protocol\_token & 19 & -0.0004988611086915334 & 92.0 & 0.9217147827148438 & 1.0 & False \\
+\bottomrule
+\end{tabular}
+\end{table}

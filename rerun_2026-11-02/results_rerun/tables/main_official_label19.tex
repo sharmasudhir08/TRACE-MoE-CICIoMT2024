@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{label19 test results, official split, mean ± std over seeds (%)}
+\label{tab:main_official_label19}
+\begin{tabular}{lccccccc}
+\toprule
+model & family & macro\_f1 & balanced\_accuracy & weighted\_f1 & macro\_pr\_auc & min\_class\_recall & ece \\
+\midrule
+bilstm\_dnn & deep & 71.34 $\pm$ 0.60 & 73.74 $\pm$ 0.31 & 97.94 $\pm$ 0.09 & 70.83 $\pm$ 0.39 & 8.29 $\pm$ 0.30 & 1.83 $\pm$ 0.11 \\
+transformer & deep & 78.32 $\pm$ 1.22 & 80.66 $\pm$ 0.33 & 98.63 $\pm$ 0.17 & 77.18 $\pm$ 0.37 & 10.33 $\pm$ 0.07 & 0.94 $\pm$ 0.19 \\
+tfsage\_lite & deep & 78.84 $\pm$ 0.96 & 81.56 $\pm$ 0.24 & 98.68 $\pm$ 0.08 & 78.52 $\pm$ 0.75 & 10.38 $\pm$ 0.33 & 1.13 $\pm$ 0.09 \\
+trace\_moe & deep & 79.53 $\pm$ 0.59 & 81.29 $\pm$ 0.33 & 98.73 $\pm$ 0.05 & 77.49 $\pm$ 0.51 & 10.43 $\pm$ 0.06 & 0.96 $\pm$ 0.05 \\
+rf & classical & 83.71 $\pm$ 0.26 & 82.06 $\pm$ 0.17 & 99.38 $\pm$ 0.04 & 86.17 $\pm$ 0.19 & 14.74 $\pm$ 0.21 & 1.79 $\pm$ 0.25 \\
+\bottomrule
+\end{tabular}
+\end{table}

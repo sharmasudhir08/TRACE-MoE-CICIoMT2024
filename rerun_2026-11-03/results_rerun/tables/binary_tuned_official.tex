@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Binary macro-F1 at 0.5 and at the tuned threshold, official (%)}
+\label{tab:binary_tuned_official}
+\begin{tabular}{lccc}
+\toprule
+model & binary\_macro\_f1\_default & binary\_macro\_f1\_tuned & threshold\_tuned \\
+\midrule
+bilstm\_dnn & 95.57 $\pm$ 1.68 & 95.86 $\pm$ 1.52 & 0.6838 $\pm$ 0.0734 \\
+rf & 95.26 $\pm$ 0.09 & 95.52 $\pm$ 1.00 & 0.5160 $\pm$ 0.0777 \\
+tfsage\_lite & 96.42 $\pm$ 0.87 & 96.46 $\pm$ 0.90 & 0.6563 $\pm$ 0.1155 \\
+trace\_moe & 98.01 $\pm$ 0.44 & 97.79 $\pm$ 0.56 & 0.0994 $\pm$ 0.1233 \\
+transformer & 96.80 $\pm$ 0.43 & 96.67 $\pm$ 0.68 & 0.3547 $\pm$ 0.3750 \\
+\bottomrule
+\end{tabular}
+\end{table}

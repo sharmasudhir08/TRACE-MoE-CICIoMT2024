@@ -1,0 +1,43 @@
+2026-10-30 13:39:46 | INFO | --- 04_train_deep.py | config configs/rerun.yaml | overrides ['train.device=mps']
+2026-10-30 13:39:46 | INFO | Session 2026-10-30_133945 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-10-30_133945_04_train_deep_mac-studio.log
+2026-10-30 13:39:54 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140765, 'val_windows_also_in_train_removed': 6492, 'test_windows_also_in_train_removed': 20313}
+2026-10-30 13:39:54 | INFO | Windows (official, T=16): train=620,004, val=60,614, test=1,593,554
+2026-10-30 13:39:55 | INFO | === main/trace_moe_official_T16_seed42: 685,041 parameters on mps | started 2026-10-30T13:39:55
+2026-10-30 13:44:46 | INFO | epoch   1 | loss 0.1005 | val macro-F1 2:0.9877 6:0.9018 19:0.7831 | 291.3s
+2026-10-30 13:49:29 | INFO | epoch   2 | loss 0.0421 | val macro-F1 2:0.9902 6:0.9428 19:0.8153 | 283.0s
+2026-10-30 13:58:07 | INFO | epoch   3 | loss 0.0330 | val macro-F1 2:0.9892 6:0.9464 19:0.7966 | 517.1s
+2026-10-30 14:02:51 | INFO | epoch   4 | loss 0.0289 | val macro-F1 2:0.9914 6:0.9443 19:0.7959 | 284.3s
+2026-10-30 14:07:33 | INFO | epoch   5 | loss 0.0263 | val macro-F1 2:0.9881 6:0.9440 19:0.8025 | 282.3s
+2026-10-30 14:14:15 | INFO | epoch   6 | loss 0.0241 | val macro-F1 2:0.9876 6:0.9421 19:0.8080 | 401.8s
+2026-10-30 14:18:54 | INFO | epoch   7 | loss 0.0231 | val macro-F1 2:0.9895 6:0.9545 19:0.8163 | 278.9s
+2026-10-30 14:23:34 | INFO | epoch   8 | loss 0.0213 | val macro-F1 2:0.9903 6:0.9611 19:0.8101 | 279.8s
+2026-10-30 14:28:11 | INFO | epoch   9 | loss 0.0205 | val macro-F1 2:0.9889 6:0.9398 19:0.8034 | 277.3s
+2026-10-30 14:32:51 | INFO | epoch  10 | loss 0.0199 | val macro-F1 2:0.9903 6:0.9526 19:0.8187 | 280.5s
+2026-10-30 14:37:35 | INFO | epoch  11 | loss 0.0195 | val macro-F1 2:0.9884 6:0.9674 19:0.8242 | 284.1s
+2026-10-30 14:42:20 | INFO | epoch  12 | loss 0.0189 | val macro-F1 2:0.9901 6:0.9629 19:0.8194 | 284.3s
+2026-10-30 15:02:36 | INFO | epoch  13 | loss 0.0182 | val macro-F1 2:0.9883 6:0.9605 19:0.8143 | 1216.6s
+2026-10-30 15:07:23 | INFO | epoch  14 | loss 0.0180 | val macro-F1 2:0.9872 6:0.9571 19:0.8170 | 286.2s
+2026-10-30 16:05:15 | INFO | epoch  15 | loss 0.0176 | val macro-F1 2:0.9897 6:0.9620 19:0.8071 | 3472.7s
+2026-10-30 16:10:01 | INFO | epoch  16 | loss 0.0171 | val macro-F1 2:0.9886 6:0.9574 19:0.8077 | 285.5s
+2026-10-30 16:30:30 | INFO | epoch  17 | loss 0.0172 | val macro-F1 2:0.9916 6:0.9479 19:0.8009 | 1229.6s
+2026-10-30 16:35:10 | INFO | epoch  18 | loss 0.0166 | val macro-F1 2:0.9886 6:0.9633 19:0.8228 | 279.3s
+2026-10-30 16:39:51 | INFO | epoch  19 | loss 0.0166 | val macro-F1 2:0.9908 6:0.9618 19:0.8204 | 281.5s
+2026-10-30 16:44:32 | INFO | epoch  20 | loss 0.0163 | val macro-F1 2:0.9893 6:0.9582 19:0.8276 | 281.0s
+2026-10-30 16:49:17 | INFO | epoch  21 | loss 0.0160 | val macro-F1 2:0.9915 6:0.9655 19:0.8264 | 284.5s
+2026-10-30 16:54:03 | INFO | epoch  22 | loss 0.0157 | val macro-F1 2:0.9901 6:0.9597 19:0.8138 | 286.4s
+2026-10-30 16:58:48 | INFO | epoch  23 | loss 0.0155 | val macro-F1 2:0.9917 6:0.9752 19:0.8311 | 285.2s
+2026-10-30 17:03:33 | INFO | epoch  24 | loss 0.0156 | val macro-F1 2:0.9894 6:0.9659 19:0.8191 | 284.6s
+2026-10-30 17:08:19 | INFO | epoch  25 | loss 0.0151 | val macro-F1 2:0.9925 6:0.9683 19:0.8267 | 286.5s
+2026-10-30 17:13:05 | INFO | epoch  26 | loss 0.0151 | val macro-F1 2:0.9907 6:0.9663 19:0.8312 | 286.1s
+2026-10-30 17:17:50 | INFO | epoch  27 | loss 0.0151 | val macro-F1 2:0.9912 6:0.9619 19:0.8179 | 285.0s
+2026-10-30 17:22:31 | INFO | epoch  28 | loss 0.0147 | val macro-F1 2:0.9899 6:0.9652 19:0.8301 | 280.3s
+2026-10-30 17:27:12 | INFO | epoch  29 | loss 0.0145 | val macro-F1 2:0.9921 6:0.9700 19:0.8211 | 281.6s
+2026-10-30 17:31:52 | INFO | epoch  30 | loss 0.0142 | val macro-F1 2:0.9904 6:0.9649 19:0.8230 | 279.6s
+2026-10-30 17:36:33 | INFO | epoch  31 | loss 0.0142 | val macro-F1 2:0.9907 6:0.9663 19:0.8159 | 281.1s
+2026-10-30 17:41:14 | INFO | epoch  32 | loss 0.0140 | val macro-F1 2:0.9893 6:0.9676 19:0.8279 | 281.1s
+2026-10-30 17:46:00 | INFO | epoch  33 | loss 0.0142 | val macro-F1 2:0.9897 6:0.9653 19:0.8240 | 286.3s
+2026-10-30 17:50:46 | INFO | epoch  34 | loss 0.0141 | val macro-F1 2:0.9882 6:0.9648 19:0.8146 | 285.6s
+2026-10-30 17:55:34 | INFO | epoch  35 | loss 0.0139 | val macro-F1 2:0.9912 6:0.9694 19:0.8216 | 287.6s
+2026-10-30 18:00:21 | INFO | epoch  36 | loss 0.0140 | val macro-F1 2:0.9904 6:0.9681 19:0.8237 | 287.1s
+2026-10-30 18:00:21 | INFO | Early stopping at epoch 36 (best val macro-F1 0.8312)
+2026-10-30 18:01:15 | INFO | test macro-F1  2:0.9720  6:0.8849  19:0.7983  -> <repo>/results_rerun/main/trace_moe_official_T16_seed42

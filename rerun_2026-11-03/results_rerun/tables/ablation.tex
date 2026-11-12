@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{TRACE-MoE ablation, macro-F1 mean and std over seeds}
+\label{tab:ablation}
+\begin{tabular}{lccccccccc}
+\toprule
+('variant', '') & ('macro\_f1', 'label19') & ('macro\_f1', 'label2') & ('macro\_f1', 'label6') & ('macro\_f1\_std', 'label19') & ('macro\_f1\_std', 'label2') & ('macro\_f1\_std', 'label6') & ('n\_seeds', 'label19') & ('n\_seeds', 'label2') & ('n\_seeds', 'label6') \\
+\midrule
+T=1 & 0.7171 & 0.9511 & 0.7953 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+T=32 & 0.8192 & 0.9861 & 0.9268 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+T=4 & 0.7608 & 0.968 & 0.8719 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+T=8 & 0.7773 & 0.9723 & 0.8815 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+dense\_expert & 0.7929 & 0.9754 & 0.8836 & 0.0085 & 0.0027 & 0.01 & 3 & 3 & 3 \\
+full & 0.7958 & 0.9796 & 0.8907 & 0.0009 & 0.003 & 0.0018 & 3 & 3 & 3 \\
+no\_balance\_loss & 0.8001 & 0.9827 & 0.9056 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+no\_experts & 0.7885 & 0.9827 & 0.8805 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+no\_hierarchy & 0.796 & 0.9672 & 0.8801 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+no\_protocol\_token & 0.7953 & 0.9633 & 0.8695 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+plain\_ce\_loss & 0.8029 & 0.9763 & 0.8962 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+protocol\_routing & 0.7982 & 0.9792 & 0.8995 & 0.0 & 0.0 & 0.0 & 1 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

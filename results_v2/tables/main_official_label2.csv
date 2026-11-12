@@ -1,0 +1,6 @@
+model,family,n_seeds,macro_f1,roc_auc,pr_auc,recall_at_fpr_0.01,ece,source_runs,source_git_commits
+tfsage_lite,deep,5,95.77 ± 0.35,95.86 ± 1.86,99.80 ± 0.09,0.00 ± 0.00,0.36 ± 0.04,tfsage_lite_official_T16_seed42|tfsage_lite_official_T16_seed43|tfsage_lite_official_T16_seed44|tfsage_lite_official_T16_seed45|tfsage_lite_official_T16_seed46,no-git
+rf,classical,5,96.03 ± 0.06,99.98 ± 0.00,100.00 ± 0.00,99.80 ± 0.01,0.15 ± 0.01,rf_official_T1_seed42|rf_official_T1_seed43|rf_official_T1_seed44|rf_official_T1_seed45|rf_official_T1_seed46,no-git
+bilstm_dnn,deep,5,96.17 ± 0.70,99.74 ± 0.31,99.99 ± 0.02,79.74 ± 44.58,0.26 ± 0.07,bilstm_dnn_official_T16_seed42|bilstm_dnn_official_T16_seed43|bilstm_dnn_official_T16_seed44|bilstm_dnn_official_T16_seed45|bilstm_dnn_official_T16_seed46,no-git
+transformer,deep,5,98.01 ± 0.55,99.97 ± 0.01,100.00 ± 0.00,99.81 ± 0.08,0.14 ± 0.05,transformer_official_T16_seed42|transformer_official_T16_seed43|transformer_official_T16_seed44|transformer_official_T16_seed45|transformer_official_T16_seed46,no-git
+trace_moe,deep,5,98.45 ± 0.37,99.97 ± 0.02,100.00 ± 0.00,99.87 ± 0.05,0.13 ± 0.03,trace_moe_official_T16_seed42|trace_moe_official_T16_seed43|trace_moe_official_T16_seed44|trace_moe_official_T16_seed45|trace_moe_official_T16_seed46,no-git

@@ -1,0 +1,12 @@
+2026-10-30 23:54:43 | INFO | --- 03_train_rf.py | config configs/rerun.yaml | overrides []
+2026-10-30 23:54:43 | INFO | Session rerun_A_2026-10-30_235442 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_A_2026-10-30_235442_03_train_rf_mac-studio.log
+2026-10-30 23:54:44 | INFO | skip official seed 42: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip official seed 43: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip official seed 44: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip official seed 45: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip official seed 46: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip random seed 42: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip random seed 43: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip random seed 44: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip random seed 45: ['rf'] already done
+2026-10-30 23:54:44 | INFO | skip random seed 46: ['rf'] already done

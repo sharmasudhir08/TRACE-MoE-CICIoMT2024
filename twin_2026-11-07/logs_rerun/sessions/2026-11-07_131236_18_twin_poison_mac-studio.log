@@ -1,0 +1,2 @@
+2026-11-07 13:12:38 | INFO | --- 18_twin_poison.py | config configs/twin.yaml | overrides ['train.device=']
+2026-11-07 13:12:38 | INFO | Session 2026-11-07_131236 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-11-07_131236_18_twin_poison_mac-studio.log

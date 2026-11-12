@@ -1,0 +1,4 @@
+model,energy_auroc,energy_fpr95,msp_auroc,flagged_unknown,caught_as_attack,caught_any,false_alarm_known,known_macro_f1
+bilstm_dnn,0.6879,0.5017,0.7247,0.3862,0.6466,0.9606,0.0513,0.7395
+trace_moe,0.7261,0.3712,0.7224,0.5172,0.6362,0.9925,0.0405,0.8189
+transformer,0.6554,0.3963,0.8061,0.5734,0.6165,0.9991,0.0432,0.8053

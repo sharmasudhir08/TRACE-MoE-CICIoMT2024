@@ -1,0 +1,65 @@
+# Results REPORTED by the five closest CICIoMT2024 papers. They are NOT re-implemented here.
+# Step 09 (09_compare.py) puts them next to our own numbers in results/tables/published_comparison.csv,
+# always labelled "reported", with each paper's split and metric, because splits and metrics differ
+# from ours. Values are in percent, copied from each paper (see METHODOLOGY.md, Section 9).
+# verified: true = checked against the publisher's article page (2 Oct 2026) or the PDF.
+
+papers:
+  - key: jodayree2026
+    study: "Jodayree et al. (2026), Sci Rep 16:23252"
+    doi: https://doi.org/10.1038/s41598-026-50813-7
+    model: "PSM-HT (hierarchical Transformer, energy open-set head)"
+    split: "session-level (leakage-aware)"
+    why_close: "Transformer, protocol-aware, 19 classes, zero-day detection"
+    results:
+      - {task: "19-class", metric: "accuracy", value: 98.90, verified: true}
+      - {task: "19-class", metric: "macro_f1", value: 98.40, verified: true}
+      - {task: "binary", metric: "accuracy", value: 99.62, verified: true}
+      - {task: "binary", metric: "macro_f1", value: 99.30, verified: true}
+      - {task: "zero-day", metric: "auroc", value: 97.5, verified: true}
+      - {task: "zero-day", metric: "fpr_at_95tpr", value: 7.8, verified: true}
+    params: "about 20M"
+
+  - key: benahmed2025
+    study: "Benahmed et al. (2025), Information 16(8):669"
+    doi: https://doi.org/10.3390/info16080669
+    model: "BiLSTM-DNN (HBiLD-IDS)"
+    split: "stratified random 80/20"
+    why_close: "best recurrent model at 19 classes; weak rare classes"
+    results:
+      - {task: "19-class", metric: "accuracy", value: 98.81, verified: true}
+      - {task: "19-class", metric: "f1", value: 98.59, verified: true}
+
+  - key: alkhodaidi2026balancing
+    study: "Alkhodaidi et al. (2026), CMC 88(2):87 (this special issue)"
+    doi: https://doi.org/10.32604/cmc.2026.081665
+    model: "Random Forest with ADASYN balancing"
+    split: "random, single seed"
+    why_close: "same dataset and special issue, 2/6/19 classes"
+    results:
+      - {task: "19-class", metric: "accuracy", value: 99.01, verified: true}
+      - {task: "19-class", metric: "f1", value: 98.95, verified: true}
+
+  - key: alsharo2026
+    study: "Al-Sharo et al. (2026), PLOS ONE 21(8):e0355601"
+    doi: https://doi.org/10.1371/journal.pone.0355601
+    model: "FedMamba (federated Mamba state-space model)"
+    split: "stratified random 80/20 (federated clients)"
+    why_close: "state-of-the-art accuracy on CICIoMT2024, federated setting is complementary to our centralised study"
+    results:
+      - {task: "19-class", metric: "accuracy", value: 99.52, verified: true}
+
+  - key: sogut2026
+    study: "Sogut et al. (2026), Sensors 26(13):4036"
+    doi: https://doi.org/10.3390/s26134036
+    model: "MSCA-Net (multi-scale CNN + attention + LSTM over windows)"
+    split: "stratified random 80/20 after windowing"
+    why_close: "window-based and edge-focused"
+    results:
+      - {task: "6-class", metric: "accuracy", value: 99.75, verified: true}
+      - {task: "6-class", metric: "weighted_f1", value: 99.77, verified: true}
+
+# Dropped from the comparison table (kept here for traceability):
+#   Alkhattabi et al. (2026), Sci Rep 16:26532 — their FGSM test (XGBoost accuracy 0.9758 -> 0.7923,
+#   LSTM autoencoder 0.8198 -> 0.8116, eps = 0.1) is on the SmartWard dataset, NOT CICIoMT2024.
+#   The paper is cited in the text only. Al-Sharo above replaces it for the comparison table.

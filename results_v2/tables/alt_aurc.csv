@@ -1,0 +1,33 @@
+model,seed,aurc_max_softmax,aurc_margin,aurc_neg_entropy,best_score
+rf,42,0.0340,0.0348,0.0342,max_softmax
+rf,43,0.0208,0.0214,0.0202,neg_entropy
+rf,44,0.0254,0.0261,0.0257,max_softmax
+rf,45,0.0201,0.0211,0.0199,neg_entropy
+rf,46,0.0192,0.0204,0.0195,max_softmax
+bilstm_dnn,42,1.5032,1.4786,1.4784,neg_entropy
+bilstm_dnn,43,1.6213,1.6052,1.6048,neg_entropy
+bilstm_dnn,44,1.3166,1.2121,1.2111,neg_entropy
+bilstm_dnn,45,1.4970,1.4656,1.4652,neg_entropy
+bilstm_dnn,46,1.3897,1.2517,1.2512,neg_entropy
+transformer,42,1.3145,1.1983,1.3632,margin
+transformer,43,1.8145,1.8305,1.8065,neg_entropy
+transformer,44,0.5184,0.5127,0.5312,margin
+transformer,45,0.6167,0.5432,0.6510,margin
+transformer,46,1.3891,1.3883,1.4111,margin
+tfsage_lite,42,1.4952,1.4493,1.4493,neg_entropy
+tfsage_lite,43,2.4147,2.2593,2.2594,margin
+tfsage_lite,44,2.4765,2.4025,2.4025,neg_entropy
+tfsage_lite,45,1.6841,1.5914,1.5914,neg_entropy
+tfsage_lite,46,2.7996,2.7529,2.7529,margin
+trace_moe,42,1.4254,1.4112,1.4088,neg_entropy
+trace_moe,43,1.3942,1.3912,1.3916,margin
+trace_moe,44,1.3795,1.3717,1.3716,neg_entropy
+trace_moe,45,1.6607,1.6476,1.6487,margin
+trace_moe,46,1.4219,1.4200,1.4220,margin
+
+# aggregated (mean ± std over 5 seeds):
+rf,0.0239 ± 0.0061,0.0248 ± 0.0060,0.0239 ± 0.0063
+bilstm_dnn,1.4656 ± 0.1168,1.4026 ± 0.1657,1.4021 ± 0.1659
+transformer,1.1306 ± 0.5494,1.0946 ± 0.5660,1.1526 ± 0.5423
+tfsage_lite,2.1740 ± 0.5571,2.0911 ± 0.5534,2.0911 ± 0.5534
+trace_moe,1.4563 ± 0.1158,1.4483 ± 0.1129,1.4485 ± 0.1135

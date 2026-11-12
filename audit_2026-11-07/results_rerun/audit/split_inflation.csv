@@ -1,0 +1,7 @@
+regime,dedup,n_test,macro_f1_label2,macro_f1_label6,macro_f1_label19
+random,False,1755003,0.9731,0.9286,0.8958
+random,True,916767,0.9691,0.92,0.8849
+official,False,1614182,0.9428,0.8429,0.8379
+official,True,1553969,0.9352,0.8196,0.8277
+temporal,False,1754997,0.9775,0.9134,0.8504
+temporal,True,1270015,0.9724,0.9009,0.8511

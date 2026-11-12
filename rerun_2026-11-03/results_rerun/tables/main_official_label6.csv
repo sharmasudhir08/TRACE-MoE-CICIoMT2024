@@ -1,0 +1,6 @@
+model,family,macro_f1,balanced_accuracy,weighted_f1,min_class_recall
+bilstm_dnn,deep,83.86 ± 1.14,90.98 ± 0.96,99.29 ± 0.10,75.53 ± 2.86
+rf,classical,86.06 ± 0.59,86.56 ± 0.28,99.63 ± 0.03,41.78 ± 0.76
+transformer,deep,86.62 ± 1.24,93.53 ± 0.78,99.62 ± 0.06,77.41 ± 3.42
+tfsage_lite,deep,88.40 ± 1.75,95.64 ± 0.57,99.67 ± 0.06,87.40 ± 2.01
+trace_moe,deep,89.09 ± 1.67,94.32 ± 0.85,99.71 ± 0.05,78.91 ± 6.18

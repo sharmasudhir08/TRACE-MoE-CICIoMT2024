@@ -1,0 +1,53 @@
+# TRACE-MoE Version B configuration (improved training).
+#
+# Applies the 4 highest-impact fixes identified from the Phase 1 seed-42 analysis:
+#   Change #1 — oversample small classes (rare-class under-training was a methodological defect:
+#               Recon-Ping_Sweep received 45 gradient updates/epoch vs DDoS giants' 60,000.
+#               With oversampling, every class now contributes exactly max_windows_per_class windows
+#               per epoch via replacement sampling.)
+#   Change #2 — focal_gamma 2.0 -> 1.0 (reduces the triple-weighting of rare classes:
+#               logit_adjust + focal_gamma + class_balanced_sampler all upweight rare classes;
+#               the stacked effect caused TRACE-MoE/Transformer to memorize ~45 rare-class windows
+#               in 5 epochs and overfit.)
+#   Change #3 — dropout 0.1 -> 0.2 (delays overfitting observed at epoch 5 on seed-42 v1.)
+#   Change #5 — epochs 30 -> 50, patience 5 -> 10 (gives BiLSTM-DNN enough room; lets the other
+#               models benefit from Changes 2+3 before early-stopping fires.)
+#
+# NOT applied (held in reserve for a v3 if needed):
+#   Change #4 — lr 1e-3 -> 5e-4 + 2-epoch warmup
+#   Change #6 — val_tail_fraction 0.15 -> 0.20
+#   Change #7 — windows.length 16 -> 8
+#   Change #8 — label smoothing
+#   Change #9 — moe.balance_weight 0.01 -> 0.02
+#
+# Append-only mode (inherited from default) means a run using this config lands in <name>__v2
+# folders, leaving Phase 1's seed-42 artefacts intact for a direct v1-vs-v2 comparison.
+
+base: default.yaml
+
+# v2 outputs live in a parallel directory tree so the Phase 1 (v1) artefacts under results/,
+# documents/, logs/ stay 100% intact and the two configurations can be compared cleanly.
+paths:
+  results_dir: results_v2
+  documents_dir: documents_v2
+  logs_dir: logs_v2
+  # processed_dir and ciciomt_csv_dir are inherited (same Parquet cache is reused)
+
+data:
+  oversample_small_classes: true   # Change #1
+
+model:
+  dropout: 0.2                     # Change #3 (was 0.1)
+
+loss:
+  focal_gamma: 1.0                 # Change #2 (was 2.0)
+
+train:
+  epochs: 50                       # Change #5 (was 30)
+  patience: 10                     # Change #5 (was 5)
+
+# windows.stride_val stays at 16 (inherited from default.yaml) — this matches the v2
+# configuration that produced the Phase 1 v1-vs-v2 comparison. Note: the reviewer flagged
+# that stride_val=16 gives ~59k val windows (every 16th), which can let a single-epoch val
+# spike determine the checkpoint; we accept that trade-off here to keep all 5 seeds on the
+# same config, and we disclose it in the paper's Limitations section.

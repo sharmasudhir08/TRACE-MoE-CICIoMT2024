@@ -1,0 +1,15 @@
+# Tiny twin study for the tests and a first check (tests/test_twin_model.py); outputs under results/_smoke.
+base: smoke.yaml
+
+twin:
+  rows_dir: data/processed/_smoke/twin/device
+  devices: configs/twin_devices.json
+  labels: file
+  cap: 50000
+  min_support: 50
+  shrinkage: 50
+  mlp_hidden: 16
+  seeds: {V0: [42], V1: [42], V2: [42], V3: [42], V4: [42], rf: [42]}
+  tune_seed: 42
+  sync_grid: {eta: [0.01, 0.05], delta: [5], budget: [60]}
+  stream_batch: 64

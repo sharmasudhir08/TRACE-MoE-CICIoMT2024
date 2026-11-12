@@ -1,0 +1,31 @@
+{
+  "memory": {
+    "bytes_per_device": {
+      "Blink_Camera": 4672,
+      "Ecobee_Camera": 6013,
+      "M1T_Camera": 4764,
+      "MQTT_Broker_attacks": 1612,
+      "Multifunctional_Pager": 5109,
+      "Owltron_Camera": 5252,
+      "SenseU": 5180,
+      "Singcall": 3652,
+      "Unprofiled_Device_002710": 4348
+    },
+    "mean_bytes_per_added_device": 4511.333333333333,
+    "fleet_profile_bytes": 8282,
+    "state_estimator_bytes": 553815,
+    "total_bytes": 602699,
+    "n_twinned_devices": 9
+  },
+  "time_ms_per_window": {
+    "delta_ms": 0.0059159974625799805,
+    "novelty_ms": 0.016666999727021903,
+    "state_estimate_ms": 0.5079999973531812,
+    "sync_update_ms": 0.009209001291310415,
+    "detector_no_twin_ms": 0.7466455008398043,
+    "detector_twin_ms": 0.7650830011698417,
+    "end_to_end_ms": 1.2956659957126249
+  },
+  "threads": 1,
+  "torch_threads": 1
+}

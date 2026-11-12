@@ -1,0 +1,224 @@
+2026-11-02 04:19:35 | INFO | --- 06_robustness.py | config configs/rerun.yaml | overrides ['train.device=mps']
+2026-11-02 04:19:35 | INFO | Session rerun_A_2026-10-30_235442 | host mac-studio | session log: <repo>/logs_rerun/sessions/rerun_A_2026-10-30_235442_06_robustness_mac-studio.log
+2026-11-02 04:19:44 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140765, 'val_windows_also_in_train_removed': 6492, 'test_windows_also_in_train_removed': 20313}
+2026-11-02 04:19:44 | INFO | Windows (official, T=16): train=620,004, val=60,614, test=1,593,554
+2026-11-02 04:19:44 | INFO | Loaded trained model <repo>/results_rerun/main/trace_moe_official_T16_seed42__v2/model.pt
+2026-11-02 04:19:44 | INFO | Loaded trained model <repo>/results_rerun/main/bilstm_dnn_official_T16_seed42__v2/model.pt
+2026-11-02 04:19:44 | INFO | Loaded trained model <repo>/results_rerun/main/transformer_official_T16_seed42__v2/model.pt
+2026-11-02 04:19:44 | INFO | Loaded trained model <repo>/results_rerun/main/tfsage_lite_official_T16_seed42__v2/model.pt
+2026-11-02 04:20:03 | INFO | transfer from trace_moe: trace_moe ASR 0.077, bilstm_dnn ASR 0.101, transformer ASR 0.066, tfsage_lite ASR 0.050, rf ASR 0.117
+2026-11-02 04:20:06 | INFO | transfer from bilstm_dnn: trace_moe ASR 0.058, bilstm_dnn ASR 0.111, transformer ASR 0.062, tfsage_lite ASR 0.048, rf ASR 0.107
+2026-11-02 04:20:08 | INFO | transfer from transformer: trace_moe ASR 0.062, bilstm_dnn ASR 0.102, transformer ASR 0.084, tfsage_lite ASR 0.051, rf ASR 0.112
+2026-11-02 04:20:09 | INFO | transfer from tfsage_lite: trace_moe ASR 0.062, bilstm_dnn ASR 0.095, transformer ASR 0.067, tfsage_lite ASR 0.075, rf ASR 0.109
+2026-11-02 04:20:09 | INFO | [trace_moe seed 42] PGD on 4,905 test windows
+2026-11-02 04:20:09 | INFO | eps=0.0   macro-F1 19:0.7956 2:0.8123 attack detection rate 0.9416
+2026-11-02 04:20:17 | INFO | eps=0.05  macro-F1 19:0.7876 2:0.8008 attack detection rate 0.9362
+2026-11-02 04:20:25 | INFO | eps=0.1   macro-F1 19:0.7764 2:0.7938 attack detection rate 0.9328
+2026-11-02 04:20:32 | INFO | eps=0.25  macro-F1 19:0.7023 2:0.7761 attack detection rate 0.9235
+2026-11-02 04:20:40 | INFO | eps=0.5   macro-F1 19:0.4861 2:0.6928 attack detection rate 0.8675
+2026-11-02 04:24:47 | INFO | adversarial fine-tune epoch 1: loss 0.0083
+2026-11-02 04:28:45 | INFO | adversarial fine-tune epoch 2: loss 0.0064
+2026-11-02 04:32:44 | INFO | adversarial fine-tune epoch 3: loss 0.0058
+2026-11-02 04:32:44 | INFO | [trace_moe seed 42] after adversarial fine-tuning
+2026-11-02 04:32:44 | INFO | eps=0.0   macro-F1 19:0.7871 2:0.8112 attack detection rate 0.9449
+2026-11-02 04:32:52 | INFO | eps=0.05  macro-F1 19:0.7833 2:0.8022 attack detection rate 0.9408
+2026-11-02 04:32:59 | INFO | eps=0.1   macro-F1 19:0.7762 2:0.7950 attack detection rate 0.9373
+2026-11-02 04:33:06 | INFO | eps=0.25  macro-F1 19:0.7153 2:0.7812 attack detection rate 0.9304
+2026-11-02 04:33:14 | INFO | eps=0.5   macro-F1 19:0.5919 2:0.6966 attack detection rate 0.8759
+2026-11-02 04:33:50 | INFO | [trace_moe seed 42] clean test macro-F1 after fine-tuning 19:0.7953 -> <repo>/results_rerun/robustness/trace_moe_official_T16_seed42
+2026-11-02 04:33:50 | INFO | [bilstm_dnn seed 42] PGD on 4,905 test windows
+2026-11-02 04:33:50 | INFO | eps=0.0   macro-F1 19:0.7233 2:0.7318 attack detection rate 0.9102
+2026-11-02 04:33:52 | INFO | eps=0.05  macro-F1 19:0.7112 2:0.7373 attack detection rate 0.9136
+2026-11-02 04:33:54 | INFO | eps=0.1   macro-F1 19:0.6642 2:0.7248 attack detection rate 0.9056
+2026-11-02 04:33:56 | INFO | eps=0.25  macro-F1 19:0.4026 2:0.6985 attack detection rate 0.8871
+2026-11-02 04:33:58 | INFO | eps=0.5   macro-F1 19:0.2331 2:0.6762 attack detection rate 0.8692
+2026-11-02 04:34:57 | INFO | adversarial fine-tune epoch 1: loss 0.2854
+2026-11-02 04:35:55 | INFO | adversarial fine-tune epoch 2: loss 0.1697
+2026-11-02 04:36:54 | INFO | adversarial fine-tune epoch 3: loss 0.1561
+2026-11-02 04:36:54 | INFO | [bilstm_dnn seed 42] after adversarial fine-tuning
+2026-11-02 04:36:54 | INFO | eps=0.0   macro-F1 19:0.7294 2:0.7445 attack detection rate 0.9153
+2026-11-02 04:36:56 | INFO | eps=0.05  macro-F1 19:0.7212 2:0.7413 attack detection rate 0.9134
+2026-11-02 04:36:58 | INFO | eps=0.1   macro-F1 19:0.7086 2:0.7368 attack detection rate 0.9106
+2026-11-02 04:37:00 | INFO | eps=0.25  macro-F1 19:0.6641 2:0.7287 attack detection rate 0.9054
+2026-11-02 04:37:02 | INFO | eps=0.5   macro-F1 19:0.3970 2:0.7081 attack detection rate 0.8912
+2026-11-02 04:37:19 | INFO | [bilstm_dnn seed 42] clean test macro-F1 after fine-tuning 19:0.6863 -> <repo>/results_rerun/robustness/bilstm_dnn_official_T16_seed42
+2026-11-02 04:37:19 | INFO | [transformer seed 42] PGD on 4,905 test windows
+2026-11-02 04:37:19 | INFO | eps=0.0   macro-F1 19:0.7831 2:0.7932 attack detection rate 0.9373
+2026-11-02 04:37:21 | INFO | eps=0.05  macro-F1 19:0.7778 2:0.7879 attack detection rate 0.9347
+2026-11-02 04:37:22 | INFO | eps=0.1   macro-F1 19:0.7724 2:0.7782 attack detection rate 0.9298
+2026-11-02 04:37:23 | INFO | eps=0.25  macro-F1 19:0.7457 2:0.7508 attack detection rate 0.9145
+2026-11-02 04:37:24 | INFO | eps=0.5   macro-F1 19:0.3642 2:0.5413 attack detection rate 0.6993
+2026-11-02 04:38:13 | INFO | adversarial fine-tune epoch 1: loss 0.0068
+2026-11-02 04:39:04 | INFO | adversarial fine-tune epoch 2: loss 0.0064
+2026-11-02 04:39:56 | INFO | adversarial fine-tune epoch 3: loss 0.0060
+2026-11-02 04:39:56 | INFO | [transformer seed 42] after adversarial fine-tuning
+2026-11-02 04:39:56 | INFO | eps=0.0   macro-F1 19:0.7911 2:0.7957 attack detection rate 0.9412
+2026-11-02 04:39:57 | INFO | eps=0.05  macro-F1 19:0.7854 2:0.7903 attack detection rate 0.9386
+2026-11-02 04:39:58 | INFO | eps=0.1   macro-F1 19:0.7786 2:0.7799 attack detection rate 0.9334
+2026-11-02 04:39:59 | INFO | eps=0.25  macro-F1 19:0.7459 2:0.7761 attack detection rate 0.9315
+2026-11-02 04:40:00 | INFO | eps=0.5   macro-F1 19:0.5264 2:0.6571 attack detection rate 0.8468
+2026-11-02 04:40:17 | INFO | [transformer seed 42] clean test macro-F1 after fine-tuning 19:0.7892 -> <repo>/results_rerun/robustness/transformer_official_T16_seed42
+2026-11-02 04:40:17 | INFO | [tfsage_lite seed 42] PGD on 4,905 test windows
+2026-11-02 04:40:18 | INFO | eps=0.0   macro-F1 19:0.8048 2:0.8116 attack detection rate 0.9513
+2026-11-02 04:40:18 | INFO | eps=0.05  macro-F1 19:0.7985 2:0.7998 attack detection rate 0.9461
+2026-11-02 04:40:19 | INFO | eps=0.1   macro-F1 19:0.7938 2:0.7860 attack detection rate 0.9397
+2026-11-02 04:40:20 | INFO | eps=0.25  macro-F1 19:0.5691 2:0.7546 attack detection rate 0.9233
+2026-11-02 04:40:20 | INFO | eps=0.5   macro-F1 19:0.3440 2:0.6110 attack detection rate 0.8031
+2026-11-02 04:40:51 | INFO | adversarial fine-tune epoch 1: loss 0.0145
+2026-11-02 04:41:22 | INFO | adversarial fine-tune epoch 2: loss 0.0103
+2026-11-02 04:41:54 | INFO | adversarial fine-tune epoch 3: loss 0.0087
+2026-11-02 04:41:54 | INFO | [tfsage_lite seed 42] after adversarial fine-tuning
+2026-11-02 04:41:54 | INFO | eps=0.0   macro-F1 19:0.8075 2:0.8323 attack detection rate 0.9597
+2026-11-02 04:41:55 | INFO | eps=0.05  macro-F1 19:0.8038 2:0.8225 attack detection rate 0.9558
+2026-11-02 04:41:55 | INFO | eps=0.1   macro-F1 19:0.7993 2:0.8096 attack detection rate 0.9505
+2026-11-02 04:41:56 | INFO | eps=0.25  macro-F1 19:0.6451 2:0.7829 attack detection rate 0.9382
+2026-11-02 04:41:57 | INFO | eps=0.5   macro-F1 19:0.3967 2:0.6143 attack detection rate 0.8070
+2026-11-02 04:42:11 | INFO | [tfsage_lite seed 42] clean test macro-F1 after fine-tuning 19:0.7896 -> <repo>/results_rerun/robustness/tfsage_lite_official_T16_seed42
+2026-11-02 04:42:19 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140619, 'val_windows_also_in_train_removed': 6538, 'test_windows_also_in_train_removed': 20526}
+2026-11-02 04:42:19 | INFO | Windows (official, T=16): train=620,150, val=60,568, test=1,593,341
+2026-11-02 04:42:19 | INFO | Loaded trained model <repo>/results_rerun/main/trace_moe_official_T16_seed43/model.pt
+2026-11-02 04:42:19 | INFO | Loaded trained model <repo>/results_rerun/main/bilstm_dnn_official_T16_seed43/model.pt
+2026-11-02 04:42:19 | INFO | Loaded trained model <repo>/results_rerun/main/transformer_official_T16_seed43/model.pt
+2026-11-02 04:42:19 | INFO | Loaded trained model <repo>/results_rerun/main/tfsage_lite_official_T16_seed43/model.pt
+2026-11-02 04:42:35 | INFO | transfer from trace_moe: trace_moe ASR 0.081, bilstm_dnn ASR 0.089, transformer ASR 0.065, tfsage_lite ASR 0.053, rf ASR 0.107
+2026-11-02 04:42:37 | INFO | transfer from bilstm_dnn: trace_moe ASR 0.065, bilstm_dnn ASR 0.105, transformer ASR 0.061, tfsage_lite ASR 0.051, rf ASR 0.107
+2026-11-02 04:42:39 | INFO | transfer from transformer: trace_moe ASR 0.069, bilstm_dnn ASR 0.086, transformer ASR 0.104, tfsage_lite ASR 0.051, rf ASR 0.110
+2026-11-02 04:42:40 | INFO | transfer from tfsage_lite: trace_moe ASR 0.070, bilstm_dnn ASR 0.095, transformer ASR 0.068, tfsage_lite ASR 0.071, rf ASR 0.112
+2026-11-02 04:42:40 | INFO | [trace_moe seed 43] PGD on 4,905 test windows
+2026-11-02 04:42:40 | INFO | eps=0.0   macro-F1 19:0.7864 2:0.7951 attack detection rate 0.9343
+2026-11-02 04:42:47 | INFO | eps=0.05  macro-F1 19:0.7797 2:0.7845 attack detection rate 0.9289
+2026-11-02 04:42:54 | INFO | eps=0.1   macro-F1 19:0.7750 2:0.7800 attack detection rate 0.9265
+2026-11-02 04:43:01 | INFO | eps=0.25  macro-F1 19:0.7099 2:0.7689 attack detection rate 0.9205
+2026-11-02 04:43:09 | INFO | eps=0.5   macro-F1 19:0.3991 2:0.6286 attack detection rate 0.8072
+2026-11-02 04:47:08 | INFO | adversarial fine-tune epoch 1: loss 0.0109
+2026-11-02 04:51:10 | INFO | adversarial fine-tune epoch 2: loss 0.0082
+2026-11-02 04:55:14 | INFO | adversarial fine-tune epoch 3: loss 0.0077
+2026-11-02 04:55:14 | INFO | [trace_moe seed 43] after adversarial fine-tuning
+2026-11-02 04:55:14 | INFO | eps=0.0   macro-F1 19:0.7916 2:0.8087 attack detection rate 0.9425
+2026-11-02 04:55:21 | INFO | eps=0.05  macro-F1 19:0.7873 2:0.8004 attack detection rate 0.9386
+2026-11-02 04:55:28 | INFO | eps=0.1   macro-F1 19:0.7836 2:0.7915 attack detection rate 0.9343
+2026-11-02 04:55:35 | INFO | eps=0.25  macro-F1 19:0.7613 2:0.7814 attack detection rate 0.9291
+2026-11-02 04:55:42 | INFO | eps=0.5   macro-F1 19:0.5511 2:0.7455 attack detection rate 0.9087
+2026-11-02 04:56:17 | INFO | [trace_moe seed 43] clean test macro-F1 after fine-tuning 19:0.7937 -> <repo>/results_rerun/robustness/trace_moe_official_T16_seed43
+2026-11-02 04:56:17 | INFO | [bilstm_dnn seed 43] PGD on 4,905 test windows
+2026-11-02 04:56:18 | INFO | eps=0.0   macro-F1 19:0.7234 2:0.7437 attack detection rate 0.9164
+2026-11-02 04:56:20 | INFO | eps=0.05  macro-F1 19:0.7089 2:0.7356 attack detection rate 0.9115
+2026-11-02 04:56:22 | INFO | eps=0.1   macro-F1 19:0.6629 2:0.7315 attack detection rate 0.9089
+2026-11-02 04:56:24 | INFO | eps=0.25  macro-F1 19:0.3704 2:0.7160 attack detection rate 0.8985
+2026-11-02 04:56:25 | INFO | eps=0.5   macro-F1 19:0.2239 2:0.6842 attack detection rate 0.8746
+2026-11-02 04:57:24 | INFO | adversarial fine-tune epoch 1: loss 0.2709
+2026-11-02 04:58:22 | INFO | adversarial fine-tune epoch 2: loss 0.1759
+2026-11-02 04:59:21 | INFO | adversarial fine-tune epoch 3: loss 0.1624
+2026-11-02 04:59:21 | INFO | [bilstm_dnn seed 43] after adversarial fine-tuning
+2026-11-02 04:59:21 | INFO | eps=0.0   macro-F1 19:0.7247 2:0.7492 attack detection rate 0.9181
+2026-11-02 04:59:23 | INFO | eps=0.05  macro-F1 19:0.6913 2:0.7463 attack detection rate 0.9164
+2026-11-02 04:59:25 | INFO | eps=0.1   macro-F1 19:0.6759 2:0.7417 attack detection rate 0.9136
+2026-11-02 04:59:26 | INFO | eps=0.25  macro-F1 19:0.6373 2:0.7321 attack detection rate 0.9076
+2026-11-02 04:59:28 | INFO | eps=0.5   macro-F1 19:0.3757 2:0.7108 attack detection rate 0.8931
+2026-11-02 04:59:46 | INFO | [bilstm_dnn seed 43] clean test macro-F1 after fine-tuning 19:0.6711 -> <repo>/results_rerun/robustness/bilstm_dnn_official_T16_seed43
+2026-11-02 04:59:46 | INFO | [transformer seed 43] PGD on 4,905 test windows
+2026-11-02 04:59:46 | INFO | eps=0.0   macro-F1 19:0.7928 2:0.7844 attack detection rate 0.9375
+2026-11-02 04:59:47 | INFO | eps=0.05  macro-F1 19:0.7858 2:0.7775 attack detection rate 0.9341
+2026-11-02 04:59:48 | INFO | eps=0.1   macro-F1 19:0.7792 2:0.7632 attack detection rate 0.9265
+2026-11-02 04:59:49 | INFO | eps=0.25  macro-F1 19:0.7171 2:0.7094 attack detection rate 0.8927
+2026-11-02 04:59:51 | INFO | eps=0.5   macro-F1 19:0.4187 2:0.5278 attack detection rate 0.6863
+2026-11-02 05:00:38 | INFO | adversarial fine-tune epoch 1: loss 0.0078
+2026-11-02 05:01:24 | INFO | adversarial fine-tune epoch 2: loss 0.0069
+2026-11-02 05:02:11 | INFO | adversarial fine-tune epoch 3: loss 0.0071
+2026-11-02 05:02:11 | INFO | [transformer seed 43] after adversarial fine-tuning
+2026-11-02 05:02:11 | INFO | eps=0.0   macro-F1 19:0.7917 2:0.7935 attack detection rate 0.9397
+2026-11-02 05:02:12 | INFO | eps=0.05  macro-F1 19:0.7834 2:0.7799 attack detection rate 0.9330
+2026-11-02 05:02:14 | INFO | eps=0.1   macro-F1 19:0.7786 2:0.7729 attack detection rate 0.9293
+2026-11-02 05:02:15 | INFO | eps=0.25  macro-F1 19:0.7602 2:0.7502 attack detection rate 0.9166
+2026-11-02 05:02:16 | INFO | eps=0.5   macro-F1 19:0.5489 2:0.5794 attack detection rate 0.7574
+2026-11-02 05:02:32 | INFO | [transformer seed 43] clean test macro-F1 after fine-tuning 19:0.7893 -> <repo>/results_rerun/robustness/transformer_official_T16_seed43
+2026-11-02 05:02:32 | INFO | [tfsage_lite seed 43] PGD on 4,905 test windows
+2026-11-02 05:02:33 | INFO | eps=0.0   macro-F1 19:0.7974 2:0.8022 attack detection rate 0.9498
+2026-11-02 05:02:33 | INFO | eps=0.05  macro-F1 19:0.7940 2:0.7954 attack detection rate 0.9468
+2026-11-02 05:02:34 | INFO | eps=0.1   macro-F1 19:0.7883 2:0.7893 attack detection rate 0.9440
+2026-11-02 05:02:35 | INFO | eps=0.25  macro-F1 19:0.5801 2:0.7613 attack detection rate 0.9300
+2026-11-02 05:02:36 | INFO | eps=0.5   macro-F1 19:0.3576 2:0.6415 attack detection rate 0.8406
+2026-11-02 05:03:08 | INFO | adversarial fine-tune epoch 1: loss 0.0210
+2026-11-02 05:03:39 | INFO | adversarial fine-tune epoch 2: loss 0.0179
+2026-11-02 05:04:11 | INFO | adversarial fine-tune epoch 3: loss 0.0174
+2026-11-02 05:04:11 | INFO | [tfsage_lite seed 43] after adversarial fine-tuning
+2026-11-02 05:04:11 | INFO | eps=0.0   macro-F1 19:0.7882 2:0.7865 attack detection rate 0.9431
+2026-11-02 05:04:12 | INFO | eps=0.05  macro-F1 19:0.7826 2:0.7810 attack detection rate 0.9405
+2026-11-02 05:04:12 | INFO | eps=0.1   macro-F1 19:0.7778 2:0.7736 attack detection rate 0.9369
+2026-11-02 05:04:13 | INFO | eps=0.25  macro-F1 19:0.6664 2:0.7556 attack detection rate 0.9274
+2026-11-02 05:04:14 | INFO | eps=0.5   macro-F1 19:0.3848 2:0.6427 attack detection rate 0.8425
+2026-11-02 05:04:29 | INFO | [tfsage_lite seed 43] clean test macro-F1 after fine-tuning 19:0.7708 -> <repo>/results_rerun/robustness/tfsage_lite_official_T16_seed43
+2026-11-02 05:04:36 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 140855, 'val_windows_also_in_train_removed': 6526, 'test_windows_also_in_train_removed': 21449}
+2026-11-02 05:04:36 | INFO | Windows (official, T=16): train=619,914, val=60,580, test=1,592,418
+2026-11-02 05:04:37 | INFO | Loaded trained model <repo>/results_rerun/main/trace_moe_official_T16_seed44/model.pt
+2026-11-02 05:04:37 | INFO | Loaded trained model <repo>/results_rerun/main/bilstm_dnn_official_T16_seed44/model.pt
+2026-11-02 05:04:37 | INFO | Loaded trained model <repo>/results_rerun/main/transformer_official_T16_seed44/model.pt
+2026-11-02 05:04:37 | INFO | Loaded trained model <repo>/results_rerun/main/tfsage_lite_official_T16_seed44/model.pt
+2026-11-02 05:04:51 | INFO | transfer from trace_moe: trace_moe ASR 0.079, bilstm_dnn ASR 0.091, transformer ASR 0.052, tfsage_lite ASR 0.047, rf ASR 0.108
+2026-11-02 05:04:54 | INFO | transfer from bilstm_dnn: trace_moe ASR 0.055, bilstm_dnn ASR 0.109, transformer ASR 0.049, tfsage_lite ASR 0.047, rf ASR 0.107
+2026-11-02 05:04:55 | INFO | transfer from transformer: trace_moe ASR 0.057, bilstm_dnn ASR 0.092, transformer ASR 0.073, tfsage_lite ASR 0.051, rf ASR 0.108
+2026-11-02 05:04:56 | INFO | transfer from tfsage_lite: trace_moe ASR 0.058, bilstm_dnn ASR 0.096, transformer ASR 0.053, tfsage_lite ASR 0.068, rf ASR 0.108
+2026-11-02 05:04:56 | INFO | [trace_moe seed 44] PGD on 4,905 test windows
+2026-11-02 05:04:57 | INFO | eps=0.0   macro-F1 19:0.7964 2:0.8224 attack detection rate 0.9461
+2026-11-02 05:05:04 | INFO | eps=0.05  macro-F1 19:0.7906 2:0.8146 attack detection rate 0.9427
+2026-11-02 05:05:11 | INFO | eps=0.1   macro-F1 19:0.7825 2:0.8090 attack detection rate 0.9401
+2026-11-02 05:05:17 | INFO | eps=0.25  macro-F1 19:0.6922 2:0.7745 attack detection rate 0.9227
+2026-11-02 05:05:24 | INFO | eps=0.5   macro-F1 19:0.3785 2:0.6444 attack detection rate 0.8227
+2026-11-02 05:09:20 | INFO | adversarial fine-tune epoch 1: loss 0.0106
+2026-11-02 05:13:17 | INFO | adversarial fine-tune epoch 2: loss 0.0083
+2026-11-02 05:17:16 | INFO | adversarial fine-tune epoch 3: loss 0.0084
+2026-11-02 05:17:16 | INFO | [trace_moe seed 44] after adversarial fine-tuning
+2026-11-02 05:17:16 | INFO | eps=0.0   macro-F1 19:0.7943 2:0.8199 attack detection rate 0.9479
+2026-11-02 05:17:23 | INFO | eps=0.05  macro-F1 19:0.7905 2:0.8130 attack detection rate 0.9449
+2026-11-02 05:17:30 | INFO | eps=0.1   macro-F1 19:0.7876 2:0.8059 attack detection rate 0.9416
+2026-11-02 05:17:37 | INFO | eps=0.25  macro-F1 19:0.6968 2:0.7855 attack detection rate 0.9317
+2026-11-02 05:17:44 | INFO | eps=0.5   macro-F1 19:0.4648 2:0.7454 attack detection rate 0.9091
+2026-11-02 05:18:18 | INFO | [trace_moe seed 44] clean test macro-F1 after fine-tuning 19:0.7977 -> <repo>/results_rerun/robustness/trace_moe_official_T16_seed44
+2026-11-02 05:18:18 | INFO | [bilstm_dnn seed 44] PGD on 4,905 test windows
+2026-11-02 05:18:18 | INFO | eps=0.0   macro-F1 19:0.7151 2:0.7086 attack detection rate 0.9132
+2026-11-02 05:18:20 | INFO | eps=0.05  macro-F1 19:0.7041 2:0.7025 attack detection rate 0.9091
+2026-11-02 05:18:22 | INFO | eps=0.1   macro-F1 19:0.6339 2:0.6978 attack detection rate 0.9059
+2026-11-02 05:18:24 | INFO | eps=0.25  macro-F1 19:0.3248 2:0.6715 attack detection rate 0.8860
+2026-11-02 05:18:26 | INFO | eps=0.5   macro-F1 19:0.2026 2:0.6460 attack detection rate 0.8639
+2026-11-02 05:19:24 | INFO | adversarial fine-tune epoch 1: loss 0.2639
+2026-11-02 05:20:22 | INFO | adversarial fine-tune epoch 2: loss 0.1725
+2026-11-02 05:21:20 | INFO | adversarial fine-tune epoch 3: loss 0.1625
+2026-11-02 05:21:20 | INFO | [bilstm_dnn seed 44] after adversarial fine-tuning
+2026-11-02 05:21:20 | INFO | eps=0.0   macro-F1 19:0.7178 2:0.7208 attack detection rate 0.9186
+2026-11-02 05:21:22 | INFO | eps=0.05  macro-F1 19:0.6892 2:0.7137 attack detection rate 0.9140
+2026-11-02 05:21:24 | INFO | eps=0.1   macro-F1 19:0.6678 2:0.7117 attack detection rate 0.9128
+2026-11-02 05:21:26 | INFO | eps=0.25  macro-F1 19:0.6171 2:0.7114 attack detection rate 0.9125
+2026-11-02 05:21:28 | INFO | eps=0.5   macro-F1 19:0.3701 2:0.6923 attack detection rate 0.8994
+2026-11-02 05:21:45 | INFO | [bilstm_dnn seed 44] clean test macro-F1 after fine-tuning 19:0.6539 -> <repo>/results_rerun/robustness/bilstm_dnn_official_T16_seed44
+2026-11-02 05:21:45 | INFO | [transformer seed 44] PGD on 4,905 test windows
+2026-11-02 05:21:46 | INFO | eps=0.0   macro-F1 19:0.7925 2:0.8125 attack detection rate 0.9500
+2026-11-02 05:21:47 | INFO | eps=0.05  macro-F1 19:0.7853 2:0.8027 attack detection rate 0.9457
+2026-11-02 05:21:48 | INFO | eps=0.1   macro-F1 19:0.7801 2:0.7975 attack detection rate 0.9433
+2026-11-02 05:21:49 | INFO | eps=0.25  macro-F1 19:0.7411 2:0.7649 attack detection rate 0.9270
+2026-11-02 05:21:50 | INFO | eps=0.5   macro-F1 19:0.5021 2:0.6154 attack detection rate 0.8053
+2026-11-02 05:22:40 | INFO | adversarial fine-tune epoch 1: loss 0.0236
+2026-11-02 05:23:29 | INFO | adversarial fine-tune epoch 2: loss 0.0208
+2026-11-02 05:24:18 | INFO | adversarial fine-tune epoch 3: loss 0.0206
+2026-11-02 05:24:18 | INFO | [transformer seed 44] after adversarial fine-tuning
+2026-11-02 05:24:18 | INFO | eps=0.0   macro-F1 19:0.7889 2:0.7936 attack detection rate 0.9371
+2026-11-02 05:24:19 | INFO | eps=0.05  macro-F1 19:0.7827 2:0.7867 attack detection rate 0.9336
+2026-11-02 05:24:21 | INFO | eps=0.1   macro-F1 19:0.7793 2:0.7812 attack detection rate 0.9308
+2026-11-02 05:24:22 | INFO | eps=0.25  macro-F1 19:0.7657 2:0.7621 attack detection rate 0.9205
+2026-11-02 05:24:23 | INFO | eps=0.5   macro-F1 19:0.5826 2:0.6546 attack detection rate 0.8397
+2026-11-02 05:24:40 | INFO | [transformer seed 44] clean test macro-F1 after fine-tuning 19:0.7749 -> <repo>/results_rerun/robustness/transformer_official_T16_seed44
+2026-11-02 05:24:40 | INFO | [tfsage_lite seed 44] PGD on 4,905 test windows
+2026-11-02 05:24:40 | INFO | eps=0.0   macro-F1 19:0.7932 2:0.8312 attack detection rate 0.9550
+2026-11-02 05:24:40 | INFO | eps=0.05  macro-F1 19:0.7907 2:0.8202 attack detection rate 0.9505
+2026-11-02 05:24:41 | INFO | eps=0.1   macro-F1 19:0.7859 2:0.8098 attack detection rate 0.9459
+2026-11-02 05:24:42 | INFO | eps=0.25  macro-F1 19:0.5760 2:0.7789 attack detection rate 0.9311
+2026-11-02 05:24:43 | INFO | eps=0.5   macro-F1 19:0.3945 2:0.6352 attack detection rate 0.8221
+2026-11-02 05:25:15 | INFO | adversarial fine-tune epoch 1: loss 0.0132
+2026-11-02 05:25:48 | INFO | adversarial fine-tune epoch 2: loss 0.0113
+2026-11-02 05:26:20 | INFO | adversarial fine-tune epoch 3: loss 0.0112
+2026-11-02 05:26:20 | INFO | [tfsage_lite seed 44] after adversarial fine-tuning
+2026-11-02 05:26:20 | INFO | eps=0.0   macro-F1 19:0.7952 2:0.8287 attack detection rate 0.9571
+2026-11-02 05:26:21 | INFO | eps=0.05  macro-F1 19:0.7908 2:0.8218 attack detection rate 0.9543
+2026-11-02 05:26:22 | INFO | eps=0.1   macro-F1 19:0.7876 2:0.8095 attack detection rate 0.9492
+2026-11-02 05:26:23 | INFO | eps=0.25  macro-F1 19:0.6722 2:0.7915 attack detection rate 0.9410
+2026-11-02 05:26:23 | INFO | eps=0.5   macro-F1 19:0.4859 2:0.7173 attack detection rate 0.8983
+2026-11-02 05:26:37 | INFO | [tfsage_lite seed 44] clean test macro-F1 after fine-tuning 19:0.7784 -> <repo>/results_rerun/robustness/tfsage_lite_official_T16_seed44

@@ -1,0 +1,23 @@
+2026-11-03 20:44:27 | INFO | --- 02_audit.py | config configs/rerun.yaml | overrides []
+2026-11-03 20:44:27 | INFO | Session 2026-11-03_204426 | host mac-studio | session log: <repo>/logs_rerun/sessions/2026-11-03_204426_02_audit_mac-studio.log
+2026-11-03 20:44:28 | INFO | 1/4 duplicates
+2026-11-03 20:44:43 | INFO | {'n_rows': 8775013, 'n_features': 45, 'test_rows': 1614182, 'test_duplicate_rows': 724611, 'test_duplicate_pct': np.float64(44.89), 'train_rows': 7160831, 'train_duplicate_rows': 2663796, 'train_duplicate_pct': np.float64(37.2), 'test_rows_also_in_train': 13589, 'test_rows_also_in_train_pct': np.float64(0.842), 'feature_vectors_with_conflicting_labels': 0, 'rows_with_conflicting_labels': 0}
+2026-11-03 20:44:43 | INFO | 2/4 single-feature shortcut test
+2026-11-03 20:44:58 | INFO | 3/4 row-order autocorrelation
+2026-11-03 20:44:59 | INFO | 4/4 split inflation (RF under each regime, with and without duplicate removal)
+2026-11-03 20:45:04 | INFO | Windows (random, T=1): train=5,967,008, val=1,053,002, test=1,755,003
+2026-11-03 20:45:15 | INFO | {'regime': 'random', 'dedup': False, 'n_test': 1755003, 'macro_f1_label2': 0.9731099777877465, 'macro_f1_label6': 0.9286166289353869, 'macro_f1_label19': 0.8958068694148493}
+2026-11-03 20:45:26 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2724656, 'val_windows_also_in_train_removed': 502383, 'test_windows_also_in_train_removed': 838236}
+2026-11-03 20:45:26 | INFO | Windows (random, T=1): train=3,242,352, val=550,619, test=916,767
+2026-11-03 20:45:32 | INFO | {'regime': 'random', 'dedup': True, 'n_test': 916767, 'macro_f1_label2': 0.969087068187414, 'macro_f1_label6': 0.9199889051347699, 'macro_f1_label19': 0.8848861159394145}
+2026-11-03 20:45:37 | INFO | Windows (official, T=1): train=6,086,708, val=1,074,123, test=1,614,182
+2026-11-03 20:45:47 | INFO | {'regime': 'official', 'dedup': False, 'n_test': 1614182, 'macro_f1_label2': 0.9428232634301609, 'macro_f1_label6': 0.8429323577856903, 'macro_f1_label19': 0.8378881519244451}
+2026-11-03 20:45:57 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2768690, 'val_windows_also_in_train_removed': 313345, 'test_windows_also_in_train_removed': 60213}
+2026-11-03 20:45:57 | INFO | Windows (official, T=1): train=3,318,018, val=760,778, test=1,553,969
+2026-11-03 20:46:07 | INFO | {'regime': 'official', 'dedup': True, 'n_test': 1553969, 'macro_f1_label2': 0.9352415216685739, 'macro_f1_label6': 0.8195867169567445, 'macro_f1_label19': 0.8277280846927675}
+2026-11-03 20:46:12 | INFO | Windows (temporal, T=1): train=5,967,011, val=1,053,005, test=1,754,997
+2026-11-03 20:46:22 | INFO | {'regime': 'temporal', 'dedup': False, 'n_test': 1754997, 'macro_f1_label2': 0.9774671312702714, 'macro_f1_label6': 0.9133783881309868, 'macro_f1_label19': 0.8504397352638303}
+2026-11-03 20:46:32 | INFO | Duplicate removal: {'train_duplicate_windows_removed': 2748337, 'val_windows_also_in_train_removed': 296545, 'test_windows_also_in_train_removed': 484982}
+2026-11-03 20:46:32 | INFO | Windows (temporal, T=1): train=3,218,674, val=756,460, test=1,270,015
+2026-11-03 20:46:41 | INFO | {'regime': 'temporal', 'dedup': True, 'n_test': 1270015, 'macro_f1_label2': 0.9724364424767095, 'macro_f1_label6': 0.900944430306613, 'macro_f1_label19': 0.8510826994132429}
+2026-11-03 20:46:41 | INFO | Audit written to <repo>/results_rerun/audit
